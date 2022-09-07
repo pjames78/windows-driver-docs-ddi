@@ -4,7 +4,7 @@ title: DOT11EXT_ONEX_START (wlanihv.h)
 description: The DOT11EXT_ONEX_START callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extstartonex.htm
 tech.root: netvista
-ms.date: 02/16/2018
+ms.date: 09/07/2022
 keywords: ["DOT11EXT_ONEX_START callback"]
 ms.keywords: DOT11EXT_ONEX_START, Dot11ExtStartOneX, Dot11ExtStartOneX callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_71199b82-64e0-4b96-89f0-e964dd959077.xml, netvista.dot11extstartonex, wlanihv/Dot11ExtStartOneX
 req.header: wlanihv.h
@@ -61,9 +61,7 @@ The handle used by the operating system to reference the wireless LAN (WLAN) ada
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pEapAttributes
-
-### -param pEapAttribute [in, optional]
+### -param pEapAttributes [in, optional]
 
 A pointer to an EAP_ATTRIBUTES array structure that contains the EAP attributes returned by the
      authentication session. For more information about EAP_ATTRIBUTES, see the Microsoft Windows SDK

@@ -2,7 +2,7 @@
 UID: NE:netwakesource._NET_WAKE_SOURCE_TYPE
 tech.root: netvista
 title: NET_WAKE_SOURCE_TYPE
-ms.date: 04/01/2022
+ms.date: 09/07/2022
 targetos: Windows
 description: The NET_WAKE_SOURCE_TYPE enumeration specifies the type of a wake-on-LAN (WoL) wake-up event for a net adapter.
 req.construct-type: enumeration
@@ -56,7 +56,7 @@ The wake source is a media connect or disconnect event.
 
 The wake source is a packet that matches a filter the driver supports, such as an Ethernet unicast frame.
 
-### -field NetWakeSourceTypeEapolPacke:5
+### -field NetWakeSourceTypeEapolPacket:5
 
 The wake source is an EAP over LAN (EAPOL) request identifier message.
 
