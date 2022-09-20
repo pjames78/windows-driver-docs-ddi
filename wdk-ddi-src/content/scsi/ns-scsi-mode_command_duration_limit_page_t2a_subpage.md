@@ -2,7 +2,7 @@
 UID: NS:scsi._MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE
 tech.root: storage
 title: MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (scsi.h)
-ms.date: 05/24/2022
+ms.date: 09/20/2022
 targetos: Windows
 description: Learn more about the MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (scsi.h) structure.
 prerelease: false
@@ -66,11 +66,11 @@ Described in the specification.
 
 Described in the specification.
 
-### -field PageLength
+### -field PageLength[2]
 
 Described in the specification.
 
-### -field Reserved
+### -field Reserved[3]
 
 Reserved.
 
@@ -78,11 +78,11 @@ Reserved.
 
 Reserved.
 
-### -field PerfvsComandDurationGuidelines
+### -field PerfvsCommandDurationGuidelines
 
 Described in the specification.
 
-### -field T2CommandDurationLimitDescriptors
+### -field T2CommandDurationLimitDescriptors[DURATION_LIMIT_T2_DESCRIPTOR_COUNT]
 
 An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** [**T2_COMMAND_DURATION_LIMIT_DESCRIPTOR**](ns-scsi-t2_command_duration_limit_descriptor.md) structures, where each structure contains a T2 command duration limit descriptor.
 

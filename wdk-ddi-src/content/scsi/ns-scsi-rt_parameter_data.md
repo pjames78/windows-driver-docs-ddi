@@ -1,9 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_18
+UID: NS:scsi.__unnamed_struct_20
 title: RT_PARAMETER_DATA (scsi.h)
 description: The RT_PARAMETER_DATA structure (scsi.h) contains the parameter data for the report timestamp command.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["RT_PARAMETER_DATA structure"]
 ms.keywords: "*PRT_PARAMETER_DATA, PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], RT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], scsi/PRT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, storage.rt_parameter_data"
 req.header: scsi.h

@@ -1,5 +1,5 @@
 ---
-UID: NS:scsi.__unnamed_struct_17
+UID: NS:scsi.__unnamed_struct_19
 title: PRO_PARAMETER_LIST (scsi.h)
 description: The PRO_PARAMETER_LIST structure (scsi.h) contains reservation information that is sent in a Persistent Reserve Out (PRO) command to a device server.
 tech.root: storage

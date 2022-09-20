@@ -1,9 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_24
+UID: NS:scsi.__unnamed_struct_26
 title: BLOCK_DEVICE_RANGE_DESCRIPTOR (scsi.h)
 description: The BLOCK_DEVICE_RANGE_DESCRIPTOR structure (scsi.h) describes a range of logical blocks associated with the fragments of a file.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["BLOCK_DEVICE_RANGE_DESCRIPTOR structure"]
 ms.keywords: "*PBLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR structure [Storage Devices], PBLOCK_DEVICE_RANGE_DESCRIPTOR, PBLOCK_DEVICE_RANGE_DESCRIPTOR structure pointer [Storage Devices], scsi/BLOCK_DEVICE_RANGE_DESCRIPTOR, scsi/PBLOCK_DEVICE_RANGE_DESCRIPTOR, storage.block_device_range_descriptor"
 req.header: scsi.h

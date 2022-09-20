@@ -1,9 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_11
+UID: NS:scsi.__unnamed_struct_13
 title: PRI_RESERVATION_LIST (scsi.h)
 description: The PRI_RESERVATION_LIST structure (scsi.h) contains a list of persistent reservations that are active within a device server.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["PRI_RESERVATION_LIST structure"]
 ms.keywords: "*PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST structure pointer [Storage Devices], PRI_RESERVATION_LIST, PRI_RESERVATION_LIST structure [Storage Devices], storage.pri_reservation_list, storport/PPRI_RESERVATION_LIST, storport/PRI_RESERVATION_LIST, structs-general_10a53f53-2aed-4be1-bf2b-d61efa2c846f.xml"
 req.header: scsi.h
