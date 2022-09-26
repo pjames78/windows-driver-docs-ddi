@@ -1,8 +1,8 @@
 ---
-UID: NS:ntddk.__unnamed_struct_21
+UID: NS:ntddk.__unnamed_struct_22
 tech.root: kernel
 title: HAL_DISPATCH (ntddk.h)
-ms.date: 03/07/2022
+ms.date: 09/26/2022
 targetos: Windows
 description: This topic describes the HAL_DISPATCH structure.
 prerelease: false
@@ -38,7 +38,7 @@ f1_keywords:
 dev_langs:
  - c++
 helpviewer_keywords:
- - __unnamed_struct_21
+ - __unnamed_struct_22
 ---
 
 ## -description

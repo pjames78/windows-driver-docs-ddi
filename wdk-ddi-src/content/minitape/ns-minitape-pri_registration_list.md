@@ -1,5 +1,5 @@
 ---
-UID: NS:minitape.__unnamed_struct_9
+UID: NS:minitape.__unnamed_struct_11
 title: PRI_REGISTRATION_LIST (minitape.h)
 description: The PRI_REGISTRATION_LIST structure (minitape.h) contains information about persistent reservations and reservation keys that are active within a device server.
 tech.root: storage
@@ -44,7 +44,7 @@ api_name:
 
 ## -description
 
-The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS.
+The **PRI_REGISTRATION_LIST** structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS.
 
 ## -struct-fields
 

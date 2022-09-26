@@ -1,9 +1,9 @@
 ---
-UID: NS:minitape.__unnamed_struct_24
+UID: NS:minitape.__unnamed_struct_26
 title: BLOCK_DEVICE_RANGE_DESCRIPTOR (minitape.h)
 description: The BLOCK_DEVICE_RANGE_DESCRIPTOR structure (minitape.h) describes a range of logical blocks associated with the fragments of a file.
 tech.root: storage
-ms.date: 09/23/2022
+ms.date: 09/26/2022
 keywords: ["BLOCK_DEVICE_RANGE_DESCRIPTOR structure"]
 ms.keywords: "*PBLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR structure [Storage Devices], PBLOCK_DEVICE_RANGE_DESCRIPTOR, PBLOCK_DEVICE_RANGE_DESCRIPTOR structure pointer [Storage Devices], scsi/BLOCK_DEVICE_RANGE_DESCRIPTOR, scsi/PBLOCK_DEVICE_RANGE_DESCRIPTOR, storage.block_device_range_descriptor"
 req.header: minitape.h

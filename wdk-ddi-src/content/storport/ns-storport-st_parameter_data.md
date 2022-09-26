@@ -1,10 +1,9 @@
 ---
-UID: NS:storport.__unnamed_struct_19
+UID: NS:storport.__unnamed_struct_21
 title: ST_PARAMETER_DATA (storport.h)
 description: The ST_PARAMETER_DATA structure (storport.h) contains the parameter list for the set timestamp command.
-old-location: storage\st_parameter_data.htm
 tech.root: storage
-ms.date: 03/29/2018
+ms.date: 09/26/2022
 keywords: ["ST_PARAMETER_DATA structure"]
 ms.keywords: "*PST_PARAMETER_DATA, PST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], ST_PARAMETER_DATA, ST_PARAMETER_DATA structure [Storage Devices], scsi/PST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA, storage.st_parameter_data"
 req.header: storport.h
@@ -42,8 +41,6 @@ api_name:
  - PST_PARAMETER_DATA
  - ST_PARAMETER_DATA
 ---
-
-# ST_PARAMETER_DATA structure (storport.h)
 
 ## -description
 

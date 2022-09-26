@@ -1,9 +1,9 @@
 ---
-UID: NS:minitape.__unnamed_struct_28
+UID: NS:minitape.__unnamed_struct_30
 title: RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER (minitape.h)
 description: The RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure (minitape.h) contains a token that is created as a representation of data (ROD).
 tech.root: storage
-ms.date: 09/23/2022
+ms.date: 09/26/2022
 keywords: ["RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure"]
 ms.keywords: "*PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, storage.receive_token_information_response_header"
 req.header: minitape.h
