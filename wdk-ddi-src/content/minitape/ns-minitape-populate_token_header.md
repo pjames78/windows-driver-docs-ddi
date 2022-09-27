@@ -1,9 +1,9 @@
 ---
-UID: NS:minitape.__unnamed_struct_25
+UID: NS:minitape.__unnamed_struct_27
 title: POPULATE_TOKEN_HEADER (minitape.h)
 description: The POPULATE_TOKEN_HEADER structure (minitape.h) contains the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command.
 tech.root: storage
-ms.date: 09/23/2022
+ms.date: 09/27/2022
 keywords: ["POPULATE_TOKEN_HEADER structure"]
 ms.keywords: "*PPOPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER structure [Storage Devices], PPOPULATE_TOKEN_HEADER, PPOPULATE_TOKEN_HEADER structure pointer [Storage Devices], scsi/POPULATE_TOKEN_HEADER, scsi/PPOPULATE_TOKEN_HEADER, storage.populate_token_header"
 req.header: minitape.h
