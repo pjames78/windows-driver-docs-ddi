@@ -2,7 +2,7 @@
 UID: NS:ntddk._KUSER_SHARED_DATA
 tech.root: kernel
 title: KUSER_SHARED_DATA (ntddk.h)
-ms.date: 03/04/2022
+ms.date: 10/03/2022
 targetos: Windows
 description: This topic describes the KUSER_SHARED_DATA structure.
 prerelease: false
@@ -78,7 +78,7 @@ Low image magic number for the host system.
 
 High image magic number for the host system.
 
-### -field NtSystemRoot
+### -field NtSystemRoot[260]
 
 Copy of system root in unicode. This field must be accessed via the **RtlGetNtSystemRoot** API for an accurate result.
 
@@ -130,7 +130,7 @@ Product type. This field must be accessed via the **RtlGetNtProductType** API fo
 
 Defines the **BOOLEAN** member **ProductTypeIsValid**.
 
-### -field Reserved0
+### -field Reserved0[1]
 
 Reserved for future use.
 
@@ -146,7 +146,7 @@ The NT major version. Each process sees a version from its PEB, but if the proce
 
 The NT minor version. Each process sees a version from its PEB, but if the process is running with an altered view of the system version, this field is used to correctly identify the version.
 
-### -field ProcessorFeatures
+### -field ProcessorFeatures[PROCESSOR_FEATURE_MAX]
 
 Processor features.
 
@@ -242,7 +242,7 @@ Keep this bitfield in sync with the one in arc.w.
 
 Keep this bitfield in sync with the one in arc.w.
 
-### -field Reserved12
+### -field Reserved12[2]
 
 Reserved for future use.
 
@@ -306,7 +306,7 @@ For debugger only. Do not use. Use the bit definitions instead.
 
 For the debugger only. Do not use. Use the bit definitions instead.
 
-### -field DataFlagsPad
+### -field DataFlagsPad[1]
 
 Defines the **ULONG** member **DataFlagsPad**.
 
@@ -326,7 +326,11 @@ On AMD64, this value is initialized to a nonzero value if the system operates wi
 
 Reserved for future use.
 
-### -field SystemCallPad
+### -field FullNumberOfPhysicalPages
+
+Reserved for future use.
+
+### -field SystemCallPad[1]
 
 Reserved for future use.
 
@@ -346,11 +350,11 @@ Defines the **ULONG64** member **TickCountQuad**.
 
 Defines **DUMMYSTRUCTNAME**.
 
-### -field DUMMYUNIONNAME3.DUMMYSTRUCTNAME.ReservedTickCountOverlay
+### -field DUMMYUNIONNAME3.DUMMYSTRUCTNAME.ReservedTickCountOverlay[3]
 
 Defines the **ULONG** member **ReservedTickCountOverlay**.
 
-### -field DUMMYUNIONNAME3.DUMMYSTRUCTNAME.TickCountPad
+### -field DUMMYUNIONNAME3.DUMMYSTRUCTNAME.TickCountPad[1]
 
 Defines the **ULONG** member **TickCountPad**.
 
@@ -358,7 +362,7 @@ Defines the **ULONG** member **TickCountPad**.
 
 Cookie for encoding pointers system wide.
 
-### -field CookiePad
+### -field CookiePad[1]
 
 Reserved for future use.
 
@@ -398,7 +402,7 @@ The scaling shift count applied to the performance counter interrupt time increm
 
 The count of unparked processors.
 
-### -field EnclaveFeatureMask
+### -field EnclaveFeatureMask[4]
 
 A bitmask of enclave features supported on this system. This field must be accessed via the **RtlIsEnclareFeaturePresent** API for an accurate result.
 
@@ -406,7 +410,7 @@ A bitmask of enclave features supported on this system. This field must be acces
 
 Current coverage round for telemetry based coverage.
 
-### -field UserModeGlobalLogger
+### -field UserModeGlobalLogger[16]
 
 The following field is used for ETW user mode global logging (UMGL).
 
