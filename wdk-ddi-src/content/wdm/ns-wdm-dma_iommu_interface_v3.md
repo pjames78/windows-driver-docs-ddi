@@ -2,7 +2,7 @@
 UID: NS:wdm._DMA_IOMMU_INTERFACE_V3
 tech.root: kernel
 title: DMA_IOMMU_INTERFACE_V3 (wdm.h)
-ms.date: 08/23/2022
+ms.date: 10/04/2022
 targetos: Windows
 description: Describes the DMA_IOMMU_INTERFACE_V3 (wdm.h) structure.
 prerelease: false
@@ -153,6 +153,10 @@ Defines the **PIOMMU_DOMAIN_ATTACH_PASID_DEVICE** member **AttachPasidDevice**.
 ### -field DetachPasidDevice
 
 Defines the **PIOMMU_DOMAIN_DETACH_PASID_DEVICE** member **DetachPasidDevice**.
+
+### -field QueryDeviceInfo
+
+Defines the **PIOMMU_DEVICE_QUERY_INFORMATION** member **QueryDeviceInfo**.
 
 ## -remarks
 

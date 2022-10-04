@@ -2,7 +2,7 @@
 UID: NC:wdm.IOMMU_PASID_DEVICE_CREATE
 tech.root: kernel
 title: IOMMU_PASID_DEVICE_CREATE (wdm.h)
-ms.date: 08/23/2022
+ms.date: 10/04/2022
 targetos: Windows
 description: The IOMMU_PASID_DEVICE_CREATE (wdm.h) callback function takes an IOMMU_DMA_DEVICE token and spawns a new sub-device representing the newly assigned PASID.
 prerelease: false
@@ -56,7 +56,7 @@ Supplies a pointer to the IOMMU DMA device token from which sub-devices are spaw
 
 Supplies a pointer to the created IOMMU DMA sub-device.
 
-### -param PasidOut
+### -param AsidOut
 
 Supplies a pointer to hold the system-assigned PASID.
 
