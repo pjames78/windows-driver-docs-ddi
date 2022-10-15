@@ -2,7 +2,7 @@
 UID: NE:d3d12umddi.D3D12DDI_RANGED_BARRIER_FLAGS
 tech.root: display
 title: D3D12DDI_RANGED_BARRIER_FLAGS
-ms.date: 09/29/2022
+ms.date: 10/17/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_RANGED_BARRIER_FLAGS enumeration.
 prerelease: true
@@ -36,7 +36,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **D3D12DDI_RANGED_BARRIER_FLAGS** enumeration specifies flags for resource barriers.
+The **D3D12DDI_RANGED_BARRIER_FLAGS** enumeration specifies flags for ranged barriers.
 
 ## -enum-fields
 

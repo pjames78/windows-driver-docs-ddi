@@ -1,10 +1,10 @@
 ---
-UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 tech.root: display
-title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 ms.date: 10/17/2022
 targetos: Windows
-description: Learn more about the D3D12DDI_COMMAND_LIST_FUNCS_3D_0088 structure.
+description: Learn more about the D3D12DDI_COMMAND_LIST_FUNCS_3D_0094 structure.
 prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,10 +15,10 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: Windows 11, version 22H2 (WDDM 3.0)
+req.target-min-winverclnt: WIN11_NEXT
 req.target-min-winversvr: 
 req.target-type: 
-req.typenames: D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+req.typenames: D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 req.umdf-ver: 
 req.unicode-ansi: 
 topic_type:
@@ -28,19 +28,19 @@ api_type:
 api_location:
  - d3d12umddi.h
 api_name:
- - D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+ - D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 f1_keywords:
- - D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
- - d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+ - D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
+ - d3d12umddi/D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 dev_langs:
  - c++
 helpviewer_keywords:
- - D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
+ - D3D12DDI_COMMAND_LIST_FUNCS_3D_0094
 ---
 
 ## -description
 
-**D3D12DDI_COMMAND_LIST_FUNCS_3D_0088** is used to provide pointers to the user-mode driver's command list 3D DDI functions for version Direct3D 12 Release 8, Build rev 8.
+**D3D12DDI_COMMAND_LIST_FUNCS_3D_0094** is used to provide pointers to the user-mode driver's command list 3D DDI functions for version Direct3D 12 Release 9, Build rev 4.
 
 ## -struct-fields
 
@@ -318,7 +318,9 @@ Pointer to a [**PFND3D12DDI_DISPATCH_MESH_0074**](nc-d3d12umddi-pfnd3d12ddi_disp
 
 ### -field pfnBarrier
 
-Pointer to a [**PFND3D12DDI_BARRIER_0088**](nc-d3d12umddi-pfnd3d12ddi_barrier_0088.md) callback function.
+Pointer to a [**PFND3D12DDI_BARRIER_0094**](nc-d3d12umddi-pfnd3d12ddi_barrier_0094.md) callback function.
+
+### -field pfnOmSetAlphaBlendFactor
 
 ## -remarks
 
