@@ -1,10 +1,10 @@
 ---
-UID: NC:d3d12umddi.PFND3D12DDI_BARRIER_0088
+UID: NC:d3d12umddi.PFND3D12DDI_BARRIER_0094
 tech.root: display
-title: PFND3D12DDI_BARRIER_0088
+title: PFND3D12DDI_BARRIER_0094
 ms.date: 10/17/2022
 targetos: Windows
-description: Learn more about the PFND3D12DDI_BARRIER_0088 callback function.
+description: Learn more about the PFND3D12DDI_BARRIER_0094 callback function.
 prerelease: true
 req.assembly: 
 req.construct-type: function
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows 11, version 22H2 (WDDM 3.0)
+req.target-min-winverclnt: WIN11_NEXT
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -32,19 +32,19 @@ api_type:
 api_location:
  - d3d12umddi.h
 api_name:
- - PFND3D12DDI_BARRIER_0088
+ - PFND3D12DDI_BARRIER_0094
 f1_keywords:
- - PFND3D12DDI_BARRIER_0088
- - d3d12umddi/PFND3D12DDI_BARRIER_0088
+ - PFND3D12DDI_BARRIER_0094
+ - d3d12umddi/PFND3D12DDI_BARRIER_0094
 dev_langs:
  - c++
 helpviewer_keywords:
- - PFND3D12DDI_BARRIER_0088
+ - PFND3D12DDI_BARRIER_0094
 ---
 
 ## -description
 
-A driver's **PFND3D12DDI_BARRIER_0088** (**pfnBarrier**) callback function synchronizes multiple accesses to resources. This callback supports enhanced barriers.
+A driver's **PFND3D12DDI_BARRIER_0094** (**pfnBarrier**) callback function synchronizes multiple accesses to resources. This callback supports enhanced barriers.
 
 ## -parameters
 
@@ -54,11 +54,11 @@ A handle to the driver's data for the command list. The driver uses this region 
 
 ### -param NumBarriers
 
-The number of [**D3D12DDIARG_BARRIER_0088**](ns-d3d12umddi-d3d12ddiarg_barrier_0088.md) structures that **pBarriers** points to.
+The number of [**D3D12DDIARG_BARRIER_0094**](ns-d3d12umddi-d3d12ddiarg_barrier_0094.md) structures that **pBarriers** points to.
 
 ### -param pBarriers
 
-Pointer to an array of [**D3D12DDIARG_BARRIER_0088**](ns-d3d12umddi-d3d12ddiarg_barrier_0088.md) structures that contain the enhanced barriers. The array size is specified by **NumBarriers**.
+Pointer to an array of [**D3D12DDIARG_BARRIER_0094**](ns-d3d12umddi-d3d12ddiarg_barrier_0094.md) structures that contain the enhanced barriers. The array size is specified by **NumBarriers**.
 
 ## -remarks
 
@@ -66,13 +66,13 @@ Drivers that [report support for enhanced barriers](ns-d3d12umddi-d3d12ddi_d3d12
 
 A driver supporting enhanced barriers must expect that legacy ResourceBarrier calls will also use the **pfnBarrier** function. The legacy PFND3D12DDI_RESOURCEBARRIER_* (**pfnResourceBarrier**) table entry can be left as NULL.
 
-Access **pfnBarrier** by using a command list functions structure such as the [**D3D12DDI_COMMAND_LIST_FUNCS_3D_0088**](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0088.md) structure.
+Access **pfnBarrier** by using a command list functions structure such as [**D3D12DDI_COMMAND_LIST_FUNCS_3D_0094**](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0094.md).
 
 See [Enhanced Barriers](/windows-hardware/drivers/display/enhanced-barriers) for general information.
 
 ## -see-also
 
-[**D3D12DDI_COMMAND_LIST_FUNCS_3D_0088**](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0088.md)
+[**D3D12DDI_COMMAND_LIST_FUNCS_3D_0094**](ns-d3d12umddi-d3d12ddi_command_list_funcs_3d_0094.md)
 
 [**D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_DECODE_0088**](ns-d3d12umddi-d3d12ddi_command_list_funcs_video_decode_0088.md)
 
@@ -82,4 +82,4 @@ See [Enhanced Barriers](/windows-hardware/drivers/display/enhanced-barriers) for
 
 [**D3D12DDI_D3D12_OPTIONS_DATA_0089**](ns-d3d12umddi-d3d12ddi_d3d12_options_data_0089.md)
 
-[**D3D12DDIARG_BARRIER_0088**](ns-d3d12umddi-d3d12ddiarg_barrier_0088.md)
+[**D3D12DDIARG_BARRIER_0094**](ns-d3d12umddi-d3d12ddiarg_barrier_0094.md)
