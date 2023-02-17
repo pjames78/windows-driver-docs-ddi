@@ -1,5 +1,5 @@
 ---
-UID: NS:d3dukmdt.__unnamed_struct_18
+UID: NS:d3dukmdt.DXGK_MIRACAST_CHUNK_INFO
 title: DXGK_MIRACAST_CHUNK_INFO (d3dukmdt.h)
 description: The DXGK_MIRACAST_CHUNK_INFO structure contains information about a specified wireless display (Miracast) encode chunk.
 tech.root: display

@@ -1,5 +1,5 @@
 ---
-UID: NS:storport.__unnamed_struct_11
+UID: NS:storport.PRI_REGISTRATION_LIST
 title: PRI_REGISTRATION_LIST (storport.h)
 description: The PRI_REGISTRATION_LIST structure (storport.h) contains information about persistent reservations and reservation keys that are active within a device server.
 tech.root: storage
@@ -42,6 +42,9 @@ api_name:
  - PRI_REGISTRATION_LIST
 ---
 
+# PRI_REGISTRATION_LIST structure (storport.h)
+
+
 ## -description
 
 The **PRI_REGISTRATION_LIST** structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS.
@@ -67,3 +70,4 @@ The [**IOCTL_STORAGE_PERSISTENT_RESERVE_IN**](../ntddstor/ni-ntddstor-ioctl_stor
 ## -see-also
 
 [**IOCTL_STORAGE_PERSISTENT_RESERVE_IN**](../ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in.md)
+

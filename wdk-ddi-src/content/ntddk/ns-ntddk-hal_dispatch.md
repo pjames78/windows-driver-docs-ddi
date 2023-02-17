@@ -1,5 +1,5 @@
 ---
-UID: NS:ntddk.__unnamed_struct_22
+UID: NS:ntddk.HAL_DISPATCH
 tech.root: kernel
 title: HAL_DISPATCH (ntddk.h)
 ms.date: 09/26/2022
@@ -146,3 +146,4 @@ Defines the **pHalGetPrmCache** member **HalGetPrmCache**.
 ## -remarks
 
 ## -see-also
+

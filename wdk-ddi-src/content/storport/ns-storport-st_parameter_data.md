@@ -1,5 +1,5 @@
 ---
-UID: NS:storport.__unnamed_struct_21
+UID: NS:storport.ST_PARAMETER_DATA
 title: ST_PARAMETER_DATA (storport.h)
 description: The ST_PARAMETER_DATA structure (storport.h) contains the parameter list for the set timestamp command.
 tech.root: storage
@@ -42,6 +42,9 @@ api_name:
  - ST_PARAMETER_DATA
 ---
 
+# ST_PARAMETER_DATA structure (storport.h)
+
+
 ## -description
 
 The **ST_PARAMETER_DATA** structure contains the parameter list for the set timestamp command.
@@ -64,3 +67,4 @@ Reserved for future use.
 ## -see-also
 
 [**RT_PARAMETER_DATA**](ns-storport-rt_parameter_data.md)
+
