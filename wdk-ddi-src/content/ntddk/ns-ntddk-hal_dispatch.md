@@ -2,7 +2,7 @@
 UID: NS:ntddk.HAL_DISPATCH
 tech.root: kernel
 title: HAL_DISPATCH (ntddk.h)
-ms.date: 09/26/2022
+ms.date: 02/22/2023
 targetos: Windows
 description: This topic describes the HAL_DISPATCH structure.
 prerelease: false
@@ -38,7 +38,7 @@ f1_keywords:
 dev_langs:
  - c++
 helpviewer_keywords:
- - __unnamed_struct_22
+ - HAL_DISPATCH
 ---
 
 ## -description
@@ -143,7 +143,10 @@ Defines the **pHalSetPciErrorHandlerCallback** member **HalSetPciErrorHandlerCal
 
 Defines the **pHalGetPrmCache** member **HalGetPrmCache**.
 
+### -field HalInvokePrmFwHandler
+
+Defines the **pHalInvokePrmFwHandler** member **HalInvokePrmFwHandler**.
+
 ## -remarks
 
 ## -see-also
-

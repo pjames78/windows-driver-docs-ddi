@@ -2,7 +2,7 @@
 UID: NE:ntddk._WHEA_PCI_RECOVERY_STATUS
 tech.root: kernel
 title: WHEA_PCI_RECOVERY_STATUS (ntddk.h)
-ms.date: 07/07/2022
+ms.date: 02/22/2023
 targetos: Windows
 description: Describes the WHEA_PCI_RECOVERY_STATUS enumeration.
 prerelease: false
@@ -73,6 +73,18 @@ Defines the **WheaPciRecoveryStatusComplexTree** constant.
 ### -field WheaPciRecoveryStatusBusNotFound
 
 Defines the **WheaPciRecoveryStatusBusNotFound** constant.
+
+### -field WheaPciRecoveryStatusDeviceNotFound
+
+Defines the **WheaPciRecoveryStatusDeviceNotFound** constant.
+
+### -field WheaPciRecoveryStatusDdaAerNotRecoverable
+
+Defines the **WheaPciRecoveryStatusDdaAerNotRecoverable** constant.
+
+### -field WheaPciRecoveryStatusFailedRecovery
+
+Defines the **WheaPciRecoveryStatusFailedRecovery** constant.
 
 ## -remarks
 

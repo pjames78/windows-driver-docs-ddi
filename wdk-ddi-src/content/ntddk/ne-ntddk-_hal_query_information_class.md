@@ -2,7 +2,7 @@
 UID: NE:ntddk._HAL_QUERY_INFORMATION_CLASS
 tech.root: kernel
 title: HAL_QUERY_INFORMATION_CLASS (ntddk.h)
-ms.date: 03/03/2022
+ms.date: 02/22/2023
 targetos: Windows
 description: The HAL_QUERY_INFORMATION_CLASS enumeration is reserved for system use only. Do not use.
 prerelease: false
@@ -151,6 +151,10 @@ The **HAL_QUERY_INFORMATION_CLASS** enumeration is reserved for system use only.
 ### -field HalQueryProfileCorruptionStatus
 
 ### -field HalQueryProfileCounterOwnership
+
+### -field HalQueryMpamInformation
+
+### -field HalAmuInformation
 
 ## -remarks
 

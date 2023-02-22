@@ -2,7 +2,7 @@
 UID: NE:ntddk._WHEA_EVENT_LOG_ENTRY_ID
 tech.root: whea
 title: WHEA_EVENT_LOG_ENTRY_ID (ntddk.h)
-ms.date: 10/03/2022
+ms.date: 02/22/2023
 targetos: Windows
 description: The WHEA_EVENT_LOG_ENTRY_ID enumeration is reserved for system use. Do not use.
 prerelease: false
@@ -216,9 +216,19 @@ The **WHEA_EVENT_LOG_ENTRY_ID** enumeration is reserved for system use. Do not u
 
 ### -field WheaEventLogEntryIdSrasTableBadData
 
+### -field WheaEventLogEntryIdDriFsStatus
+
 ### -field WheaEventLogEntryIdCpusFrozen
 
 ### -field WheaEventLogEntryIdCpusFrozenNoCrashDump
+
+### -field WheaEventLogEntryIdRegNotifyPolicyChange
+
+### -field WheaEventLogEntryIdRegError
+
+### -field WheaEventLogEntryIdRowOfflineEvent
+
+### -field WheaEventLogEntryIdBitOfflineEvent
 
 ### -field WheaEventLogEntryIdPshedPiTraceLog
 
