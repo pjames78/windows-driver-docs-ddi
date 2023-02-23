@@ -52,9 +52,15 @@ This topic describes the **IOMMU_DMA_DEVICE_INFORMATION** structure.
 
 ### -field DefaultPasidEnabled
 
+Defines the **BOOLEAN** member **DefaultPasidEnabled**.
+
 ### -field PasidTaggedDmaEnabled
 
+Defines the **BOOLEAN** member **PasidTaggedDmaEnabled**.
+
 ### -field PasidFaultsSuppressed
+
+Defines the **BOOLEAN** member **PasidFaultsSuppressed**.
 
 ## -remarks
 

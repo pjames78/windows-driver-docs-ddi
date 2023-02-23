@@ -48,7 +48,11 @@ This topic describes the **POOL_CREATE_EXTENDED_PARAMETER_TYPE** enumeration.
 
 ### -field PoolCreateExtendedParameterInvalidType
 
+Defines the **PoolCreateExtendedParameterInvalidType** constant.
+
 ### -field PoolCreateExtendedParameterName
+
+Defines the **PoolCreateExtendedParameterName** constant.
 
 ## -remarks
 

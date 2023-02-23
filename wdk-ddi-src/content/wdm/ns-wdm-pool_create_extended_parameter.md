@@ -52,9 +52,15 @@ This topic describes the **POOL_CREATE_EXTENDED_PARAMETER** structure.
 
 ### -field Type
 
+Defines the **POOL_CREATE_EXTENDED_PARAMETER_TYPE** member **Type**.
+
 ### -field DUMMYUNIONNAME
 
+Defines the **DUMMYUNIONNAME** structure.
+
 ### -field DUMMYUNIONNAME.PoolName
+
+Defines the **UNICODE_STRING** member **PoolName**.
 
 ## -remarks
 

@@ -50,6 +50,8 @@ This topic describes the **IoGetDriverProxyFeatures** function.
 
 ### -param Flags
 
+Defines the **PDRIVER_PROXY_FEATURE_FLAGS** parameter *Flags*.
+
 ## -remarks
 
 ## -see-also

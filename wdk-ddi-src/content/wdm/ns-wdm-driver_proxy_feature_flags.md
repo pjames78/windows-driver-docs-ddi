@@ -52,9 +52,15 @@ This topic describes the **DRIVER_PROXY_FEATURE_FLAGS** structure.
 
 ### -field AsUlong
 
+Defines the **ULONG** member **AsUlong**.
+
 ### -field Enabled
 
+Defines the **ULONG** member **Enabled**.
+
 ### -field Reserved
+
+Reserved for future use.
 
 ## -remarks
 

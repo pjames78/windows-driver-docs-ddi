@@ -50,25 +50,47 @@ This topic describes the **ZwCopyFileChunk** function.
 
 ### -param SourceHandle
 
+Defines the **HANDLE** parameter *SourceHandle*.
+
 ### -param DestHandle
+
+Defines the **HANDLE** parameter *DestHandle*.
 
 ### -param Event
 
+Defines the **HANDLE** parameter *Event*.
+
 ### -param IoStatusBlock
+
+Defines the **PIO_STATUS_BLOCK** parameter *IoStatusBlock*.
 
 ### -param Length
 
+Defines the **ULONG** parameter *Length*.
+
 ### -param SourceOffset
+
+Defines the **PLARGE_INTEGER** parameter *SourceOffset*.
 
 ### -param DestOffset
 
+Defines the **PLARGE_INTEGER** parameter *DestOffset*.
+
 ### -param SourceKey
+
+Defines the **PULONG** parameter *SourceKey*.
 
 ### -param DestKey
 
+Defines the **PULONG** parameter *DestKey*.
+
 ### -param Flags
 
+Defines the **ULONG** parameter *Flags*.
+
 ## -returns
+
+Returns a **NTSTATUS** value.
 
 ## -remarks
 

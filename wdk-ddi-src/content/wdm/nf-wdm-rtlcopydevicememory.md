@@ -50,9 +50,15 @@ This topic describes the **RtlCopyDeviceMemory** function.
 
 ### -param Destination
 
+Defines the **Destination** parameter.
+
 ### -param Source
 
+Defines the **Source** parameter.
+
 ### -param Length
+
+Defines the **Length** parameter.
 
 ## -remarks
 

@@ -50,6 +50,8 @@ This topic describes the **ExRcuFreePool** function.
 
 ### -param Ptr
 
+Defines the **PVOID** parameter *Ptr*.
+
 ## -remarks
 
 ## -see-also

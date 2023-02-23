@@ -359,11 +359,27 @@ A [**FILE_KNOWN_FOLDER_INFORMATION**](../ntifs/ns-ntifs-file_known_folder_inform
 
 ### -field FileStatBasicInformation
 
-A **FILE_STAT_BASIC_INFORMATION** structure. This value is available starting with WIN11_NEXT.
+A **FILE_STAT_BASIC_INFORMATION** structure. This value is available starting with Windows 11, version 22H2.
+
+### -field FileId64ExtdDirectoryInformation
+
+A **FILEID64EXTDDIRECTORYINFORMATION** structure. This value is available starting with WIN11_NEXT.
+
+### -field FileId64ExtdBothDirectoryInformation
+
+A **FILEID64EXTDBOTHDIRECTORYINFORMATION** structure. This value is available starting with WIN11_NEXT.
+
+### -field FileIdAllExtdDirectoryInformation
+
+A **FILEIDALLEXTDDIRECTORYINFORMATION** structure. This value is available starting with WIN11_NEXT.
+
+### -field FileIdAllExtdBothDirectoryInformation
+
+A **FILEIDALLEXTDBOTHDIRECTORYINFORMATION** structure. This value is available starting with WIN11_NEXT.
 
 ### -field FileMaximumInformation
 
-This value is reserved for system use. This value is available starting with Windows 7.
+This value is reserved for system use.
 
 ## -syntax
 
@@ -460,6 +476,10 @@ typedef enum _FILE_INFORMATION_CLASS {
     FileCaseSensitiveInformationForceAccessCheck,   // 75
     FileKnownFolderInformation,                     // 76
     FileStatBasicInformation,                       // 77
+    FileId64ExtdDirectoryInformation,               // 78
+    FileId64ExtdBothDirectoryInformation,           // 79
+    FileIdAllExtdDirectoryInformation,              // 80
+    FileIdAllExtdBothDirectoryInformation,          // 81
 
     FileMaximumInformation
 } FILE_INFORMATION_CLASS, *PFILE_INFORMATION_CLASS;

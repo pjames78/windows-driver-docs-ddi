@@ -48,9 +48,15 @@ This topic describes the **IOMMU_PASID_CONFIGURATION_TYPE** enumeration.
 
 ### -field PasidConfigTypeDefaultPasidOnly
 
+Defines the **PasidConfigTypeDefaultPasidOnly** constant.
+
 ### -field PasidConfigTypePasidTaggedDma
 
+Defines the **PasidConfigTypePasidTaggedDma** constant.
+
 ### -field PasidConfigTypeMax
+
+Defines the **PasidConfigTypeMax** constant.
 
 ## -remarks
 

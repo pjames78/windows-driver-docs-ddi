@@ -50,13 +50,23 @@ This topic describes the **IOMMU_DEVICE_QUERY_INFORMATION** callback function.
 
 ### -param DmaDevice
 
+Defines the **PIOMMU_DMA_DEVICE** parameter *DmaDevice*.
+
 ### -param Size
+
+Defines the **ULONG** parameter *Size*.
 
 ### -param BytesWritten
 
+Defines the **PULONG** parameter *BytesWritten*.
+
 ### -param Buffer
 
+Defines the **PIOMMU_DMA_DEVICE_INFORMATION** parameter *Buffer*.
+
 ## -returns
+
+Returns a **NTSTATUS** value.
 
 ## -remarks
 

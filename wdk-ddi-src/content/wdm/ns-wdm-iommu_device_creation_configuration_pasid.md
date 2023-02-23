@@ -52,6 +52,8 @@ This topic describes the **IOMMU_DEVICE_CREATION_CONFIGURATION_PASID** structure
 
 ### -field ConfigType
 
+Defines the **IOMMU_PASID_CONFIGURATION_TYPE** member **ConfigType**.
+
 ## -remarks
 
 ## -see-also

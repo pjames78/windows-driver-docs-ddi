@@ -334,6 +334,8 @@ System service parameters for **MountVolume**.
 
 ### -field Parameters.MountVolume.DeviceObject
 
+### -field Parameters.MountVolume.OutputBufferLength
+
 ### -field Parameters.VerifyVolume
 
 System service parameters for **VerifyVolume**.
@@ -436,7 +438,7 @@ Parameters for IRP_MN_DEVICE_USAGE_NOTIFICATION.
 
 ### -field Parameters.UsageNotification.InPath
 
-### -field Parameters.UsageNotification.Reserved
+### -field Parameters.UsageNotification.Reserved[3]
 
 ### -field Parameters.UsageNotification.Type
 
