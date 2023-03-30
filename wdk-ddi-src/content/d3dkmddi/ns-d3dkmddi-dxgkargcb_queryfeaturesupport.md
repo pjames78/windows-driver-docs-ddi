@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARGCB_QUERYFEATURESUPPORT
 tech.root: display
 title: DXGKARGCB_QUERYFEATURESUPPORT
-ms.date: 09/08/2022
+ms.date: 03/29/2023
 targetos: Windows
 description: Learn more about the DXGKARGCB_QUERYFEATURESUPPORT structure.
 prerelease: false
@@ -53,7 +53,7 @@ The **DXGKARGCB_QUERYFEATURESUPPORT** structure is the parameter passed to the [
 
 ### -field FeatureId
 
-[in] A [**DXGK_FEATURE_ID**](ne-d3dkmddi-_dxgk_feature_id.md) value that identifies the feature to query enabled state for.
+[in] A [**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) value that identifies the feature to query enabled state for.
 
 ### -field DriverSupportState
 
@@ -71,5 +71,7 @@ The **DXGKARGCB_QUERYFEATURESUPPORT** structure is the parameter passed to the [
 [out] The OS sets this field to FALSE to instruct the driver not to enable the feature, and sets it to TRUE if the OS allows the driver to enable the feature.
 
 ## -see-also
+
+[**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md)
 
 [**DXGKCB_QUERYFEATURESUPPORT**](nc-d3dkmddi-dxgkcb_queryfeaturesupport.md)

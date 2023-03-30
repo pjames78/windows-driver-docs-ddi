@@ -3,7 +3,7 @@ UID: NS:d3dkmddi._DXGKARGCB_ISFEATUREENABLED
 title: DXGKARGCB_ISFEATUREENABLED
 description: Learn more about the DXGKARGCB_ISFEATUREENABLED structure.
 tech.root: display
-ms.date: 09/08/2022
+ms.date: 03/29/2023
 keywords: ["DXGKARGCB_ISFEATUREENABLED structure"]
 ms.keywords: _DXGKARGCB_ISFEATUREENABLED, DXGKARGCB_ISFEATUREENABLED, *INOUT_PDXGKARGCB_ISFEATUREENABLED
 req.header: d3dkmddi.h
@@ -49,17 +49,17 @@ The **DXGKARGCB_ISFEATUREENABLED** structure contains the arguments used in the 
 
 ## -struct-fields
 
-### -field DeviceHandle [in]
+### -field DeviceHandle
 
-Device handle that was passed to the driver's [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) function.
+[in] Device handle that was passed to the driver's [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) function.
 
-### -field FeatureId [in]
+### -field FeatureId
 
-A [**DXGK_FEATURE_ID**](ne-d3dkmddi-_dxgk_feature_id.md) value that identifies the feature to query enabled state for.
+[in] A [**DXGK_FEATURE_ID**](../d3dukmdt/ne-dxgk_feature_id.md) value that identifies the feature to query enabled state for.
 
-### -field Enabled [out]
+### -field Enabled
 
-FALSE if the OS instructs the driver not to enable the feature. TRUE if the OS allows the driver to enable the feature.
+[out] FALSE if the OS instructs the driver not to enable the feature. TRUE if the OS allows the driver to enable the feature.
 
 ## -see-also
 
