@@ -2,7 +2,7 @@
 UID: NS:ntddk.HAL_DISPATCH
 tech.root: kernel
 title: HAL_DISPATCH (ntddk.h)
-ms.date: 02/22/2023
+ms.date: 04/17/2023
 targetos: Windows
 description: This topic describes the HAL_DISPATCH structure.
 prerelease: false
