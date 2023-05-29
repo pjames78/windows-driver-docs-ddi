@@ -2,10 +2,10 @@
 UID: NE:d3dukmdt._DXGK_FEATURE_ID
 tech.root: display
 title: DXGK_FEATURE_ID
-ms.date: 03/29/2023
+ms.date: 05/25/2023
 targetos: Windows
 description: Learn more about the DXGK_FEATURE_ID enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3dukmdt.h
@@ -182,3 +182,126 @@ For each feature in this enumeration, if the driver supports it, the driver must
 ## -see-also
 
 [**DXGKCB_QUERYFEATURESUPPORT**](../d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport.md)
+=======
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_2:7
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_3:8
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_4:9
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_5:10
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_6:11
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_7:12
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_8:13
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_9:14
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_10:15
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_11:16
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_12:17
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_13:18
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_14:19
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_15:20
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_16:21
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_17:22
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_18:23
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_19:24
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_20:25
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_21:26
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_22:27
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_23:28
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_24:29
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_RESERVED_25:30
+
+### -field DXGK_FEATURE_SAMPLE:31
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_PAGE_BASED_MEMORY_MANAGER:32
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_KERNEL_MODE_TESTING:33
+
+Reserved for system use.
+
+### -field DXGK_FEATURE_MAX
+
+Maximum value for the **DXGK_FEATURE_ID** enumeration.
+
+## -remarks
+
+For each feature in this enumeration, if the driver supports it, the driver must call the OS to query its enabled status, and only enable the feature if the OS returned ```Enabled=TRUE```. Drivers that don't support the feature doesn't have to call the OS to query its status.
+
+## -see-also
+
+[**DXGKARGCB_ISFEATUREENABLED**](../d3dkmddi/ns-d3dkmddi-_dxgkargcb_isfeatureenabled)
+
+[**DXGKCB_ISFEATUREENABLED**](../d3dkmddi/ns-d3dkmddi-_dxgkargcb_isfeatureenabled)
+
