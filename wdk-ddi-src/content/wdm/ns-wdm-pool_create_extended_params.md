@@ -2,7 +2,7 @@
 UID: NS:wdm._POOL_CREATE_EXTENDED_PARAMS
 tech.root: kernel
 title: POOL_CREATE_EXTENDED_PARAMS
-ms.date: 02/23/2023
+ms.date: 08/17/2023
 targetos: Windows
 description: Defines the POOL_CREATE_EXTENDED_PARAMS structure.
 req.construct-type: structure

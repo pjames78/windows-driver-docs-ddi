@@ -2,7 +2,7 @@
 UID: NE:wdm._IOMMU_DMA_DOMAIN_TYPE
 tech.root: kernel
 title: IOMMU_DMA_DOMAIN_TYPE
-ms.date: 10/04/2022
+ms.date: 08/17/2023
 targetos: Windows
 description: Describes the domain types that can be created and interacted with via the DMA_IOMMU_INTERFACE_EX.
 prerelease: false
@@ -68,7 +68,7 @@ Invalid domain type.
 
 ## -see-also
 
-[IOMMU_DOMAIN_CREATE_EX](nc-wdm-iommu_domain_create_ex.md)
+[**IOMMU_DOMAIN_CREATE_EX**](nc-wdm-iommu_domain_create_ex.md)
 
 [**DMA_IOMMU_INTERFACE_EX**](ns-wdm-dma_iommu_interface_ex.md)
 

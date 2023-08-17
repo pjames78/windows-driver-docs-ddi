@@ -2,7 +2,7 @@
 UID: NS:wdm._DMA_IOMMU_INTERFACE_EX
 tech.root: kernel
 title: DMA_IOMMU_INTERFACE_EX
-ms.date: 01/06/2023
+ms.date: 08/16/2023
 targetos: Windows
 description: An interface structure that allows device drivers to interface with the IOMMU functions that perform device domain operations.
 req.construct-type: structure
