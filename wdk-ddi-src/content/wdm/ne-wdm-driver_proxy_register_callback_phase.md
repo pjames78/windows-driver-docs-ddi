@@ -1,10 +1,10 @@
 ---
 UID: NE:wdm._DRIVER_PROXY_REGISTER_CALLBACK_PHASE
 tech.root: kernel
-title: DRIVER_PROXY_REGISTER_CALLBACK_PHASE (wdm.h)
-ms.date: 08/23/2022
+title: DRIVER_PROXY_REGISTER_CALLBACK_PHASE
+ms.date: 08/18/2023
 targetos: Windows
-description: Describes the DRIVER_PROXY_REGISTER_CALLBACK_PHASE (wdm.h) enumeration.
+description: This topic describes the DRIVER_PROXY_REGISTER_CALLBACK_PHASE enumeration.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
@@ -12,10 +12,11 @@ req.header: wdm.h
 req.include-header: Wdm.h
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
+typedef_isUnnamed: false
 req.umdf-ver: 
 topic_type:
  - apiref
@@ -42,7 +43,7 @@ helpviewer_keywords:
 
 ## -description
 
-Describes the **DRIVER_PROXY_REGISTER_CALLBACK_PHASE** enumeration.
+This topic describes the **DRIVER_PROXY_REGISTER_CALLBACK_PHASE** enumeration.
 
 ## -enum-fields
 

@@ -12,10 +12,11 @@ req.header: wdm.h
 req.include-header: Wdm.h
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
+typedef_isUnnamed: false
 req.umdf-ver: 
 topic_type:
  - apiref
