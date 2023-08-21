@@ -1,10 +1,10 @@
 ---
 UID: NS:wdm._DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT
 tech.root: kernel
-title: DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT (wdm.h)
-ms.date: 08/23/2022
+title: DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT
+ms.date: 08/21/2023
 targetos: Windows
-description: Describes the DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT (wdm.h) structure.
+description: This topic describes the DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,10 +15,11 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT, *PDRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT
+typedef_isUnnamed: false
 req.umdf-ver: 
 req.unicode-ansi: 
 topic_type:
@@ -46,7 +47,7 @@ helpviewer_keywords:
 
 ## -description
 
-Describes the **DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT** structure.
+This topic describes the **DRIVER_PROXY_HOTSWAP_WORKER_ROUTINE_START_CONTEXT** structure.
 
 ## -struct-fields
 
@@ -86,7 +87,7 @@ Defines the **LARGE_INTEGER** member **Timeout**.
 
 Defines the **ULONG** member **EventCount**.
 
-### -field Events
+### -field Events[ANYSIZE_ARRAY]
 
 Defines the **PKEVENT** member **Events**.
 
