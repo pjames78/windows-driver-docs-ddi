@@ -107,10 +107,6 @@ Returns a **FILE_FS_METADATA_SIZE_INFORMATION** structure that contains the meta
 
 Returns a [**FILE_FS_FULL_SIZE_INFORMATION_EX**](../ntddk/ns-ntddk-_file_fs_full_size_information_ex.md) structure that contains information about the total amount of space available on the volume.
 
-### -field FileFsGuidInformation
-
-Returns a **FILEFSGUIDINFORMATION** structure. This value is available starting with WIN11_NEXT.
-
 ### -field FileFsMaximumInformation
 
 End of this enumeration.
