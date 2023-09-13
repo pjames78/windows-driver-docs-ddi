@@ -57,6 +57,18 @@ Defines the **SratProcessorLocalX2APIC** constant.
 
 Defines the **SratGicc** constant.
 
+### -field SratGicIts
+
+Defines the **SratGicIts** constant.
+
+### -field SratGenericInitiator
+
+Defines the **SratGenericInitiator** constant.
+
+### -field SratGenericPort
+
+Defines the **SratGenericPort** constant.
+
 ## -remarks
 
 ## -see-also
