@@ -64,6 +64,10 @@ Defines the **BtiVbarBhbSb** constant.
 
 Defines the **BtiVbarBhbClr** constant.
 
+### -field BtiVbarLdrLdp8380R1
+
+Defines the **BtiVbarLdrLdp8380R1** constant.
+
 ## -remarks
 
 ## -see-also

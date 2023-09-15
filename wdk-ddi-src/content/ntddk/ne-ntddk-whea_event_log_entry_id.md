@@ -230,6 +230,20 @@ The **WHEA_EVENT_LOG_ENTRY_ID** enumeration is reserved for system use. Do not u
 
 ### -field WheaEventLogEntryIdBitOfflineEvent
 
+### -field WheaEventLogEntryIdBadGasFields
+
+### -field WheaEventLogEntryIdCrashDumpError
+
+### -field WheaEventLogEntryIdCrashDumpCheckpoint
+
+### -field WheaEventLogEntryIdCrashDumpProgressPercent
+
+### -field WheaEventLogEntryIdPreviousCrashBugCheckProgress
+
+### -field WheaEventLogEntryIdSELBugCheckStackDump
+
+### -field WheaEventLogEntryIdPciePromotedAerErr
+
 ### -field WheaEventLogEntryIdPshedPiTraceLog
 
 ## -remarks

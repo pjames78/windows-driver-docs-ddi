@@ -140,6 +140,14 @@ Reserved for internal use.
 
 Reserved for internal use.
 
+### -field HalRegisterPmuNotification
+
+Reserved for internal use.
+
+### -field HalUnregisterPmuNotification
+
+Reserved for internal use.
+
 ## -remarks
 
 ## -see-also

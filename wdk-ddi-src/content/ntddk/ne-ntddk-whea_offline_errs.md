@@ -90,6 +90,10 @@ Defines the **UnsupportedDdrVersion** constant.
 
 Defines the **IncorrectDdrVersion** constant.
 
+### -field NoMemoryForWrapper
+
+Defines the **NoMemoryForWrapper** constant.
+
 ## -remarks
 
 ## -see-also
