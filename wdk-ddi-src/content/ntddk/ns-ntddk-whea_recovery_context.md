@@ -71,11 +71,9 @@ Reserved for system use.
 
 ### -field ErrorType
 
-### -field ComponentTag
+### -field PageCount
 
-### -field ActionTaken
-
-### -field ActionTakenAdditionalInfo
+### -field PageInfo[WHEA_PFA_PAGE_RANGE_MAX]
 
 ## -remarks
 

@@ -454,9 +454,9 @@ Defines the **USHORT** member QpcData.
 
 A boolean indicating whether performance counter queries can read the counter directly (bypassing the system call).
 
-### -field QpcShift
+### -field QpcReserved
 
-Shift applied to the raw counter value to derive the QPC count.
+Reserved for future use.
 
 ### -field TimeZoneBiasEffectiveStart
 
