@@ -48,6 +48,10 @@ This topic describes the **ExRcuFreePool** function.
 
 ## -parameters
 
+### -param Context
+
+Defines the **PEX_RCU_FREE_POOL_CONTEXT** parameter *Context*.
+
 ### -param Ptr
 
 Defines the **PVOID** parameter *Ptr*.

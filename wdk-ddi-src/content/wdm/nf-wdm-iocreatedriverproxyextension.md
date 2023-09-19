@@ -52,6 +52,10 @@ Describes the **IoCreateDriverProxyExtension** function.
 
 Defines the **PDRIVER_OBJECT** parameter *OwningDriverObject*.
 
+### -param Flags
+
+Defines the **DRIVER_PROXY_EXTENSION_CREATION_FLAGS** parameter *Flags*.
+
 ### -param DriverProxyExtension
 
 Defines the **PDRIVER_PROXY_EXTENSION** parameter *DriverProxyExtension*.

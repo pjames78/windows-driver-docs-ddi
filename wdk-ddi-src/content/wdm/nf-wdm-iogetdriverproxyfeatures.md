@@ -48,6 +48,10 @@ This topic describes the **IoGetDriverProxyFeatures** function.
 
 ## -parameters
 
+### -param DriverObject
+
+Defines the **PDRIVER_OBJECT** parameter *DriverObject*.
+
 ### -param Flags
 
 Defines the **PDRIVER_PROXY_FEATURE_FLAGS** parameter *Flags*.
