@@ -4,7 +4,7 @@ tech.root: kernel
 title: DEVICE_BUS_SPECIFIC_RESET_TYPE
 ms.date: 06/13/2021
 targetos: Windows
-description: Defines the DEVICE_BUS_SPECIFIC_RESET_TYPE structure.
+description: Defines the DEVICE_BUS_SPECIFIC_RESET_TYPE union.
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -43,29 +43,53 @@ dev_langs:
 
 ## -description
 
-Defines the **DEVICE_BUS_SPECIFIC_RESET_TYPE** structure.
+Defines the **DEVICE_BUS_SPECIFIC_RESET_TYPE** union.
 
 ## -struct-fields
 
 ### -field Pci
 
+Defines the **Pci** structure.
+
 ### -field Pci.FunctionLevelDeviceReset
+
+Defines the **ULONGLONG** member **FunctionLevelDeviceReset**.
 
 ### -field Pci.PlatformLevelDeviceReset
 
+Defines the **ULONGLONG** member **PlatformLevelDeviceReset**.
+
 ### -field Pci.SecondaryBusReset
+
+Defines the **ULONGLONG** member **SecondaryBusReset**.
+
+### -field Pci.PowerControllerReset
+
+Defines the **ULONGLONG** member **PowerControllerReset**.
 
 ### -field Pci.Reserved
 
+Reserved for future use.
+
 ### -field Acpi
+
+Defines the **Acpi** structure.
 
 ### -field Acpi.FunctionLevelDeviceReset
 
+Defines the **ULONGLONG** member **FunctionLevelDeviceReset**.
+
 ### -field Acpi.PlatformLevelDeviceReset
+
+Defines the **ULONGLONG** member **PlatformLevelDeviceReset**.
 
 ### -field Acpi.Reserved
 
+Reserved for future use.
+
 ### -field AsULONGLONG
+
+Defines the **ULONGLONG** member **AsULONGLONG**.
 
 ## -remarks
 
