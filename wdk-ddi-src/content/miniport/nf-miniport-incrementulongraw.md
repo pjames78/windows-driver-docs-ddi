@@ -54,6 +54,8 @@ Defines the **ULONG** parameter *Destination*.
 
 ## -returns
 
+Returns a **ULONG** value.
+
 ## -remarks
 
 ## -see-also

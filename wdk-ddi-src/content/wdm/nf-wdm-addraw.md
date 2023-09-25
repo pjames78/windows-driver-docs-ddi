@@ -1,18 +1,18 @@
 ---
-UID: NF:miniport.IncrementRaw64
+UID: NF:wdm.AddRaw
 tech.root: kernel
-title: IncrementRaw64
-ms.date: 09/20/2023
+title: AddRaw (wdm.h)
+ms.date: 09/25/2023
 targetos: Windows
-description: This topic describes the IncrementRaw64 function.
+description: This topic describes the AddRaw function (wdm.h).
 prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
 req.dll: 
-req.header: miniport.h
+req.header: wdm.h
 req.idl: 
-req.include-header: Miniport.h
+req.include-header: Wdm.h
 req.irql: 
 req.kmdf-ver: 
 req.lib: 
@@ -30,31 +30,35 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - miniport.h
+ - wdm.h
 api_name:
- - IncrementRaw64
+ - AddRaw
 f1_keywords:
- - IncrementRaw64
- - miniport/IncrementRaw64
+ - AddRaw
+ - wdm/AddRaw
 dev_langs:
  - c++
 helpviewer_keywords:
- - IncrementRaw64
+ - AddRaw
 ---
 
 ## -description
 
-This topic describes the **IncrementRaw64** function.
+This topic describes the **AddRaw** function (wdm.h).
 
 ## -parameters
 
 ### -param Destination
 
-Defines the **LONG64** parameter *Destination*.
+Defines the **LONG** parameter *Destination*.
+
+### -param Value
+
+Defines the **LONG** parameter *Value*.
 
 ## -returns
 
-Returns a **LONG64** value.
+Returns a **LONG** value.
 
 ## -remarks
 

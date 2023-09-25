@@ -1,18 +1,18 @@
 ---
-UID: NF:miniport.IncrementRaw64
+UID: NF:wdm.IncrementRaw64
 tech.root: kernel
-title: IncrementRaw64
-ms.date: 09/20/2023
+title: IncrementRaw64 (wdm.h)
+ms.date: 09/25/2023
 targetos: Windows
-description: This topic describes the IncrementRaw64 function.
+description: This topic describes the IncrementRaw64 function (wdm.h).
 prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
 req.dll: 
-req.header: miniport.h
+req.header: wdm.h
 req.idl: 
-req.include-header: Miniport.h
+req.include-header: Wdm.h
 req.irql: 
 req.kmdf-ver: 
 req.lib: 
@@ -30,12 +30,12 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - miniport.h
+ - wdm.h
 api_name:
  - IncrementRaw64
 f1_keywords:
  - IncrementRaw64
- - miniport/IncrementRaw64
+ - wdm/IncrementRaw64
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-This topic describes the **IncrementRaw64** function.
+This topic describes the **IncrementRaw64** function (wdm.h).
 
 ## -parameters
 

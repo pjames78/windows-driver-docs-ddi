@@ -54,6 +54,8 @@ Defines the **LONG** parameter *Destination*.
 
 ## -returns
 
+Returns a **LONG** value.
+
 ## -remarks
 
 ## -see-also
