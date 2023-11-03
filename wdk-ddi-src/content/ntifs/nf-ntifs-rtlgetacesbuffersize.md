@@ -2,7 +2,7 @@
 UID: NF:ntifs.RtlGetAcesBufferSize
 tech.root: ifsk
 title: RtlGetAcesBufferSize
-ms.date: 10/24/2023
+ms.date: 11/03/2023
 targetos: Windows
 description: Learn more about the RtlGetAcesBufferSize function.
 prerelease: false
@@ -13,7 +13,7 @@ req.dll:
 req.header: ntifs.h
 req.idl: 
 req.include-header: 
-req.irql: 
+req.irql: IRQL <= APC_LEVEL
 req.kmdf-ver: 
 req.lib: 
 req.max-support: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-**RtlGetAcesBufferSize** computes the size of the buffer required to hold the access control entries (ACEs) for the specified access control list (ACL).
+**RtlGetAcesBufferSize** computes the size of the access control entries (ACEs) for the specified access control list (ACL).
 
 ## -parameters
 
