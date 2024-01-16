@@ -2,9 +2,9 @@
 UID: NE:ntddk.PCR_BTI_VBAR_INDEX
 tech.root: kernel
 title: PCR_BTI_VBAR_INDEX (ntddk.h)
-ms.date: 02/16/2023
+ms.date: 01/11/2024
 targetos: Windows
-description: This topic describes the PCR_BTI_VBAR_INDEX enumeration.
+description: Describes the PCR_BTI_VBAR_INDEX enumeration.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
@@ -12,10 +12,11 @@ req.header: ntddk.h
 req.include-header: Ntddk.h
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 23H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
+typedef_isUnnamed: false
 req.umdf-ver: 
 topic_type:
  - apiref
@@ -36,7 +37,7 @@ helpviewer_keywords:
 
 ## -description
 
-This topic describes the **PCR_BTI_VBAR_INDEX** enumeration.
+Describes the **PCR_BTI_VBAR_INDEX** enumeration.
 
 ## -enum-fields
 
@@ -63,10 +64,6 @@ Defines the **BtiVbarBhbSb** constant.
 ### -field BtiVbarBhbClr
 
 Defines the **BtiVbarBhbClr** constant.
-
-### -field BtiVbarLdrLdp8380R1
-
-Defines the **BtiVbarLdrLdp8380R1** constant.
 
 ## -remarks
 
