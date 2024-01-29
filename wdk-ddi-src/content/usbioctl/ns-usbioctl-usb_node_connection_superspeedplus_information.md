@@ -1,8 +1,8 @@
 ---
 UID: NS:usbioctl._USB_NODE_CONNECTION_SUPERSPEEDPLUS_INFORMATION
-tech.root: 
+tech.root: usbref
 title: USB_NODE_CONNECTION_SUPERSPEEDPLUS_INFORMATION
-ms.date: 01/23/2024
+ms.date: 01/29/2024
 targetos: Windows
 description: 
 prerelease: false
