@@ -4,18 +4,18 @@ tech.root: netvista
 title: NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO
 ms.date: 01/18/2024
 targetos: Windows
-description: NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO specifies the UDP receive segment coalescing (RSC) offload information for a NET_BUFFER_LIST structure.
+description: NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO specifies the UDP RSC (URO) offload information for a NET_BUFFER_LIST structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
-req.header: nbluro.h
-req.include-header: 
+req.header: ndis/nbluro.h
+req.include-header: ndis.h
 req.kmdf-ver: 
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: WIN11_NEXT
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO, *PNDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO
@@ -47,7 +47,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO** structure specifies the UDP receive segment coalescing (RSC) offload information for a NET_BUFFER_LIST structure.
+The **NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO** structure specifies the [UDP Receive Segment Coalescing Offload (URO)](/windows-hardware/drivers/network/udp-rsc-offload) information for a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure.
 
 ## -struct-fields
 
@@ -69,5 +69,10 @@ A PVOID version of the UDP RSC information. Miniport drivers can use this member
 
 ## -remarks
 
+The **NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO** structure is part of the information that is included in a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure.
+
 ## -see-also
 
+[**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md)
+
+[UDP Receive Segment Coalescing Offload (URO)](/windows-hardware/drivers/network/udp-rsc-offload)

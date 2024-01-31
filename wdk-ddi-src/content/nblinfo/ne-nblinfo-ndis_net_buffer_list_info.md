@@ -297,10 +297,6 @@ The flow entry ID for GFT.
 
 Reserved.
 
-### -field NetBufferListInfoReserved4
-
-Reserved.
-
 ### -field NetBufferListInfoReserved1
 
 Reserved for NDIS.
