@@ -66,7 +66,7 @@ The number of duplicate ACK messages.
 
 ### -field DUMMYUNIONNAME.UDP
 
-A structure that holds the TCP RSC information.
+A structure that holds the UDP RSC information.
 
 ### -field DUMMYUNIONNAME.UDP.CoalescedSegmentCount
 
