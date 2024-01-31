@@ -71,6 +71,7 @@ To indicate the version of the **NDIS_OFFLOAD_PARAMETERS** structure, set the **
 | **NDIS_OFFLOAD_PARAMETERS_REVISION_2**<br>2 | Supports the **IPsecV2**, **IPsecV2IPv4**, **Reserved1**, and **Reserved2** members for NDIS 6.1. Set the **Size** member to NDIS_SIZEOF_OFFLOAD_PARAMETERS_REVISION_2. |
 | **NDIS_OFFLOAD_PARAMETERS_REVISION_1**<br>1 | Original version for NDIS 6.0. Set the **Size** member to NDIS_SIZEOF_OFFLOAD_PARAMETERS_REVISION_1. |
 
+
 ### -field IPv4Checksum
 
 The IPv4 checksum setting of the miniport adapter. For more information, see the following Remarks

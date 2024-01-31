@@ -147,7 +147,7 @@ UDP Segmentation Offload (USO) hardware offload information in an [**NDIS_UDP_SE
 
 ###  -field UdpRsc
 
-UDP Receive Segment Coalescing Offload (URO) hardware offload information in an [**NDIS_UDP_RSC_OFFLOAD**](ns-nbluro-ndis_udp_rsc_offload.md) structure.
+UDP Receive Segment Coalescing Offload (URO) hardware offload information in an [**NDIS_UDP_RSC_OFFLOAD**](../nbluro/ns-nbluro-ndis_udp_rsc_offload.md) structure.
 
 **Note**: This member is available only in NDIS 6.89 and later.
 

@@ -2,7 +2,7 @@
 description: "Learn more about: nbluro.h header"
 UID: NA:nbluro
 title: nbluro.h header
-ms.date: 01/18/24
+ms.date: 01/18/2024
 keywords: ["nbluro.h header"]
 ms.keywords: 
 ms.topic: overview
