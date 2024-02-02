@@ -2,9 +2,8 @@
 UID: NS:d3dkmddi._DXGKARGCB_NOTIFY_INTERRUPT_DATA
 title: DXGKARGCB_NOTIFY_INTERRUPT_DATA (d3dkmddi.h)
 description: Learn more about the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure.
-ms.date: 02/03/2023
+ms.date: 04/08/2024
 keywords: ["DXGKARGCB_NOTIFY_INTERRUPT_DATA structure"]
-ms.keywords: "*IN_CONST_PDXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA structure [Display Devices]"
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -426,6 +425,30 @@ The frequency of the GPU clock counter. Available starting in Windows Server 202
 ### -field CrtcVsyncWithMultiPlaneOverlay3.GpuClockCounter
 
 The GPU clock counter at the time of the VSYNC interrupt. Combined with GpuFrequency, this indicates the time of the VSYNC interrupt. Available starting in Windows Server 2022 (WDDM 2.9).
+
+### -field NativeFenceSignaled
+
+[in] Structure used when **InterruptType** is **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED**. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+
+### -field NativeFenceSignaled.NodeOrdinal
+
+Node ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+
+### -field NativeFenceSignaled.EngineOrdinal
+
+Engine ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+
+### -field NativeFenceSignaled.SignaledNativeFenceCount
+
+The size of the signaled native fence array that **pSignaledNativeFenceArray** points to. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+
+### -field NativeFenceSignaled.pSignaledNativeFenceArray
+
+Array containing all native fences that were signaled and require waiters to be unblocked. If this array is empty, the OS will re-scan all pending native fence waiters instead of the subset specified by the signaled native fence array. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is FALSE. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+
+### -field hHWQueue
+
+KMD handle of the HWQueue running on the engine that raised the interrupt. If this handle is NULL then *Dxgkrnl* will re-scan the log buffer of all HWQueues on this engine. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is TRUE. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
 
 ### -field Reserved
 

@@ -2,9 +2,7 @@
 UID: NE:d3dkmddi._DXGK_INTERRUPT_TYPE
 title: DXGK_INTERRUPT_TYPE (d3dkmddi.h)
 description: Learn more about the DXGK_INTERRUPT_TYPE enumeration.
-old-location: display\dxgk_interrupt_type.htm
-ms.date: 02/03/2023
-ms.keywords: DXGK_INTERRUPT_CRTC_VSYNC, DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY, DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS, DXGK_INTERRUPT_DISPLAYONLY_VSYNC, DXGK_INTERRUPT_DMA_COMPLETED, DXGK_INTERRUPT_DMA_FAULTED, DXGK_INTERRUPT_DMA_PAGE_FAULTED, DXGK_INTERRUPT_DMA_PREEMPTED, DXGK_INTERRUPT_MICACAST_ENCODE_CHUNK_COMPLETE, DXGK_INTERRUPT_PERIODIC_MONITORED_FENCE_SIGNALED, DXGK_INTERRUPT_TYPE, DXGK_INTERRUPT_TYPE enumeration [Display Devices], DmEnums_5ed0a892-5813-43ff-aae9-25b03aa3ea5f.xml, _DXGK_INTERRUPT_TYPE, d3dkmddi/DXGK_INTERRUPT_CRTC_VSYNC, d3dkmddi/DXGK_INTERRUPT_CRTC_VSYNC_WITH_MULTIPLANE_OVERLAY, d3dkmddi/DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS, d3dkmddi/DXGK_INTERRUPT_DISPLAYONLY_VSYNC, d3dkmddi/DXGK_INTERRUPT_DMA_COMPLETED, d3dkmddi/DXGK_INTERRUPT_DMA_FAULTED, d3dkmddi/DXGK_INTERRUPT_DMA_PAGE_FAULTED, d3dkmddi/DXGK_INTERRUPT_DMA_PREEMPTED, d3dkmddi/DXGK_INTERRUPT_MICACAST_ENCODE_CHUNK_COMPLETE, d3dkmddi/DXGK_INTERRUPT_PERIODIC_MONITORED_FENCE_SIGNALED, d3dkmddi/DXGK_INTERRUPT_TYPE, display.dxgk_interrupt_type
+ms.date: 04/08/2024
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -46,7 +44,7 @@ api_name:
 
 ## -description
 
-The **DXGK_INTERRUPT_TYPE** enumeration indicates the type of interrupt that the display miniport driver notifies the graphics processing unit (GPU) scheduler about.
+The **DXGK_INTERRUPT_TYPE** enumeration indicates the type of the interrupt that the kernel-mode driver (KMD) is notifying the GPU scheduler about.
 
 ## -enum-fields
 
@@ -132,7 +130,7 @@ A Vsync has completed in a display miniport driver that supports the [hardware f
 
 ### -field DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED:19
 
-Available starting in Windows 11, version 22H2 (WDDM 3.1).
+A set of native fence GPU objects monitored by the CPU were signaled on a GPU engine. Supported starting in Windows 11, version 24H2.
 
 ### -field DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE:20
 
