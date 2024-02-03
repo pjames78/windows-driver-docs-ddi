@@ -44,13 +44,21 @@ helpviewer_keywords:
 
 ## -description
 
+This routine unlocks a PRM module and allows it to be updated.
+
 ## -parameters
 
 ### -param HandlerGuid
 
+Supplies the GUID of the PRM handler whose module needs to be unlocked.
+
 ## -returns
 
+This method returns NTSTATUS which contains STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.
+
 ## -remarks
+
+PRM_UNLOCK_MODULE is not a system routine that can be called directly by name. This routine is callable only by pointer from the address returned in a [PRM_INTERFACE](./ns-prminterface-prm_interface.md) structure. Drivers obtain the address of this routine by calling [**ExGetPrmInterface**](./nf-prminterface-exgetprminterface.md).
 
 ## -see-also
 

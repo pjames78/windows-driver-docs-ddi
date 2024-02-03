@@ -51,13 +51,23 @@ helpviewer_keywords:
 
 ### -field Version
 
+Specifies the version of this structure.
+
 ### -field UnlockModule
+
+A pointer to a system-defined routine to xxx. For more information, see [PRM_UNLOCK_MODULE](./nc-prminterface-prm_unlock_module.md).
 
 ### -field LockModule
 
+A pointer to a system-defined routine to xxx. For more information, see [PRM_LOCK_MODULE](./nc-prminterface-prm_lock_module.md).
+
 ### -field InvokeHandler
 
+A pointer to a system-defined routine to xxx. For more information, see [PRM_INVOKE_HANDLER](./nc-prminterface-prm_invoke_handler.md).
+
 ### -field QueryHandler
+
+A pointer to a system-defined routine to xxx. For more information, see [PRM_QUERY_HANDLER](./nc-prminterface-prm_query_handler.md).
 
 ## -remarks
 

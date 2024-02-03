@@ -44,13 +44,21 @@ helpviewer_keywords:
 
 ## -description
 
+This routine calls gets the PRM interface.
+
 ## -parameters
 
 ### -param Version
 
+Supplies the interface version being requested.
+
 ### -param InterfaceOut
 
+Pointer to a [PRM_INTERFACE](./ns-prminterface-prm_interface.md) structure to receive the functions.
+
 ## -returns
+
+This method returns NTSTATUS which contains STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code.
 
 ## -remarks
 
