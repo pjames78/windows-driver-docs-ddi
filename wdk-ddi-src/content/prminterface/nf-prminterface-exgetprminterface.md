@@ -2,7 +2,7 @@
 UID: NF:prminterface.ExGetPrmInterface
 tech.root: 
 title: ExGetPrmInterface
-ms.date: 
+ms.date: 02/05/2024
 targetos: Windows
 description: 
 prerelease: true
@@ -44,17 +44,17 @@ helpviewer_keywords:
 
 ## -description
 
-This routine calls gets the PRM interface.
+This routine fills a caller-provided structure with pointers to system-supplied routines that comprise the PRM interface.
 
 ## -parameters
 
-### -param Version
+### -param Version [in]
 
-Supplies the interface version being requested.
+A ULONG value that specifies the interface version. Set to 1 for Windows 11, version 24H2.
 
-### -param InterfaceOut
+### -param InterfaceOut [out]
 
-Pointer to a [PRM_INTERFACE](./ns-prminterface-prm_interface.md) structure to receive the functions.
+A pointer to a caller-supplied [PRM_INTERFACE](./ns-prminterface-prm_interface.md) structure which, on output, contains pointers to functions that support PRM operations.
 
 ## -returns
 

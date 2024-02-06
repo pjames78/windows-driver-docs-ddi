@@ -2,7 +2,7 @@
 UID: NC:prminterface.PRM_LOCK_MODULE
 tech.root: 
 title: PRM_LOCK_MODULE
-ms.date: 
+ms.date: 02/05/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -48,7 +48,7 @@ This routine locks a PRM module and prevent it from being unloaded.
 
 ## -parameters
 
-### -param HandlerGuid
+### -param HandlerGuid [in]
 
 Supplies the GUID of the PRM handler whose module needs to be locked.
 

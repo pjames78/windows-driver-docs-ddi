@@ -2,7 +2,7 @@
 UID: NC:prminterface.PRM_INVOKE_HANDLER
 tech.root: 
 title: PRM_INVOKE_HANDLER
-ms.date: 
+ms.date: 02/05/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -48,19 +48,19 @@ This routine invokes a specific PRM handler.
 
 ## -parameters
 
-### -param HandlerGuid
+### -param HandlerGuid [in]
 
-Supplies the GUID of the PRM handler to invoke.
+Pointer to a 128-bit unique identifier that specifies the PRM handler to invoke.
 
-### -param ParameterBuffer
+### -param ParameterBuffer [in]
 
-Supplies the PRM handler parameter buffer allocated by the caller. NULL if not direct call.
+Pointer to a caller-allocated PRM handler parameter buffer. Set to NULL if not direct call.
 
-### -param Reserved
+### -param Reserved [in]
 
 Supplies the reserved field used to differentiate direct and ACPI opregion originated calls.
 
-### -param EfiStatus
+### -param EfiStatus [out]
 
 Returns the EFI status from a PRM invocation.
 

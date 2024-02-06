@@ -2,7 +2,7 @@
 UID: NC:prminterface.PRM_QUERY_HANDLER
 tech.root: 
 title: PRM_QUERY_HANDLER
-ms.date: 
+ms.date: 02/05/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -44,15 +44,15 @@ helpviewer_keywords:
 
 ## -description
 
-This routine quries for the presence of a specific PRM handler.
+This routine queries for the presence of a specific PRM handler.
 
 ## -parameters
 
-### -param HandlerGuid
+### -param HandlerGuid [in]
 
 Supplies the GUID of the PRM handler to query.
 
-### -param Found
+### -param Found [out]
 
 Returns result from the query.
 
