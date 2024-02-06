@@ -1,10 +1,10 @@
 ---
 UID: NF:prminterface.ExGetPrmInterface
-tech.root: 
+tech.root: kernel
 title: ExGetPrmInterface
 ms.date: 02/05/2024
 targetos: Windows
-description: 
+description: "Retrieves pointers to PRM interfaces."
 prerelease: true
 req.assembly: 
 req.construct-type: function
@@ -13,13 +13,13 @@ req.dll:
 req.header: prminterface.h
 req.idl: 
 req.include-header: 
-req.irql: 
+req.irql: PASSIVE_LEVEL
 req.kmdf-ver: 
 req.lib: 
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 

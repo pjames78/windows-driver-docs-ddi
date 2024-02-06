@@ -1,10 +1,10 @@
 ---
 UID: NS:prminterface._PRM_INTERFACE
-tech.root: 
+tech.root: kernel
 title: PRM_INTERFACE
 ms.date: 02/05/2024
 targetos: Windows
-description: 
+description: "Provides a set of pointers to functions that control the operation of a PRM interface."
 prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: PRM_INTERFACE, *PPRM_INTERFACE
@@ -47,6 +47,8 @@ helpviewer_keywords:
 
 ## -description
 
+The PRM_INTERFACE structure provides a set of pointers to functions that control the operation of a PRM interface.
+
 ## -struct-fields
 
 ### -field Version
@@ -70,6 +72,8 @@ A pointer to a system-defined routine to invoke a specific PRM handler. For more
 A pointer to a system-defined routine to query for the presence of a specific PRM handler. For more information, see [PRM_QUERY_HANDLER](./nc-prminterface-prm_query_handler.md).
 
 ## -remarks
+
+All members of this structure, with the exception of Version, are pointers to functions that drivers use to perform PRM operations. Drivers obtain these pointers by calling the [**ExGetPrmInterface**](./nf-prminterface-exgetprminterface.md) routine.
 
 ## -see-also
 

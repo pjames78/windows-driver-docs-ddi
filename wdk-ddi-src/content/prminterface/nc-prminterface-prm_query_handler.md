@@ -1,10 +1,10 @@
 ---
 UID: NC:prminterface.PRM_QUERY_HANDLER
-tech.root: 
+tech.root: kernel
 title: PRM_QUERY_HANDLER
 ms.date: 02/05/2024
 targetos: Windows
-description: 
+description: "Queries for the presence of a specific PRM handler."
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -13,13 +13,13 @@ req.dll:
 req.header: prminterface.h
 req.idl: 
 req.include-header: 
-req.irql: 
+req.irql: <= HIGH_LEVEL
 req.kmdf-ver: 
 req.lib: 
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
