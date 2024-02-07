@@ -64,6 +64,17 @@ Client drivers typically call **WifiDeviceSetStationCapabilities** within [*EvtD
 
 To indicate the ability to maintain [Secondary Sta connectivity](/windows-hardware/drivers/netcx/dual-sta-connectivity), the driver must set the **NumSecondaryStaBandCombinations** and **SecondaryStaBandsCombinations** fields of the [**WIFI_STATION_CAPABILITIES**](ns-wificx-wifi_station_capabilities.md) structure to non-zero values. If either value is **0** or **NULL**, then the Secondary Sta capability will not be set.
 
+To indicate support for MLO connections in Wi-Fi 7, the driver must set the **MaxMLOLinksSupported**, **MLOAddressesList**, **NumAkmsSupported**, and **AkmsList** fields of the **WIFI_STATION_CAPABILITIES** structure to non-zero values.
+
+To support SAE connections using AKM 24 or AKM 8 with GCMP-256 cipher, the driver must add the following auth-cipher pairs in the **WIFI_STATION_CAPABILITIES** structure:
+- In **UnicastAlgorithmsList**:
+{ DOT11_AUTH_ALGO_WPA3_SAE, DOT11_CIPHER_ALGO_GCMP_256 }
+- In **MulticastMgmtAlgorithmsList**:
+{ DOT11_AUTH_ALGO_WPA3_SAE, DOT11_CIPHER_ALGO_GCMP_256 }
+ 
+To support OWE connections with GCMP-256 cipher, the driver must add the following auth-cipher pair:
+- In **UnicastAlgorithmsList**: { DOT11_AUTH_ALGO_OWE, DOT11_CIPHER_ALGO_GCMP_256 }
+
 ## -see-also
 
 [**WIFI_STATION_CAPABILITIES**](ns-wificx-wifi_station_capabilities.md)

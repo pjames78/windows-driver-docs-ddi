@@ -4,7 +4,7 @@ title: _DOT11_PHY_TYPE (windot11.h)
 description: The DOT11_PHY_TYPE enumeration is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_phy_type.htm
 tech.root: netvista
-ms.date: 05/12/2023
+ms.date: 03/17/2023
 keywords: ["DOT11_PHY_TYPE enumeration"]
 ms.keywords: "*PDOT11_PHY_TYPE, DOT11_PHY_TYPE, DOT11_PHY_TYPE enumeration [Network Drivers Starting with Windows Vista], Native_802.11_data_types_814496a3-4f7e-44a0-925c-0dbf64eb3f72.xml, PDOT11_PHY_TYPE, PDOT11_PHY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE, dot11_phy_type_IHV_end, dot11_phy_type_IHV_start, dot11_phy_type_any, dot11_phy_type_dsss, dot11_phy_type_erp, dot11_phy_type_fhss, dot11_phy_type_hrdsss, dot11_phy_type_ht, dot11_phy_type_irbaseband, dot11_phy_type_ofdm, dot11_phy_type_unknown, dot11_phy_type_vht, netvista.dot11_phy_type, windot11/DOT11_PHY_TYPE, windot11/PDOT11_PHY_TYPE, windot11/dot11_phy_type_IHV_end, windot11/dot11_phy_type_IHV_start, windot11/dot11_phy_type_any, windot11/dot11_phy_type_dsss, windot11/dot11_phy_type_erp, windot11/dot11_phy_type_fhss, windot11/dot11_phy_type_hrdsss, windot11/dot11_phy_type_ht, windot11/dot11_phy_type_irbaseband, windot11/dot11_phy_type_ofdm, windot11/dot11_phy_type_unknown, windot11/dot11_phy_type_vht"
 req.header: windot11.h
@@ -116,9 +116,7 @@ Specifies the start of the range that is used to define proprietary PHY types th
      by an independent hardware vendor (IHV).
 
 
-The
-     <b>dot11_phy_type_IHV_start</b> enumerator value is valid only when the miniport driver is operating in
-     Extensible Station (ExtSTA) mode.
+The **dot11\_phy\_type\_IHV\_start** enumerator value is valid only when the miniport driver is operating in Extensible Station (ExtSTA) mode.
 
 ### -field dot11_phy_type_IHV_end:0xffffffff
 
@@ -126,31 +124,19 @@ Specifies the end of the range that is used to define proprietary PHY types that
      an IHV.
 
 
-The
-     <b>dot11_phy_type_IHV_end</b> enumerator value is valid only when the miniport driver is operating in
-     ExtSTA mode.
+The **dot11\_phy\_type\_IHV\_end** enumerator value is valid only when the miniport driver is operating in ExtSTA mode.
 
 ## -remarks
 
-An IHV can assign a value for its proprietary PHY types from
-    <b>dot11_phy_type_IHV_start</b> through
-    <b>dot11_phy_type_IHV_end</b>. The IHV must assign a unique number from this range for each of its
-    proprietary PHY types.
+An IHV can assign a value for its proprietary PHY types from **dot11\_phy\_type\_IHV\_start** through **dot11\_phy\_type\_IHV\_end**. The IHV must assign a unique number from this range for each of its proprietary PHY types.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/network/oid-dot11-recv-sensitivity-list">OID_DOT11_RECV_SENSITIVITY_LIST</a>
+[OID\_DOT11\_RECV\_SENSITIVITY\_LIST](/windows-hardware/drivers/network/oid-dot11-recv-sensitivity-list)
 
+[OID\_DOT11\_SUPPORTED\_PHY\_TYPES](/windows-hardware/drivers/network/oid-dot11-supported-phy-types)
 
+[ DOT11\_ASSOCIATION\_COMPLETION\_PARAMETERS](..\windot11\ns-windot11-dot11_association_completion_parameters.md)
 
-<a href="/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
-
-
-
-<a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
-   DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>
-
-
-
-<a href="/windows-hardware/drivers/network/oid-dot11-scan-request">OID_DOT11_SCAN_REQUEST</a>
+[OID\_DOT11\_SCAN\_REQUEST](/windows-hardware/drivers/network/oid-dot11-scan-request)
 
