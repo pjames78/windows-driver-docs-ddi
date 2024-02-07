@@ -251,7 +251,7 @@ Reserved.
 
 ### -field UdpRecvSegCoalesceOffloadInfo
 
-Reserved for protocol driver use.
+Identifies a pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union containing UDP receive segment coalescing (RSC) counter information. For more information, see the <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> documentation.
 
 ### -field SwitchForwardingReserved
 
@@ -271,7 +271,7 @@ Reserved for NDIS.
 
 ### -field TcpRecvSegCoalesceInfo
 
-Identifies a pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union containing receive segment coalescing (RSC) counter information. For more information, see the <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> documentation.
+Identifies a pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union containing RSC counter information. For more information, see the <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> documentation.
 
 ### -field UdpSegmentationOffloadInfo
 

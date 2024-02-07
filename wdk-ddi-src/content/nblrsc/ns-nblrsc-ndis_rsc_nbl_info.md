@@ -78,9 +78,7 @@ A member in the union that is contained in <b>NDIS_RSC_NBL_INFO</b>.  Drivers us
 
 ## -remarks
 
-To access receive segment coalescing (RSC) counter  information that is associated with a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure, an NDIS driver calls the <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> macro and specifies the <b>TcpRecvSegCoalesceInfo</b> information type which is in an <b>NDIS_RSC_NBL_INFO</b> union.
-
-
+To access receive segment coalescing (RSC) counter information that is associated with a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure, an NDIS driver calls the <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> macro and specifies the <b>TcpRecvSegCoalesceInfo</b> or <b>UdpRecvSegCoalesceOffloadInfo</b> information type. <b>TcpRecvSegCoalesceInfo</b> and <b>UdpRecvSegCoalesceOffloadInfo</b> identify a pointer to a driver-allocated **NDIS_RSC_NBL_INFO** union.
 
 To access RSC  timestamp information that is associated with a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure, an NDIS driver calls the <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> macro and specifies the <b>RscTcpTimestampDelta</b> information type which is a single <b>ULONG</b> value.
 
