@@ -1,24 +1,24 @@
 ---
-description: "Learn more about: Wdm.h header"
-UID: NA:wdm
-title: Wdm.h header
-ms.date: 01/05/2023
-keywords: ["Wdm.h header"]
+description: "Learn more about: Prminterface.h header"
+UID: NA:prminterface
+title: Prminterface.h header
+ms.date: 02/07/2024
+keywords: ["Prminterface.h header"]
 ms.keywords: 
 ms.topic: overview
 tech.root: kernel
 f1_keywords:
- - wdm
- - wdm/wdm
+ - prminterface
+ - prminterface/prminterface
 api_name:
- - wdm
+ - prminterface
 ---
 
-# Wdm.h header
+# Prminterface.h header
 
 ## -description
 
-This header contains reference material that includes specific details about the routines, structures, and data types that you will need to use to write kernel-mode drivers.
+This header contains reference material that includes specific details about the routines, structures, and data types that you will need to use to work with the Platform Runtime Mechanism (PRM) interface.
 
 For more information, see:
 
