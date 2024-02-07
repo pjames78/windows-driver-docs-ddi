@@ -15,7 +15,6 @@
     "pcivirt.h",
     "pep_x.h",
     "pepfx.h",
-    "prminterface.h",
     "procgrp.h",
     "vpci.h",
     "wdm.h",
