@@ -1,18 +1,18 @@
 ---
 UID: NE:ksmedia.tagAUDIOLOOPBACK_TAPPOINT_TYPE
-tech.root: kernel
-title: AUDIOLOOPBACK_TAPPOINT_TYPE (ksmedia.h)
-ms.date: 10/16/2023
+tech.root: audio
+title: AUDIOLOOPBACK_TAPPOINT_TYPE
+ms.date: 01/29/2024
 targetos: Windows
-description: This topic describes the AUDIOLOOPBACK_TAPPOINT_TYPE enumeration (ksmedia.h).
+description: The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: ksmedia.h
-req.include-header: Ksmedia.h
+req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
@@ -40,18 +40,26 @@ helpviewer_keywords:
 
 ## -description
 
-This topic describes the **AUDIOLOOPBACK_TAPPOINT_TYPE** enumeration (ksmedia.h).
+The AUDIOLOOPBACK_TAPPOINT_TYPE enum contains the  pre and post tap point definitions. It is available starting in Windows 11 23H2.
 
 ## -enum-fields
 
 ### -field AUDIOLOOPBACK_TAPPOINT_PREVOLUMEMUTE
 
-Defines the **AUDIOLOOPBACK_TAPPOINT_PREVOLUMEMUTE** constant.
+The loopback stream tap point is returned before applying endpoint volume and mute.
 
 ### -field AUDIOLOOPBACK_TAPPOINT_POSTVOLUMEMUTE
 
-Defines the **AUDIOLOOPBACK_TAPPOINT_POSTVOLUMEMUTE** constant.
+The loopback stream tap point is after applying endpoint volume and mute.
 
 ## -remarks
 
+The enum is used by [KSPROPERTY_AUDIOLOOPBACK](/windows-hardware/drivers/audio/ksproperty-audioloopback) in the [KSPROPSETID_AudioLoopback](/windows-hardware/drivers/audio/kspropsetid-audioloopback) property set to indicate if the loopback tap point is pre or post volume and mute.
+
 ## -see-also
+
+[KSPROPERTY_AUDIOLOOPBACK](/windows-hardware/drivers/audio/ksproperty-audioloopback)
+
+[KSPROPSETID_AudioLoopback](/windows-hardware/drivers/audio/kspropsetid-audioloopback)
+
+[KSATTRIBUTE_AUDIOLOOPBACK_TAPPOINT](ns-ksmedia-ksattribute_audioloopback_tappoint.md)
