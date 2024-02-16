@@ -217,7 +217,7 @@ Logical remapping can only be done if no existing physical memory is referenced 
 
 ### -field DXGKQAITYPE_NATIVE_FENCE_CAPS:37
 
-The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_fence_caps.md) structure that contains the driver's support details for native GPU fences. Supported starting in Windows 11, version 22H2.
+The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_fence_caps.md) structure that contains the driver's support details for native GPU fences. Supported starting in Windows 11, version 24H2. For more information, see [Native GPU fences](/windows-hardware/drivers/display/native-gpu-fences).
 
 ### -field DXGKQAITYPE_USERMODESUBMISSION_CAPS:38
 

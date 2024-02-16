@@ -130,7 +130,7 @@ A Vsync has completed in a display miniport driver that supports the [hardware f
 
 ### -field DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED:19
 
-A set of native fence GPU objects monitored by the CPU were signaled on a GPU engine. Supported starting in Windows 11, version 24H2.
+A set of [native fence GPU objects](/windows-hardware/drivers/display/native-gpu-fence-objects) monitored by the CPU were signaled on a GPU engine. Supported starting in Windows 11, version 24H2.
 
 ### -field DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE:20
 

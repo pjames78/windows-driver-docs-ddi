@@ -1,10 +1,10 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_NATIVEFENCEINFO
-tech.root: 
+tech.root: display
 title: D3DDDI_NATIVEFENCEINFO
-ms.date: 
+ms.date: 04/08/2024
 targetos: Windows
-description: 
+description: Learn more about the D3DDDI_NATIVEFENCEINFO structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3DDDI_NATIVEFENCEINFO
@@ -44,19 +44,40 @@ helpviewer_keywords:
 
 ## -description
 
+**D3DDDI_NATIVEFENCEINFO**  describes the attributes of a native fence synchronization object.
+
 ## -struct-fields
 
 ### -field InitialFenceValue
 
+[in] The initial fence value.
+
 ### -field EngineAffinity
+
+[in] Defines the physical adapters where the GPU virtual address is mapped.
+
+### -field Type
+
+[in] A [**D3DDDI_NATIVEFENCE_TYPE**](ne-d3dukmdt-d3dddi_nativefence_type.md) value that specifies the type of the fence.
 
 ### -field Flags
 
+[in] A [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](../d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) structure that identifies the attributes of the synchronization object.
+
 ### -field NativeFenceMapping
+
+[out] A [**D3DDDI_NATIVEFENCE_MAPPING**](../d3dukmdt/ns-d3dukmdt-d3dddi_nativefencemapping.md) structure in which the process mapping information for the native fence is returned.
 
 ### -field Reserved[32]
 
+Reserved for system use.
+
 ## -remarks
+
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 
+[**D3DKMT_CREATENATIVEFENCE**](ns-d3dkmthk-d3dkmt_createnativefence.md)
+
+[**D3DKMTCreateNativeFence**](nf-d3dkmthk-d3dkmtcreatenativefence.md)

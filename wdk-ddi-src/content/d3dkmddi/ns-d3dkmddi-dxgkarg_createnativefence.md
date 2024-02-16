@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_CREATENATIVEFENCE
@@ -56,7 +56,7 @@ On output, the value returned by the KMD is the internal, KMD-maintained handle 
 
 ### -field Type
 
-[in] A [**D3DDDI_NATIVEFENCE_TYPE**]() value that indicates the type of native GPU fence object to create.
+[in] A [**D3DDDI_NATIVEFENCE_TYPE**](../d3dukmdt/ne-d3dukmdt-d3dddi_nativefence_type.md) value that indicates the type of native GPU fence object to create.
 
 ### -field CurrentValueSystemProcessGpuVa
 
@@ -80,7 +80,7 @@ Reserved for system use.
 
 ## -remarks
 
-For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 

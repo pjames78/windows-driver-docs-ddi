@@ -1,10 +1,10 @@
 ---
-UID: NS:d3dkmddi._DXGK_OPENNATIVEFENCE_FLAGS
+UID: NS:d3dkmddi._DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 tech.root: display
-title: DXGK_OPENNATIVEFENCE_FLAGS
+title: DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 ms.date: 04/08/2024
 targetos: Windows
-description: Learn more about DXGK_OPENNATIVEFENCE_FLAGS.
+description: Learn more about the DXGKARG_UPDATEMONITOREDVALUES_FLAGS structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -18,7 +18,7 @@ req.redist:
 req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
-req.typenames: DXGK_OPENNATIVEFENCE_FLAGS
+req.typenames: DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 typedef_isUnnamed: false
 req.umdf-ver: 
 req.unicode-ansi: 
@@ -29,22 +29,22 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - _DXGK_OPENNATIVEFENCE_FLAGS
- - DXGK_OPENNATIVEFENCE_FLAGS
+ - _DXGKARG_UPDATEMONITOREDVALUES_FLAGS
+ - DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 f1_keywords:
- - _DXGK_OPENNATIVEFENCE_FLAGS
- - d3dkmddi/_DXGK_OPENNATIVEFENCE_FLAGS
- - DXGK_OPENNATIVEFENCE_FLAGS
- - d3dkmddi/DXGK_OPENNATIVEFENCE_FLAGS
+ - _DXGKARG_UPDATEMONITOREDVALUES_FLAGS
+ - d3dkmddi/_DXGKARG_UPDATEMONITOREDVALUES_FLAGS
+ - DXGKARG_UPDATEMONITOREDVALUES_FLAGS
+ - d3dkmddi/DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 dev_langs:
  - c++
 helpviewer_keywords:
- - _DXGK_OPENNATIVEFENCE_FLAGS
+ - _DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 ---
 
 ## -description
 
-**DXGK_OPENNATIVEFENCE_FLAGS** specifies flags to use when opening a native GPU fence.
+**DXGKARG_UPDATEMONITOREDVALUES_FLAGS** specifies flags to use when updating monitored values for a native GPU fence.
 
 ## -struct-fields
 
@@ -62,6 +62,6 @@ For more information about native GPU fences, see [Native GPU fence objects](/wi
 
 ## -see-also
 
-[**DXGKARG_CREATENATIVEFENCE**](ns-d3dkmddi-dxgkarg_createnativefence.md)
+[**DXGKARG_UPDATEMONITOREDVALUES**](ns-d3dkmddi-dxgkarg_updatemonitoredvalues.md)
 
-[**DxgkDdiOpenNativeFence**](nc-d3dkmddi-dxgkddi_opennativefence.md)
+[**DxgkDdiUpdateMonitoredValues**](nc-d3dkmddi-dxgkddi_updatemonitoredvalues.md)

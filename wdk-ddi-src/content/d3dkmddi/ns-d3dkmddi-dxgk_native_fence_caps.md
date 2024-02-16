@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGK_NATIVE_FENCE_CAPS
@@ -78,7 +78,7 @@ When set, **MapToGpuSystemProcess** instructs the OS to reserve a system process
 
 The KMD can also specify an optional minimum and maximum address to restrict native fence GPU VA mappings within a chosen range for both process address space and system address space. This limit will apply to all native fences created on the system.
 
-For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 

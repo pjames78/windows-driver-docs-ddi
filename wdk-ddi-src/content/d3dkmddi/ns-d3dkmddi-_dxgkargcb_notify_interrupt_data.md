@@ -428,27 +428,27 @@ The GPU clock counter at the time of the VSYNC interrupt. Combined with GpuFrequ
 
 ### -field NativeFenceSignaled
 
-[in] Structure used when **InterruptType** is **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED**. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+[in] Structure used when **InterruptType** is **DXGK_INTERRUPT_NATIVE_FENCE_SIGNALED**. For more information about native fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field NativeFenceSignaled.NodeOrdinal
 
-Node ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+Node ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field NativeFenceSignaled.EngineOrdinal
 
-Engine ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+Engine ordinal of engine generating the notification. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field NativeFenceSignaled.SignaledNativeFenceCount
 
-The size of the signaled native fence array that **pSignaledNativeFenceArray** points to. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+The size of the signaled native fence array that **pSignaledNativeFenceArray** points to. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field NativeFenceSignaled.pSignaledNativeFenceArray
 
-Array containing all native fences that were signaled and require waiters to be unblocked. If this array is empty, the OS will re-scan all pending native fence waiters instead of the subset specified by the signaled native fence array. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is FALSE. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+Array containing all native fences that were signaled and require waiters to be unblocked. If this array is empty, the OS will re-scan all pending native fence waiters instead of the subset specified by the signaled native fence array. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is FALSE. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field hHWQueue
 
-KMD handle of the HWQueue running on the engine that raised the interrupt. If this handle is NULL then *Dxgkrnl* will re-scan the log buffer of all HWQueues on this engine. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is TRUE. Supported starting with Windows 11, version 24H2 (WDDM 3.1).
+KMD handle of the HWQueue running on the engine that raised the interrupt. If this handle is NULL then *Dxgkrnl* will re-scan the log buffer of all HWQueues on this engine. *Dxgkrnl* reads this value only if [**DXGK_VIDSCHCAPS::OptimizedNativeFenceInterrupt**](ns-d3dkmddi-_dxgk_vidschcaps.md) is TRUE. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field Reserved
 

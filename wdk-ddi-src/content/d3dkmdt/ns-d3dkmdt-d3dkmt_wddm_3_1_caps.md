@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: Windows 11, version 22H2
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3DKMT_WDDM_3_1_CAPS
@@ -50,7 +50,7 @@ Reserved for system use. Do not use.
 
 ### -field NativeGpuFenceSupported
 
-Specifies whether the native GPU fence feature is supported by this GPU.
+Specifies whether the native GPU fence feature is supported by this GPU. For more information about the native GPU fence feature, see [Native GPU fence](https://docs.microsoft.com/windows-hardware/drivers/display/native-gpu-fence).
 
 ### -field Reserved
 

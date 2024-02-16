@@ -64,7 +64,6 @@ If **VSyncPowerSaveAware** is set to 1 (TRUE), the OS can save power by disablin
 A UINT value that specifies whether the driver supports the GPU preemption policy of Windows 8 and later versions of Windows. With this policy, the OS always issues preemption requests to the GPU before it initiates the [**Timeout Detection and Recovery
 (TDR)](/windows-hardware/drivers/display/timeout-detection-and-recovery) process. Supported starting with Windows 8.
 
-
 If **PreemptionAware** is set to 1 (TRUE), the driver supports the preemption policy of Windows 8 and later versions of Windows. Note that if **PreemptionAware** is set to 1, the **MultiEngineAware** member must also be set to a value of 1. If **PreemptionAware** is set to 1 but **MultiEngineAware** is set to zero, the OS will halt the driver initialization process and return a failure code.
 
 If **PreemptionAware** is set to zero (FALSE), the driver supports the preemption policy of Windows 7. With this policy, the OS may not issue preemption requests while potentially long running operations are being executed on the GPU. As a result, these GPU requests are not preempted  before the TDR process is initiated. This may cause the TDR process to repeatedly reset the GPU which could lead to a system stop error.
@@ -101,7 +100,7 @@ Maximum number of DMA packets allowed to be queued to a node.
 
 ### -field NativeGpuFence
 
-If the OS has enabled the [**DXGK_FEATURE_NATIVE_FENCE**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) feature, the driver can declare support for native GPU fence functionality during adapter initialization by setting the **NativeGpuFence** bit to 1. This capability is exposed to user mode via a corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps.md) bit. Supported starting with Windows 11, version 22H2 (WDDM 3.1).
+If the OS has enabled the [**DXGK_FEATURE_NATIVE_FENCE**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) feature, the driver can declare support for native GPU fence functionality during adapter initialization by setting the **NativeGpuFence** bit to 1. This capability is exposed to user mode via a corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps.md) bit. For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field Reserved
 

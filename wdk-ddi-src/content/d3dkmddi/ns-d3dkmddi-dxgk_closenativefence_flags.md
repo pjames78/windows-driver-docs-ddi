@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGK_CLOSENATIVEFENCE_FLAGS
@@ -58,10 +58,10 @@ An alternative way to access the structure members.
 
 ## -remarks
 
-For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 
-[**DXGK_CLOSENATIVEFENCE**](d3dkmddi-dxgk_closenativefence.md)
+[**DXGKARG_CLOSENATIVEFENCE**](ns-d3dkmddi-dxgkarg_closenativefence.md)
 
 [**DxgkDdiCloseNativeFence**](nc-d3dkmddi-dxgkddi_closenativefence.md)

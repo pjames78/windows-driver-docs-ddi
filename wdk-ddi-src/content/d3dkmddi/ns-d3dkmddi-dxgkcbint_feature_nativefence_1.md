@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKCBINT_FEATURE_NATIVEFENCE_1
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **DXGKCBINT_FEATURE_NATIVEFENCE_1** structure is used to query the OS for its support of native GPU fence features.
+The **DXGKCBINT_FEATURE_NATIVEFENCE_1** structure is an internal driver structure used by KMD to query the OS for its support of native GPU fence features.
 
 ## -struct-fields
 
@@ -54,8 +54,12 @@ The **DXGKCBINT_FEATURE_NATIVEFENCE_1** structure is used to query the OS for it
 
 ## -remarks
 
-For a sample code snippet and more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+KMD queries the OS's native GPU fence features by calling the callback function that **GetOSCaps** points to. KMD should maintain an internal cache for the state and version of the results returned.
+
+For a sample code snippet and more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
+
+[**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](nc-d3dkmddi-dxgkcb_feature_nativefence_caps_1.md)
 
 [isfeatureenabled]()

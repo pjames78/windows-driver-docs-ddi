@@ -1,10 +1,10 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_NATIVEFENCEMAPPING
-tech.root: 
+tech.root: display
 title: D3DDDI_NATIVEFENCEMAPPING
-ms.date: 
+ms.date: 04/08/2024
 targetos: Windows
-description: 
+description: Learn more about D3DDDI_NATIVEFENCEMAPPING.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3DDDI_NATIVEFENCEMAPPING
@@ -44,15 +44,32 @@ helpviewer_keywords:
 
 ## -description
 
+**D3DDDI_NATIVEFENCEMAPPING** contains native GPU fence address mappings in the caller's process address space.
+
 ## -struct-fields
+
+### -field CurrentValueCpuVa
+
+Read-only mapping of the current value for the CPU. This value is used by user-mode components to poll the native fence [**CurrentValue**](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ### -field CurrentValueGpuVa
 
+Read/write mapping of the current value for the GPU in the current process's address space. This value is used by the GPU engine to read or write to the native fence **CurrentValue** as a fence signal operation.
+
 ### -field MonitoredValueGpuVa
+
+Read/write mapping of the monitored value for the GPU in the current process's address space. This value is used by the GPU engine to check whether a conditional CPU interrupt should be raised.
 
 ### -field Reserved[32]
 
+Reserved for system use.
+
 ## -remarks
+
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 
+[**D3DKMT_CREATENATIVEFENCE**](ns-d3dkmthk-d3dkmt_createnativefence.md)
+
+[**D3DKMTCreateNativeFence**](nf-d3dkmthk-d3dkmtcreatenativefence.md)

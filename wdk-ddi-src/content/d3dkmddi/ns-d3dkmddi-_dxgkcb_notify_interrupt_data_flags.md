@@ -1,11 +1,9 @@
 ---
 UID: NS:d3dkmddi._DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS
 title: DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS (d3dkmddi.h)
-description: The DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure indicates whether the display miniport driver provides a physical adapter mask in a call to the DxgkCbNotifyInterrupt function.
-old-location: display\dxgkcb_notify_interrupt_data_flags.htm
-ms.date: 10/13/2021
+description: Learn more about the DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure.
+ms.date: 04/08/2024
 keywords: ["DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure"]
-ms.keywords: DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure [Display Devices], DmStructs_bfff264e-44a2-458c-ab0d-c103d4b76f71.xml, _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, d3dkmddi/DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, display.dxgkcb_notify_interrupt_data_flags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -53,21 +51,25 @@ The **DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS** structure indicates whether the displ
 
 ### -field ValidPhysicalAdapterMask
 
-A UINT value that specifies whether the driver provides a physical adapter mask. If this member is set, the driver provides a physical adapter mask in the **PhysicalAdapterMask** member of the **CrtcVsync** structure that is contained in the [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md) structure.
+Specifies whether the driver provides a physical adapter mask. If this member is set, the driver provides a physical adapter mask in the **PhysicalAdapterMask** member of the **CrtcVsync** structure that is contained in the [**DXGKARGCB_NOTIFY_INTERRUPT_DATA**](ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md) structure.
 
 Setting this member is equivalent to setting the first bit of the 32-bit **Value** member (0x00000001).
 
 ### -field HsyncFlipCompletion
 
-A UINT value that specifies whether the Hsync flip has been completed.
+Specifies whether the Hsync flip has been completed.
+
+### -field EvaluateLegacyMonitoredFences
+
+When set, indicates to the OS to scan all waiters (legacy monitored fence waiter & native fence waiters). For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Available starting with Windows 11, version 22H2 (WDDM 3.2).
 
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of the 32-bit **Value** member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field Value
 
-The 32-bit value that indicates all of the flags set in the union.
+An alternative way to access to bit fields of this structure.
 
 ## -see-also
 

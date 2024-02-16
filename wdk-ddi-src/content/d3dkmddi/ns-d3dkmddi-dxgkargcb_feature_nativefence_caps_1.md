@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1
@@ -44,19 +44,21 @@ helpviewer_keywords:
 
 ## -description
 
+The **DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1** structure describes the native fence capabilities of the OS.
+
 ## -struct-fields
 
 ### -field SupportOptimizedDefaultFenceType
 
-Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_DEFAULT** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md). If the OS sets this as TRUE, the OS supports allocating native fence storage in VRAM. KMD should query this OS cap and determine whether the OS allows KMD to specify a local memory **SupportedSegmentSet** during the creation of fence type **D3DDDI_NATIVEFENCE_TYPE_DEFAULT**.
+Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_DEFAULT** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). If the OS sets this as TRUE, the OS supports allocating native fence storage in VRAM. KMD should query this OS cap and determine whether the OS allows KMD to specify a local memory **SupportedSegmentSet** during the creation of fence type **D3DDDI_NATIVEFENCE_TYPE_DEFAULT**.
 
 ### -field SupportIntraGpuFenceType
 
-Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_INTRA_GPU** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md)..
+Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_INTRA_GPU** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects)..
 
 ## -remarks
 
-For a sample code snippet and more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+For a sample code snippet and more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 

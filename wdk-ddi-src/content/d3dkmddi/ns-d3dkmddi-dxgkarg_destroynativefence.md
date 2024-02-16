@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT 
+req.target-min-winverclnt: Windows 11, version 24H2 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_DESTROYNATIVEFENCE
@@ -64,8 +64,7 @@ Reserved for system use.
 
 KMD should destroy its global fence data associated with **hGlobalNativeFence**.
 
-For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
-
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 

@@ -1,15 +1,15 @@
 ---
-UID: NS:d3dkmddi._DXGK_OPENNATIVEFENCE_FLAGS
+UID: NS:d3dkmthk._D3DKMT_CREATENATIVEFENCE_FLAGS
 tech.root: display
-title: DXGK_OPENNATIVEFENCE_FLAGS
+title: D3DKMT_CREATENATIVEFENCE_FLAGS
 ms.date: 04/08/2024
 targetos: Windows
-description: Learn more about DXGK_OPENNATIVEFENCE_FLAGS.
+description: Learn more about the D3DKMT_CREATENATIVEFENCE_FLAGS structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
-req.header: d3dkmddi.h
+req.header: d3dkmthk.h
 req.include-header: 
 req.kmdf-ver: 
 req.lib: 
@@ -18,7 +18,7 @@ req.redist:
 req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
-req.typenames: DXGK_OPENNATIVEFENCE_FLAGS
+req.typenames: D3DKMT_CREATENATIVEFENCE_FLAGS
 typedef_isUnnamed: false
 req.umdf-ver: 
 req.unicode-ansi: 
@@ -27,24 +27,24 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - d3dkmddi.h
+ - d3dkmthk.h
 api_name:
- - _DXGK_OPENNATIVEFENCE_FLAGS
- - DXGK_OPENNATIVEFENCE_FLAGS
+ - _D3DKMT_CREATENATIVEFENCE_FLAGS
+ - D3DKMT_CREATENATIVEFENCE_FLAGS
 f1_keywords:
- - _DXGK_OPENNATIVEFENCE_FLAGS
- - d3dkmddi/_DXGK_OPENNATIVEFENCE_FLAGS
- - DXGK_OPENNATIVEFENCE_FLAGS
- - d3dkmddi/DXGK_OPENNATIVEFENCE_FLAGS
+ - _D3DKMT_CREATENATIVEFENCE_FLAGS
+ - d3dkmthk/_D3DKMT_CREATENATIVEFENCE_FLAGS
+ - D3DKMT_CREATENATIVEFENCE_FLAGS
+ - d3dkmthk/D3DKMT_CREATENATIVEFENCE_FLAGS
 dev_langs:
  - c++
 helpviewer_keywords:
- - _DXGK_OPENNATIVEFENCE_FLAGS
+ - _D3DKMT_CREATENATIVEFENCE_FLAGS
 ---
 
 ## -description
 
-**DXGK_OPENNATIVEFENCE_FLAGS** specifies flags to use when opening a native GPU fence.
+**D3DKMT_CREATENATIVEFENCE_FLAGS** specifies flags to use when creating a native GPU fence.
 
 ## -struct-fields
 
@@ -62,6 +62,4 @@ For more information about native GPU fences, see [Native GPU fence objects](/wi
 
 ## -see-also
 
-[**DXGKARG_CREATENATIVEFENCE**](ns-d3dkmddi-dxgkarg_createnativefence.md)
-
-[**DxgkDdiOpenNativeFence**](nc-d3dkmddi-dxgkddi_opennativefence.md)
+[**D3DKMT_CREATENATIVEFENCE**](ns-d3dkmthk-d3dkmt_createnativefence.md)

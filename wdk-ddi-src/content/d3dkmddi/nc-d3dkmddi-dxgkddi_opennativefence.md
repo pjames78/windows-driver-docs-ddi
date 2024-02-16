@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -64,9 +64,14 @@ helpviewer_keywords:
 
  **DxgkDdiOpenNativeFence** is always preceded by a call to [**DxgkDdiCreateNativeFence**](nc-d3dkmddi-dxgkddi_createnativefence.md).
 
-If a second process opens the shared native fence object using [**D3DKMT_OPENNATIVEFENCEFROMNTHANDLE**](), *Dxgkrnl* will locate the **hGlobalNativeFence**, and create a new CPU virtual address (VA) and GPU VA mapping for that existing object in the second process's address space. *Dxgkrnl* passes this payload to the KMD by calling **DxgkDdiOpenNativeFence**, along with a new **hLocalNativeFence** handle.
+If a second process opens the shared native fence object using [**D3DKMT_OPENNATIVEFENCEFROMNTHANDLE**](../d3dkmthk/nf-d3dkmthk-d3dkmtopennativefencefromnthandle.md), *Dxgkrnl* does the following:
 
-For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects.md).
+* Locates the **hGlobalNativeFence**.
+* Creates a new CPU virtual address (VA) and GPU VA mapping for that existing object in the second process's address space.
+
+*Dxgkrnl* passes this payload to the KMD by calling **DxgkDdiOpenNativeFence** along with a new [**hLocalNativeFence**](ns-d3dkmddi-dxgkarg_opennativefence.md) handle.
+
+For more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 
