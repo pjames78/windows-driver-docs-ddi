@@ -51,17 +51,23 @@ See [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_comman
 
 ### -field Length
 
+### -field ControllerHandle
+
+### -field Reserved0
+
 ### -field CommandDWORD0
 
 ### -field CommandNSID
 
-### -field Reserved0
+### -field Reserved1[2]
 
 ### -field CommandMPTR
 
 ### -field CommandPRP1
 
 ### -field CommandPRP2
+
+### -field CommandSGL1[2]
 
 ### -field CommandCDW10
 
@@ -75,9 +81,41 @@ See [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_comman
 
 ### -field CommandCDW15
 
+### -field FabricsCommand
+
+### -field FabricsCommand.OPC
+
+### -field FabricsCommand.PSDT
+
+### -field FabricsCommand.CID
+
+### -field FabricsCommand.FCTYPE
+
+### -field FabricsCommand.Reserved[35]
+
+### -field FabricsCommand.Specific[24]
+
+### -field Command
+
+### -field Command.OPC
+
+### -field Command.FUSE
+
+### -field Command.Reserved
+
+### -field Command.PSDT
+
+### -field Command.CID
+
+### -field Command.TypeSpecific[60]
+
 ### -field CommandType
 
+### -field Reserved2
+
 ### -field CommandFlags
+
+### -field ResponseFlags
 
 ### -field CommandStatus
 
@@ -89,7 +127,7 @@ See [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_comman
 
 ### -field CommandStatus.DUMMYSTRUCTNAME.SCT
 
-### -field CommandStatus.DUMMYSTRUCTNAME.Reserved
+### -field CommandStatus.DUMMYSTRUCTNAME.CRD
 
 ### -field CommandStatus.DUMMYSTRUCTNAME.M
 
@@ -103,6 +141,14 @@ See [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_comman
 
 ### -field CQEntryDW0
 
+### -field CQEntryDW1
+
+### -field Specific[8]
+
+### -field SQHD
+
+### -field SQID
+
 ## -see-also
 
-See [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_command.md).
+- [**SRBEX_DATA_NVME_COMMAND** (*srb.h*)](../srb/ns-srb-srbex_data_nvme_command.md)

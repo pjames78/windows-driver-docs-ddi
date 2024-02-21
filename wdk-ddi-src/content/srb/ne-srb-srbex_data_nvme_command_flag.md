@@ -2,7 +2,7 @@
 UID: NE:srb.SRBEX_DATA_NVME_COMMAND_FLAG
 tech.root: storage
 title: SRBEX_DATA_NVME_COMMAND_FLAG (srb.h)
-ms.date: 05/13/2021
+ms.date: 02/14/2024
 targetos: Windows
 description: The SRBEX_DATA_NVME_COMMAND_FLAG (srb.h) enumeration contains values that indicate the properties of a particular SRBEX Data NVMe command.
 req.construct-type: enumeration
@@ -56,12 +56,11 @@ By default, the system frames a physical region page (PRP) before sending the da
 
 Reserved for system use; do not use.
 
-## -remarks
+### -field SRBEX_DATA_NVME_COMMAND_FLAG_NO_POLLING
 
-**SRBEX_DATA_NVME_COMMAND_FLAG** can be a bitwise-OR of the above flags.
+Indicates to send the command with interrupt mode.
 
-> [!NOTE]
-> Currently, data can only be read OR written in one command (SRBEX_DATA_NVME_COMMAND_FLAG_REQUIRE_DATA_TRANSFER_IN | SRBEX_DATA_NVME_COMMAND_FLAG_REQUIRE_DATA_TRANSFER_OUT).
+## -see-also
 
-A user specifies these flags in a [**SRBEX_DATA_NVME_COMMAND**](ns-srb-srbex_data_nvme_command.md) structure.
-
+- [**SRBEX_DATA_NVME_COMMAND_FLAG** (*minitape.h*)](../minitape/ne-minitape-srbex_data_nvme_command_flag.md)
+- [**SRBEX_DATA_NVME_COMMAND_FLAG** (*storport.h*)](../storport/ne-storport-srbex_data_nvme_command_flag.md)
