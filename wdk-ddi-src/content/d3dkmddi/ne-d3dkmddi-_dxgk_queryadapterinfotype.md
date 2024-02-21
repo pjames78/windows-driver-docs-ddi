@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGK_QUERYADAPTERINFOTYPE
 title: DXGK_QUERYADAPTERINFOTYPE (d3dkmddi.h)
 description: Learn more about the DXGK_QUERYADAPTERINFOTYPE enumeration.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["DXGK_QUERYADAPTERINFOTYPE enumeration"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h

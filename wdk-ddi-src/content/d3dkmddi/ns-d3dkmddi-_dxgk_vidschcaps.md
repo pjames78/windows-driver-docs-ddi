@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_VIDSCHCAPS
 title: DXGK_VIDSCHCAPS (d3dkmddi.h)
 description: Learn more about the DXGK_VIDSCHCAPS structure.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["DXGK_VIDSCHCAPS structure"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
@@ -100,7 +100,11 @@ Maximum number of DMA packets allowed to be queued to a node.
 
 ### -field NativeGpuFence
 
-If the OS has enabled the [**DXGK_FEATURE_NATIVE_FENCE**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) feature, the driver can declare support for native GPU fence functionality during adapter initialization by setting the **NativeGpuFence** bit to 1. This capability is exposed to user mode via a corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps.md) bit. For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Supported starting with Windows 11, version 24H2 (WDDM 3.2).
+If the OS has enabled the [**DXGK_FEATURE_NATIVE_FENCE**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) feature, the driver can declare support for native GPU fence functionality during adapter initialization by setting the **NativeGpuFence** bit to 1. This capability is exposed to user mode via a corresponding [**D3DKMT_WDDM_3_1_CAPS::NativeGpuFenceSupported**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps.md) bit. For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Available starting with Windows 11, version 22H2 (WDDM 3.1).
+
+### -field OptimizedNativeFenceSignaledInterrupt
+
+The driver sets this TRUE if, on a signaled interrupt, the GPU can specify in [**DXGKARGCB_NOTIFY_INTERRUPT_DATA::NativeFenceSignaled**](ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md) only the KMD handle of the HWQueue that was running. For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Available starting with Windows 11, version 22H2 (WDDM 3.1).
 
 ### -field Reserved
 

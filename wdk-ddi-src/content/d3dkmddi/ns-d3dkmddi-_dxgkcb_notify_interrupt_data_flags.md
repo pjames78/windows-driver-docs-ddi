@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS
 title: DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS (d3dkmddi.h)
 description: Learn more about the DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h

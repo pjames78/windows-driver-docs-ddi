@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_CLOSENATIVEFENCE
 tech.root: display
 title: DXGKDDI_CLOSENATIVEFENCE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_CLOSENATIVEFENCE function.
 prerelease: false

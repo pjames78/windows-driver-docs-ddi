@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CLOSENATIVEFENCE
 tech.root: display
 title: DXGKARG_CLOSENATIVEFENCE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGKARG_CLOSENATIVEFENCE structure.
 prerelease: false

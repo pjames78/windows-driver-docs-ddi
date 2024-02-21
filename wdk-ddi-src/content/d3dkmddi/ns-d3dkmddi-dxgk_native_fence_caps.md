@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_NATIVE_FENCE_CAPS
 tech.root: display
 title: DXGK_NATIVE_FENCE_CAPS
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGK_NATIVE_FENCE_CAPS structure.
 prerelease: false

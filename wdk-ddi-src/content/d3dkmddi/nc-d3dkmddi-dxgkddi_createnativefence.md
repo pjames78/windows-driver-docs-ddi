@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_CREATENATIVEFENCE
 tech.root: display
 title: DXGKDDI_CREATENATIVEFENCE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_CREATENATIVEFENCE function.
 prerelease: false

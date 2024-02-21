@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARGCB_NOTIFY_INTERRUPT_DATA
 title: DXGKARGCB_NOTIFY_INTERRUPT_DATA (d3dkmddi.h)
 description: Learn more about the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["DXGKARGCB_NOTIFY_INTERRUPT_DATA structure"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h

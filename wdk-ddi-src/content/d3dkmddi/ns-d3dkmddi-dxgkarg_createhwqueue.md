@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CREATEHWQUEUE
 tech.root: display
 title: DXGKARG_CREATEHWQUEUE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGKARG_CREATEHWQUEUE structure.
 prerelease: false

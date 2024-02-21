@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_CLOSENATIVEFENCE_FLAGS
 tech.root: display
 title: DXGK_CLOSENATIVEFENCE_FLAGS
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about DXGK_CLOSENATIVEFENCE_FLAGS.
 prerelease: false

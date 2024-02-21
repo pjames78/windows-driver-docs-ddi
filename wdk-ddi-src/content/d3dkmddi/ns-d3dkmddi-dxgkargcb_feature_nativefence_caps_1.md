@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1
 tech.root: display
 title: DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1 structure.
 prerelease: false
