@@ -190,6 +190,18 @@ Indicates the tagged-queuing message to be used when the **SRB_FLAGS_QUEUE_ACTIO
 
 Indicates the interval, in seconds, that the request can execute before the operating system-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
 
+### -field DUMMYUNIONNAME
+
+Union containing Windows 10 and later fields.
+
+### -field DUMMYUNIONNAME.SystemStatus
+
+Used to store system failure status information in SrbStatus failure conditions (e.g. SRB_STATUS_INTERNAL_ERROR).
+
+### -field DUMMYUNIONNAME.RequestTagHigh4Bytes
+
+Used to store high 4 bytes of unique tag if unique tag feature is enabled.
+
 ### -field SystemStatus
 
 Used by the Storport driver, instead of **SrbStatus**, to report the status of the completed request whenever the request cannot be delivered to the miniport driver. In such cases, **SrbStatus** is set to **SRB_STATUS_INTERNAL_ERROR**. This member is used exclusively for communication between the Storport and the class driver and should not be used by miniport drivers.
