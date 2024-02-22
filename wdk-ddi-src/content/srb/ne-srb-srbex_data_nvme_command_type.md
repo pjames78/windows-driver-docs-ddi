@@ -2,7 +2,7 @@
 UID: NE:srb.SRBEX_DATA_NVME_COMMAND_TYPE
 tech.root: storage
 title: SRBEX_DATA_NVME_COMMAND_TYPE (srb.h)
-ms.date: 02/20/2024
+ms.date: 02/21/2024
 targetos: Windows
 description: The SRBEX_DATA_NVME_COMMAND_TYPE (srb.h) contains values that indicate the SRBEX Data NVMe command types.
 req.construct-type: enumeration

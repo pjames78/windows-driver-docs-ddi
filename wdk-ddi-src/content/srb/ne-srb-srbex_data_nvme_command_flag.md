@@ -2,7 +2,7 @@
 UID: NE:srb.SRBEX_DATA_NVME_COMMAND_FLAG
 tech.root: storage
 title: SRBEX_DATA_NVME_COMMAND_FLAG (srb.h)
-ms.date: 02/14/2024
+ms.date: 02/21/2024
 targetos: Windows
 description: The SRBEX_DATA_NVME_COMMAND_FLAG (srb.h) enumeration contains values that indicate the properties of a particular SRBEX Data NVMe command.
 req.construct-type: enumeration
