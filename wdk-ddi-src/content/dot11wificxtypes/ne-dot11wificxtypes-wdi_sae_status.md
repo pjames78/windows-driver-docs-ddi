@@ -2,7 +2,7 @@
 UID: NE:dot11wificxtypes._WDI_SAE_STATUS
 tech.root: netvista
 title: WDI_SAE_STATUS (dot11wificxtypes.h)
-ms.date: 07/01/2021
+ms.date: 02/12/2024
 targetos: Windows
 description: The WDI_SAE_STATUS enum defines SAE authentication failure error status codes.
 prerelease: false
@@ -111,6 +111,10 @@ WDI detected a reflection attack.
 ### -field WDI_SAE_STATUS_COMMIT_MESSAGE_INTERNAL_COMPUTATION_ERROR:18
 
 WDI encountered an internal computation error.
+
+### -field WDI_SAE_STATUS_COMMIT_MESSAGE_INVALID_REJECTED_GROUP: 19
+
+WDI rejected the commit frame for specifying an invalid or unsupported finite cyclic group.
 
 ### -field WDI_SAE_STATUS_CONFIRM_MESSAGE_RECEIVED_IN_INVALID_STATE:30
 
