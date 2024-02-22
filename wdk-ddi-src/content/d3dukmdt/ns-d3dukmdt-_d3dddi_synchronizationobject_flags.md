@@ -3,7 +3,7 @@ UID: NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
 title: D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS (d3dukmdt.h)
 description: Learn more about the D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure.
 tech.root: display
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure"]
 req.header: d3dukmdt.h
 req.include-header: D3dumddi.h, D3dkmddi.h

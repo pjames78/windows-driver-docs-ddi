@@ -2,7 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_CREATENATIVEFENCE
 tech.root: display
 title: D3DKMT_CREATENATIVEFENCE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the D3DKMT_CREATENATIVEFENCE structure.
 prerelease: false
@@ -62,7 +62,7 @@ The **D3DKMT_CREATENATIVEFENCE** structure is a parameter for the [**D3DKMTCreat
 
 ### -field Info
 
-[in/out] A [**D3DDDI_NATIVEFENCEINFO**](ns-d3dkmddi-d3dddi_nativefenceinfo.md) structure that describes the attributes of the synchronization object.
+[in/out] A [**D3DDDI_NATIVEFENCEINFO**](../d3dukmdt/ns-d3dukmdt-d3dddi_nativefenceinfo.md) structure that describes the attributes of the synchronization object.
 
 ### -field Flags
 

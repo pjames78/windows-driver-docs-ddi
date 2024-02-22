@@ -2,7 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_OPENNATIVEFENCEFROMNTHANDLE
 tech.root: display
 title: D3DKMT_OPENNATIVEFENCEFROMNTHANDLE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the D3DKMT_OPENNATIVEFENCEFROMNTHANDLE structure.
 prerelease: false
@@ -62,7 +62,7 @@ The **D3DKMT_OPENNATIVEFENCEFROMNTHANDLE** structure is a parameter for the [**D
 
 ### -field Flags
 
-[in] A [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](/windows-hardware/drivers/display/d3dddi-synchronizationobject-flags) structure that identifies the attributes of the synchronization object.
+[in] A [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](../d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) structure that identifies the attributes of the synchronization object.
 
 ### -field hSyncObject
 

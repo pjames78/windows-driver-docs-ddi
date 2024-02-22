@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTDestroySynchronizationObject
 title: D3DKMTDestroySynchronizationObject function (d3dkmthk.h)
 description: Learn more about the D3DKMTDestroySynchronizationObject function.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["D3DKMTDestroySynchronizationObject function"]
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h

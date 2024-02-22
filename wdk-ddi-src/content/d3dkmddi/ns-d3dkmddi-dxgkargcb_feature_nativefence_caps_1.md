@@ -54,7 +54,7 @@ Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_DEFAULT** as describ
 
 ### -field SupportIntraGpuFenceType
 
-Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_INTRA_GPU** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects)..
+Indicates whether the OS supports **D3DDDI_NATIVEFENCE_TYPE_INTRA_GPU** as described in [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -remarks
 

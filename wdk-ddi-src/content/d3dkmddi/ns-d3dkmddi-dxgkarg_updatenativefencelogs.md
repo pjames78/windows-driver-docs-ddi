@@ -58,7 +58,7 @@ helpviewer_keywords:
 
 ### -field Flags
 
-[in] A [**DXGKARG_UPDATENATIVEFENCELOGS_FLAGS**](../d3dkmddi/ns-d3dkmddi-dxgkarg_updatenativefencelogs_) structure that contains flags for the flush.
+[in] A [**DXGKARG_UPDATENATIVEFENCELOGS_FLAGS**](../d3dkmddi/ns-d3dkmddi-dxgkarg_updatenativefencelogs_flags.md) structure that contains flags for the flush.
 
 ### -field Reserved[32]
 

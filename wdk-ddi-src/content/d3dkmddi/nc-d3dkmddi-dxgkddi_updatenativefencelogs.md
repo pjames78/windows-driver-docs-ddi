@@ -50,7 +50,7 @@ helpviewer_keywords:
 
 ### -param pUpdateNativeFenceLog
 
-[in] Pointer to a [**DXGKARG_UPDATENATIVEFENCELOGS**](nc-d3dkmddi-dxgkarg_updatenativefencelogs.md) structure that contains the native fence log information.
+[in] Pointer to a [**DXGKARG_UPDATENATIVEFENCELOGS**](ns-d3dkmddi-dxgkarg_updatenativefencelogs.md) structure that contains the native fence log information.
 
 ## -returns
 

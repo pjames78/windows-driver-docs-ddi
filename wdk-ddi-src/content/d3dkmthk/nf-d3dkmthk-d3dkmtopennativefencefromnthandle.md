@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTOpenNativeFenceFromNtHandle
 tech.root: display
 title: D3DKMTOpenNativeFenceFromNtHandle
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the D3DKMTOpenNativeFenceFromNtHandle function.
 prerelease: false

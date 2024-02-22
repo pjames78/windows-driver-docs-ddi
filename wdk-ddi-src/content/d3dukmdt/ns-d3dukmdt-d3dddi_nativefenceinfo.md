@@ -2,7 +2,7 @@
 UID: NS:d3dukmdt._D3DDDI_NATIVEFENCEINFO
 tech.root: display
 title: D3DDDI_NATIVEFENCEINFO
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the D3DDDI_NATIVEFENCEINFO structure.
 prerelease: false
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-**D3DDDI_NATIVEFENCEINFO**  describes the attributes of a native fence synchronization object.
+**D3DDDI_NATIVEFENCEINFO** describes the attributes of a native fence synchronization object.
 
 ## -struct-fields
 
@@ -62,11 +62,11 @@ helpviewer_keywords:
 
 ### -field Flags
 
-[in] A [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](../d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) structure that identifies the attributes of the synchronization object.
+[in] A [**D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS**](ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) structure that identifies the attributes of the synchronization object.
 
 ### -field NativeFenceMapping
 
-[out] A [**D3DDDI_NATIVEFENCE_MAPPING**](../d3dukmdt/ns-d3dukmdt-d3dddi_nativefencemapping.md) structure in which the process mapping information for the native fence is returned.
+[out] A [**D3DDDI_NATIVEFENCE_MAPPING**](ns-d3dukmdt-d3dddi_nativefencemapping.md) structure in which the process mapping information for the native fence is returned.
 
 ### -field Reserved[32]
 
@@ -78,6 +78,6 @@ For more information about native GPU fences, see [Native GPU fence objects](/wi
 
 ## -see-also
 
-[**D3DKMT_CREATENATIVEFENCE**](ns-d3dkmthk-d3dkmt_createnativefence.md)
+[**D3DKMT_CREATENATIVEFENCE**](../d3dkmthk/ns-d3dkmthk-d3dkmt_createnativefence.md.md)
 
-[**D3DKMTCreateNativeFence**](nf-d3dkmthk-d3dkmtcreatenativefence.md)
+[**D3DKMTCreateNativeFence**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatenativefence.md)

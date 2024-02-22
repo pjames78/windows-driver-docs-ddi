@@ -2,7 +2,7 @@
 UID: NS:d3dkmdt._D3DKMT_WDDM_3_1_CAPS
 tech.root: display
 title: D3DKMT_WDDM_3_1_CAPS
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn about the D3DKMT_WDDM_3_1_CAPS structure.
 prerelease: false
@@ -50,7 +50,7 @@ Reserved for system use. Do not use.
 
 ### -field NativeGpuFenceSupported
 
-Specifies whether the native GPU fence feature is supported by this GPU. For more information about the native GPU fence feature, see [Native GPU fence](https://docs.microsoft.com/windows-hardware/drivers/display/native-gpu-fence).
+Specifies whether the native GPU fence feature is supported by this GPU. For more information about the native GPU fence feature, see [Native GPU fence](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ### -field Reserved
 

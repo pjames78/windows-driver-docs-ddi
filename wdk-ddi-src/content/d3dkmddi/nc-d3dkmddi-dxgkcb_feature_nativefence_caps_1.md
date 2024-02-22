@@ -44,13 +44,13 @@ helpviewer_keywords:
 
 ## -description
 
-**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1** is the OS's interface table dedicated to version 1 of **DXGK_FEATURE_NATIVE_FENCE**. KMD calls **DXGKCB_FEATURE_NATIVEFENCE_CAPS_1** to determine the OS's support for the native GPU fence feature.
+**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1** is the OS's interface table dedicated to version 1 of [**DXGK_FEATURE_NATIVE_FENCE**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md).
 
 ## -parameters
 
 ### -param pArgs
 
-[in/out] Pointer to a [**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](ns-d3dkmddi-_dxgkargcb_feature_nativefence_caps_1.md) structure in which the OS returns the support it's providing.
+[in/out] Pointer to a [**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](ns-d3dkmddi-dxgkargcb_feature_nativefence_caps_1.md) structure in which the OS returns the support it's providing.
 
 ## -returns
 
@@ -58,10 +58,12 @@ helpviewer_keywords:
 
 ## -remarks
 
+ KMD calls **DXGKCB_FEATURE_NATIVEFENCE_CAPS_1** to determine the OS's support for the native GPU fence feature.
+
 For a sample code snippet and more information about native GPU fences, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ## -see-also
 
-[**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](ns-d3dkmddi-_dxgkargcb_feature_nativefence_caps_1.md)
+[**DXGKARGCB_FEATURE_NATIVEFENCE_CAPS_1**](ns-d3dkmddi-dxgkargcb_feature_nativefence_caps_1.md)
 
-[**DXGKCBINT_FEATURE_NATIVEFENCE_1**](ns-d3dkmddi-_dxgkcbint_feature_nativefence_1.md)
+[**DXGKCBINT_FEATURE_NATIVEFENCE_1**](ns-d3dkmddi-dxgkcbint_feature_nativefence_1.md)

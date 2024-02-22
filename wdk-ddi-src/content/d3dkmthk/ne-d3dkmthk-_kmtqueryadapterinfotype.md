@@ -2,7 +2,7 @@
 UID: NE:d3dkmthk._KMTQUERYADAPTERINFOTYPE
 title: KMTQUERYADAPTERINFOTYPE (d3dkmthk.h)
 description: Learn more about the KMTQUERYADAPTERINFOTYPE enumeration.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["KMTQUERYADAPTERINFOTYPE enumeration"]
 ms.keywords: _KMTQUERYADAPTERINFOTYPE, KMTQUERYADAPTERINFOTYPE,
 req.header: d3dkmthk.h

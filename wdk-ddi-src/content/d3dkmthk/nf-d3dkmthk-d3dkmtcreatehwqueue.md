@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTCreateHwQueue
 title: D3DKMTCreateHwQueue function (d3dkmthk.h)
 description: Learn more about the D3DKMTCreateHwQueue function.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["D3DKMTCreateHwQueue function"]
 req.header: d3dkmthk.h
 req.include-header: 

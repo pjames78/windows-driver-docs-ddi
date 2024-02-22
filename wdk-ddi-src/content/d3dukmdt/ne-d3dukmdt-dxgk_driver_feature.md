@@ -2,7 +2,7 @@
 UID: NE:d3dukmdt._DXGK_DRIVER_FEATURE
 tech.root: display
 title: DXGK_DRIVER_FEATURE
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGK_DRIVER_FEATURE enumeration.
 prerelease: true
@@ -192,7 +192,7 @@ Maximum value for the enumeration.
 
 ## -remarks
 
-A WDDM feature is indentified by its "feature ID" ([**DXGK_FEATURE_ID**](../d3dkmddi/ne-d3dkmddi-_dxgk_feature_id.md)) which is composed of a category ID (upper 4 bits), and the sub-ID for the feature itself within that category (**DXGK_DRIVER_FEATURE**).
+A WDDM feature is indentified by its "feature ID" ([**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md)) which is composed of a category ID (upper 4 bits), and the sub-ID for the feature itself within that category (**DXGK_DRIVER_FEATURE**).
 
 Because the original feature implementations didn't categorize the feature IDs, there are a handful of feature IDs that must remain defined within category 0 for backwards compatibility, but are not driver features. This applies to the following feature IDs:
 
@@ -204,4 +204,4 @@ These feature IDs represent features that have been defined or implemented on ol
 
 ## -see-also
 
-[**DXGK_FEATURE_ID**](../d3dkmddi/ne-d3dkmddi-_dxgk_feature_id.md)
+[**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md)

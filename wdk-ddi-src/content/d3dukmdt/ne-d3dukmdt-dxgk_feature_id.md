@@ -2,7 +2,7 @@
 UID: NE:d3dukmdt._DXGK_FEATURE_ID
 tech.root: display
 title: DXGK_FEATURE_ID
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGK_FEATURE_ID enumeration.
 prerelease: false
@@ -40,7 +40,7 @@ helpviewer_keywords:
 
 ## -description
 
-**DXGK_FEATURE_ID** is an enumeration of WDDM features that a kernel-mode display miniport driver (KMD) can indicate support for. It's composed of a category ID (upper four bits) and a sub-ID ([**DXGK_DRIVER_FEATURE**](DXGK_DRIVER_FEATURE)) for the feature itself.
+**DXGK_FEATURE_ID** is an enumeration of WDDM features that a kernel-mode display miniport driver (KMD) can indicate support for. It's composed of a category ID (upper four bits) and a sub-ID ([**DXGK_DRIVER_FEATURE**](ne-d3dukmdt-dxgk_driver_feature.md)) for the feature itself.
 
 ## -enum-fields
 

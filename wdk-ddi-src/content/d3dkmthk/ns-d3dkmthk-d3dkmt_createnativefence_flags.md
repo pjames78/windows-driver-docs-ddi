@@ -2,7 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_CREATENATIVEFENCE_FLAGS
 tech.root: display
 title: D3DKMT_CREATENATIVEFENCE_FLAGS
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the D3DKMT_CREATENATIVEFENCE_FLAGS structure.
 prerelease: false

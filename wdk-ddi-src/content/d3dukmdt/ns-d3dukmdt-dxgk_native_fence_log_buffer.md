@@ -2,7 +2,7 @@
 UID: NS:d3dukmdt._DXGK_NATIVE_FENCE_LOG_BUFFER
 tech.root: display
 title: DXGK_NATIVE_FENCE_LOG_BUFFER
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGK_NATIVE_FENCE_LOG_BUFFER structure.
 prerelease: false
@@ -50,11 +50,11 @@ helpviewer_keywords:
 
 ### -field Header
 
-A [**DXGK_NATIVE_FENCE_LOG_HEADER**](dxgk_native_fence_log_header.md) structure that contains the header information for the native fence log buffer.
+A [**DXGK_NATIVE_FENCE_LOG_HEADER**](ns-d3dukmdt-dxgk_native_fence_log_header.md) structure that contains the header information for the native fence log buffer.
 
 ### -field Entries[1]
 
-Array of **Header.NumberofEntries** [**DXGK_NATIVE_FENCE_LOG_ENTRY**](dxgk_native_fence_log_entry.md) structures that contain the native fence log entries.
+Array of **Header.NumberofEntries** [**DXGK_NATIVE_FENCE_LOG_ENTRY**](ns-d3dukmdt-dxgk_native_fence_log_entry.md) structures that contain the native fence log entries.
 
 ## -remarks
 
@@ -62,10 +62,10 @@ For more information about native GPU fences and log buffer usage, see [Native G
 
 ## -see-also
 
-[**DXGK_NATIVE_FENCE_LOG_ENTRY**](dxgk_native_fence_log_entry.md)
+[**DXGK_NATIVE_FENCE_LOG_ENTRY**](ns-d3dukmdt-dxgk_native_fence_log_entry.md)
 
-[**DXGK_NATIVE_FENCE_LOG_HEADER**](dxgk_native_fence_log_header.md)
+[**DXGK_NATIVE_FENCE_LOG_HEADER**](ns-d3dukmdt-dxgk_native_fence_log_header.md)
 
-[**DXGKARG_SETNATIVEFENCELOGBUFFER**](ns-d3dkmddi-dxgkarg_setnativefencelogbuffer.md)
+[**DXGKARG_SETNATIVEFENCELOGBUFFER**](../d3dkmddi/ns-d3dkmddi-dxgkarg_setnativefencelogbuffer.md)
 
-[**DxgkDdiSetNativeFenceLogBuffer**](nc-d3dkmddi-dxgkddi_setnativefencelogbuffer.md)
+[**DxgkDdiSetNativeFenceLogBuffer**](../d3dkmddi/nc-d3dkmddi-dxgkddi_setnativefencelogbuffer.md)

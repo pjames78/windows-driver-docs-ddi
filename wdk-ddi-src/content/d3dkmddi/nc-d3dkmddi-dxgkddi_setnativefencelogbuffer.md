@@ -58,7 +58,7 @@ helpviewer_keywords:
 
 ## -remarks
 
-*Dxgkrnl* can destroy and recreate a log buffer. Each time it does, it calls [**DxgkDdiSetNativeFenceLogBuffer**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setnativefencelogbuffer) to inform KMD of the new location.
+*Dxgkrnl* can destroy and recreate a log buffer. Each time it does, it calls **DxgkDdiSetNativeFenceLogBuffer** to inform KMD of the new location.
 
 For more information about native GPU fences and log buffer usage, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects).
 

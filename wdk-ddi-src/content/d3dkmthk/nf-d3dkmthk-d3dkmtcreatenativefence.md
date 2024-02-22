@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTCreateNativeFence
 tech.root: display
 title: D3DKMTCreateNativeFence
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about D3DKMTCreateNativeFence.
 prerelease: false

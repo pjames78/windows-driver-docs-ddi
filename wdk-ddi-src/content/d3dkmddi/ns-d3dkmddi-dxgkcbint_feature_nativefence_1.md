@@ -50,7 +50,7 @@ The **DXGKCBINT_FEATURE_NATIVEFENCE_1** structure is an internal driver structur
 
 ### -field GetOSCaps
 
-[in/out] The OS's [**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](nc-d3dkmddi-_dxgkargcb_feature_nativefence_caps_1.md) callback function from which the OS returns its support for native GPU fence features.
+[in/out] The OS's [**DXGKCB_FEATURE_NATIVEFENCE_CAPS_1**](nc-d3dkmddi-dxgkcb_feature_nativefence_caps_1.md) callback function from which the OS returns its support for native GPU fence features.
 
 ## -remarks
 

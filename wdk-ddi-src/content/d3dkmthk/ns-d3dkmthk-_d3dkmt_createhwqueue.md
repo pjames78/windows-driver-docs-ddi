@@ -2,7 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_CREATEHWQUEUE
 title: D3DKMT_CREATEHWQUEUE (d3dkmthk.h)
 description: Learn more about the D3DKMT_CREATEHWQUEUE structure.
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 keywords: ["D3DKMT_CREATEHWQUEUE structure"]
 req.header: d3dkmthk.h
 req.include-header: 

@@ -54,7 +54,7 @@ helpviewer_keywords:
 
 ### -field Flags
 
-[in] A [**DXGKARG_DESTROYNATIVEFENCE_FLAGS**](ns-d3dkmddi-dxgkarg_destroynativefence_flags.md) structure containing flags to use when destroying the native GPU fence object.
+[in] A [**DXGKARG_DESTROYNATIVEFENCE_FLAGS**](ns-d3dkmddi-dxgk_destroynativefence_flags.md) structure containing flags to use when destroying the native GPU fence object.
 
 ### -field Reserved[32]
 

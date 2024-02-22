@@ -2,7 +2,7 @@
 UID: NS:d3dukmdt._DXGK_NATIVE_FENCE_LOG_ENTRY
 tech.root: display
 title: DXGK_NATIVE_FENCE_LOG_ENTRY
-ms.date: 04/08/2024
+ms.date: 03/21/2024
 targetos: Windows
 description: Learn more about the DXGK_NATIVE_FENCE_LOG_ENTRY structure.
 prerelease: false
