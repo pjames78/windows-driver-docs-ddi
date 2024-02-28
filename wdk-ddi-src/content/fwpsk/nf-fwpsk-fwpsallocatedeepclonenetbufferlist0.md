@@ -2,7 +2,7 @@
 UID: NF:fwpsk.FwpsAllocateCloneNetBufferList0
 tech.root: netvista
 title: FwpsAllocateCloneNetBufferList0
-ms.date: 07/10/2023
+ms.date: 02/28/2024
 targetos: Windows
 description: The FwpsAllocateCloneNetBufferList0 function allocates a NET_BUFFER_LIST structure that is a deep clone of an existing NET_BUFFER_LIST structure.
 prerelease: true
@@ -59,6 +59,10 @@ A [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) pool handle that was o
 ### -param netBufferPoolHandle [in, optional]
 
 A [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) pool handle that was obtained from a previous call to the [**NdisAllocateNetBufferPool**](../ndis/nf-ndis-ndisallocatenetbufferpool.md) function. This parameter is optional and can be **NULL**.
+
+### -param allocateCloneFlags [in]
+
+There are currently no flags defined for this function. Callout drivers should set this parameter to **zero**.
 
 ### -param netBufferList [out]
 
