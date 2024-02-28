@@ -2,7 +2,7 @@
 UID: NE:storport.STOR_POWER_ACTION
 tech.root: storage
 title: STOR_POWER_ACTION
-ms.date: 05/13/2021
+ms.date: 09/26/2022
 targetos: Windows
 description: The STOR_POWER_ACTION enumeration identifies the system power actions that can occur on a computer.
 req.construct-type: enumeration

@@ -51,7 +51,14 @@ Defines the **POOL_CREATE_EXTENDED_PARAMS** structure.
 
 Defines the **ULONG** member **Version**.
 
+### -field ParameterCount
+
+Defines the **ULONG** member **ParameterCount**.
+
+### -field Parameters
+
+Defines the **PPOOL_CREATE_EXTENDED_PARAMETER** member **Parameters**.
+
 ## -remarks
 
 ## -see-also
-

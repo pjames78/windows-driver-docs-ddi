@@ -4,7 +4,7 @@ title: NDIS_WDI_TX_SEND_RESTART_IND (dot11wdi.h)
 description: The NdisWdiTxSendRestartIndication callback function resumes transmission on a given port to a given peer or peer-TID combination.
 old-location: netvista\ndiswditxsendrestartindication.htm
 tech.root: netvista
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["NDIS_WDI_TX_SEND_RESTART_IND callback function"]
 ms.keywords: NDIS_WDI_TX_SEND_RESTART_IND, NDIS_WDI_TX_SEND_RESTART_IND callback, NdisWdiTxSendRestartIndication, NdisWdiTxSendRestartIndication callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiTxSendRestartIndication, netvista.ndiswditxsendrestartindication
 req.header: dot11wdi.h
@@ -74,11 +74,9 @@ The peer ID. Wildcards are accepted.
 
 The Extended TID bitmask. See <i>Remarks</i> section for more information.
 
-### -param TxRestartReason
+### -param TxRestartReason [in]
 
-### -param TxPauseReason [in]
-
-TX pause reason bitmask, specified as <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_tx_pause_reason">WDI_TX_PAUSE_REASON</a> value(s). See <i>Remarks</i> section for more information.
+TX restart reason bitmask, specified as <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_tx_pause_reason">WDI_TX_PAUSE_REASON</a> value(s). See <i>Remarks</i> section for more information.
 
 ## -remarks
 

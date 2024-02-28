@@ -2,9 +2,8 @@
 UID: NS:storport.WRITE_USING_TOKEN_HEADER
 title: WRITE_USING_TOKEN_HEADER (storport.h)
 description: The WRITE_USING_TOKEN_HEADER structure (storport.h) describes the destination data locations for an offload write data operation.
-old-location: storage\write_using_token_header.htm
 tech.root: storage
-ms.date: 05/24/2022
+ms.date: 09/26/2022
 keywords: ["WRITE_USING_TOKEN_HEADER structure"]
 ms.keywords: "*PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER structure [Storage Devices], scsi/PWRITE_USING_TOKEN_HEADER, scsi/WRITE_USING_TOKEN_HEADER, storage.write_using_token_header"
 req.header: storport.h

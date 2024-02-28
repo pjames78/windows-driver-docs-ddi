@@ -3,7 +3,7 @@ UID: NS:scsi.PRI_REGISTRATION_LIST
 title: PRI_REGISTRATION_LIST (scsi.h)
 description: The PRI_REGISTRATION_LIST structure (scsi.h) contains information about persistent reservations and reservation keys that are active within a device server.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["PRI_REGISTRATION_LIST structure"]
 ms.keywords: "*PPRI_REGISTRATION_LIST, PPRI_REGISTRATION_LIST, PPRI_REGISTRATION_LIST structure pointer [Storage Devices], PRI_REGISTRATION_LIST, PRI_REGISTRATION_LIST structure [Storage Devices], storage.pri_registration_list, storport/PPRI_REGISTRATION_LIST, storport/PRI_REGISTRATION_LIST, structs-general_ad5a83a3-3ac6-4579-be4f-c24181e9d59e.xml"
 req.header: scsi.h

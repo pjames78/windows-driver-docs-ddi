@@ -261,6 +261,10 @@ Defines the **MonitorRequestReasonBatteryPreCritical** constant.
 
 Defines the **MonitorRequestReasonUserInputTouch** constant.
 
+### -field MonitorRequestReasonAusterityBatteryDrain
+
+Defines the **MonitorRequestReasonAusterityBatteryDrain** constant.
+
 ### -field MonitorRequestReasonMax
 
 Defines the **MonitorRequestReasonMax** constant.

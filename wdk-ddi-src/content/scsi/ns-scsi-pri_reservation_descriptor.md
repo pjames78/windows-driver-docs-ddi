@@ -3,7 +3,7 @@ UID: NS:scsi.PRI_RESERVATION_DESCRIPTOR
 title: PRI_RESERVATION_DESCRIPTOR (scsi.h)
 description: The PRI_RESERVATION_DESCRIPTOR structure (scsi.h) describes a persistent reservation that is active within a device server.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["PRI_RESERVATION_DESCRIPTOR structure"]
 ms.keywords: "*PPRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR structure pointer [Storage Devices], PRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR structure [Storage Devices], storage.pri_reservation_descriptor, storport/PPRI_RESERVATION_DESCRIPTOR, storport/PRI_RESERVATION_DESCRIPTOR, structs-general_96e112cc-0cf3-442d-bb3a-7bcad8a95220.xml"
 req.header: scsi.h

@@ -2,11 +2,9 @@
 UID: NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
 title: D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS (d3dukmdt.h)
 description: Learn more about the D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure.
-old-location: display\d3dddi_synchronizationobject_flags.htm
 tech.root: display
-ms.date: 09/22/2022
+ms.date: 03/21/2024
 keywords: ["D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure"]
-ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure [Display Devices], D3D_other_Structs_3d266c5b-53c9-47d1-abe9-f492d05660a4.xml, _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, display.d3dddi_synchronizationobject_flags
 req.header: d3dukmdt.h
 req.include-header: D3dumddi.h, D3dkmddi.h
 req.target-type: Windows
@@ -120,15 +118,19 @@ Supported starting with Windows 10.
 
 ### -field NoGPUAccess
 
-When set, the fence will not be mapped into the GPU virtual address space and will always stored as a 64-bit value (regardless of adapter caps). Only packet-based signal/wait operations are supported.
+When set, the fence will not be mapped into the GPU virtual address space and will always stored as a 64-bit value (regardless of adapter caps). Only packet-based signal/wait operations are supported. Supported starting with Windows 10.
 
 ### -field SignalByKmd
 
 When set, the fence can be signaled by the kernel-mode driver (KMD). This flag can only be used with [**D3DDDI_CPU_NOTIFICATION**](ne-d3dukmdt-_d3dddi_synchronizationobject_type.md) objects. Supported starting with Windows 11 (WDDM 3.0).
 
-### -field LocalMemoryPreferred
+### -field Unused
 
-When set, indicates that the fence should be placed in GPU local memory if possible. Supported starting with Windows 11 version 22H2 (WDDM 3.1).
+This member is unused and should be set to zero. Available starting with Windows 11, version 22H2 (WDDM 3.1).
+
+### -field UnwaitCpuWaitersOnlyOnDestroy
+
+When set, the waiters for a shared synchronization object on the CPU will be unblocked only when the shared sync object is finally destroyed. By default, CPU waiters are unblocked when a local sync object is destroyed, but the main shared sync object is still opened by another local sync object. Supported starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field Reserved
 

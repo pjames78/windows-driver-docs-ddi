@@ -2,7 +2,7 @@
 UID: NS:ntddk.DEBUG_MEMORY_REQUIREMENTS
 tech.root: kernel
 title: DEBUG_MEMORY_REQUIREMENTS (ntddk.h)
-ms.date: 03/07/2022
+ms.date: 09/26/2022
 targetos: Windows
 description: This topic describes the DEBUG_MEMORY_REQUIREMENTS structure.
 prerelease: false

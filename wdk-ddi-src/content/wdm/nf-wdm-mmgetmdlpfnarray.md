@@ -56,6 +56,8 @@ A pointer to an MDL.
 
 ## -remarks
 
+**MmGetMdlPfnArray** returns a pointer to the beginning of the array of physical page numbers that are associated with the MDL.
+
 Macro definition:
 
 ```cpp

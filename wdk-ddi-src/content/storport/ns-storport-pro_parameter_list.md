@@ -2,9 +2,8 @@
 UID: NS:storport.PRO_PARAMETER_LIST
 title: PRO_PARAMETER_LIST (storport.h)
 description: The PRO_PARAMETER_LIST structure (storport.h) contains reservation information that is sent in a Persistent Reserve Out (PRO) command to a device server.
-old-location: storage\pro_parameter_list.htm
 tech.root: storage
-ms.date: 05/24/2022
+ms.date: 09/26/2022
 keywords: ["PRO_PARAMETER_LIST structure"]
 ms.keywords: "*PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST structure pointer [Storage Devices], PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], storage.pro_parameter_list, storport/PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml"
 req.header: storport.h
@@ -48,7 +47,7 @@ api_name:
 
 ## -description
 
-The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
+The **PRO_PARAMETER_LIST** structure is sent in a Persistent Reserve Out command to a device server.
 
 ## -struct-fields
 
@@ -60,10 +59,13 @@ The ReservationKey field contains an 8-byte value that is provided by the applic
 
 The ServiceActionReservationKey field contains information that is needed for the following four service actions:
 
-* REGISTER
-* REGISTER AND IGNORE EXISTING KEY
-* PREEMPT
-* PREEMPT AND ABORT
+- REGISTER
+
+- REGISTER AND IGNORE EXISTING KEY
+
+- PREEMPT
+
+- PREEMPT AND ABORT
 
 ### -field ScopeSpecificAddress
 
@@ -73,8 +75,9 @@ The ScopeSpecificAddress field contains the element address that has zeros place
 
 The ActivatePersistThroughPowerLoss (APTPL) bit is valid only for the following service actions:
 
-* REGISTER
-* REGISTER AND IGNORE EXISTING KEY
+- REGISTER
+
+- REGISTER AND IGNORE EXISTING KEY
 
 ### -field Reserved1
 
@@ -82,7 +85,11 @@ Reserved. Must be zero.
 
 ### -field AllTargetPorts
 
+Defines the **UCHAR** member **AllTargetPorts**.
+
 ### -field SpecifyInitiatorPorts
+
+Defines the **UCHAR** member **SpecifyInitiatorPorts**.
 
 ### -field Reserved2
 

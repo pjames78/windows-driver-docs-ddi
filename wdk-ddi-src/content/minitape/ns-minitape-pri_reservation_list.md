@@ -2,9 +2,8 @@
 UID: NS:minitape.PRI_RESERVATION_LIST
 title: PRI_RESERVATION_LIST (minitape.h)
 description: The PRI_RESERVATION_LIST structure (minitape.h) contains a list of persistent reservations that are active within a device server.
-old-location: storage\pri_reservation_list.htm
 tech.root: storage
-ms.date: 03/29/2018
+ms.date: 09/26/2022
 keywords: ["PRI_RESERVATION_LIST structure"]
 ms.keywords: "*PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST, PPRI_RESERVATION_LIST structure pointer [Storage Devices], PRI_RESERVATION_LIST, PRI_RESERVATION_LIST structure [Storage Devices], storage.pri_reservation_list, storport/PPRI_RESERVATION_LIST, storport/PRI_RESERVATION_LIST, structs-general_10a53f53-2aed-4be1-bf2b-d61efa2c846f.xml"
 req.header: minitape.h
@@ -43,12 +42,9 @@ api_name:
  - PRI_RESERVATION_LIST
 ---
 
-# PRI_RESERVATION_LIST structure (minitape.h)
-
-
 ## -description
 
-The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
+The **PRI_RESERVATION_LIST** structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
 
 ## -struct-fields
 
@@ -68,9 +64,8 @@ An array of reservation descriptors.
 
 ## -remarks
 
-The <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
+The [IOCTL_STORAGE_PERSISTENT_RESERVE_IN](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in) request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
-
+[IOCTL_STORAGE_PERSISTENT_RESERVE_IN](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in)
