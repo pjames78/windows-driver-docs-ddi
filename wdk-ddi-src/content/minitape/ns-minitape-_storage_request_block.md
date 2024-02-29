@@ -200,7 +200,7 @@ Used to store system failure status information in SrbStatus failure conditions 
 
 ### -field DUMMYUNIONNAME.RequestTagHigh4Bytes
 
-Used to store high 4 bytes of unique tag if unique tag feature is enabled.
+Used to store high four bytes of unique tag if unique tag feature is enabled.
 
 ### -field SystemStatus
 

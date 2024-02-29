@@ -3,7 +3,7 @@ UID: NE:storport._STOR_SPINLOCK
 title: STOR_SPINLOCK (storport.h)
 description: Learn more about the STOR_SPINLOCK enumeration.
 tech.root: storage
-ms.date: 07/12/2023
+ms.date: 02/28/2024
 keywords: ["STOR_SPINLOCK enumeration"]
 ms.keywords: DpcLock, InterruptLock, STOR_SPINLOCK, STOR_SPINLOCK enumeration [Storage Devices], StartIoLock, _STOR_SPINLOCK, storage.stor_spinlock, storport/DpcLock, storport/InterruptLock, storport/STOR_SPINLOCK, storport/StartIoLock, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml
 req.header: storport.h
@@ -50,7 +50,11 @@ The **STOR_SPINLOCK** enumeration is used to specify the type of a spinlock.
 
 ## -enum-fields
 
-### -field DpcLock:1
+### -field InvalidLock
+
+Indicates an invalid spinlock. This value should never be used.
+
+### -field DpcLock
 
 Indicates a DPC spinlock.
 
