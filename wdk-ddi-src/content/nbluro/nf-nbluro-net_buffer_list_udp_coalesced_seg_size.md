@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-NDIS drivers use the **NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** macro to get and set the size, in bytes, of the individual UDP datagram payloads that were coalesced into a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure. The datagrams must have the same payload length in order to be eligible for coalescing, with the exception of the last datagram which can vary in size.
+NDIS drivers use the **NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** macro to get and set the size, in bytes, of the individual UDP datagram payloads that were coalesced into a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure. The datagrams must have the same payload length in order to be eligible for coalescing, with the exception of the last datagram which may be less.
 
 ## -syntax
 

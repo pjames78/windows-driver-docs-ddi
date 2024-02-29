@@ -271,7 +271,7 @@ Reserved for NDIS.
 
 ### -field TcpRecvSegCoalesceInfo
 
-Identifies receive segment coalescing (RSC) counter information. When <b>TcpRecvSegCoalesceInfo</b> is specified, <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> returns an <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union. This union enables drivers to access the information as a single PVOID value.
+Identifies receive segment coalescing (RSC) information. When <b>TcpRecvSegCoalesceInfo</b> is specified, <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> returns an <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union. This union enables drivers to access the information as a single PVOID value.
 
 ### -field UdpSegmentationOffloadInfo
 
