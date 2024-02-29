@@ -2,9 +2,9 @@
 UID: NF:nbluro.NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE
 tech.root: netvista
 title: NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE
-ms.date: 01/18/2024
+ms.date: 02/28/2024
 targetos: Windows
-description: The NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE macro returns the size, in bytes, of the UDP RSC (URO) information for a NET_BUFFER_LIST structure.
+description: NDIS drivers use NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE to get and set the size, in bytes, of the individual UDP datagram payloads that were coalesced into a single NET_BUFFER_LIST structure.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,7 +44,15 @@ helpviewer_keywords:
 
 ## -description
 
-The **NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** macro returns the size, in bytes, of the UDP RSC (URO) information for a NET_BUFFER_LIST structure.
+NDIS drivers use the **NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** macro to get and set the size, in bytes, of the individual UDP datagram payloads that were coalesced into a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure. The datagrams must have the same payload length in order to be eligible for coalescing, with the exception of the last datagram which can vary in size.
+
+## -syntax
+
+```cpp
+#define NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE(_NBL) \
+    (((NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO*) \
+        &(_NBL)->NetBufferListInfo[UdpRecvSegCoalesceOffloadInfo])->Receive.SegSize)
+```
 
 ## -parameters
 
@@ -54,9 +62,21 @@ A pointer to a **NET_BUFFER_LIST** structure.
 
 ## -returns
 
-**NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** returns the **SegSize** member of the [**NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO**](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md) structure that is associated with the **UdpRecvSegCoalesceOffloadInfo** identifier. The information is retrieved from the **NetBufferListInfo** member of the indicated NET_BUFFER_LIST structure.
+**NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE** returns the **SegSize** member of the [**NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO**](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md) structure that is associated with the **UdpRecvSegCoalesceOffloadInfo** identifier. The information is retrieved from the **NetBufferListInfo** member of the indicated **NET_BUFFER_LIST** structure.
 
 ## -remarks
+
+The following example demonstrates getting a **SegSize** value:
+
+```cpp
+value = NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE(Nbl);
+```
+
+The following example demonstrates setting a **SegSize** value:
+
+```cpp
+NET_BUFFER_LIST_UDP_COALESCED_SEG_SIZE(Nbl) = 1200;
+```
 
 ## -see-also
 

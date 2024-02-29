@@ -1,7 +1,7 @@
 ---
 UID: NE:nblinfo._NDIS_NET_BUFFER_LIST_INFO
 title: NDIS_NET_BUFFER_LIST_INFO
-ms.date: 03/22/2022
+ms.date: 02/28/2024
 targetos: Windows
 description: The NDIS_NET_BUFFER_LIST_INFO enumeration identifies information that is common to all NET_BUFFER structures in a NET_BUFFER_LIST structure.
 tech.root: netvista
@@ -251,7 +251,7 @@ Reserved.
 
 ### -field UdpRecvSegCoalesceOffloadInfo
 
-Identifies a pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union containing UDP receive segment coalescing (RSC) counter information. For more information, see the <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> documentation.
+Identifies UDP Receive Segment Coalescing Offload (URO) information. When **UdpRecvSegCoalesceOffloadInfo** is specified, [NET_BUFFER_LIST_INFO](../network/net-buffer-list-info.md) returns an [NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md) structure. This structure contains a union that enables drivers to access the information as a single PVOID value.
 
 ### -field SwitchForwardingReserved
 
@@ -271,11 +271,11 @@ Reserved for NDIS.
 
 ### -field TcpRecvSegCoalesceInfo
 
-Identifies a pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union containing RSC counter information. For more information, see the <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> documentation.
+Identifies receive segment coalescing (RSC) counter information. When <b>TcpRecvSegCoalesceInfo</b> is specified, <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> returns an <a href="/windows-hardware/drivers/ddi/content/nblrsc/ns-nblrsc-ndis_rsc_nbl_info">NDIS_RSC_NBL_INFO</a> union. This union enables drivers to access the information as a single PVOID value.
 
 ### -field UdpSegmentationOffloadInfo
 
-Identifies information that is used in offloading the segmentation of a large TCP packet from the TCP/IP protocol to a miniport adapter for UDP Segmentation Offload (USO). When <b>UdpSegmentationOffloadInfo</b> is specified, <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> returns an <a href="/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info">NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO</a> structure. This structure contains a union that enables the information to be accessed as a single PVOID value or as bit fields.
+Identifies information that is used in offloading the segmentation of a large UDP packet from the TCP/IP protocol to a miniport adapter for UDP Segmentation Offload (USO). When <b>UdpSegmentationOffloadInfo</b> is specified, <a href="/windows-hardware/drivers/network/net-buffer-list-info">NET_BUFFER_LIST_INFO</a> returns an <a href="/windows-hardware/drivers/ddi/content/ndis/ns-ndis-_ndis_udp_segmentation_offload_net_buffer_list_info">NDIS_UDP_SEGMENTATION_OFFLOAD_NET_BUFFER_LIST_INFO</a> structure. This structure contains a union that enables drivers to access the information as a single PVOID value or as bit fields.
 
 ### -field RscTcpTimestampDelta
 
@@ -369,3 +369,5 @@ Use these enumeration values with the
 <a href="/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndiscancelsendnetbufferlists">NdisCancelSendNetBufferLists</a>
 
 <a href="/windows-hardware/drivers/ddi/content/ndis/nf-ndis-ndisgeneratepartialcancelid">NdisGeneratePartialCancelId</a>
+
+[**NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO**](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md)

@@ -61,7 +61,7 @@ The number of segments that were coalesced into the NET_BUFFER_LIST structure.
 
 ### -field Receive.SegSize
 
-The size, in bytes, of the segments that were coalesced into the NET_BUFFER_LIST structure.
+The size, in bytes, of the individual segments that were coalesced into the NET_BUFFER_LIST structure.
 
 ### -field Value
 
