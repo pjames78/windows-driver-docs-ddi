@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_STATION_CAPABILITIES
 tech.root: netvista
 title: WIFI_STATION_CAPABILITIES (wificx.h)
-ms.date: 08/18/2023
+ms.date: 03/01/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_STATION_CAPABILITIES structure describes the station capabilities for a WiFiCx device.
@@ -179,15 +179,19 @@ A pointer to an array of [**DOT11_CIPHER_ALGORITHM**](..\wlantypes\ne-wlantypes-
 
 ### -field MSCSSupported
 
-Indicates whether Microsoft Cluster Service (MSCS) is supported.
+A BOOLEAN that indicates whether the driver supports Mirrored Stream Classification Service (MSCS).
 
 ### -field DSCPToUPMappingSupported
 
-Indicates whether Differentiated Services Code Point (DSCP) to User Priority (UP) QoS Mapping is supported.
+A BOOLEAN that indicates whether the driver supports QoS Mapping (Differentiated Services Code Point (DSCP) to User Priority (UP) Mapping).
 
 ### -field MaxNumConfigurableActionFrameWakePatterns
 
-The number of action frame wake patterns that the device supports.
+The maximum number of action frame wake patterns that the device supports. Drivers must set **MaxNumConfigurableActionFrameWakePatterns** to at least:
+* **1** to support MSCS.
+* **2** to support DSCP to UP mapping.
+
+If **MaxNumConfigurableActionFrameWakePatterns** is less than the minimum value required for each feature, the OS will disable the feature. 
 
 ## -remarks
 
