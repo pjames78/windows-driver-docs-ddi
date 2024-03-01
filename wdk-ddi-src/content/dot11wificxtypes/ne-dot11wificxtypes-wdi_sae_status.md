@@ -114,7 +114,7 @@ WDI encountered an internal computation error.
 
 ### -field WDI_SAE_STATUS_COMMIT_MESSAGE_INVALID_REJECTED_GROUP: 19
 
-WDI rejected the commit frame for specifying an invalid or unsupported finite cyclic group.
+WDI rejected the commit frame because it included a group in the Rejected Groups field that the OS actually supports.
 
 ### -field WDI_SAE_STATUS_CONFIRM_MESSAGE_RECEIVED_IN_INVALID_STATE:30
 
