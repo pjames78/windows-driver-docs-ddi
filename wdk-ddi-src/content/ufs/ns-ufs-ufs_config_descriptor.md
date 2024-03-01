@@ -59,9 +59,9 @@ Specifies the size, in bytes, of this descriptor.
 
 Specifies the Configuration Descriptor Type Identifier. This descriptor will have a value of **UFS_DESC_CONFIGURATION_IDN**.
 
-### -field Reserved1
+### -field bConfDescContinue
 
-Reserved for future use.
+Specifies if a device's configuration descriptor continue feature is enabled.
 
 ### -field bBootEnable
 
@@ -87,15 +87,31 @@ Configures the secure removal type.
 
 Configures the ICC level in Active mode after device initialization or hardware reset.
 
-### -field wPeriodicRTCUpdate
+### -field wPeriodicRTCUpdate[2]
 
 Specifies the frequency and method of real-time clock updates.
 
-### -field Reserved2
+### -field Reserved2[1]
 
 Reserved for future use.
 
-### -field UnitConfig
+### -field -field bRPMBRegionEnable
+
+Specifies if Replay Protected Memory Blocks (RPMB) are enabled.
+
+### -field -field bRPMBRegion1Size
+
+Specifies the size of RPMB region 1.
+
+### -field -field bRPMBRegion2Size
+
+Specifies the size of RPMB region 2.
+
+### -field -field bRPMBRegion3Size
+
+Specifies the size of RPMB region 3.
+
+### -field -field UnitConfig[UFS_MAX_NUM_LU]
 
 Contains the configurable parameters of the unit descriptor.
 
