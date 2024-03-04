@@ -2,7 +2,7 @@
 UID: NE:sensorsdef.PROXIMITY_SENSOR_CAPABILITIES
 tech.root: sensors
 title: PROXIMITY_SENSOR_CAPABILITIES
-ms.date: 05/09/2023
+ms.date: 02/26/2024
 targetos: Windows
 description: The PROXIMITY_SENSOR_CAPABILITIES enumeration values indicate the capabilities of a proximity sensor.
 prerelease: false
@@ -49,10 +49,34 @@ The sensor can detect human presence.
 
 The sensor can detect if the user is engaged with the system.
 
+### -field Proximity_Sensor_Human_Head_Azimuth_Capable
+
+The sensor can detect the azimuth of the user's head.
+
+### -field Proximity_Sensor_Human_Head_Altitude_Capable
+
+The sensor can detect the altitude of the user's head.
+
+### -field Proximity_Sensor_Human_Head_Roll_Capable
+
+The sensor can detect the roll of the user's head.
+
+### -field Proximity_Sensor_Human_Head_Pitch_Capable
+
+The sensor can detect the pitch of the user's head.
+
+### -field Proximity_Sensor_Human_Head_Yaw_Capable
+
+The sensor can detect the yaw of the user's head.
+
+### -field Proximity_Sensor_Human_Identification_Capable
+
+The sensor can identify a person.
+
+### -field Proximity_Sensor_Multi_Person_Detection_Capable
+
+The sensor can detect if more than one person is present.
+
 ### -field Proximity_Sensor_Supported_Capabilities
 
 Indicates that all capabilities are supported.
-
-## -remarks
-
-## -see-also

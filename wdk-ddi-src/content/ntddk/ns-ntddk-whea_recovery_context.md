@@ -1,13 +1,13 @@
 ---
 UID: NS:ntddk._WHEA_RECOVERY_CONTEXT
 title: WHEA_RECOVERY_CONTEXT
-description: Reserved for system use.
+description: "Learn more about: WHEA_RECOVERY_CONTEXT structure"
 tech.root: whea
-ms.date: 08/17/2022
+ms.date: 08/19/2019
 keywords: ["WHEA_RECOVERY_CONTEXT structure"]
 ms.keywords: WHEA_RECOVERY_CONTEXT, WHEA_RECOVERY_CONTEXT, *PWHEA_RECOVERY_CONTEXT,
 req.header: ntddk.h
-req.include-header: Ntddk.h
+req.include-header: 
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -20,6 +20,7 @@ req.unicode-ansi:
 req.max-support: 
 req.typenames: WHEA_RECOVERY_CONTEXT, *PWHEA_RECOVERY_CONTEXT
 targetos: Windows
+ms.custom: 19H1
 f1_keywords:
  - _WHEA_RECOVERY_CONTEXT
  - ntddk/_WHEA_RECOVERY_CONTEXT
@@ -40,6 +41,9 @@ api_name:
 product:
  - Windows
 ---
+
+# WHEA_RECOVERY_CONTEXT structure
+
 
 ## -description
 
@@ -71,10 +75,7 @@ Reserved for system use.
 
 ### -field ErrorType
 
-### -field PageCount
-
-### -field PageInfo[WHEA_PFA_PAGE_RANGE_MAX]
-
 ## -remarks
 
 ## -see-also
+
