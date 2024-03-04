@@ -1,8 +1,8 @@
 ---
 UID: NF:wdm.ZwMapViewOfSectionEx
-tech.root: 
+tech.root: kernel
 title: ZwMapViewOfSectionEx
-ms.date: 
+ms.date: 03/04/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
