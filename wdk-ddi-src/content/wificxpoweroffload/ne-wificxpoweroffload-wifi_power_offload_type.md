@@ -2,9 +2,9 @@
 UID: NE:wificxpoweroffload._WIFI_POWER_OFFLOAD_TYPE
 tech.root: netvista
 title: WIFI_POWER_OFFLOAD_TYPE (wificxpoweroffload.h)
-ms.date: 09/10/2021
+ms.date: 03/04/2024
 targetos: Windows
-description: The WIFI_POWER_OFFLOAD_TYPE enumeration specifies the type for a low power offload protocol offload to a WiFiCx net adapter.
+description: The WIFI_POWER_OFFLOAD_TYPE enumeration specifies the type for a low power offload protocol offload to a WiFiCx network adapter.
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: wificxpoweroffload.h
@@ -36,7 +36,7 @@ dev_langs:
 
 ## -description
 
-The **WIFI_POWER_OFFLOAD_TYPE** enumeration specifies the type for a low power offload protocol offload to a WiFiCx net adapter.
+The **WIFI_POWER_OFFLOAD_TYPE** enumeration specifies the type for a low power offload protocol offload to a WiFiCx network adapter.
 
 ## -enum-fields
 
@@ -44,9 +44,13 @@ The **WIFI_POWER_OFFLOAD_TYPE** enumeration specifies the type for a low power o
 
 The power offload is the 802.11 RSN rekey protocol.
 
+### -field WifiPowerOffloadTypeWakeOnIncomingActionFrame:2
+
+The power offload is for waking on incoming action frame reception.
+
 ## -remarks
 
-Call [**WifiPowerOffloadGetType**](nf-wificxpoweroffload-wifipoweroffloadgettype.md) to get the type for a low power protocol offload to a WiFiCx net adapter.
+Call [**WifiPowerOffloadGetType**](nf-wificxpoweroffload-wifipoweroffloadgettype.md) to get the type for a low power protocol offload to a WiFiCx network adapter.
 
 ## -see-also
 
