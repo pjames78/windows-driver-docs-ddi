@@ -55,7 +55,7 @@ The **DXGKARGCB_ISFEATUREENABLED** structure contains the arguments used in the 
 
 ### -field FeatureId
 
-[in] A [**DXGK_FEATURE_ID**](../d3dkmddi/ne-d3dukmdt-dxgk_feature_id.md) value that identifies the feature to query enabled state for.
+[in] A [**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) value that identifies the feature to query enabled state for.
 
 ### -field Enabled
 

@@ -1,11 +1,9 @@
 ---
 UID: NF:d3dkmthk.D3DKMTDestroySynchronizationObject
 title: D3DKMTDestroySynchronizationObject function (d3dkmthk.h)
-description: The D3DKMTDestroySynchronizationObject function destroys a kernel-mode synchronization object.
-old-location: display\d3dkmtdestroysynchronizationobject.htm
-ms.date: 02/23/2022
+description: Learn more about the D3DKMTDestroySynchronizationObject function.
+ms.date: 03/21/2024
 keywords: ["D3DKMTDestroySynchronizationObject function"]
-ms.keywords: D3DKMTDestroySynchronizationObject, D3DKMTDestroySynchronizationObject function [Display Devices], OpenGL_Functions_181e72ed-9dd7-4b4c-b6e6-9231a2603f20.xml, d3dkmthk/D3DKMTDestroySynchronizationObject, display.d3dkmtdestroysynchronizationobject
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
@@ -43,8 +41,6 @@ api_name:
  - D3DKMTDestroySynchronizationObject
 ---
 
-# D3DKMTDestroySynchronizationObject function
-
 ## -description
 
 The **D3DKMTDestroySynchronizationObject** function destroys a kernel-mode synchronization object.
@@ -53,7 +49,7 @@ The **D3DKMTDestroySynchronizationObject** function destroys a kernel-mode synch
 
 ### -param unnamedParam1 [in]
 
-A pointer to a [D3DKMT_DESTROYSYNCHRONIZATIONOBJECT](ns-d3dkmthk-_d3dkmt_destroysynchronizationobject.md) structure that contains the handle to the synchronization object to destroy.
+Pointer to a [**D3DKMT_DESTROYSYNCHRONIZATIONOBJECT**](ns-d3dkmthk-_d3dkmt_destroysynchronizationobject.md) structure that contains the handle to the synchronization object to destroy.
 
 ## -returns
 
@@ -68,4 +64,4 @@ This function might also return other **NTSTATUS** values.
 
 ## -see-also
 
-[D3DKMT_DESTROYSYNCHRONIZATIONOBJECT](ns-d3dkmthk-_d3dkmt_destroysynchronizationobject.md)
+[**D3DKMT_DESTROYSYNCHRONIZATIONOBJECT**](ns-d3dkmthk-_d3dkmt_destroysynchronizationobject.md)

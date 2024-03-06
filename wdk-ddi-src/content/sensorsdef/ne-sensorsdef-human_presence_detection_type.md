@@ -2,7 +2,7 @@
 UID: NE:sensorsdef.HUMAN_PRESENCE_DETECTION_TYPE
 tech.root: The HUMAN_PRESENCE_DETECTION_TYPE enumeration values indicate types of human presence detection hardware.
 title: HUMAN_PRESENCE_DETECTION_TYPE
-ms.date: 02/09/2022
+ms.date: 02/26/2024
 targetos: Windows
 description: The HUMAN_PRESENCE_DETECTION_TYPE enumeration values indicate types of human presence detection hardware.
 prerelease: false
@@ -40,6 +40,10 @@ The **HUMAN_PRESENCE_DETECTION_TYPE** enumeration values indicate types of human
 
 ## -enum-fields
 
+### -field HumanPresenceDetectionType_Undefined
+
+Indicates an undefined human presence detection type.
+
 ### -field HumanPresenceDetectionType_VendorDefinedNonBiometric
 
 Indicates a vendor defined, non-biometric human presence detection type.
@@ -60,8 +64,6 @@ Indicates an audio human presence detection type, such as a microphone.
 
 Used to force the **HUMAN_PRESENCE_DETECTION_TYPE** enum to a 32-bit data type (a DWORD).
 
-## -remarks
-
 ## -see-also
 
-- [HUMAN_PRESENCE_DETECTION_TYPE_COUNT](ne-sensorsdef-human_presence_detection_type_count.md)
+- **[HUMAN_PRESENCE_DETECTION_TYPE_COUNT](ne-sensorsdef-human_presence_detection_type_count.md)**
