@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_DEVICE_CAPABILITIES
 tech.root: netvista
 title: WIFI_DEVICE_CAPABILITIES (wificx.h)
-ms.date: 02/12/2024
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_DEVICE_CAPABILITIES structure describes a WiFiCx device's capabilities.
@@ -125,8 +125,10 @@ The number of radios. **NumRadios** is equal to the number of connections on dif
 
 ## -remarks
 
-Client drivers pass **WIFI_DEVICE_CAPABILITIES** as a parameter to [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) to report device capabilities to WiFiCx.
+Call [**WIFI_DEVICE_CAPABILITIES_INIT**](nf-wificx-wifi_device_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) to report device capabilities to WiFiCx.
 
 ## -see-also
+
+[**WIFI_DEVICE_CAPABILITIES_INIT**](nf-wificx-wifi_device_capabilities_init.md)
 
 [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) 

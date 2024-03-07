@@ -2,7 +2,7 @@
 UID: NF:wificx.WifiDeviceSetBandCapabilities
 tech.root: netvista
 title: WifiDeviceSetBandCapabilities (wificx.h)
-ms.date: 08/26/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WifiDeviceSetBandCapabilities function sets the band capabilities for a WiFiCx device.
@@ -62,10 +62,14 @@ Returns STATUS_SUCCESS if the operation succeeds. Otherwise, this function may r
 
 Client drivers typically call **WifiDeviceSetBandCapabilities** within [*EvtDevicePrepareHardware*](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
 
+Call [**WIFI_BAND_CAPABILITIES_INIT**](nf-wificx-wifi_band_capabilities_init.md) to initialize the **WIFI_BAND_CAPABILITIES** structure and fill in its **Size** field. Then call **WifiDeviceSetBandCapabilities** to report band capabilities to WiFiCx.
+
 For more information see [Default (station) adapter creation flow](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#default-(station)-adapter-creation-flow).
 
 ## -see-also
 
-[**WIFI_BAND_CAPABILITIES**](ns-wificx-wifi_band_capabilities.md) 
+[**WIFI_BAND_CAPABILITIES**](ns-wificx-wifi_band_capabilities.md)
+
+[**WIFI_BAND_CAPABILITIES_INIT**](nf-wificx-wifi_band_capabilities_init.md)
 
 [Default (station) adapter creation flow](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#default-(station)-adapter-creation-flow)
