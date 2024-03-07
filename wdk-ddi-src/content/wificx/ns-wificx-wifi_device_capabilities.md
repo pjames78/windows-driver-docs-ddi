@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_DEVICE_CAPABILITIES
 tech.root: netvista
 title: WIFI_DEVICE_CAPABILITIES (wificx.h)
-ms.date: 08/26/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_DEVICE_CAPABILITIES structure describes a WiFiCx device's capabilities.
@@ -57,7 +57,7 @@ Specifies whether the radio is enabled by hardware. Valid values are 0 (disabled
 
 Specifies whether they radio is enabled by software. Valid values are 0 (disabled) and 1 (enabled).
 
-### -field FirmwareVersion
+### -field FirmwareVersion[MAX_FIRMWARE_VERSION_LENGTH]
 
 The firmware version.
 
@@ -119,10 +119,16 @@ Specifies if the device supports Multiband Operation (MBO). Valid values are 0 (
 
 Specifies if the adapter implements beacon report measurements. Valid values are 0 (the adapter does not implement beacon report measurements) and 1 (the adapter implements its own 11k beacon report).
 
+### -field NumRadios
+
+The number of radios. **NumRadios** is equal to the number of connections on different channels that the device can simultaneously Rx and Tx.
+
 ## -remarks
 
-Client drivers pass **WIFI_DEVICE_CAPABILITIES** as a parameter to [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) to report device capabilities to WiFiCx.
+Call [**WIFI_DEVICE_CAPABILITIES_INIT**](nf-wificx-wifi_device_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) to report device capabilities to WiFiCx.
 
 ## -see-also
+
+[**WIFI_DEVICE_CAPABILITIES_INIT**](nf-wificx-wifi_device_capabilities_init.md)
 
 [**WifiDeviceSetDeviceCapabilities**](nf-wificx-wifidevicesetdevicecapabilities.md) 

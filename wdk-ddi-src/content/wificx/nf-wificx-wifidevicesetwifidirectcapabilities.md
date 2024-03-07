@@ -62,11 +62,15 @@ Returns STATUS_SUCCESS if the operation succeeds. Otherwise, this function may r
 
 Client drivers need to call **WifiDeviceSetWiFiDirectCapabilities** in the set device capabilities phase. Typically this is within [*EvtDevicePrepareHardware*](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
 
+Call [**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md) to initialize the **WIFI_WIFIDIRECT_CAPABILITIES** structure and fill in its **Size** field. Then call **WifiDeviceSetWiFiDirectCapabilities** to report band capabilities to WiFiCx.
+
 For an example showing how to set Wi-Fi Direct capabilities, see [Wi-Fi Direct support](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#wi-fi-direct-device-capabilities).
 
 
 ## -see-also
 
 [**WIFI_WIFIDIRECT_CAPABILITIES**](ns-wificx-wifi_wifidirect_capabilities.md)
+
+[**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md)
 
 [Wi-Fi Direct support](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#wi-fi-direct-device-capabilities)
