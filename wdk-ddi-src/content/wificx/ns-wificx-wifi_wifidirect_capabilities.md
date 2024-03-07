@@ -179,8 +179,11 @@ A pointer to an array of interface addresses formatted as [**WDI_MAC_ADDRESS**](
 
 ## -remarks
 
-Client drivers pass **WIFI_WIFIDIRECT_CAPABILITIES** as a parameter to [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md) to report Wi-Fi Direct capabilities to WiFiCx.
+Call [**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md) to report Wi-Fi Direct capabilities to WiFiCx.
+
 
 ## -see-also
+
+[**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md)
 
 [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md)
