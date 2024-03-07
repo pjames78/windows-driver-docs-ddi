@@ -37,8 +37,6 @@ api_name:
  - _WHEAP_PFA_MEMORY_OFFLINED
  - PWHEAP_PFA_MEMORY_OFFLINED
  - WHEAP_PFA_MEMORY_OFFLINED
-product:
- - Windows
 ---
 
 ## -description

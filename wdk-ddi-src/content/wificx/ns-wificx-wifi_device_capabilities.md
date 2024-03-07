@@ -57,7 +57,7 @@ Specifies whether the radio is enabled by hardware. Valid values are 0 (disabled
 
 Specifies whether they radio is enabled by software. Valid values are 0 (disabled) and 1 (enabled).
 
-### -field FirmwareVersion
+### -field FirmwareVersion[MAX_FIRMWARE_VERSION_LENGTH]
 
 The firmware version.
 
@@ -118,6 +118,10 @@ Specifies if the device supports Multiband Operation (MBO). Valid values are 0 (
 ### -field BeaconReportsImplemented
 
 Specifies if the adapter implements beacon report measurements. Valid values are 0 (the adapter does not implement beacon report measurements) and 1 (the adapter implements its own 11k beacon report).
+
+### -field NumRadios
+
+The number of radios. **NumRadios** is equal to the number of connections on different channels that the device can simultaneously Rx and Tx.
 
 ## -remarks
 
