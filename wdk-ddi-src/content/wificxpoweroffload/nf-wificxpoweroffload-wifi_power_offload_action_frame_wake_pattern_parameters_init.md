@@ -44,9 +44,6 @@ helpviewer_keywords:
 
 ## -description
 
-> [!IMPORTANT]
-> This topic is part of the [WiFiCx driver model](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx). WiFiCx is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. The previous Wi-Fi driver model [WDI](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) is in maintenance mode and will only receive high priority fixes.
-
 The **WIFI_POWER_OFFLOAD_ACTION_FRAME_WAKE_PATTERN_PARAMETERS_INIT** function initializes a [**WIFI_POWER_OFFLOAD_ACTION_FRAME_WAKE_PATTERN_PARAMETERS**](wdk-ddi-src\content\wificxpoweroffloadns-wificxpoweroffload-wifi_power_offload_action_frame_wake_pattern_parameters.md) structure.
 
 ## -parameters

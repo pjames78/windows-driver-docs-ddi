@@ -44,9 +44,6 @@ helpviewer_keywords:
 
 ## -description
 
-> [!IMPORTANT]
-> This topic is part of the [WiFiCx driver model](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx). WiFiCx is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. The previous Wi-Fi driver model [WDI](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) is in maintenance mode and will only receive high priority fixes.
-
 The **WIFI_POWER_OFFLOAD_ACTION_FRAME_WAKE_PATTERN_PARAMETERS** structure contains parameters for an action frame wake pattern low power protocol offload to a WiFiCx network adapter.
 
 ## -struct-fields
@@ -71,7 +68,7 @@ A UINT8 representing the Action Frame Action. The driver ignores **ActionFrameAc
 
 ## -remarks
 
-Call [**WIFI_POWER_OFFLOAD_ACTION_FRAME_WAKE_PATTERN_PARAMETERS_INIT**](wificxpoweroffload\nf-wificxpoweroffload-wifi_power_offload_action_frame_wake_pattern_parameters_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiPowerOffloadGetActionFrameWakePatternParameters**](nf-wificxpoweroffload-wifipoweroffloadgetactionframewakepatternparameters.md) to fill in the remaining members of the structure.
+The IHV driver must call [**WIFI_POWER_OFFLOAD_ACTION_FRAME_WAKE_PATTERN_PARAMETERS_INIT**](wificxpoweroffload\nf-wificxpoweroffload-wifi_power_offload_action_frame_wake_pattern_parameters_init.md) to initialize this structure and fill in its **Size** field. Then the driver must call [**WifiPowerOffloadGetActionFrameWakePatternParameters**](nf-wificxpoweroffload-wifipoweroffloadgetactionframewakepatternparameters.md) to fill in the remaining members of the structure.
 
 ## -see-also
 

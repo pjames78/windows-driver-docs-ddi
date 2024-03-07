@@ -189,7 +189,7 @@ A BOOLEAN that indicates whether the driver supports QoS Mapping (Differentiated
 
 The maximum number of action frame wake patterns that the device supports. Drivers must set **MaxNumConfigurableActionFrameWakePatterns** to at least:
 * **1** to support MSCS.
-* **2** to support DSCP to UP mapping.
+* **2** to support DSCP-to-UP mapping.
 
 If **MaxNumConfigurableActionFrameWakePatterns** is less than the minimum value required for each feature, the OS will disable the feature. 
 
