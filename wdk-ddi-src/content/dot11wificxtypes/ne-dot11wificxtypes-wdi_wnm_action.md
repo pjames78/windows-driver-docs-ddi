@@ -2,7 +2,7 @@
 UID: NE:dot11wificxtypes._WDI_WNM_ACTION
 tech.root: netvista
 title: WDI_WNM_ACTION
-ms.date: 04/30/2021
+ms.date: 03/07/2024
 targetos: Windows
 description: "Microsoft reserves the WDI_WNM_ACTION enumeration for internal use only. Don't use this enumeration in your code."
 req.construct-type: enumeration
@@ -39,24 +39,46 @@ dev_langs:
 > [!IMPORTANT]
 > This topic is part of the [WiFiCx driver model](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx). WiFiCx is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. The previous Wi-Fi driver model [WDI](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) is in maintenance mode and will only receive high priority fixes.
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it is commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-This function is reserved for system use and should not be called in your code.
+The **WDI_WNM_ACTION** enumeration defines the message type for 802.11v BSS Transition Management action frames.
 
 ## -enum-fields
 
-### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_QUERY
+### -field WDI_WNM_ACTION_EVENT_REQUEST:0
 
-Reserved.
+The message is an event request frame. This is sent by the AP to the client.
 
-### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST
+### -field WDI_WNM_ACTION_EVENT_RESPONSE:1
 
-Reserved.
+The message is an event response frame. This is a response to the above request frame from the AP.
 
-### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE
+### -field WDI_WNM_ACTION_DIAGNOSTIC_REQUEST:2
 
-Reserved.
+The message is a diagnostic request frame. This is sent by the AP to the client.
+
+### -field WDI_WNM_ACTION_DIAGNOSTIC_RESPONSE:3
+
+The message is a diagnostic response frame. This is a response to the above request frame from the AP.
+
+### -field WDI_WNM_ACTION_LOCATION_CONFIGURATION_REQUEST:4
+
+The message is a location configuration request frame. This is sent by the AP to the client.
+
+### -field WDI_WNM_ACTION_LOCATION_CONFIGURATION_RESPONSE:5
+
+The message is a location configuration response frame. This is a response to the above request frame from the AP.
+
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_QUERY:6
+
+The message is a BSS Transition Management query frame.
+
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_REQUEST:7
+
+The message is a BSS Transition Management request frame. This is sent by the AP to the client.
+
+### -field WDI_WNM_ACTION_BSS_TRANSITION_MANAGEMENT_RESPONSE:8
+
+The message is a BSS Transition Management response frame. This is a response to the above request frame from the AP.
+
 
 ## -remarks
 

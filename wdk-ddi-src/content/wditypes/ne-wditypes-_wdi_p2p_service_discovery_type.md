@@ -4,7 +4,7 @@ title: _WDI_P2P_SERVICE_DISCOVERY_TYPE (wditypes.h)
 description: The WDI_P2P_SERVICE_DISCOVERY_TYPE enumeration defines the types of service discovery.
 old-location: netvista\wdi_p2p_service_discovery_type.htm
 tech.root: netvista
-ms.date: 05/02/2018
+ms.date: 03/07/2024
 keywords: ["WDI_P2P_SERVICE_DISCOVERY_TYPE enumeration"]
 ms.keywords: WDI_P2P_SERVICE_DISCOVERY_TYPE, WDI_P2P_SERVICE_DISCOVERY_TYPE enumeration [Network Drivers Starting with Windows Vista], WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_INFORMATION, WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_NAME_ONLY, WDI_P2P_SERVICE_DISCOVERY_TYPE_NO_SERVICE_DISCOVERY, WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_INFORMATION, WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY, _WDI_P2P_SERVICE_DISCOVERY_TYPE, netvista.wdi_p2p_service_discovery_type, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_INFORMATION, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_NAME_ONLY, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE_NO_SERVICE_DISCOVERY, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_INFORMATION, wditypes/WDI_P2P_SERVICE_DISCOVERY_TYPE_SERVICE_NAME_ONLY
 req.header: wditypes.hpp
@@ -70,17 +70,3 @@ The adapter encodes the service hashes in the IEs, tracks the service names from
 ### -field WDI_P2P_SERVICE_DISCOVERY_TYPE_MAX_VALUE
 
 The maximum value for this type.
-
-### -field WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_INFORMATION
-
-Added in Windows 10, version 1607, WDI version 1.0.21.
-
-The adapter encodes ASP2 service hashes in the P2P IEs, tracks  service names (service type and instance name) from the probe responses, and does GAS queries to get service information for each responding device.  This is only applicable if the adapter supports the P2P ASP2 Service Information Discovery capability.
-
-
-### -field WDI_P2P_SERVICE_DISCOVERY_TYPE_ASP2_SERVICE_NAME_ONLY
-
-Added in Windows 10, version 1607, WDI version 1.0.21.
-
-The adapter encodes ASP2 service hashes in the P2P IEs during probe requests and indicates probe responses. It does not perform any GAS queries for service information.
-
