@@ -95,23 +95,23 @@ Specifies the frequency and method of real-time clock updates.
 
 Reserved for future use.
 
-### -field -field bRPMBRegionEnable
+### -field bRPMBRegionEnable
 
 Specifies if Replay Protected Memory Blocks (RPMB) are enabled.
 
-### -field -field bRPMBRegion1Size
+### -field bRPMBRegion1Size
 
 Specifies the size of RPMB region 1.
 
-### -field -field bRPMBRegion2Size
+### -field bRPMBRegion2Size
 
 Specifies the size of RPMB region 2.
 
-### -field -field bRPMBRegion3Size
+### -field bRPMBRegion3Size
 
 Specifies the size of RPMB region 3.
 
-### -field -field UnitConfig[UFS_MAX_NUM_LU]
+### -field UnitConfig[UFS_MAX_NUM_LU]
 
 Contains the configurable parameters of the unit descriptor.
 
