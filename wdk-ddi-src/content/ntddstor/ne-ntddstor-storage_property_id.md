@@ -211,11 +211,11 @@ The caller is querying for protocol-specific data from the adapter. Data is retu
 
 ### -field StorageAdapterProtocolSpecificPropertyEx
 
-The caller is querying for protocol-specific data from the adapter. Data is returned using the **[STORAGE_PROTOCOL_DATA_DESCRIPTOR](ns-ntddstor-_storage_protocol_data_descriptor.md)** structure. See the Remarks for more info.
+The caller is querying for protocol-specific data from the adapter. Data is returned using the **[STORAGE_PROTOCOL_DATA_DESCRIPTOR_EXT](ns-ntddstor-storage_protocol_specific_data_ext.md)** structure. See the Remarks for more info.
 
 ### -field StorageDeviceProtocolSpecificPropertyEx
 
-The caller is querying for protocol-specific data from the device. Data is returned using the **[STORAGE_PROTOCOL_DATA_DESCRIPTOR](ns-ntddstor-_storage_protocol_data_descriptor.md)** structure. See the Remarks for more info.
+The caller is querying for protocol-specific data from the device. Data is returned using the **[STORAGE_PROTOCOL_DATA_DESCRIPTOR_EXT](ns-ntddstor-storage_protocol_specific_data_ext.md)** structure. See the Remarks for more info.
 
 ## -remarks
 
