@@ -1,9 +1,9 @@
 ---
 UID: NC:d3dkmddi.DXGKCB_ISFEATUREENABLED
 title: DXGKCB_ISFEATUREENABLED
-description: Queries for the enabled state of the feature.
+description: Learn more about the DXGKCB_ISFEATUREENABLED function.
 tech.root: display
-ms.date: 09/08/2022
+ms.date: 04/05/2024
 keywords: ["DXGKCB_ISFEATUREENABLED callback function"]
 req.header: d3dkmddi.h
 req.include-header: 
@@ -45,7 +45,7 @@ dev_langs:
 
 ## -description
 
-A kernel-mode display miniport driver (KMD) calls **DXGKCB_ISFEATUREENABLED** to query whether the OS will permit it to enable support for a feature.
+A kernel-mode display miniport driver (KMD) calls **DxgkCbIsFeatureEnabled** to query whether the OS has enabled a feature. Starting in Windows 11, version 24H2 (WDDM 3.2), this port driver callback function has been replaced by [**DXGK_FEATURE_INTERFACE**](../dispmprt/ns-dispmprt-dxgkddi_feature_interface.md).
 
 ## -parameters
 
@@ -55,7 +55,7 @@ Pointer to a [**DXGKARGCB_ISFEATUREENABLED**](ns-d3dkmddi-_dxgkargcb_isfeatureen
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, returns an appropriate NTSTATUS error code.
+**DxgkCbIsFeatureEnabled** returns STATUS_SUCCESS if the operation succeeds. Otherwise, it returns an appropriate NTSTATUS code.
 
 ## -remarks
 
