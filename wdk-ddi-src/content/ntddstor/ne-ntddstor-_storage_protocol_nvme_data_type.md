@@ -4,7 +4,7 @@ title: STORAGE_PROTOCOL_NVME_DATA_TYPE (ntddstor.h)
 description: Describes the type of NVMe protocol-specific data that is to be queried during an IOCTL_STORAGE_QUERY_PROPERTY request.
 old-location: storage\storage_protocol_nvme_data_type.htm
 tech.root: storage
-ms.date: 02/21/2024
+ms.date: 03/13/2024
 keywords: ["STORAGE_PROTOCOL_NVME_DATA_TYPE enumeration"]
 ms.keywords: "*PSTORAGE_PROTOCOL_NVME_DATA_TYPE, NVMeDataTypeFeature, NVMeDataTypeIdentify, NVMeDataTypeLogPage, NVMeDataTypeUnknown, PSTORAGE_PROTOCOL_NVME_DATA_TYPE, PSTORAGE_PROTOCOL_NVME_DATA_TYPE enumeration pointer [Storage Devices], STORAGE_PROTOCOL_NVME_DATA_TYPE, STORAGE_PROTOCOL_NVME_DATA_TYPE enumeration [Storage Devices], _STORAGE_PROTOCOL_NVME_DATA_TYPE, ntddstor/NVMeDataTypeFeature, ntddstor/NVMeDataTypeIdentify, ntddstor/NVMeDataTypeLogPage, ntddstor/NVMeDataTypeUnknown, ntddstor/PSTORAGE_PROTOCOL_NVME_DATA_TYPE, ntddstor/STORAGE_PROTOCOL_NVME_DATA_TYPE, storage.storage_protocol_nvme_data_type"
 req.header: ntddstor.h
@@ -81,7 +81,16 @@ When this type of data is being queried, fields in the **[STORAGE_PROTOCOL_SPECI
 
 ### -field NVMeDataTypeFeature
 
-Feature data type.
+Retrieved by command - GET FEATURES or SET FEATURES
+
+Corresponding values in **[STORAGE_PROTOCOL_SPECIFIC_DATA](ns-ntddstor-_storage_protocol_specific_data.md)** (get) or **[STORAGE_PROTOCOL_SPECIFIC_DATA_EXT](ns-ntddstor-storage_protocol_specific_data_ext.md)** (set):
+
+- **ProtocolDataRequestValue** - Defined in NVME_CDW10_GET_FEATURES / NVME_CDW10_SET_FEATURES
+- **ProtocolDataRequestSubValue** - Defined in NVME_CDW11_FEATURES
+- **ProtocolDataRequestSubValue2** - Defined in NVME_CDW12_FEATURES
+- **ProtocolDataRequestSubValue3** - Defined in NVME_CDW13_FEATURES
+- **ProtocolDataRequestSubValue4** - Defined in NVME_CDW14_FEATURES
+- **ProtocolDataRequestSubValue5** - Defined in NVME_CDW15_FEATURES
 
 ### -field NVMeDataTypeLogPageEx
 
@@ -131,6 +140,8 @@ To specify a type of NVMe protocol-specific information,  configure the **[STORA
   - Use **NVMeDataTypeIdentify** to get Identify Controller data or Identify Namespace data.
   - Use **NVMeDataTypeLogPage** to get log pages (including SMART/health data).
   - Use **NVMeDataTypeFeature** to get features of the NVMe drive.
+  - Use **NVMeDataTypeLogPageEx** to get log pages (including SMART/health data) using extended format.
+  - Use **NVMeDataTypeFeatureEx** to get features of the NVMe drive using extended format.
 
 ## -see-also
 

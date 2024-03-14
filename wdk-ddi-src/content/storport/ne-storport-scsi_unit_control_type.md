@@ -2,7 +2,7 @@
 UID: NE:storport._SCSI_UNIT_CONTROL_TYPE
 tech.root: storage
 title: SCSI_UNIT_CONTROL_TYPE
-ms.date: 02/28/2024
+ms.date: 03/13/2024
 targetos: Windows
 description: The SCSI_UNIT_CONTROL_TYPE enumeration contains unit control operations, where each control type initiates an action on a unit by the miniport driver. Storport specifies the control type when it calls a miniport's HwStorUnitControl routine.
 req.construct-type: enumeration
@@ -115,7 +115,7 @@ Reserved for system use. Available starting in Windows 11, version 22H2.
 
 ### -field ScsiUnitKsrPowerDown
 
-Storport sends this control to notify miniport with a dedicated control code for KSR power down, miniport could then skip power down device since power is not lost during KSR.
+Storport sends this control to notify miniport with a dedicated control code for KSR power down, miniport could then skip power down device since power is not lost during KSR. Available starting in Windows 11, version 24H2.
 
 ### -field ScsiUnitControlMax
 

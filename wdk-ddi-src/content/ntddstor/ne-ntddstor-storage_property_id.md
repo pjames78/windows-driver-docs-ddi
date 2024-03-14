@@ -207,7 +207,7 @@ The caller is querying for the ID of a fault replacement unit (FRU). Data is ret
 
 ### -field StorageStackProperty
 
-The caller is querying for protocol-specific data from the adapter. Data is returned using the **[STORAGE_STACK_DESCRIPTOR](ns-ntddstor-storage_stack_descriptor.md)** structure.
+The caller is querying for the type of the storage stack, such as SCSI, NVMe, and so on. Data is returned using the **[STORAGE_STACK_DESCRIPTOR](ns-ntddstor-storage_stack_descriptor.md)** structure.
 
 ### -field StorageAdapterProtocolSpecificPropertyEx
 
