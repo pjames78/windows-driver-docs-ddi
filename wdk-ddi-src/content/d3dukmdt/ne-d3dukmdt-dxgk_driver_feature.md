@@ -2,17 +2,17 @@
 UID: NE:d3dukmdt._DXGK_DRIVER_FEATURE
 tech.root: display
 title: DXGK_DRIVER_FEATURE
-ms.date: 03/21/2024
+ms.date: 04/05/2024
 targetos: Windows
 description: Learn more about the DXGK_DRIVER_FEATURE enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3dukmdt.h
 req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
@@ -40,33 +40,33 @@ helpviewer_keywords:
 
 ## -description
 
-**DXGK_DRIVER_FEATURE** is an enumeration that provides the sub-IDs for driver features that a kernel-mode display miniport driver (KMD) can indicate support for.
+The **DXGK_DRIVER_FEATURE** enumeration is a list of driver features.
 
 ## -enum-fields
 
 ### -field DXGK_DRIVER_FEATURE_HWSCH:0
 
-Indicates support for hardware accelerated GPU scheduling.
+The hardware accelerated GPU scheduling feature.
 
 ### -field DXGK_DRIVER_FEATURE_HWFLIPQUEUE:1
 
-Indicates support for hardware flip queue.
+The hardware flip queue feature.
 
 ### -field DXGK_DRIVER_FEATURE_LDA_GPUPV:2
 
-Indicates support for a linked display adapter in GPU paravirtualization.
+The linked display adapter in GPU paravirtualization feature.
 
 ### -field DXGK_DRIVER_FEATURE_KMD_SIGNAL_CPU_EVENT:3
 
-Indicates support for signaling of a CPU event by KMD.
+The signaling of a CPU event by KMD feature.
 
 ### -field DXGK_DRIVER_FEATURE_USER_MODE_SUBMISSION:4
 
-Indicates support for user-mode submission.
+The user-mode submission feature.
 
 ### -field DXGK_DRIVER_FEATURE_SHARE_BACKING_STORE_WITH_KMD:5
 
-Indicates support for allowing UMD to share the backing store with KMD.
+The allowing UMD to share the backing store with KMD feature.
 
 ### -field DXGK_DRIVER_FEATURE_RESERVED_1:6
 
@@ -172,19 +172,23 @@ Reserved.
 
 ### -field DXGK_DRIVER_FEATURE_PAGE_BASED_MEMORY_MANAGER:32
 
-Indicates support for page-based memory management.
+The page-based memory management feature.
 
 ### -field DXGK_DRIVER_FEATURE_KERNEL_MODE_TESTING:33
 
-Indicates support for the kernel-mode testing interface.
+The kernel-mode testing interface feature.
 
 ### -field DXGK_DRIVER_FEATURE_64K_PT_DEMOTION_FIX:34
 
+The OS bugfix for 64K page table demotion.
+
 ### -field DXGK_DRIVER_FEATURE_GPUPV_PRESENT_HWQUEUE:35
+
+The OS bugfix for GPU paravirtualization and hardware scheduling enabled.
 
 ### -field DXGK_DRIVER_FEATURE_NATIVE_FENCE:36
 
-Indicates support for native GPU fences.
+The native GPU fence feature.
 
 ### -field DXGK_DRIVER_FEATURE_MAX
 
@@ -192,16 +196,12 @@ Maximum value for the enumeration.
 
 ## -remarks
 
-A WDDM feature is indentified by its "feature ID" ([**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md)) which is composed of a category ID (upper 4 bits), and the sub-ID for the feature itself within that category (**DXGK_DRIVER_FEATURE**).
+A WDDM feature is identified by a [feature ID](ne-d3dukmdt-dxgk_feature_id.md) value that has a [feature category](ne-d3dukmdt-dxgk_feature_category.md) (upper 4 bits) and a sub-ID (bottom 28 bits). The feature sub-ID is one of the values in this enumeration when the feature category is **DXGK_FEATURE_CATEGORY_DRIVER**.
 
-Because the original feature implementations didn't categorize the feature IDs, there are a handful of feature IDs that must remain defined within category 0 for backwards compatibility, but are not driver features. This applies to the following feature IDs:
-
-* DXGK_FEATURE_64K_PT_DEMOTION_FIX
-* DXGK_FEATURE_GPUPV_PRESENT_HWQUEUE
-* All feature IDs in the range of DXGK_DRIVER_FEATURE_RESERVED_1-DXGK_DRIVER_FEATURE_RESERVED_25
-
-These feature IDs represent features that have been defined or implemented on older OS builds, and existing software checks must be able to continue to query these features by those IDs. Drivers are not required to implement support for any of these feature IDs.
+For more information, see [Querying WDDM feature support and enablement](/windows-hardware/drivers/display/querying-wddm-feature-support-and-enablement).
 
 ## -see-also
+
+[**DXGK_FEATURE_CATEGORY**](ne-d3dukmdt-dxgk_feature_category.md)
 
 [**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md)
