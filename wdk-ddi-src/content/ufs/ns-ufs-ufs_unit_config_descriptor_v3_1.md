@@ -4,7 +4,7 @@ tech.root: storage
 title: UFS_UNIT_CONFIG_DESCRIPTOR_V3_1
 ms.date: 03/11/2024
 targetos: Windows
-description: 
+description: The UFS_UNIT_CONFIG_DESCRIPTOR_V3_1 structure describes the user-configurable parameters within the UFS_CONFIG_DESCRIPTOR_V3_1 structure.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+The **UFS_UNIT_CONFIG_DESCRIPTOR_V3_1** structure describes the user-configurable parameters within the **[UFS_CONFIG_DESCRIPTOR_V3_1](ns-ufs-ufs_config_descriptor_v3_1.md)** structure.
 
 ## -struct-fields
 
