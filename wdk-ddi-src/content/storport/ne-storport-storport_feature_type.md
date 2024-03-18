@@ -3,7 +3,7 @@ UID: NE:storport._STORPORT_FEATURE_TYPE
 title: STORPORT_FEATURE_TYPE
 description: The STORPORT_FEATURE_TYPE enum identifies a Storport feature supported by a miniport.
 tech.root: storage
-ms.date: 05/24/2022
+ms.date: 02/28/2024
 ms.keywords: STORPORT_FEATURE_TYPE, STORPORT_FEATURE_TYPE,
 req.header: storport.h
 req.include-header: 
@@ -60,25 +60,45 @@ Indicates whether the **ScsiAdapterSetEventLogging** control operation is suppor
 
 Indicates whether the **ScsiUnitReportInternalData** control operation is supported.
 
-## -field StorportFeatureReportInternalDataAdapterControl
+### -field StorportFeatureReportInternalDataAdapterControl
 
 Indicates whether the **ScsiAdapterReportInternalData** control operation is supported.
 
-## -field StorportFeatureResetBusSynchronous
+### -field StorportFeatureResetBusSynchronous
 
 Indicates whether the **ScsiAdapterResetBusSynchronous** control operation is supported.
 
-## -field StorportFeaturePostHwInitialize
+### -field StorportFeaturePostHwInitialize
 
 Indicates whether the **ScsiAdapterPostHwInitialize** control operation is supported.
 
-## -field StorportFeaturePrepareEarlyDumpData
+### -field StorportFeaturePrepareEarlyDumpData
 
 Indicates whether the **ScsiAdapterPrepareEarlyDumpData** control operation is supported.
 
-## -field StorportFeatureRestoreEarlyDumpData
+### -field StorportFeatureRestoreEarlyDumpData
 
 Indicates whether the **ScsiAdapterRestoreEarlyDumpData** control operation is supported.
+
+### -field StorportFeatureKsrAdapterPowerDownOptimization
+
+Indicates whether the **ScsiAdapterKsrPowerDown** control operation is supported.
+
+### -field StorportFeatureKsrUnitPowerDownOptimization
+
+Indicates whether the **ScsiUnitKsrPowerDown** control operation is supported.
+
+### -field StorportFeaturePreparePLDR
+
+Indicates whether the **ScsiAdapterPreparePLDR** control operation is supported.
+
+### -field StorportFeatureNvmeofAdapterOperation
+
+Indicates whether the **ScsiNvmeofAdapterOperation** control operation is supported.
+
+### -field StorportFeatureReserved1
+
+Reserved, do not use.
 
 ### -field StorportFeatureMax
 

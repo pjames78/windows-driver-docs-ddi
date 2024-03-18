@@ -123,6 +123,10 @@ Indicates a storage class memory (SCM) bus.
 
 Indicates a universal flash storage (UFS) bus.
 
+### -field BusTypeNvmeof
+
+Indicates a non-volatile memory express over Fabrics (NVMe-oF) bus.
+
 ### -field BusTypeMax
 
 Indicates the current maximum value for this enumeration. Do not use this value because it changes as new bus types are added.

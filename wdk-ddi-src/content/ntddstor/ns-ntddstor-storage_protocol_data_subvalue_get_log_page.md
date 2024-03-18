@@ -2,7 +2,7 @@
 UID: NS:ntddstor._STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE
 tech.root: storage
 title: STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE
-ms.date: 05/13/2021
+ms.date: 02/21/2024
 targetos: Windows
 description: STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE is used to provide additional information to be specified when getting an NVMe log page.
 req.construct-type: structure
@@ -57,7 +57,17 @@ Indicates whether to retain (1) or clear (0) an asynchronous event.
 
 Used for certain log page queries. See the log page-related sections of the NVMe specification for details.
 
+### -field DUMMYSTRUCTNAME.Reserved0
+
+Reserved.
+
+### -field DUMMYSTRUCTNAME.UUIDIndex
+
+Used internally to iterate through an array of UUID values.
+
 ### -field DUMMYSTRUCTNAME.Reserved
+
+Reserved.
 
 ### -field AsUlong
 
@@ -65,12 +75,10 @@ Can be used to reference the entire bit field.
 
 ## -remarks
 
-**STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE** is the value of **ProtocolDataRequestSubValue4** of the [**STORAGE_PROTOCOL_SPECIFIC_DATA**](ns-ntddstor-_storage_protocol_specific_data.md) structure when [**STORAGE_PROTOCOL_NVME_DATA_TYPE**](ne-ntddstor-_storage_protocol_nvme_data_type.md) is **NVMeDataTypeLogPage**.
+**STORAGE_PROTOCOL_DATA_SUBVALUE_GET_LOG_PAGE** is the value of **ProtocolDataRequestSubValue4** of the **[STORAGE_PROTOCOL_SPECIFIC_DATA](ns-ntddstor-_storage_protocol_specific_data.md)** structure when **[STORAGE_PROTOCOL_NVME_DATA_TYPE](ne-ntddstor-_storage_protocol_nvme_data_type.md)** is **NVMeDataTypeLogPage**.
 
 ## -see-also
 
-[**IOCTL_STORAGE_QUERY_PROPERTY**](ni-ntddstor-ioctl_storage_query_property.md)
-
-[**STORAGE_PROTOCOL_NVME_DATA_TYPE**](ne-ntddstor-_storage_protocol_nvme_data_type.md)
-
-[**STORAGE_PROTOCOL_SPECIFIC_DATA**](ns-ntddstor-_storage_protocol_specific_data.md)
+- **[IOCTL_STORAGE_QUERY_PROPERTY](ni-ntddstor-ioctl_storage_query_property.md)**
+- **[STORAGE_PROTOCOL_NVME_DATA_TYPE](ne-ntddstor-_storage_protocol_nvme_data_type.md)**
+- **[STORAGE_PROTOCOL_SPECIFIC_DATA](ns-ntddstor-_storage_protocol_specific_data.md)**
