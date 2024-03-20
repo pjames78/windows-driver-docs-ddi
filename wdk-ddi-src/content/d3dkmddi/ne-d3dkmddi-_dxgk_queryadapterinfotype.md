@@ -221,6 +221,14 @@ The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_f
 
 ### -field DXGKQAITYPE_USERMODESUBMISSION_CAPS:38
 
+### -field DXGKQAITYPE_DIRTYBITTRACKINGCAPS:39
+
+The KMD should populate a [**DXGK_DIRTY_BIT_TRACKING_CAPS**](ns-d3dkmddi-dxgk_dirty_bit_tracking_caps.md) structure that contains the driver's support details for dirty bit tracking. Supported starting in Windows 11, version 24H2. For more information, see [Dirty bit tracking](/windows-hardware/drivers/display/dirty-bit-tracking).
+
+### -field DXGKQAITYPE_DIRTYBITTRACKINGSEGMENTCAPS:40
+
+The KMD should populate a [**DXGK_DIRTY_BIT_TRACKING_SEGMENT_CAPS**](ns-d3dkmddi-dxgk_dirty_bit_tracking_segment_caps.md) structure that contains the driver's support details for dirty bit tracking on a specific memory segment. Supported starting in Windows 11, version 24H2. For more information, see [Dirty bit tracking](/windows-hardware/drivers/display/dirty-bit-tracking).
+
 ## -remarks
 
 *Dxgkrnl* calls The KMD's [**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md) callback to retrieve configuration information from the graphics adapter. The driver fills the requested information in the buffer pointed to by the **pOutputData** member of the [**DXGKARG_QUERYADAPTERINFO**](ns-d3dkmddi-_dxgkarg_queryadapterinfo.md) structure. See each enumeration value for the type of structure to fill in.
