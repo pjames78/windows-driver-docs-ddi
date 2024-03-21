@@ -64,5 +64,6 @@ This method returns NTSTATUS which contains STATUS_SUCCESS if the call was succe
 
 ## -see-also
 
+* [Windows Kernel-Mode PRM Library](/windows-hardware/drivers/kernel/windows-kernel-mode-prm-library)
 * [Platform Runtime Mechanism specification on uefi.org](https://uefi.org/sites/default/files/resources/Platform%20Runtime%20Mechanism%20-%20with%20legal%20notice.pdf)
 * [PRM sample](https://github.com/microsoft/Windows-driver-samples/tree/develop/prm/PrmFunc)

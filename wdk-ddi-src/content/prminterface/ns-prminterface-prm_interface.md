@@ -77,3 +77,4 @@ All members of this structure, with the exception of Version, are pointers to fu
 
 ## -see-also
 
+[Windows Kernel-Mode PRM Library](/windows-hardware/drivers/kernel/windows-kernel-mode-prm-library)

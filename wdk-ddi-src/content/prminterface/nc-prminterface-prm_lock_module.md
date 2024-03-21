@@ -62,3 +62,4 @@ PRM_LOCK_MODULE is not a system routine that can be called directly by name. Thi
 
 ## -see-also
 
+[Windows Kernel-Mode PRM Library](/windows-hardware/drivers/kernel/windows-kernel-mode-prm-library)
