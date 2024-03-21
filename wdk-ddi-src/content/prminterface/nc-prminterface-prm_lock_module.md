@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-This routine locks a PRM module and prevents it from being unloaded.
+This routine locks a PRM module in memory and prevents it from being updated by the OS runtime.
 
 ## -parameters
 

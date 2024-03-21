@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-This routine unlocks a PRM module and allows it to be updated.
+This routine undoes the operation from [**PRM_LOCK_MODULE**](./nc-prminterface-prm_lock_module.md) and allows the module to be updated. PRM_UNLOCK_MODULE should always be preceded by exactly one PRM_LOCK_MODULE call.
 
 ## -parameters
 
