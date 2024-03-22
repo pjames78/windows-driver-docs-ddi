@@ -54,7 +54,7 @@ Contains the **[PRI_FULL_STATUS_DESCRIPTOR_HEADER](ns-storport-pri_full_status_d
 
 ### -field TransportID[ANYSIZE_ARRAY]
 
-The *TransportID* identifies the SCSI initiator port that is described by this full status descriptor.
+The *TransportID* identifies the initiator port that is described by this full status descriptor.
 
 ## -remarks
 

@@ -65,8 +65,8 @@ A reservation holder set to one indicates that all initiator and target ports de
 An *AllTargetPorts* value of zero indicates that this full status descriptor represents a single initiator port and target port pair. An *AllTargetPorts* value of one indicates:
 
 - This full status descriptor represents all the initiator and target ports that are associated with both:
-  - The SCSI initiator port (I) is specified by the *TransportID*
-  - Every target port (T) is in the SCSI target device
+  - The initiator port (I) is specified by the *TransportID*
+  - Every target port (T) is in the target device
 - All the initiator and target ports are registered with the same reservation key
 - All the initiator and target ports are either reservation holders or not reservation holders as indicated by the *ReservationHolder* field
 
