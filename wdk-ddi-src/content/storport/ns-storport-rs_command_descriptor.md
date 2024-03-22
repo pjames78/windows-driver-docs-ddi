@@ -1,15 +1,15 @@
 ---
-UID: NS:scsi.RS_COMMAND_DESCRIPTOR
+UID: NS:storport.RS_COMMAND_DESCRIPTOR
 tech.root: storage
 title: RS_COMMAND_DESCRIPTOR
-ms.date: 03/21/2024
+ms.date: 03/22/2024
 targetos: Windows
 description: The RS_COMMAND_DESCRIPTOR structure contains information about a single supported command descriptor block (CDB).
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
-req.header: scsi.h
+req.header: storport.h
 req.include-header: 
 req.kmdf-ver: 
 req.lib: 
@@ -27,15 +27,15 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - scsi.h
+ - storport.h
 api_name:
  - RS_COMMAND_DESCRIPTOR
  - PRS_COMMAND_DESCRIPTOR
 f1_keywords:
  - RS_COMMAND_DESCRIPTOR
- - scsi/RS_COMMAND_DESCRIPTOR
+ - storport/RS_COMMAND_DESCRIPTOR
  - PRS_COMMAND_DESCRIPTOR
- - scsi/PRS_COMMAND_DESCRIPTOR
+ - storport/PRS_COMMAND_DESCRIPTOR
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -87,8 +87,8 @@ The *MultipleLogicalUnits* field is described in the following table.
 |--|--|
 | 0 | The effect of this command on other logical units is not reported. |
 | 1 | This command only affects this logical unit. |
-| 2 | This command affects more than one but not all logical units contained in this SCSI target device. |
-| 3 | This command affects all of the logical units contained in this SCSI target device. |
+| 2 | This command affects more than one but not all logical units contained in this target device. |
+| 3 | This command affects all of the logical units contained in this target device. |
 
 ### -field ReadWriteCommandDurationLimitsPage
 

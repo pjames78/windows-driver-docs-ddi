@@ -1,15 +1,15 @@
 ---
-UID: NS:scsi.PRI_FULL_STATUS_DESCRIPTOR
+UID: NS:storport.PRI_FULL_STATUS_DESCRIPTOR
 tech.root: storage
 title: PRI_FULL_STATUS_DESCRIPTOR
-ms.date: 03/18/2024
+ms.date: 03/22/2024
 targetos: Windows
 description: The PRI_FULL_STATUS_DESCRIPTOR structure is used to construct the PRI_FULL_STATUS_LIST structure that is returned in response to a Persistent Reserve In command.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
-req.header: scsi.h
+req.header: storport.h
 req.include-header: 
 req.kmdf-ver: 
 req.lib: 
@@ -27,15 +27,15 @@ topic_type:
 api_type:
  - HeaderDef
 api_location:
- - scsi.h
+ - storport.h
 api_name:
  - PRI_FULL_STATUS_DESCRIPTOR
  - PPRI_FULL_STATUS_DESCRIPTOR
 f1_keywords:
  - PRI_FULL_STATUS_DESCRIPTOR
- - scsi/PRI_FULL_STATUS_DESCRIPTOR
+ - storport/PRI_FULL_STATUS_DESCRIPTOR
  - PPRI_FULL_STATUS_DESCRIPTOR
- - scsi/PPRI_FULL_STATUS_DESCRIPTOR
+ - storport/PPRI_FULL_STATUS_DESCRIPTOR
 dev_langs:
  - c++
 helpviewer_keywords:
@@ -44,13 +44,13 @@ helpviewer_keywords:
 
 ## -description
 
-The **PRI_FULL_STATUS_DESCRIPTOR** structure is used to construct the **[PRI_FULL_STATUS_LIST](ns-scsi-pri_full_status_list.md)** structure that is returned in response to a Persistent Reserve In command with `ServiceAction=RESERVATION_ACTION_READ_FULL_STATUS`.
+The **PRI_FULL_STATUS_DESCRIPTOR** structure is used to construct the **[PRI_FULL_STATUS_LIST](ns-storport-pri_full_status_list.md)** structure that is returned in response to a Persistent Reserve In command with `ServiceAction=RESERVATION_ACTION_READ_FULL_STATUS`.
 
 ## -struct-fields
 
 ### -field Header
 
-Contains the **[PRI_FULL_STATUS_DESCRIPTOR_HEADER](ns-scsi-pri_full_status_descriptor_header.md)** structure.
+Contains the **[PRI_FULL_STATUS_DESCRIPTOR_HEADER](ns-storport-pri_full_status_descriptor_header.md)** structure.
 
 ### -field TransportID[ANYSIZE_ARRAY]
 
@@ -63,4 +63,4 @@ The **[IOCTL_STORAGE_PERSISTENT_RESERVE_IN](../ntddstor/ni-ntddstor-ioctl_storag
 ## -see-also
 
 - **[IOCTL_STORAGE_PERSISTENT_RESERVE_IN](../ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_in.md)**
-- **[PRI_FULL_STATUS_DESCRIPTOR_HEADER](ns-scsi-pri_full_status_descriptor_header.md)**
+- **[PRI_FULL_STATUS_DESCRIPTOR_HEADER](ns-storport-pri_full_status_descriptor_header.md)**
