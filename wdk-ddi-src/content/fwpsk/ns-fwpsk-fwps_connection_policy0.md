@@ -48,15 +48,15 @@ The **FWPS_CONNECTION_POLICY0** structure defines the connection policy for outb
 
 ## -struct-fields
 
-### -field localAddress [_out_]
+### -field localAddress
 
 The local address of the outbound connection. This is an IPV4 or IPV6 address and TCP/UDP port formatted as a [**SOCKADDR_STORAGE**](/windows/win32/api/ws2def/ns-ws2def-sockaddr_storage_lh) structure.
 
-### -field nextHopAddress [_out_]
+### -field nextHopAddress
 
 The next hop address for the outbound connection. This is an IPV4 or IPV6 address and TCP/UDP port formatted as a [**SOCKADDR_STORAGE**](/windows/win32/api/ws2def/ns-ws2def-sockaddr_storage_lh) structure.
 
-### -field interfaceLuid [_out_]
+### -field interfaceLuid
 
 The locally unique identifier (LUID) for the network interface used for the outbound connection.
 

@@ -122,7 +122,7 @@ The TCP receive window was closed.
 
 ### -field InetDiscardTcbRemoved:19
 
-	The TCP connection was closed.
+The TCP connection was closed.
 
 ### -field InetDiscardFinWait2:20
 
@@ -150,7 +150,7 @@ A TCP connection was closed due to urgent delivery.
 
 ### -field InetDiscardTimeWaitTcbReceivedRstOutsideWindow:26
 
-A TIME_WAIT state TCP connection received an RSP segment outside the window.
+A TIME_WAIT state TCP connection received a RST segment outside the window.
 
 ### -field InetDiscardTimeWaitTcbSynAndOtherFlags:27
 
