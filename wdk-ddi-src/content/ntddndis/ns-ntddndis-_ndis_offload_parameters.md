@@ -226,6 +226,7 @@ Indicates Receive Segment Coalescing state for IPv6.
 A protocol driver sets **EncapsulatedPacketTaskOffload** as follows: 
 
 **Note**: For receive side offloads such as VMQ and RSS, there are other set OIDs that the protocol driver sends down to enable and configure the offload parameters (for example, queues, hash, and indirection table). The **EncapsulatedPacketTaskOffload** member is supplemental to those OIDs and instructs the NIC to also do these offloads for encapsulated packets.
+
 | Value                         | Meaning |
 |-------------------------------|---------|
 | **NDIS_OFFLOAD_SET_NO_CHANGE**<br>0| The NVGRE and VXLAN task offload states are unchanged. |
