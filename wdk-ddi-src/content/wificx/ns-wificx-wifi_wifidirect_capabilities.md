@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_WIFIDIRECT_CAPABILITIES
 tech.root: netvista
 title: WIFI_WIFIDIRECT_CAPABILITIES (wificx.h)
-ms.date: 08/25/2021
+ms.date: 02/12/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_WIFIDIRECT_CAPABILITIES structure describes the Wi-Fi Direct capabilities for a WiFiCx device.
@@ -99,7 +99,7 @@ Valid values are 0 (not supported) and 1 (supported).
 Specifies whether infrastructure management is supported.
 Valid values are 0 (not supported) and 1 (supported).
 
-### -field DeviceAddress
+### -field DeviceAddress[6]
 
 The device address in network byte order.
 
@@ -177,10 +177,17 @@ The number of interface addresses supported.
 
 A pointer to an array of interface addresses formatted as [**WDI_MAC_ADDRESS**](../dot11wificxintf/ns-dot11wificxintf-wdi_mac_address.md) structures. The length of this array is specified by the **NumInterfaceAddresses** member.
 
+### -field GOon6GHzBandSupported
+
+A BOOLEAN value that specifies whether the adapter supports operating a GO on 6GHz band. Valid values are 0 (not supported) and 1 (supported).
+
 ## -remarks
 
-Client drivers pass **WIFI_WIFIDIRECT_CAPABILITIES** as a parameter to [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md) to report Wi-Fi Direct capabilities to WiFiCx.
+Call [**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md) to report Wi-Fi Direct capabilities to WiFiCx.
+
 
 ## -see-also
+
+[**WIFI_WIFIDIRECT_CAPABILITIES_INIT**](nf-wificx-wifi_wifidirect_capabilities_init.md)
 
 [**WifiDeviceSetWiFiDirectCapabilities**](nf-wificx-wifidevicesetwifidirectcapabilities.md)

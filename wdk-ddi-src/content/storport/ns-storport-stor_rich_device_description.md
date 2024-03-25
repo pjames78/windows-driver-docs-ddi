@@ -2,7 +2,7 @@
 UID: NS:storport._STOR_RICH_DEVICE_DESCRIPTION
 tech.root: storage
 title: STOR_RICH_DEVICE_DESCRIPTION
-ms.date: 05/13/2021
+ms.date: 02/28/2024
 targetos: Windows
 description: STOR_RICH_DEVICE_DESCRIPTION is the structure pointed to by the Parameters parameter when a miniport's HwStorUnitControl routine is called with a ControlType of ScsiUnitRichDescription.
 req.construct-type: structure
@@ -43,7 +43,7 @@ dev_langs:
 
 ## -description
 
-**STOR_RICH_DEVICE_DESCRIPTION** is the structure pointed to by the **Parameters** parameter when a miniport's [**HwStorUnitControl**](nc-storport-hw_unit_control.md) routine is called with a **ControlType** of **ScsiUnitRichDescription**.
+**STOR_RICH_DEVICE_DESCRIPTION** is the structure pointed to by the **Parameters** parameter when a miniport's **[HwStorUnitControl](nc-storport-hw_unit_control.md)** routine is called with a **ControlType** of **ScsiUnitRichDescription**.
 
 ## -struct-fields
 
@@ -53,24 +53,20 @@ The version of the structure. This value should be **STOR_RICH_DEVICE_DESCRIPTIO
 
 ### -field Size
 
-The size of the structure, in bytes.  Should be ```sizeof(STOR_RICH_DEVICE_DESCRIPTION_V2)```.
+The size of the structure, in bytes.  Should be `sizeof(STOR_RICH_DEVICE_DESCRIPTION_V2)`.
 
-### -field VendorId
+### -field VendorId[STOR_VENDOR_ID_LENGTH + 1]
 
-A string representing the device’s vendor ID. May be an empty string if **ModelNumber** is provided. The miniport should fill this in.
+A string representing the device's vendor ID. May be an empty string if **ModelNumber** is provided. The miniport should fill this in.
 
-### -field ModelNumber
+### -field ModelNumber[STOR_MODEL_NUMBER_LENGTH + 1]
 
-A string representing the device’s model. The miniport should fill this in.
+A string representing the device's model. The miniport should fill this in.
 
-### -field FirmwareRevision
+### -field FirmwareRevision[STOR_FIRMWARE_REVISION_LENGTH + 1]
 
-A string representing the device’s currently active firmware revision. The miniport should fill this in.
-
-### -field Address
-
-The address of the device for which the rich device description is desired. This is provided by Storport.
+A string representing the device's currently active firmware revision. The miniport should fill this in.
 
 ## -see-also
 
-[**HwStorUnitControl**](nc-storport-hw_unit_control.md)
+- **[HwStorUnitControl](nc-storport-hw_unit_control.md)**

@@ -2,7 +2,7 @@
 UID: NS:acpitabl._ASPT_ENTRY
 tech.root: acpi
 title: ASPT_ENTRY (acpitabl.h)
-ms.date: 02/13/2023
+ms.date: 03/01/2022
 targetos: Windows
 description: This topic describes the ASPT_ENTRY union used by the AMD Secure Processor Table (ASPT).
 prerelease: false
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 22H2
 req.target-min-winversvr: 
 req.target-type: Windows
 req.typenames: ASPT_ENTRY, *PASPT_ENTRY
@@ -54,29 +54,17 @@ This topic describes the **ASPT_ENTRY** union used by the AMD Secure Processor T
 
 Defines the **ASPT_ENTRY_HEADER** member **Header**.
 
-### -field AspGlobalRegistersV1
+### -field AspGlobalRegisters
 
-Defines the **ASPT_ENTRY_ASP_GLOBAL_REGISTERS_V1** member **AspGlobalRegistersV1**.
+Defines the **ASPT_ENTRY_ASP_GLOBAL_REGISTERS** member **AspGlobalRegisters**.
 
-### -field SevMailboxRegistersV1
+### -field SevMailboxRegisters
 
-Defines the **ASPT_ENTRY_SEV_MAILBOX_REGISTERS_V1** member **SevMailboxRegistersV1**.
+Defines the **ASPT_ENTRY_SEV_MAILBOX_REGISTERS** member **SevMailboxRegisters**.
 
-### -field AcpiMailboxRegistersV1
+### -field AcpiMailboxRegisters
 
-Defines the **ASPT_ENTRY_ACPI_MAILBOX_REGISTERS_V1** member **AcpiMailboxRegistersV1**.
-
-### -field AspGlobalRegistersV2
-
-Defines the **ASPT_ENTRY_ASP_GLOBAL_REGISTERS_V2** member **AspGlobalRegistersV2**.
-
-### -field SevMailboxRegistersV2
-
-Defines the **ASPT_ENTRY_SEV_MAILBOX_REGISTERS_V2** member **SevMailboxRegistersV2**.
-
-### -field AcpiMailboxRegistersV2
-
-Defines the **ASPT_ENTRY_ACPI_MAILBOX_REGISTERS_V2** member **AcpiMailboxRegistersV2**.
+Defines the **ASPT_ENTRY_ACPI_MAILBOX_REGISTERS** member **AcpiMailboxRegisters**.
 
 ## -remarks
 

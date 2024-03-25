@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_PHY_CAPABILITIES
 tech.root: netvista
 title: WIFI_PHY_CAPABILITIES (wificx.h)
-ms.date: 09/15/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_PHY_CAPABILITIES structure describes the PHY capabilities for a WiFiCx device.
@@ -61,7 +61,11 @@ A pointer to a list of [**WIFI_PHY_INFO**](ns-wificx-wifi_phy_info.md) structure
 
 Client drivers pass **WIFI_PHY_CAPABILITIES** as a parameter to [**WifiDeviceSetPhyCapabilities**](nf-wificx-wifidevicesetphycapabilities.md) to report PHY capabilities to WiFiCx.
 
+Call [**WIFI_PHY_CAPABILITIES_INIT**](nf-wificx-wifi_phy_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetPhyCapabilities**](nf-wificx-wifidevicesetphycapabilities.md) to report PHY capabilities to WiFiCx.
+
 ## -see-also
+
+[**WIFI_PHY_CAPABILITIES_INIT**](nf-wificx-wifi_phy_capabilities_init.md)
 
 [**WifiDeviceSetPhyCapabilities**](nf-wificx-wifidevicesetphycapabilities.md)
 
