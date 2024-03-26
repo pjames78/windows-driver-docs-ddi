@@ -3,7 +3,7 @@ UID: NS:netadapter._NET_ADAPTER_RX_CAPABILITIES
 title: _NET_ADAPTER_RX_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_RX_CAPABILITIES structure describes the receive capabilities of a net adapter.
 tech.root: netvista
-ms.date: 01/26/2024
+ms.date: 03/26/2024
 keywords: ["NET_ADAPTER_RX_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_RX_CAPABILITIES, NET_ADAPTER_RX_CAPABILITIES, *PNET_ADAPTER_RX_CAPABILITIES,
 req.header: netadapter.h
@@ -88,6 +88,8 @@ A struct that contains the following members:
 ### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME2.MappingRequirement
 
 A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map receive data buffers.
+
+UMDF drivers must set **MappingRequirement** to **NetMemoryMappingRequirementNone**.
 
 ### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME2.FragmentBufferAlignment
 

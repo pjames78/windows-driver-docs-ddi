@@ -3,7 +3,7 @@ UID: NS:netadapter._NET_ADAPTER_TX_CAPABILITIES
 title: _NET_ADAPTER_TX_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_TX_CAPABILITIES structure describes the transmit capabilities of a net adapter.
 tech.root: netvista
-ms.date: 01/26/2024
+ms.date: 03/26/2024
 keywords: ["NET_ADAPTER_TX_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_TX_CAPABILITIES, NET_ADAPTER_TX_CAPABILITIES, *PNET_ADAPTER_TX_CAPABILITIES,
 req.header: netadapter.h
@@ -51,7 +51,9 @@ The size of this structure, in bytes.
 
 ### -field MappingRequirement
 
-A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map transmit data buffers.
+A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map transmit data buffers. 
+
+UMDF drivers must set **MappingRequirement** to **NetMemoryMappingRequirementNone**.
 
 ### -field PayloadBackfill
 
