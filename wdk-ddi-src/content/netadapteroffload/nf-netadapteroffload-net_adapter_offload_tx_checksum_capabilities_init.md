@@ -12,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 11
 req.target-min-winversvr: Windows Server 2022
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: 

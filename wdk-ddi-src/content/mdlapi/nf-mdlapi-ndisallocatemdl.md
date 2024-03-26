@@ -22,7 +22,7 @@ req.target-min-winverclnt: Supported in NDIS 6.0 and later.
 req.target-min-winversvr: 
 req.target-type: Universal
 req.type-library: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.unicode-ansi: 
 topic_type:
  - apiref

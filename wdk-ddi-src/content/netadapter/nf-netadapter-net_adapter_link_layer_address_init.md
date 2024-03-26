@@ -12,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10, version 1709
 req.target-min-winversvr: Windows Server 2016
 req.kmdf-ver: 1.23
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL

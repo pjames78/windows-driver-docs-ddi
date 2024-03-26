@@ -3,7 +3,7 @@ UID: NS:netadapter._NET_ADAPTER_RX_CAPABILITIES
 title: _NET_ADAPTER_RX_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_RX_CAPABILITIES structure describes the receive capabilities of a net adapter.
 tech.root: netvista
-ms.date: 02/14/2018
+ms.date: 03/26/2024
 keywords: ["NET_ADAPTER_RX_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_RX_CAPABILITIES, NET_ADAPTER_RX_CAPABILITIES, *PNET_ADAPTER_RX_CAPABILITIES,
 req.header: netadapter.h
@@ -12,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -51,11 +51,15 @@ The size of this structure, in bytes.
 
 ### -field AllocationMode
 
-A [**NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE**](ne-netadapter-_net_rx_fragment_buffer_allocation_mode.md) value that specifies how the operating system should allocate receive buffers.
+A [**NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE**](ne-netadapter-_net_rx_fragment_buffer_allocation_mode.md) value that specifies how the operating system should allocate receive buffers. 
+
+UMDF drivers must set this value to **NetRxFragmentBufferAllocationModeSystem**.
 
 ### -field AttachmentMode
 
-A [**NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE**](ne-netadapter-_net_rx_fragment_buffer_attachment_mode.md) value that specifies how the operating system should pre-attach receive buffers.
+A [**NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE**](ne-netadapter-_net_rx_fragment_buffer_attachment_mode.md) value that specifies how the operating system should pre-attach receive buffers. 
+
+UMDF drivers must set this value to **NetRxFragmentBufferAttachmentModeSystem**.
 
 ### -field FragmentRingNumberOfElementsHint
 
@@ -89,13 +93,17 @@ A struct that contains the following members:
 
 A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map receive data buffers.
 
+UMDF drivers must set **MappingRequirement** to **NetMemoryMappingRequirementNone**.
+
 ### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME2.FragmentBufferAlignment
 
 The minimum alignment for packet fragments. This member must be a power of 2.
 
 ### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME2.DmaCapabilities
 
-A pointer to a driver-allocated and initialized [**NET_DMA_CAPABILITIES**](ns-netadapter-_net_adapter_dma_capabilities.md) structure that describes the adapter's DMA capabilities on the receive path. This member is ignored by NetAdapterCx if **MappingRequirement** is not set to **NetMemoryMappingRequirementDmaMapped**.
+A pointer to a driver-allocated and initialized [**NET_DMA_CAPABILITIES**](ns-netadapter-_net_adapter_dma_capabilities.md) structure that describes the adapter's DMA capabilities on the receive path. This member is ignored by NetAdapterCx if **MappingRequirement** is not set to **NetMemoryMappingRequirementDmaMapped**. 
+
+UMDF NetAdapterCX doesn't support **DmaCapabilities**. UMDF drivers must set this member to **NULL**.
 
 ## -remarks
 

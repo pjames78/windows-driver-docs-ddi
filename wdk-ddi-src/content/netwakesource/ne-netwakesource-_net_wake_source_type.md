@@ -15,7 +15,7 @@ req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: NET_WAKE_SOURCE_TYPE
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 topic_type:
  - apiref
 api_type:
