@@ -18,7 +18,7 @@ req.target-min-winverclnt: Windows 11
 req.target-min-winversvr: Windows Server 2022
 req.target-type: 
 req.typenames: NET_ADAPTER_LINK_LAYER_ADDRESS
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.unicode-ansi: 
 topic_type:
  - apiref

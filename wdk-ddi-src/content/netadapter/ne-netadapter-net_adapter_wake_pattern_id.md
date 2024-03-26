@@ -15,7 +15,7 @@ req.target-min-winverclnt: Windows 11
 req.target-min-winversvr: Windows Server 2022
 req.target-type: 
 req.typenames: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 topic_type:
  - apiref
 api_type:

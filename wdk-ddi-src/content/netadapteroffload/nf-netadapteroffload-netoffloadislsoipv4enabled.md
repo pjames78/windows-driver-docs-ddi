@@ -14,7 +14,7 @@ req.target-type:
 req.target-min-winverclnt:
 req.target-min-winversvr:
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL

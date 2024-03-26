@@ -22,7 +22,7 @@ req.target-min-winverclnt:
 req.target-min-winversvr: Windows Server 2022
 req.target-type: Universal
 req.type-library: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.unicode-ansi: 
 topic_type:
  - apiref
