@@ -51,11 +51,15 @@ The size of this structure, in bytes.
 
 ### -field AllocationMode
 
-A [**NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE**](ne-netadapter-_net_rx_fragment_buffer_allocation_mode.md) value that specifies how the operating system should allocate receive buffers. UMDF drivers must set this value to **NetRxFragmentBufferAllocationModeSystem**.
+A [**NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE**](ne-netadapter-_net_rx_fragment_buffer_allocation_mode.md) value that specifies how the operating system should allocate receive buffers. 
+
+UMDF drivers must set this value to **NetRxFragmentBufferAllocationModeSystem**.
 
 ### -field AttachmentMode
 
-A [**NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE**](ne-netadapter-_net_rx_fragment_buffer_attachment_mode.md) value that specifies how the operating system should pre-attach receive buffers. UMDF drivers must set this value to **NetRxFragmentBufferAttachmentModeSystem**.
+A [**NET_RX_FRAGMENT_BUFFER_ATTACHMENT_MODE**](ne-netadapter-_net_rx_fragment_buffer_attachment_mode.md) value that specifies how the operating system should pre-attach receive buffers. 
+
+UMDF drivers must set this value to **NetRxFragmentBufferAttachmentModeSystem**.
 
 ### -field FragmentRingNumberOfElementsHint
 
