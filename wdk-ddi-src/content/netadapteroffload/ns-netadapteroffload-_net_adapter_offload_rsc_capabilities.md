@@ -3,7 +3,7 @@ UID: NS:netadapteroffload._NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES
 title: NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES (netadapteroffload.h)
 description: The NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES structure describes a network interface card (NIC)'s capabilities for receive segment coalescence (RSC).
 tech.root: netvista
-ms.date: 10/15/2020
+ms.date: 01/30/2024
 keywords: ["NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES, NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES,
 req.header: netadapteroffload.h
@@ -35,8 +35,6 @@ api_location:
 api_name:
  - _NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES
  - NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES structure
@@ -59,7 +57,7 @@ Flags specifying the layer 3 protocols that the NIC can successfully perform RSC
 
 ### -field Layer4Flags
 
-Flags specifying the layer 4 protocols that the NIC can successfully perform RSC on. `NetAdapterOffloadLayer4FlagTcpNoOptions` is the only valid value. Layer 3 flags must be set if the `NetAdapterOffloadLayer4FlagTcpNoOptions` flag is set.
+Flags specifying the layer 4 protocols that the NIC can successfully perform RSC on. `NetAdapterOffloadLayer4FlagTcpNoOptions` and `NetAdapterOffloadLayer4FlagUdp` are the only valid values. Layer 3 flags must be set if the `NetAdapterOffloadLayer4FlagTcpNoOptions` flag is set.
 
 ### -field TcpTimestampOption
 

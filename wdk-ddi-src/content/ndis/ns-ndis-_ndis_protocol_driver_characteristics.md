@@ -117,6 +117,9 @@ The minor NDIS version. The following are the available minor version value sett
 |84|NDIS 6.84|
 |85|NDIS 6.85|
 |86|NDIS 6.86|
+|87|NDIS 6.87|
+|88|NDIS 6.88|
+|89|NDIS 6.89|
 
 ### -field MajorDriverVersion
 
@@ -130,7 +133,13 @@ Reserved for the minor version number of the protocol driver. Protocol drivers c
 
 ### -field Flags
 
-Reserved for NDIS. Protocol drivers should set this member to zero.
+The following flag is supported in NDIS 6.89 and higher:
+
+|Value|Meaning|
+|--- |--- |
+|NDIS_PROTOCOL_DRIVER_UDP_RSC_NOT_SUPPORTED 0x00000008| The driver opt-outs of URO support. |
+
+In NDIS 6.88 and below, **Flags** is reserved for NDIS. Protocol drivers should set this member to zero.
 
 ### -field Name
 

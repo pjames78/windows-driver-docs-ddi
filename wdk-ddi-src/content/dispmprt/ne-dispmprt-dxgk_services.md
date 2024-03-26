@@ -1,12 +1,10 @@
 ---
 UID: NE:dispmprt.DXGK_SERVICES
 title: DXGK_SERVICES (dispmprt.h)
-description: The DXGK_SERVICES enumeration indicates the type of interface being requested by a call to the DxgkCbQueryServices function.
-old-location: display\dxgk_services.htm
+description: Learn more about the DXGK_SERVICES enumeration.
 tech.root: display
-ms.date: 11/18/2021
+ms.date: 04/05/2024
 keywords: ["DXGK_SERVICES enumeration"]
-ms.keywords: DXGK_SERVICES, DXGK_SERVICES enumeration [Display Devices], DmEnums_340c8991-c135-47da-876d-2970157fea0b.xml, DxgkServicesAgp, DxgkServicesBDD, DxgkServicesDebugReport, DxgkServicesFirmwareTable, DxgkServicesSPB, DxgkServicesTimedOperation, display.dxgk_services, dispmprt/DXGK_SERVICES, dispmprt/DxgkServicesAgp, dispmprt/DxgkServicesBDD, dispmprt/DxgkServicesDebugReport, dispmprt/DxgkServicesFirmwareTable, dispmprt/DxgkServicesSPB, dispmprt/DxgkServicesTimedOperation
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
@@ -42,10 +40,9 @@ api_name:
 
 # DXGK_SERVICES enumeration
 
-
 ## -description
 
-The **DXGK_SERVICES** enumeration indicates the type of interface being requested by a call to the [**DxgkCbQueryServices**](nc-dispmprt-dxgkcb_query_services.md) function.
+A **DXGK_SERVICES** enumeration value indicates the type of display port driver-implemented service interface that [**DxgkCbQueryServices**](nc-dispmprt-dxgkcb_query_services.md) should return.
 
 ## -enum-fields
 
@@ -63,7 +60,7 @@ Indicates the [Timed Operation interface](ns-dispmprt-_dxgk_timed_operation_inte
 
 ### -field DxgkServicesSPB
 
-Indicates the [Simple Peripheral Bus (SPB) interface](ns-dispmprt-_dxgk_spb_interface.md). Supported starting with Windows 8.
+Indicates the [Simple Peripheral Bus (SPB) interface](ns-dispmprt-_dxgk_spb_interface.md). Available starting with Windows 8.
 
 ### -field DxgkServicesBDD
 
@@ -71,15 +68,19 @@ Reserved for system use. Do not use in your driver. Supported starting with Wind
 
 ### -field DxgkServicesFirmwareTable
 
-Indicates the [System Firmware Table interface](ns-dispmprt-_dxgk_firmware_table_interface.md). Supported starting with Windows 8.
+Indicates the [System Firmware Table interface](ns-dispmprt-_dxgk_firmware_table_interface.md). Available starting with Windows 8.
 
 ### -field DxgkServicesIDD
 
-Reserved for system use. Do not use in your driver. Supported starting with Windows 8.
+Reserved for system use. Do not use in your driver. Available starting with Windows 8.
+
+### -field DxgkServicesFeature
+
+Indicates the [interface for querying whether a feature is enabled](ns-dispmprt-dxgk_feature_interface.md). Available starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 
-An interface, in this context, is a set of function pointers. The functions in the AGP, Debug Report, Timed Operation, SPB, and System Firmware Table interfaces are implemented by the Microsoft DirectX graphics kernel subsystem and called by the display miniport driver.
+In this context, an interface is a set of pointers to functions implemented by *Dxgkrnl*. A kernel-mode display minport driver (KMD) can call the function interfaces that aren't reserved for system use.
 
 ## -see-also
 
@@ -89,7 +90,10 @@ An interface, in this context, is a set of function pointers. The functions in t
 
 [**DXGK_FIRMWARE_TABLE_INTERFACE**](ns-dispmprt-_dxgk_firmware_table_interface.md)
 
+[**DXGK_FEATURE_INTERFACE**](ns-dispmprt-dxgk_feature_interface.md)
+
 [**DXGK_SPB_INTERFACE**](ns-dispmprt-_dxgk_spb_interface.md)
 
 [**DXGK_TIMED_OPERATION_INTERFACE**](ns-dispmprt-_dxgk_timed_operation_interface.md)
 
+[**DxgkCbQueryServices**](nc-dispmprt-dxgkcb_query_services.md)

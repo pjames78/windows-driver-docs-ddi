@@ -2,7 +2,7 @@
 UID: NF:wificx.WifiDeviceSetStationCapabilities
 tech.root: netvista
 title: WifiDeviceSetStationCapabilities (wificx.h)
-ms.date: 08/26/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WifiDeviceSetStationCapabilities function sets the station capabilities for a WiFiCx device.
@@ -62,11 +62,15 @@ Returns STATUS_SUCCESS if the operation succeeds. Otherwise, this function may r
 
 Client drivers typically call **WifiDeviceSetStationCapabilities** within [*EvtDevicePrepareHardware*](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md). For more information see [Default (station) adapter creation flow](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#default-(station)-adapter-creation-flow).
 
+Call [**WIFI_STATION_CAPABILITIES_INIT**](nf-wificx-wifi_station_capabilities_init.md) to initialize the **WIFI_STATION_CAPABILITIES** structure and fill in its **Size** field. Then call **WifiDeviceSetStationCapabilities** to report station capabilities to WiFiCx.
+
 To indicate the ability to maintain [Secondary Sta connectivity](/windows-hardware/drivers/netcx/dual-sta-connectivity), the driver must set the **NumSecondaryStaBandCombinations** and **SecondaryStaBandsCombinations** fields of the [**WIFI_STATION_CAPABILITIES**](ns-wificx-wifi_station_capabilities.md) structure to non-zero values. If either value is **0** or **NULL**, then the Secondary Sta capability will not be set.
 
 ## -see-also
 
 [**WIFI_STATION_CAPABILITIES**](ns-wificx-wifi_station_capabilities.md)
+
+[**WIFI_STATION_CAPABILITIES_INIT**](nf-wificx-wifi_station_capabilities_init.md)
 
 [Default (station) adapter creation flow](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#default-(station)-adapter-creation-flow)
 

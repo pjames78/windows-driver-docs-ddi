@@ -3,7 +3,7 @@ UID: NS:ntddstor._STORAGE_PROTOCOL_SPECIFIC_DATA_EXT
 title: STORAGE_PROTOCOL_SPECIFIC_DATA_EXT
 description: The **STORAGE_PROTOCOL_SPECIFIC_DATA_EXT** structure describes the protocol-specific device data for IOCTL_STORAGE_QUERY_PROPERTY and IOCTL_STORAGE_SET_PROPERTY requests.
 tech.root: storage
-ms.date: 08/18/2022
+ms.date: 02/21/2024
 keywords: ["STORAGE_PROTOCOL_SPECIFIC_DATA_EXT structure"]
 ms.keywords: STORAGE_PROTOCOL_SPECIFIC_DATA_EXT, STORAGE_PROTOCOL_SPECIFIC_DATA_EXT, *PSTORAGE_PROTOCOL_SPECIFIC_DATA_EXT,
 req.header: ntddstor.h
@@ -38,8 +38,6 @@ api_name:
  - _STORAGE_PROTOCOL_SPECIFIC_DATA_EXT
  - PSTORAGE_PROTOCOL_SPECIFIC_DATA_EXT
  - STORAGE_PROTOCOL_SPECIFIC_DATA_EXT
-product:
- - Windows
 ---
 
 # STORAGE_PROTOCOL_SPECIFIC_DATA_EXT structure
@@ -94,16 +92,16 @@ Third additional data sub-value.
 
 Fourth additional data sub-value.
 
-### -field Reserved[5]
+### -field ProtocolDataSubValue6
+
+Fifth additional data sub-value.
+
+### -field Reserved[4]
 
 Reserved for future use; do not use.
 
-## -remarks
-
 ## -see-also
 
-[IOCTL_STORAGE_QUERY_PROPERTY](./ni-ntddstor-ioctl_storage_query_property.md)
-
-[IOCTL_STORAGE_SET_PROPERTY](./ni-ntddstor-ioctl_storage_set_property.md)
-
-[STORAGE_PROTOCOL_SPECIFIC_DATA](ns-ntddstor-_storage_protocol_specific_data.md)
+- [IOCTL_STORAGE_QUERY_PROPERTY](./ni-ntddstor-ioctl_storage_query_property.md)
+- [IOCTL_STORAGE_SET_PROPERTY](./ni-ntddstor-ioctl_storage_set_property.md)
+- [STORAGE_PROTOCOL_SPECIFIC_DATA](ns-ntddstor-_storage_protocol_specific_data.md)

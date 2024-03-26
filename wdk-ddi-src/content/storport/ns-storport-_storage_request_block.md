@@ -4,7 +4,7 @@ title: STORAGE_REQUEST_BLOCK (storport.h)
 description: The _STORAGE_REQUEST_BLOCK structure (storport.h) describes the extended format of a SCSI Request Block (SRB).
 old-location: storage\storage_request_block.htm
 tech.root: storage
-ms.date: 08/17/2022
+ms.date: 02/28/2024
 keywords: ["STORAGE_REQUEST_BLOCK structure"]
 ms.keywords: PSTORAGE_REQUEST_BLOCK, PSTORAGE_REQUEST_BLOCK structure pointer [Storage Devices], SRB_FLAGS_ADAPTER_CACHE_ENABLE, SRB_FLAGS_ALLOCATED_FROM_ZONE, SRB_FLAGS_BYPASS_FROZEN_QUEUE, SRB_FLAGS_BYPASS_LOCKED_QUEUE, SRB_FLAGS_D3_PROCESSING, SRB_FLAGS_DATA_IN, SRB_FLAGS_DATA_OUT, SRB_FLAGS_DISABLE_AUTOSENSE, SRB_FLAGS_DISABLE_DISCONNECT, SRB_FLAGS_DISABLE_SYNCH_TRANSFER, SRB_FLAGS_FREE_SENSE_BUFFER, SRB_FLAGS_IS_ACTIVE, SRB_FLAGS_NO_DATA_TRANSFER, SRB_FLAGS_NO_KEEP_AWAKE, SRB_FLAGS_NO_QUEUE_FREEZE, SRB_FLAGS_QUEUE_ACTION_ENABLE, SRB_FLAGS_SGLIST_FROM_POOL, SRB_FLAGS_UNSPECIFIED_DIRECTION, SRB_FUNCTION_ABORT_COMMAND, SRB_FUNCTION_CRYPTO_OPERATION, SRB_FUNCTION_DUMP_POINTERS, SRB_FUNCTION_EXECUTE_SCSI, SRB_FUNCTION_FLUSH, SRB_FUNCTION_FREE_DUMP_POINTERS, SRB_FUNCTION_IO_CONTROL, SRB_FUNCTION_LOCK_QUEUE, SRB_FUNCTION_PNP, SRB_FUNCTION_POWER, SRB_FUNCTION_QUIESCE_DEVICE, SRB_FUNCTION_RECEIVE_EVENT, SRB_FUNCTION_RELEASE_RECOVERY, SRB_FUNCTION_RESET_BUS, SRB_FUNCTION_RESET_DEVICE, SRB_FUNCTION_RESET_LOGICAL_UNIT, SRB_FUNCTION_SHUTDOWN, SRB_FUNCTION_TERMINATE_IO, SRB_FUNCTION_UNLOCK_QUEUE, SRB_FUNCTION_WMI, SRB_STATUS_ABORTED, SRB_STATUS_ABORT_FAILED, SRB_STATUS_AUTOSENSE_VALID, SRB_STATUS_BAD_FUNCTION, SRB_STATUS_BAD_SRB_BLOCK_LENGTH, SRB_STATUS_BUSY, SRB_STATUS_BUS_RESET, SRB_STATUS_COMMAND_TIMEOUT, SRB_STATUS_DATA_OVERRUN, SRB_STATUS_ERROR, SRB_STATUS_ERROR_RECOVERY, SRB_STATUS_INTERNAL_ERROR, SRB_STATUS_INVALID_LUN, SRB_STATUS_INVALID_PATH_ID, SRB_STATUS_INVALID_REQUEST, SRB_STATUS_INVALID_TARGET_ID, SRB_STATUS_LINK_DOWN, SRB_STATUS_MESSAGE_REJECTED, SRB_STATUS_NOT_POWERED, SRB_STATUS_NO_DEVICE, SRB_STATUS_NO_HBA, SRB_STATUS_PARITY_ERROR, SRB_STATUS_PENDING, SRB_STATUS_PHASE_SEQUENCE_FAILURE, SRB_STATUS_QUEUE_FROZEN, SRB_STATUS_REQUEST_FLUSHED, SRB_STATUS_REQUEST_SENSE_FAILED, SRB_STATUS_SELECTION_TIMEOUT, SRB_STATUS_SUCCESS, SRB_STATUS_TIMEOUT, SRB_STATUS_UNEXPECTED_BUS_FREE, STORAGE_REQUEST_BLOCK, STORAGE_REQUEST_BLOCK structure [Storage Devices], _STORAGE_REQUEST_BLOCK, storage.storage_request_block, storport/PSTORAGE_REQUEST_BLOCK, storport/STORAGE_REQUEST_BLOCK
 req.header: storport.h
@@ -199,6 +199,18 @@ Indicates the tagged-queuing message to be used when the **SRB_FLAGS_QUEUE_ACTIO
 
 Indicates the interval, in seconds, that the request can execute before the operating system-specific port driver might consider it timed out. Miniport drivers are not required to time requests because the port driver already does.
 
+### -field DUMMYUNIONNAME
+
+Embedded union.
+
+### -field DUMMYUNIONNAME.SystemStatus
+
+Used to store system failure status information in SrbStatus failure conditions (for example, SRB_STATUS_INTERNAL_ERROR).
+
+### -field DUMMYUNIONNAME.RequestTagHigh4Bytes
+
+Used to store high four bytes of unique tag if unique tag feature is enabled.
+
 ### -field SystemStatus
 
 Used by the Storport driver, instead of **SrbStatus**, to report the status of the completed request whenever the request cannot be delivered to the miniport driver. In such cases, **SrbStatus** is set to **SRB_STATUS_INTERNAL_ERROR**. This member is used exclusively for communication between the Storport and the class driver and should not be used by miniport drivers.
@@ -249,7 +261,7 @@ Indicates the **STORAGE_REQUEST_BLOCK** to which this request applies. Only a sm
 
 ### -field _STORAGE_REQUEST_BLOCK
 
-### -field SrbExDataOffset
+### -field SrbExDataOffset[ANYSIZE_ARRAY]
 
 An array of offsets specifying the location of extended data blocks for the SRB. This array is empty if **NumSrbExData** = 0.
 
@@ -263,6 +275,5 @@ The target device address for the SRB is in a [**STOR_ADDRESS**](../scsi/ns-scsi
 
 ## -see-also
 
-[**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md)
-
-[**STOR_ADDRESS**](../scsi/ns-scsi-_stor_address.md)
+- [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md)
+- [**STOR_ADDRESS**](../scsi/ns-scsi-_stor_address.md)

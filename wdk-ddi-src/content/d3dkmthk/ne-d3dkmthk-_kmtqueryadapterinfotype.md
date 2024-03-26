@@ -1,8 +1,8 @@
 ---
 UID: NE:d3dkmthk._KMTQUERYADAPTERINFOTYPE
-title: _KMTQUERYADAPTERINFOTYPE (d3dkmthk.h)
-description: Each KMTQUERYADAPTERINFOTYPE value correlates to a specific piece of adapter information being retrieved by D3DKMQueryAdapterInfo.
-ms.date: 02/23/2022
+title: KMTQUERYADAPTERINFOTYPE (d3dkmthk.h)
+description: Learn more about the KMTQUERYADAPTERINFOTYPE enumeration.
+ms.date: 03/21/2024
 keywords: ["KMTQUERYADAPTERINFOTYPE enumeration"]
 ms.keywords: _KMTQUERYADAPTERINFOTYPE, KMTQUERYADAPTERINFOTYPE,
 req.header: d3dkmthk.h
@@ -31,11 +31,7 @@ api_location:
 api_name:
  - _KMTQUERYADAPTERINFOTYPE
  - KMTQUERYADAPTERINFOTYPE
-product:
- - Windows
 ---
-
-# KMTQUERYADAPTERINFOTYPE enumeration
 
 ## -description
 
@@ -275,6 +271,14 @@ Support for this type started with Windows 10 version 1803.
 ### -field KMTQAITYPE_WDDM_3_0_CAPS
 
 **pPrivateDriverData** points to a [**D3DKMT_WDDM_3_0_CAPS**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_0_caps.md) structure with information about supported WDDM 3.0 caps. Supported starting with Windows 11, version 21H2.
+
+### -field KMTQAITYPE_WSAUMDIMAGENAME
+
+### -field KMTQAITYPE_VGPUINTERFACEID
+
+### -field KMTQAITYPE_WDDM_3_1_CAPS
+
+**pPrivateDriverData** points to a [**D3DKMT_WDDM_3_1_CAPS**](../d3dkmdt/ns-d3dkmdt-d3dkmt_wddm_3_1_caps.md) structure with information about supported WDDM 3.1 caps. Supported starting with Windows 11, version 22H2.
 
 ## -remarks
 

@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_STATION_CAPABILITIES
 tech.root: netvista
 title: WIFI_STATION_CAPABILITIES (wificx.h)
-ms.date: 03/23/2022
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_STATION_CAPABILITIES structure describes the station capabilities for a WiFiCx device.
@@ -167,8 +167,10 @@ A pointer to an array of [**WDI_MAC_ADDRESS**](../dot11wificxintf/ns-dot11wificx
 
 ## -remarks
 
-Client drivers pass **WIFI_STATION_CAPABILITIES** as a parameter to [**WifiDeviceSetStationCapabilities**](nf-wificx-wifidevicesetstationcapabilities.md) to report station capabilities to WiFiCx.
+Call [**WIFI_STATION_CAPABILITIES_INIT**](nf-wificx-wifi_station_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetStationCapabilities**](nf-wificx-wifidevicesetstationcapabilities.md) to report station capabilities to WiFiCx.
 
 ## -see-also
+
+[**WIFI_STATION_CAPABILITIES_INIT**](nf-wificx-wifi_station_capabilities_init.md)
 
 [**WifiDeviceSetStationCapabilities**](nf-wificx-wifidevicesetstationcapabilities.md)

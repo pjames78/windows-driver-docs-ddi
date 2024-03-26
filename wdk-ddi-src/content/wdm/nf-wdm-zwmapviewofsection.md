@@ -91,11 +91,19 @@ Drivers should typically specify **ViewUnmap** for this parameter.
 
 ### -param AllocationType [in]
 
-Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_LARGE_PAGES, MEM_RESERVE, and MEM_TOP_DOWN. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_*XXX* flags, see the description of the [VirtualAlloc](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) routine.
+Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_RESERVE, MEM_TOP_DOWN, MEM_LARGE_PAGES, MEM_DIFFERENT_IMAGE_BASE_OK and MEM_REPLACE_PLACEHOLDER. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_*XXX* flags, see the description of the [VirtualAlloc](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc) and [MapViewOfFile3](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile3) routines.
 
 ### -param Win32Protect [in]
 
-Specifies the type of protection for the region of initially committed pages. Device and intermediate drivers should set this value to PAGE_READWRITE.
+Specifies the [page protection](/windows/win32/Memory/memory-protection-constants) to be applied to the mapped view.
+
+For section objects created with the SEC_IMAGE attribute, the Win32Protect parameter has no effect, and can be set to any valid value such as PAGE_READONLY.
+
+For section objects created with the SEC_IMAGE_NO_EXECUTE attribute, the Win32Protect value must be set to PAGE_READONLY.
+
+For non-image sections, the value of the Win32Protect parameter must be compatible with the section's page protection that was specified when ZwCreateSection was called.  
+
+**ZwMapViewOfSection** sets the cache type of the mapped pages to match the cache type supplied when the section object was created. For example, if ZwCreateSection was called with the SEC_NOCACHE flag, **ZwMapViewOfSection** will map the pages uncached, regardless of whether the Win32Protect parameter includes the PAGE_NOCACHE flag or not.
 
 ## -returns
 
@@ -104,19 +112,17 @@ Specifies the type of protection for the region of initially committed pages. De
 | Return code | Description |
 |---|---|
 | **STATUS_SUCCESS** | The routine successfully performed the requested operation. |
-| **STATUS_CONFLICTING_ADDRESSES** | The specified address range conflicts with an address range already reserved, or the specified cache attribute type conflicts with the address range's existing cache attribute. For example, if the memory being mapped lies within a large page that is already mapped as fully cached, then it is illegal to request to map this memory as non-cached or write combined. |
-| **STATUS_INVALID_PAGE_PROTECTION** | The value specified for the *Protect* parameter is invalid. |
-| **STATUS_SECTION_PROTECTION** | The value specified for the *AllocationType* parameter is incompatible with the protection type specified when the section was created. |
+| **STATUS_CONFLICTING_ADDRESSES** | The specified address range conflicts with a range that is already reserved. |
+| **STATUS_INVALID_PAGE_PROTECTION** | The value specified for the *Win32Protect* parameter is invalid. |
+| **STATUS_SECTION_PROTECTION** | The value specified for the *Win32Protect* parameter is incompatible with the page protection specified when the section was created. |
 
 ## -remarks
 
 Several different views of a section can be concurrently mapped into the virtual address space of one or more processes.
 
-If the specified section does not exist or the access requested is not allowed, **ZwMapViewOfSection** returns an error.
+Do not use **ZwMapViewOfSection** to map a memory range from **\Device\PhysicalMemory** into user mode, unless your driver has directly allocated the memory range through [MmAllocatePagesForMdlEx](./nf-wdm-mmallocatepagesformdlex.md) or another method guaranteeing that no other system component has mapped the same memory range with a different [MEMORY_CACHING_TYPE](./ne-wdm-_memory_caching_type.md) value.
 
-Do not use **ZwMapViewOfSection** to map a memory range from **\Device\PhysicalMemory** into user mode—unless your driver has directly allocated the memory range through [MmAllocatePagesForMdl](./nf-wdm-mmallocatepagesformdl.md) or another method guaranteeing that no other system component has mapped the same memory range with a different [MEMORY_CACHING_TYPE](./ne-wdm-_memory_caching_type.md) value.
-
-User applications cannot access **\Device\PhysicalMemory** directly starting with Windows Server 2003 with Service Pack 1 (SP1) and can access it only if the driver passes a handle to the application.
+User applications cannot access **\Device\PhysicalMemory** directly starting with Windows Server 2003 with Service Pack 1 (SP1) and can access it only if the driver passes a handle to the application.
 
 For more information about section objects, see [Section Objects and Views](/windows-hardware/drivers/kernel/section-objects-and-views).
 
@@ -126,16 +132,14 @@ For calls from kernel-mode drivers, the **Nt*Xxx*** and **Zw*Xxx*** versions of 
 
 ## -see-also
 
-[MEMORY_CACHING_TYPE](./ne-wdm-_memory_caching_type.md)
-
-[MmAllocatePagesForMdl](./nf-wdm-mmallocatepagesformdl.md)
-
 [Using Nt and Zw Versions of the Native System Services Routines](/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines)
 
-[VirtualAlloc](/windows/win32/api/memoryapi/nf-memoryapi-virtualalloc)
-
-[ZwCurrentProcess](/windows-hardware/drivers/kernel/zwcurrentprocess)
+[ZwCreateSection](./nf-wdm-zwcreatesection.md)
 
 [ZwOpenSection](./nf-wdm-zwopensection.md)
 
+[ZwMapViewOfSectionEx](./nf-wdm-zwmapviewofsectionex.md)
+
 [ZwUnmapViewOfSection](./nf-wdm-zwunmapviewofsection.md)
+
+[MapViewOfFile3](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile3)

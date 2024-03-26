@@ -3,9 +3,8 @@ UID: NF:ntifs.CcSetFileSizes
 title: CcSetFileSizes function (ntifs.h)
 description: Learn more about the CcSetFileSizes function.
 tech.root: ifsk
-ms.date: 09/27/2023
+ms.date: 02/02/2024
 keywords: ["CcSetFileSizes function"]
-ms.keywords: CcSetFileSizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml, ifsk.ccsetfilesizes, ntifs/CcSetFileSizes
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
@@ -43,7 +42,7 @@ api_name:
 
 ## -description
 
-The **CcSetFileSizes** routine updates the cache maps and section object for a cached file whose size has changed.
+The **CcSetFileSizes** routine updates the cache maps and section object for a cached file whose size has changed. Use [**CcSetFileSizesEx**](nf-ntifs-ccsetfilesizesex.md) instead since it provides an NTSTATUS return code along with better guidance for error handling.
 
 ## -parameters
 
@@ -57,7 +56,7 @@ Pointer to a [**CC_FILE_SIZES**](ns-ntifs-cc_file_sizes.md) structure containing
 
 ## -remarks
 
-File systems must call **CcSetFileSizes** to update the cache manager data structures whenever one of the following changes is made to a cached file:
+File systems must call [**CcSetFileSizesEx**](nf-ntifs-ccsetfilesizesex.md) or **CcSetFileSizes** to update the cache manager data structures whenever one of the following changes is made to a cached file:
 
 * Its allocation size is increased.
 
@@ -69,6 +68,8 @@ File systems must call **CcSetFileSizes** to update the cache manager data struc
 
 If any failure occurs, **CcSetFileSizes** raises a status exception for that particular failure. For example, if a pool allocation failure occurs, **CcSetFileSizes** raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to **CcSetFileSizes** in a *try-except* or *try-finally* statement.
 
+The file system must ensure that the cache map is valid and will remain so for the duration of this call.
+
 To cache a file, use [**CcInitializeCacheMap**](nf-ntifs-ccinitializecachemap.md).
 
 To get the size of the cached file, pass **FileObject** to [**CcGetFileSizePointer**](nf-ntifs-ccgetfilesizepointer.md).
@@ -76,3 +77,5 @@ To get the size of the cached file, pass **FileObject** to [**CcGetFileSizePoint
 ## -see-also
 
 [**CcInitializeCacheMap**](nf-ntifs-ccinitializecachemap.md)
+
+ [**CcSetFileSizesEx**](nf-ntifs-ccsetfilesizesex.md)

@@ -2,7 +2,7 @@
 UID: NF:wificx.WifiDeviceSetPhyCapabilities
 tech.root: netvista
 title: WifiDeviceSetPhyCapabilities (wificx.h)
-ms.date: 08/26/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WifiDeviceSetPhyCapabilities function sets the PHY capabilities for a WiFiCx device.
@@ -62,9 +62,13 @@ Returns STATUS_SUCCESS if the operation succeeds. Otherwise, this function may r
 
 Client drivers typically call **WifiDeviceSetPhyCapabilities** within [*EvtDevicePrepareHardware*](../wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware.md).
 
+Call [**WIFI_PHY_CAPABILITIES_INIT**](nf-wificx-wifi_phy_capabilities_init.md) to initialize the **WIFI_PHY_CAPABILITIES** structure and fill in its **Size** field. Then call **WifiDeviceSetPhyCapabilities** to report PHY capabilities to WiFiCx.
+
 For more information see [Default (station) adapter creation flow](/windows-hardware/drivers/netcx/writing-a-wificx-client-driver#default-(station)-adapter-creation-flow).
 
 ## -see-also
+
+[**WIFI_PHY_CAPABILITIES_INIT**](nf-wificx-wifi_phy_capabilities_init.md)
 
 [**WIFI_PHY_CAPABILITIES**](ns-wificx-wifi_wifidirect_capabilities.md)
 

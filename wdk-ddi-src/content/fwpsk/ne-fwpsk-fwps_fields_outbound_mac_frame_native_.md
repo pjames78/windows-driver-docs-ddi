@@ -93,9 +93,3 @@ The compartment that the network interface belongs to.
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
-
-
-### -field FWPS_FIELD_OUTBOUND_MAC_FRAME_NATIVE_FLAGS
-
-The outbound MAC frame native flags field.
-

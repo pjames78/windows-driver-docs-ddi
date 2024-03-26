@@ -1,10 +1,10 @@
 ---
 UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS
-tech.root: kernel
+tech.root: stream
 title: KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS (ksmedia.h)
-ms.date: 10/16/2023
+ms.date: 03/25/2024
 targetos: Windows
-description: This topic describes the KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS structure (ksmedia.h).
+description: The KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS structure defines the configuration capabilities of a camera's field of view (FoV).
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS
@@ -47,26 +47,42 @@ helpviewer_keywords:
 
 ## -description
 
-This topic describes the **KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS** structure (ksmedia.h).
+The **KSCAMERA_EXTENDEDPROP_FIELDOFVIEW2_CONFIGCAPS** structure defines the configuration capabilities of a camera's field of view (FoV).
 
 ## -struct-fields
 
 ### -field DefaultDiagonalFieldOfViewInDegrees
 
-Defines the **WORD** member **DefaultDiagonalFieldOfViewInDegrees**.
+ This is the default diagonal field of view in degrees. The DefaultDiagonalFieldOfViewInDegrees value must be equal to one of the values provided in the DiscreteFoVStops array.
 
 ### -field DiscreteFoVStopsCount
 
-Defines the **WORD** member **DiscreteFoVStopsCount**.
+This is a count of valid FoVStops in the DiscreteFoVStops[360] array, with value between 1 and 360. The array has room for maximum of 360 FoV values, but not all of them need to be populated.
+
+For example, if three FoV values are supported: 110, 90, and 75 degrees
+
+```cpp
+DiscreteFoVStopsCount = 3,
+DiscreteFoVStops[0] = 110,
+DiscreteFoVStops[1] = 90,
+DiscreteFoVStops[2] = 75
+DiscreteFoVStops[3] = 0 (not populated)
+...
+DiscreteFoVStops[359] = 0 (not populated)
+```
 
 ### -field DiscreteFoVStops[360]
 
-Defines the **WORD** member **DiscreteFoVStops**.
+This is an array of discrete FoV stops. Each element in the array represents a specific field of view setting in degrees. The values are populated in descending order.
 
 ### -field Reserved
 
-Reserved for future use.
+Reserved. Set to 0.
 
 ## -remarks
 
 ## -see-also
+
+[KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2](/windows-hardware/drivers/stream/ksproperty_cameracontrol_extended_fieldofview2)
+
+[KSPROPERTY_CAMERACONTROL_EXTENDED_FIELDOFVIEW2_CONFIGCAPS](/windows-hardware/drivers/stream/ksproperty_cameracontrol_extended_fieldofview2_configcaps)
