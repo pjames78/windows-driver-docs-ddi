@@ -3,7 +3,7 @@ UID: NF:ntifs.MmCanFileBeTruncated
 title: MmCanFileBeTruncated function (ntifs.h)
 description: Learn more about the MmCanFileBeTruncated function.
 tech.root: ifsk
-ms.date: 09/27/2023
+ms.date: 03/28/2024
 keywords: ["MmCanFileBeTruncated function"]
 ms.keywords: MmCanFileBeTruncated, MmCanFileBeTruncated routine [Installable File System Drivers], ifsk.mmcanfilebetruncated, mmref_7d6c86f9-4a26-4d2c-bf55-9352044e9339.xml, ntifs/MmCanFileBeTruncated
 req.header: ntifs.h
@@ -53,7 +53,7 @@ Pointer to a structure that contains the file object's section object pointers.
 
 ### -param NewFileSize [in, optional]
 
-Pointer to a variable that specifies the size to which the file is to be truncated.  If this parameter is NULL, then a length of zero is assumed.
+Pointer to a variable that specifies the size in bytes to which the file is to be truncated.  If this parameter is NULL, then a length of zero is assumed and **MmCanFileBeTruncated** checks whether the entire file can be truncated.
 
 ## -returns
 
@@ -75,6 +75,10 @@ A file cannot be truncated (and **MmCanFileBeTruncated** will return FALSE) if a
 
 ## -see-also
 
+[**CcCoherencyFlushAndPurge**](nf-ntifs-cccoherencyflushandpurgecache.md)
+
 [**CcPurgeCacheSection**](nf-ntifs-ccpurgecachesection.md)
+
+[**CcSetFileSizesEx**](nf-ntifs-cccoherencyflushandpurgecache.md)
 
 [**MmFlushImageSection**](nf-ntifs-mmflushimagesection.md)
