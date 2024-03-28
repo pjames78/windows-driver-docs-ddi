@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_OPENNATIVEFENCE_FLAGS
 tech.root: display
 title: DXGK_OPENNATIVEFENCE_FLAGS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about DXGK_OPENNATIVEFENCE_FLAGS.
 prerelease: false

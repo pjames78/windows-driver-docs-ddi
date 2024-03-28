@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_DIRTY_BIT_TRACKING_SEGMENT_CAPS
 tech.root: display
 title: DXGK_DIRTY_BIT_TRACKING_SEGMENT_CAPS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGK_DIRTY_BIT_TRACKING_SEGMENT_CAPS structure.
 prerelease: false

@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_QUERYADAPTERINFO
 title: DXGKARG_QUERYADAPTERINFO (d3dkmddi.h)
 description: Learn more about the DXGKARG_QUERYADAPTERINFO structure.
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 keywords: ["DXGKARG_QUERYADAPTERINFO structure"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
@@ -60,9 +60,10 @@ A pointer to input information for the query. The following table describes the 
 | Value of **Type** | Contents of **pInputData** |
 | --- | --- |
 | DXGKQAITYPE_UMDRIVERPRIVATE | A proprietary buffer that contains information about the query. |
-| DXGKQAITYPE_QUERYSEGMENT | [**DXGK_QUERYSEGMENTIN**](ns-d3dkmddi-_dxgk_querysegmentin.md) structure |
+| DXGKQAITYPE_QUERYSEGMENT | A [**DXGK_QUERYSEGMENTIN**](ns-d3dkmddi-_dxgk_querysegmentin.md) structure. |
 | DXGKQAITYPE_POWERCOMPONENTINFO | Buffer containing the power component index. |
 | DXGKQAITYPE_DIRTYBITTRACKINGSEGMENTCAPS | Buffer containing the driver's segment ID. The driver should fill out the output caps for this particular segment. |
+| DXGKQAITYPE_SCATTER_RESERVE | A [**DXGK_QUERYSCATTERRESERVEIN**](ns-d3dkmddi-dxgk_queryscatterreservein.md) structure. |
 
 ### -field InputDataSize [in]
 

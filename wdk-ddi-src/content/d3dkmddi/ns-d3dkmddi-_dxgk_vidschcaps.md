@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_VIDSCHCAPS
 title: DXGK_VIDSCHCAPS (d3dkmddi.h)
 description: Learn more about the DXGK_VIDSCHCAPS structure.
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 keywords: ["DXGK_VIDSCHCAPS structure"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h

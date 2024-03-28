@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_STOPDIRTYTRACKING
 tech.root: display
 title: DXGKDDI_STOPDIRTYTRACKING
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_STOPDIRTYTRACKING function.
 prerelease: false

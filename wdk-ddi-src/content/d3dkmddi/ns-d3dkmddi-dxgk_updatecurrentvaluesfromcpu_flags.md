@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_UPDATECURRENTVALUESFROMCPU_FLAGS
 tech.root: display
 title: DXGK_UPDATECURRENTVALUESFROMCPU_FLAGS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGK_UPDATECURRENTVALUESFROMCPU_FLAGS structure.
 prerelease: false

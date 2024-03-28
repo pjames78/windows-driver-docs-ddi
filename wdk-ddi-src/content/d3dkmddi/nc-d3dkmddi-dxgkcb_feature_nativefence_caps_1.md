@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKCB_FEATURE_NATIVEFENCE_CAPS_1
 tech.root: display
 title: DXGKCB_FEATURE_NATIVEFENCE_CAPS_1
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKCB_FEATURE_NATIVEFENCE_CAPS_1 callback function.
 prerelease: false

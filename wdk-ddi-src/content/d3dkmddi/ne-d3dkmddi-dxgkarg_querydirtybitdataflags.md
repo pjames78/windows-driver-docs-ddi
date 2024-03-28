@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGKARG_QUERYDIRTYBITDATAFLAGS
 tech.root: display
 title: DXGKARG_QUERYDIRTYBITDATAFLAGS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKARG_QUERYDIRTYBITDATAFLAGS enumeration.
 prerelease: false

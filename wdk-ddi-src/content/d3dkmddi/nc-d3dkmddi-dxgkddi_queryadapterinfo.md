@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_QUERYADAPTERINFO
 title: DXGKDDI_QUERYADAPTERINFO (d3dkmddi.h)
 description: Learn more about the DXGKDDI_QUERYADAPTERINFO callback function.
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 keywords: ["DXGKDDI_QUERYADAPTERINFO callback function"]
 req.header: d3dkmddi.h
 req.include-header: 

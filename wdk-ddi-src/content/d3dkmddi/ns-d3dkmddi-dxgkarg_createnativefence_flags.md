@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CREATENATIVEFENCE_FLAGS
 tech.root: display
 title: DXGKARG_CREATENATIVEFENCE_FLAGS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about DXGKARG_CREATENATIVEFENCE_FLAGS.
 prerelease: false

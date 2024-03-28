@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGK_INTERRUPT_TYPE
 title: DXGK_INTERRUPT_TYPE (d3dkmddi.h)
 description: Learn more about the DXGK_INTERRUPT_TYPE enumeration.
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows

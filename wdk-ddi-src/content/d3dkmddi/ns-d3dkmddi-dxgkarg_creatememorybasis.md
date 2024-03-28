@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CREATEMEMORYBASIS
 tech.root: display
 title: DXGKARG_CREATEMEMORYBASIS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKARG_CREATEMEMORYBASIS structure.
 prerelease: false
