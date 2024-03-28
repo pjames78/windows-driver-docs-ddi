@@ -2,9 +2,9 @@
 UID: NS:srb._SRBEX_DATA_NVMEOF_OPERATION
 tech.root: storage
 title: SRBEX_DATA_NVMEOF_OPERATION
-ms.date: 03/12/2024
+ms.date: 03/28/2024
 targetos: Windows
-description: 
+description: For internal use only. Do not use.
 prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
@@ -47,31 +47,33 @@ helpviewer_keywords:
 
 ## -description
 
+For internal use only. Do not use.
+
 ## -struct-fields
 
 ### -field Type
 
-Indicates the SRB extended data type.
+For internal use only. Do not use.
 
 ### -field Length
 
-Specifies the length of a **SRBEX_DATA_NVMEOF_OPERATION**.
+For internal use only. Do not use.
 
 ### -field Version
 
-Indicates the version of this structure.
+For internal use only. Do not use.
 
 ### -field Reserved1
 
-Reserved for future use.
+For internal use only. Do not use.
 
 ### -field Flags
 
-Specifies operation-specific flags.
+For internal use only. Do not use.
 
 ### -field FunctionType
 
-Specifies the **STOR_NVMEOF_FUNCTION_TYPE**, defined in storport.h.
+For internal use only. Do not use.
 
 ## -remarks
 
