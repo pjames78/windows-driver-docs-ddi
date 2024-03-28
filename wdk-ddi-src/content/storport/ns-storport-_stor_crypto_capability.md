@@ -4,7 +4,7 @@ title: STOR_CRYPTO_CAPABILITY (storport.h)
 description: "Microsoft reserves the STOR_CRYPTO_CAPABILITY structure for internal use only. Don't use this structure in your code."
 old-location: storage\stor_crypto_capability.htm
 tech.root: storage
-ms.date: 02/28/2024
+ms.date: 03/26/2024
 keywords: ["STOR_CRYPTO_CAPABILITY structure"]
 ms.keywords: "*PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY structure pointer [Storage Devices], STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY structure [Storage Devices], _STOR_CRYPTO_CAPABILITY, storage.stor_crypto_capability, storport/PSTOR_CRYPTO_CAPABILITY, storport/STOR_CRYPTO_CAPABILITY"
 req.header: storport.h
@@ -86,7 +86,7 @@ Reserved for system use.
 
 Reserved for system use.
 
-### ### -field SecurityComplianceBitmask
+### -field SecurityComplianceBitmask
 
 Reserved for system use.
 
