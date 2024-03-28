@@ -95,8 +95,8 @@ Indicates whether certain commands are allowed through certain types of persiste
 | Value | Description |
 |--|--|
 | 0 | No information is provided about whether certain commands are allowed through certain types of persistent reservations. |
-| 1 | The device server allows the TEST UNIT READY command through write exclusive type reservations and exclusive access type reservations. |
-| 2 | The device server allows the TEST UNIT READY command through write exclusive type reservations and exclusive access type reservations. |
+| 1 | The device server allows the TEST UNIT READY command through write exclusive type reservations and exclusive access type reservations. The device server does not provide information about whether the following commands are allowed through Write Exclusive type reservations: <ol><li>MODE SENSE</li><li>READ ATTRIBUTE</li><li>READ BUFFER(10)</li><li>RECEIVE DIAGNOSTIC RESULTS</li><li>REPORT SUPPORTED OPERATION CODES</li><li>REPORT SUPPORTED TASK MANAGEMENT FUNCTIONS</li><li>READ DEFECT DATA</li></ol> |
+| 2 | The device server allows the TEST UNIT READY command through write exclusive type reservations and exclusive access type reservations. The device server does not allow the following commands through Write Exclusive type reservations: <ol><li>MODE SENSE</li><li>READ ATTRIBUTE</li><li>READ BUFFER(10)</li><li>RECEIVE DIAGNOSTIC RESULTS</li><li>REPORT SUPPORTED OPERATION CODES</li><li>REPORT SUPPORTED TASK MANAGEMENT FUNCTIONS</li><li>READ DEFECT DATA</li></ol> |
 | 3 | The device server allows the TEST UNIT READY command through write exclusive and exclusive access type reservations. And the following commands through write exclusive type reservations:<ol><li>MODE SENSE</li><li>READ ATTRIBUTE</li><li>READ BUFFER(10)</li><li>RECEIVE DIAGNOSTIC RESULTS</li><li>REPORT SUPPORTED OPERATION CODES</li><li>REPORT SUPPORTED TASK MANAGEMENT FUNCTIONS</li><li>READ DEFECT DATA</li></ol> |
 | 4 | The device server allows the TEST UNIT READY command through write exclusive and exclusive access persistent reservations. And the following commands through write exclusive persist reservations:<ol><li>MODE SENSE</li><li>READ ATTRIBUTE</li><li>READ BUFFER(10)</li><li>RECEIVE DIAGNOSTIC RESULTS</li><li>REPORT SUPPORTED OPERATION CODES</li><li>REPORT SUPPORTED TASK MANAGEMENT FUNCTIONS</li><li>READ DEFECT DATA</li></ol> |
 | 5 | The device server allows:<ol><li>The following commands through write exclusive and exclusive access persistent reservations:<ol><li>TEST UNIT READY</li><li>REPORT SUPPORTED OPERATION CODES</li><li>REPORT SUPPORTED TASK MANAGEMENT FUNCTIONS</li></ol></li><li>The following commands through write exclusive persistent reservations:<ol><li>MODE SENSE</li><li>READ ATTRIBUTE</li><li>READ BUFFER(10)</li><li>RECEIVE DIAGNOSTIC RESULTS</li><li>READ DEFECT DATA</li></ol></li></ol> |
@@ -104,7 +104,7 @@ Indicates whether certain commands are allowed through certain types of persiste
 
 ### -field TypeMaskValid
 
-Contains a bit map that indicates the persistent reservation types that are supported by the device server.
+Contains a bitmask that indicates the persistent reservation types that are supported by the device server.
 
 ### -field Reserved3
 
