@@ -4,7 +4,7 @@ title: UFS_RPMB_UNIT_DESCRIPTOR (ufs.h)
 description: The UFS_RPMB_UNIT_DESCRIPTOR structure describes the contents of a Replay Protected Memory Block (RBMB) Unit.
 old-location: storage\ufs_rpmb_unit_descriptor.htm
 tech.root: storage
-ms.date: 03/07/2024
+ms.date: 03/28/2024
 keywords: ["UFS_RPMB_UNIT_DESCRIPTOR structure"]
 ms.keywords: "*PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR structure pointer [Storage Devices], UFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR structure [Storage Devices], storage.ufs_rpmb_unit_descriptor, ufs/PUFS_RPMB_UNIT_DESCRIPTOR, ufs/UFS_RPMB_UNIT_DESCRIPTOR"
 req.header: ufs.h
@@ -61,7 +61,7 @@ Specifies the type of the descriptor. This descriptor will have a value of **UFS
 
 ### -field bUnitIndex
 
-Specifies unit index
+Specifies the unit index.
 
 ### -field bLUEnable
 
@@ -100,8 +100,6 @@ Specifies the desired memory type. Equal to 0x0F.
 
 Reserved for future use.
 
-Reserved for future use.
-
 ### -field bLogicalBlockSize
 
 Specifies the logical block size of the descriptor.
@@ -118,8 +116,10 @@ Specifies the erase block size.
 
 Specifies the provisioning type.
 
-### -field  qPhyMemResourceCount[8]
+### -field qPhyMemResourceCount[8]
 
 Specifies the total physical memory resources available in the logical unit.
 
 ### -field Reserved2[3]
+
+Reserved for future use.
