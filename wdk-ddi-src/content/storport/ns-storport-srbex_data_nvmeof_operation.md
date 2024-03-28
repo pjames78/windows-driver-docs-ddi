@@ -2,9 +2,9 @@
 UID: NS:storport._SRBEX_DATA_NVMEOF_OPERATION
 tech.root: storage
 title: SRBEX_DATA_NVMEOF_OPERATION
-ms.date: 03/26/2024
+ms.date: 03/28/2024
 targetos: Windows
-description: The SRBEX_DATA_NVMEOF_OPERATION structure contains information about an NVMe OF operation.
+description: For internal use only. Do not use.
 prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
@@ -47,33 +47,33 @@ helpviewer_keywords:
 
 ## -description
 
-The **SRBEX_DATA_NVMEOF_OPERATION** structure contains information about an NVMe OF operation.
+For internal use only. Do not use.
 
 ## -struct-fields
 
 ### -field Type
 
-The type of the operation. This must be set to `SrbExDataTypeNvmeofOperation`.
+For internal use only. Do not use.
 
 ### -field Length
 
-The size of this structure, in bytes.
+For internal use only. Do not use.
 
 ### -field Version
 
-The version of this structure.
+For internal use only. Do not use.
 
 ### -field Reserved1
 
-Reserved for internal use.
+For internal use only. Do not use.
 
 ### -field Flags
 
-Operation specific flags.
+For internal use only. Do not use.
 
 ### -field FunctionType
 
-Specifies the function type. This is set to one of the values in the **STOR_NVMEOF_FUNCTION_TYPE** enum defined in storport.h.
+For internal use only. Do not use.
 
 ## -remarks
 
