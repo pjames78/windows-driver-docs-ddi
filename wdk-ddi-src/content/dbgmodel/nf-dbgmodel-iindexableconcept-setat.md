@@ -57,11 +57,11 @@ The number of dimensions that the object is being indexed in.
 
 ### -param indexers
 
-An array (sized according to the indexerCount) of indicies indicating where inside the instance object to access.
+An array (sized according to the indexerCount) of indices indicating where inside the instance object to access.
 
 ### -param value
 
-The value of the element to assign at the specified indicies.
+The value of the element to assign at the specified indices.
 
 ## -returns
 

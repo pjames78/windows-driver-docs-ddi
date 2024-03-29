@@ -57,11 +57,11 @@ The number of dimensions that the object is being indexed in.
 
 ### -param indexers
 
-An array (sized according to the indexerCount) of indicies indicating where inside the instance object to access.
+An array (sized according to the indexerCount) of indices indicating where inside the instance object to access.
 
 ### -param object
 
-The value of the element at the specified indicies is returned here. If the method fails, extended error information may be returned here as an error object.
+The value of the element at the specified indices is returned here. If the method fails, extended error information may be returned here as an error object.
 
 ### -param metadata
 

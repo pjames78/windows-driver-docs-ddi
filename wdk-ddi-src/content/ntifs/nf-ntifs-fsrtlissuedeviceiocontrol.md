@@ -82,7 +82,7 @@ A pointer to a ULONG status value to receive the information field value set in 
 
 ## -returns
 
-**FsRtlIssueDeviceIoControl** returns STATUS_SUCCESS or an another NTSTATUS value returned in the status block from the I/O operation.
+**FsRtlIssueDeviceIoControl** returns STATUS_SUCCESS or another NTSTATUS value returned in the status block from the I/O operation.
 
 ## -see-also
 

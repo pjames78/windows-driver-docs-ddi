@@ -128,7 +128,7 @@ Contains the capabilities of the keyboard reader.
 
 ### -field ReaderExtension
 
-Contains data that is specifc to the smart card reader.
+Contains data that is specific to the smart card reader.
 
 ### -field SmartcardReply
 

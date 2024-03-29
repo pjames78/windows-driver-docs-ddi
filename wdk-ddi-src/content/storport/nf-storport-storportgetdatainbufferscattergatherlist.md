@@ -63,7 +63,7 @@ The request block to containing the input data buffer for the scatter-gather lis
 ### -param SgList [out]
 
 
-A pointer to  an scatter-gather list structure address to receive the scatter-gather list for the input data buffer in <i>Srb</i>.
+A pointer to  a scatter-gather list structure address to receive the scatter-gather list for the input data buffer in <i>Srb</i>.
 
 ## -returns
 

@@ -68,7 +68,7 @@ An ACXCIRCUIT has at least an input pin (ACXPIN) and an output pin (ACXPIN), and
 
 Each ACXCIRCUIT has at least one Sink pin and one Source pin. These pins are used by the ACX framework to expose the circuit's connections to the audio stack. For a Render circuit, the Source pin is used to control the render behavior (device properties) of any stream created from the circuit. For a Capture circuit, the Sink pin is used to control the capture behavior (device properties) of any stream created from the circuit.
 
-ACXPIN is the object used to control streaming in the Audio Path. For simple ACXCIRCUIT toplogies, ACX is able to automatically create the other ACXPIN if only one is present.
+ACXPIN is the object used to control streaming in the Audio Path. For simple ACXCIRCUIT topologies, ACX is able to automatically create the other ACXPIN if only one is present.
 
 ### Example
 
