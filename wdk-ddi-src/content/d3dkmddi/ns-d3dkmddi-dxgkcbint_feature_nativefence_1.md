@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKCBINT_FEATURE_NATIVEFENCE_1
 tech.root: display
 title: DXGKCBINT_FEATURE_NATIVEFENCE_1
-ms.date: 03/21/2024 
+ms.date: 03/28/2024 
 targetos: Windows
 description: Learn more about the DXGKCBINT_FEATURE_NATIVEFENCE_1 structure.
 prerelease: false

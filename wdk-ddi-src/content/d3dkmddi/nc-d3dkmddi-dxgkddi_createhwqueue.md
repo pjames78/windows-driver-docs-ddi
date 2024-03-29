@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_CREATEHWQUEUE
 tech.root: display
 title: DXGKDDI_CREATEHWQUEUE
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_CREATEHWQUEUE function.
 prerelease: false

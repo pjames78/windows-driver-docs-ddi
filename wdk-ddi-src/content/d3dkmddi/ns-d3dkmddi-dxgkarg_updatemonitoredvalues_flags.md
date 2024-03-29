@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_UPDATEMONITOREDVALUES_FLAGS
 tech.root: display
 title: DXGKARG_UPDATEMONITOREDVALUES_FLAGS
-ms.date: 03/21/2024
+ms.date: 03/28/2024
 targetos: Windows
 description: Learn more about the DXGKARG_UPDATEMONITOREDVALUES_FLAGS structure.
 prerelease: false

@@ -5,7 +5,7 @@ title: DXGKARGCB_DISCONNECTDOORBELL
 ms.date: 05/22/2023
 targetos: Windows
 description: Learn more about the DXGKARGCB_DISCONNECTDOORBELL structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
