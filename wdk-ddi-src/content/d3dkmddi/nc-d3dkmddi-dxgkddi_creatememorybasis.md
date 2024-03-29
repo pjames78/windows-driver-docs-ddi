@@ -54,7 +54,7 @@ KMD's **DxgkDdiCreateMemoryBasis** function creates a handle for a collection of
 
 ### -param pArgs
 
-[in] A pointer to a [**DXGKARG_CREATEMEMORYBASIS**](nc-d3dkmddi-dxgkarg_creatememorybasis.md) structure that contains information for the basis being created.
+[in] A pointer to a [**DXGKARG_CREATEMEMORYBASIS**](ns-d3dkmddi-dxgkarg_creatememorybasis.md) structure that contains information for the basis being created.
 
 ## -returns
 
@@ -78,6 +78,6 @@ For more information, see [Dirty bit tracking](/windows-hardware/drivers/display
 
 ## -see-also
 
-[**DXGKARG_CREATEMEMORYBASIS**](nc-d3dkmddi-dxgkarg_creatememorybasis.md)
+[**DXGKARG_CREATEMEMORYBASIS**](ns-d3dkmddi-dxgkarg_creatememorybasis.md)
 
 [**DxgkDdiDestroyMemoryBasis**](nc-d3dkmddi-dxgkddi_destroymemorybasis.md)

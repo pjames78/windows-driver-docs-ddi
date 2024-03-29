@@ -5,7 +5,7 @@ title: DXGKDDI_CREATEDOORBELL
 ms.date: 05/22/2023
 targetos: Windows
 description: Learn more about the DXGKDDI_CREATEDOORBELL callback function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

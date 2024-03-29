@@ -58,6 +58,6 @@ For more information, see [Live migration on GPU-P devices](/windows-hardware/dr
 
 ## -see-also
 
-[**DXGKARG_GPUP_PREPARE_LIVE_MIGRATION**](ns-d3dkmddi-dxkgarg_gpup_prepare_live_migration.md)
+[**DXGKARG_GPUP_PREPARE_LIVE_MIGRATION**](ns-d3dkmddi-dxgkarg_gpup_prepare_live_migration.md)
 
 [**DxgkDdiPrepareLiveMigration**](nc-d3dkmddi-dxgkddi_preparelivemigration.md)

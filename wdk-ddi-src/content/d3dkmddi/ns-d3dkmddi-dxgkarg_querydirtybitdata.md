@@ -82,7 +82,7 @@ For more information, see [Dirty bit tracking](/windows-hardware/drivers/display
 
 ## -see-also
 
-[**DXGKARG_QUERYDIRTYBITDATAFLAGS**](ns-d3dkmddi-dxgkarg_querydirtybitdataflags.md)
+[**DXGKARG_QUERYDIRTYBITDATAFLAGS**](ne-d3dkmddi-dxgkarg_querydirtybitdataflags.md)
 
 [**DxgkDdiCreateMemoryBasis**](nc-d3dkmddi-dxgkddi_creatememorybasis.md)
 

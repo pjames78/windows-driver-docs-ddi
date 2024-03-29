@@ -5,7 +5,7 @@ title: DXGKARG_NOTIFYWORKSUBMISSION_FLAGS
 ms.date: 05/22/2023
 targetos: Windows
 description: Learn more about the DXGKARG_NOTIFYWORKSUBMISSION_FLAGS structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

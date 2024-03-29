@@ -64,7 +64,7 @@ The receiving-side OS calls **DxgkDdiRestoreImmutableMigrationData** to restore 
 
 Unlike the save/send side that is called twice, **DxgkDdiRestoreImmutableMigrationData** is called only once because it has all the data needed to present a full data buffer to the receiving side KMD. The driver should take the data and apply it to the VF being constructed, as well as any tracking for it, and it should validate the data invariants necessary for a successful restore.
 
-The buffer is the content that was filled on the source side in [**DxgkDdiSaveImmutableMigrationData**](/windows-hardware/drivers/ddi/d3dkmddi/nc-n3dkmddi-dxgkddi_saveimmutablemigrationdata), so KMD should be tracking that data in a common type. There should also be a versioning scheme implemented in the content data if the data might potentially need to change with new drivers, and this scheme should be a part of the version checking done on the target.
+The buffer is the content that was filled on the source side in [**DxgkDdiSaveImmutableMigrationData**](nc-d3dkmddi-dxgkddi_saveimmutablemigrationdata.md), so KMD should be tracking that data in a common type. There should also be a versioning scheme implemented in the content data if the data might potentially need to change with new drivers, and this scheme should be a part of the version checking done on the target.
 
 If the data indicates that the target system isn't configured properly to have the VF migrated from the source, KMD should do the following:
 
@@ -78,3 +78,5 @@ For more information, see [Live migration on GPU-P devices](/windows-hardware/dr
 ## -see-also
 
 [**DXGKARG_GPUP_RESTORE_IMMUTABLE_MIGRATION_DATA**](ns-d3dkmddi-dxgkarg_gpup_restore_immutable_migration_data.md)
+
+[**DxgkDdiSaveImmutableMigrationData**](nc-d3dkmddi-dxgkddi_saveimmutablemigrationdata.md)

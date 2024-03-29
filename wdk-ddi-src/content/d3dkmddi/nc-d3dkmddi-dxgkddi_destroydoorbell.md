@@ -5,7 +5,7 @@ title: DXGKDDI_DESTROYDOORBELL
 ms.date: 05/22/2023
 targetos: Windows
 description: Learn more about the DXGKDDI_DESTROYDOORBELL callback function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

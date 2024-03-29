@@ -62,7 +62,7 @@ KMD can call the display port driver's **DxgkIsFeatureEnabled2** function before
 
 ## -remarks
 
-**DxgkIsFeatureEnabled2** is defined in the display port driver's library (*displib.lib*). As a result, KMD can call this function to check for the presence of an enabled feature before *Dxgkrnl* is initialized. Because **DxgkIsFeatureEnabled2** is intended to be used at [**DriverEntry**](driverentry-of-display-miniport-driver.md), only a subset of global features can be queried through it. This subset currently includes:
+**DxgkIsFeatureEnabled2** is defined in the display port driver's library (*displib.lib*). As a result, KMD can call this function to check for the presence of an enabled feature before *Dxgkrnl* is initialized. Because **DxgkIsFeatureEnabled2** is intended to be used at [**DriverEntry**](/windows-hardware/drivers/display/driverentry-of-display-miniport-driver), only a subset of global features can be queried through it. This subset currently includes:
 
 * DXGK_FEATURE_GPUVAIOMMU
 
@@ -70,6 +70,6 @@ For more information, see [Querying WDDM feature support and enablement](/window
 
 ## -see-also
 
-[**DriverEntry**](driverentry-of-display-miniport-driver.md)
+[**DriverEntry**](/windows-hardware/drivers/display/driverentry-of-display-miniport-driver)
 
 [**DXGKARGCB_ISFEATUREENABLED2**](ns-d3dkmddi-dxgkargcb_isfeatureenabled2.md)

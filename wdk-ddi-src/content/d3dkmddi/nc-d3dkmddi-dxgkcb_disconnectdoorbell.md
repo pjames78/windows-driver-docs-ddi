@@ -5,7 +5,7 @@ title: DXGKCB_DISCONNECTDOORBELL
 ms.date: 05/22/2023
 targetos: Windows
 description: Learn more about the DXGKCB_DISCONNECTDOORBELL callback function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
