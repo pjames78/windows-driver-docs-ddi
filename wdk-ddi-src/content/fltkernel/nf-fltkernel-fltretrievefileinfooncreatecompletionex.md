@@ -111,6 +111,7 @@ QUERY_ON_CREATE_FILE_STAT_INFORMATION* fileStatInfo;
 QUERY_ON_CREATE_FILE_LX_INFORMATION* fileLxInfo;
 QUERY_ON_CREATE_EA_INFORMATION* fileEaInfo;
 QUERY_ON_CREATE_USN_INFORMATION* fileUsnInfo;
+QUERY_ON_CREATE_SECURITY_INFORMATION* fileSecurityInfo;
 
 status = FltRetrieveFileInfoOnCreateCompletionEx( Filter,
                                                   CallbackData,
@@ -132,6 +133,11 @@ status = FltRetrieveFileInfoOnCreateCompletionEx( Filter,
                                                   QoCFileUsnInformation, 
                                                   &fileUsnInfo, 
                                                   &fileUsnInfo );
+status = FltRetrieveFileInfoOnCreateCompletionEx( Filter,
+                                                  CallbackData,
+                                                  QoCFileSecurityInformation,
+                                                  &fileSecurityInfo,
+                                                  &fileSecurityInfo);
 ```
 
 Once **FltRetrieveFileInfoOnCreateCompletionEx** returns, a minifilter can write into the buffer that **RetInfoBuffer** points to. Any filters above that minifilter will see the changes if they call **FltRetrieveFileInfoOnCreateCompletionEx** on the modified information type.

@@ -81,7 +81,7 @@ Pointer to a KMD-implemented [**DxgkDdiQueryFeatureInterface**](../d3dkmddi/nc-d
 
 ## -remarks
 
-If the driver implements the **DXGKDDI_FEATURE_INTERFACE**, it no longer needs to call [**DxgkCbQueryFeatureSupport**](../ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport) to enable a feature in the port driver ahead of time. It can instead query feature support on demand using its **DXGKDDI_FEATURE_INTERFACE** interface.
+If the driver implements the **DXGKDDI_FEATURE_INTERFACE**, it no longer needs to call [**DxgkCbQueryFeatureSupport**](../d3dkmddi/nc-d3dkmddi-dxgkcb_queryfeaturesupport.md) to enable a feature in the port driver ahead of time. It can instead query feature support on demand using its **DXGKDDI_FEATURE_INTERFACE** interface.
 
 For more information, see [Querying WDDM feature support and enablement](/windows-hardware/drivers/display/querying-wddm-feature-support-and-enablement).
 

@@ -78,6 +78,6 @@ For more information about native GPU fences, see [Native GPU fence objects](/wi
 
 ## -see-also
 
-[**D3DKMT_CREATENATIVEFENCE**](../d3dkmthk/ns-d3dkmthk-d3dkmt_createnativefence.md.md)
+[**D3DKMT_CREATENATIVEFENCE**](../d3dkmthk/ns-d3dkmthk-d3dkmt_createnativefence.md)
 
 [**D3DKMTCreateNativeFence**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatenativefence.md)
