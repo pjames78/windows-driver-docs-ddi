@@ -172,7 +172,7 @@ Routine Description:
 
     This routine is used to query the end of file information on
     the opened serial port.  Any other file information request
-    is retured with an invalid parameter.
+    is returned with an invalid parameter.
 
     This routine always returns an end of file of 0.
 

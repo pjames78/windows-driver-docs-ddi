@@ -75,7 +75,7 @@ A pointer to the storage for the original IRQL value to be used in a subsequent 
 
 ## -remarks
 
-A miniport driver calls the **StorPortAcquireMSISpinLock** routine to acquire the MSI spin lock for a particular message. To release the spin lock, the miniport driver calls the [**StorPortReleaseMSISpinLock**](nf-storport-storportreleasemsispinlock.md) routine. This routine is used by a miniport drivers to acquire a  the MSI spin lock for an individual message only when the **InterruptSynchronizationMode** member of the [**PORT_CONFIGURATION_INFORMATION**](ns-storport-_port_configuration_information.md) structure is set to **InterruptSynchronizePerMessage**.
+A miniport driver calls the **StorPortAcquireMSISpinLock** routine to acquire the MSI spin lock for a particular message. To release the spin lock, the miniport driver calls the [**StorPortReleaseMSISpinLock**](nf-storport-storportreleasemsispinlock.md) routine. This routine is used by a miniport drivers to acquire an MSI spin lock for an individual message only when the **InterruptSynchronizationMode** member of the [**PORT_CONFIGURATION_INFORMATION**](ns-storport-_port_configuration_information.md) structure is set to **InterruptSynchronizePerMessage**.
 
 When a miniport needs to synchronize with all messages, it can use one call to [**StorPortAcquireSpinLock**](nf-storport-storportacquirespinlock.md) which will acquire a lock for each message in the proper order.
 

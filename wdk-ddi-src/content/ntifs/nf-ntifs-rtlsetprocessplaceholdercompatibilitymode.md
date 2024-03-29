@@ -52,7 +52,7 @@ The placeholder compatibility mode to set.
 
 ## -returns
 
-This function returns the process's previous placeholder compatibily mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx).
+This function returns the process's previous placeholder compatibility mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx).
 
 It can be one of the following values:
 

@@ -81,7 +81,7 @@ Data fields contain sensor-generated data, as opposed to properties, which descr
 
 Each <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> object returned by this method must contain a time stamp, as described in <a href="/windows-hardware/drivers/sensors/sensor-category-all">SENSOR_CATEGORY_ALL</a>. 
 
-The sensor class extension is responsibile for freeing any <b>PROPVARIANT</b> structures returned by this method.
+The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 
 The sensor class extension calls this method only for sensors for which the user has granted permission through Control Panel.
 

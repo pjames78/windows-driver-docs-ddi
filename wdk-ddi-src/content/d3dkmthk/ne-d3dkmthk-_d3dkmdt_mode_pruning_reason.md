@@ -58,7 +58,7 @@ A variable of type D3DKMDT_MODE_PRUNING_REASON has not yet been assigned a meani
 
 ### -field D3DKMDT_MPR_ALLCAPS
 
-The monitor does not support the display mode because none of the available monitor capabilites imply support of the display mode.
+The monitor does not support the display mode because none of the available monitor capabilities imply support of the display mode.
 
 ### -field D3DKMDT_MPR_DESCRIPTOR_MONITOR_SOURCE_MODE
 

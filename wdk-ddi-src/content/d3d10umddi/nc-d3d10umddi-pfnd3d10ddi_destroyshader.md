@@ -1,7 +1,7 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYSHADER
 title: PFND3D10DDI_DESTROYSHADER (d3d10umddi.h)
-description: The DestroyShader function destroys the specified shader object. The shader object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyShader function destroys the specified shader object. The shader object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyshader.htm
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYSHADER callback function"]
