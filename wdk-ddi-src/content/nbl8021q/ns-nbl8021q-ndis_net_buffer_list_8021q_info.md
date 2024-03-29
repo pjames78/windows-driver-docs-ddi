@@ -104,7 +104,7 @@ Identifies the VLAN that a packet belongs to. Outgoing packets are marked with t
 A wireless multimedia (WMM) integer value that is the same as the traffic identifier (TID) fields
         that appear in certain frames that are used to deliver and to control the delivery of 802.1Q Quality
         of Service (QoS) data. The values 0 through 7 represent QoS user priorities (UPs) for the MAC service
-        data units (MSDUs). The values 8 through 15 are reserved. Therefore, the higest bit in 
+        data units (MSDUs). The values 8 through 15 are reserved. Therefore, the highest bit in 
         <b>WMMInfo</b> must be zero.
 
 <div class="alert"><b>Note</b>  Traffic specification (TSPEC) and traffic classification (TCLAS) are not

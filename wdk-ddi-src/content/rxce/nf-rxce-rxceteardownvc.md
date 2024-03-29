@@ -52,7 +52,7 @@ api_name:
 ### -param pVc [in]
 
 
-A pointer to a handle for an virtual circuit structure to be torn down.
+A pointer to a handle for a virtual circuit structure to be torn down.
 
 ## -returns
 

@@ -86,7 +86,7 @@ If this flag is set, NDIS did not allocate new MDLs for the cloned NET_BUFFER_LI
 
 ## -remarks
 
-The caller must specifiy the same flags that it specified in the 
+The caller must specify the same flags that it specified in the 
     <i>AllocateCloneFlags</i> parameter when it called the 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateclonenetbufferlist">
     NdisAllocateCloneNetBufferList</a> function.

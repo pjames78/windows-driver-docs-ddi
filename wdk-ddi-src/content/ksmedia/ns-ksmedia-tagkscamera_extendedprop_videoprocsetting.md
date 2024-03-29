@@ -97,7 +97,7 @@ Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE](/windows-hardware
 
 Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-whitebalancemode) property, when **Mode** is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, the **VideoProc.Value.ul** value is a temperature value in degrees Kelvin.
 
-Using the  [KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-exposuremode) property, when used for manually setting exposure, KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL, the **VideoProc.Value.ul** value is a the exposure time in 100 nanosecond units.
+Using the  [KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-exposuremode) property, when used for manually setting exposure, KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL, the **VideoProc.Value.ul** value is the exposure time in 100 nanosecond units.
 
 Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode) property, this member contains the focal length value for manual focus mode,  KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.
 

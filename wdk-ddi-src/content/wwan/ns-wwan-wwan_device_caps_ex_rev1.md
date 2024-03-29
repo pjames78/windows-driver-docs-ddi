@@ -174,7 +174,7 @@ A bitmap that represents the type of SMS messages and directional flow that the 
 | WWAN_SMS_CAPS_TEXT_SEND | The device supports sending Text-style SMS messages. This flag applies for CDMA-based devices. |
 | WWAN_SMS_CAPS_TEXT_RECEIVE | The device supports receiving Text-style SMS messages. This flag applies for CDMA-based devices. |
 
-Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefure, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
+Miniport drivers should set this member to reflect support for only GSM PDU format for receiving and sending SMS when the current home provider is multi-mode capable. Therefore, if the miniport driver receives a SMS in the cellular class native format, for example CDMA TEXT or CDMA PDU, then the miniport driver is required to do the translation to GSM PDU and indicate it to the MB Service. Similarly if the miniport driver receives a send request in GSM PDU format then it is required to do the translation to its native cellular class format.
 
 ### -field WwanControlCaps
 

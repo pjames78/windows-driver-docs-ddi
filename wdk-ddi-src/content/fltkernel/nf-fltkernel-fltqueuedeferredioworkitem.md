@@ -133,7 +133,7 @@ A minifilter driver can use **FltQueueDeferredIoWorkItem** in a post-operation c
 
 4. After processing the I/O operation, the work routine calls [**FltCompletePendedPostOperation**](nf-fltkernel-fltcompletependedpostoperation.md) to return the I/O operation to the Filter Manager.
 
-The work routine calls [**FltFreeDeferredIoWorkItem**](nf-fltkernel-fltfreedeferredioworkitem.md) to free the work item.
+5. The work routine calls [**FltFreeDeferredIoWorkItem**](nf-fltkernel-fltfreedeferredioworkitem.md) to free the work item.
 
 ## -see-also
 
