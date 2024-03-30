@@ -12,7 +12,7 @@ req.header: d3dukmdt.h
 req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: Windows 11, version 24H2
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
@@ -62,4 +62,4 @@ For detailed information about these differences and about native GPU fences in 
 
 [**D3DDDI_NATIVEFENCEINFO**](ns-d3dukmdt-d3dddi_nativefenceinfo.md)
 
-[**D3DKMTCreateNativeFence**](../d3dkmthk/nc-d3dkmthk-d3dkmtcreatenativefence.md)
+[**D3DKMTCreateNativeFence**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatenativefence.md)
