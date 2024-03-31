@@ -42,7 +42,7 @@ A key/value store.  Typically used for metadata.
 
 ## -inheritance
 
-IKeyStore interits from IUnknown.
+IKeyStore inherits from IUnknown.
 
 ## -remarks
 

@@ -42,7 +42,7 @@ Represents a context of the debugger answers questions about (what session, proc
 
 ## -inheritance
 
-IDebugHostContext interits from IUnknown.
+IDebugHostContext inherits from IUnknown.
 
 ## -remarks
 

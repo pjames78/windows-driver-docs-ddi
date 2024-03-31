@@ -42,7 +42,7 @@ The expression evaluator interface to the underlying debugger.
 
 ## -inheritance
 
-IDebugHostEvaluator interits from IUnknown.
+IDebugHostEvaluator inherits from IUnknown.
 
 ## -remarks
 

@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
+This structure contains the fields necessary for the 1394 stack to carry out an asynchronous lock request.
 
 ## -struct-fields
 

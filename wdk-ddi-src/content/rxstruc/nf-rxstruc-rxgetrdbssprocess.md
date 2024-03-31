@@ -53,7 +53,7 @@ api_name:
 
 ## -remarks
 
-When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel process that is running is retreived by calling <b>PsGetCurrentProcess</b> and stored in an internal RDBSS data structure. This value is returned when <b>RxGetRDBSSProcess</b> is called. This value is sometimes called the file system process.
+When <b>RxDriverEntry</b> is called to initialize RDBSS, a pointer to the kernel process that is running is retrieved by calling <b>PsGetCurrentProcess</b> and stored in an internal RDBSS data structure. This value is returned when <b>RxGetRDBSSProcess</b> is called. This value is sometimes called the file system process.
 
 ## -see-also
 

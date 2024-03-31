@@ -61,7 +61,7 @@ On input, the caller sets this member to REGISTER_MONITOR_PLUG_NOTIFY to registe
 
 ### -field pfnNotify
 
-On input, aointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. 
+On input, a pointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. 
 
 This function uses the following prototype: 
 

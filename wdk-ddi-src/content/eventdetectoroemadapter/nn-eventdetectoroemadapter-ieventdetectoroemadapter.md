@@ -42,7 +42,7 @@ The IEventDetectorOemAdapter interface is used for hardware keyword spotters.
 
 ## -inheritance
 
-IEventDetectorOemAdapter interits from IUnknown.
+IEventDetectorOemAdapter inherits from IUnknown.
 
 ## -remarks
 

@@ -44,7 +44,7 @@ Extensions which implement methods would implement this interface one or more ti
 
 ## -inheritance
 
-IModelMethod interits from IUnknown.
+IModelMethod inherits from IUnknown.
 
 ## -remarks
 

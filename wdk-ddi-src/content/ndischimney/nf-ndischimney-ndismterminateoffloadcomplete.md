@@ -103,7 +103,7 @@ Before calling the
 
 <ul>
 <li>
-Complete any oustanding calls to the 
+Complete any outstanding calls to the 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_invalidate_offload_handler">MiniportInvalidateOffload</a>,      
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_query_offload_handler">MiniportQueryOffload</a>, 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_tcp_offload_receive_handler">MiniportTcpOffloadReceive</a>,      

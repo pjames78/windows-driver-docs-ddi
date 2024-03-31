@@ -44,7 +44,7 @@ A given language/native type is described by the [IDebugHostType2](nn-dbgmodel-i
 
 ## -inheritance
 
-IDebugHostType interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostType inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

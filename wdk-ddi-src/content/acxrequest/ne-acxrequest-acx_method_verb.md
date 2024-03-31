@@ -4,7 +4,7 @@ tech.root: audio
 title: ACX_METHOD_VERB
 ms.date: 07/26/2022
 targetos: Windows
-description: The ACX_METHOD_VERB structure describes the type of verb operations suppored on ACX methods.
+description: The ACX_METHOD_VERB structure describes the type of verb operations supported on ACX methods.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
@@ -40,7 +40,7 @@ dev_langs:
 
 ## -description
 
-The **ACX_METHOD_VERB** enumeration describes the type of verb operations suppored on ACX methods.
+The **ACX_METHOD_VERB** enumeration describes the type of verb operations supported on ACX methods.
 
 ## -enum-fields
 

@@ -65,7 +65,7 @@ Indicates that the display hardware may require completion of pending flips on a
 
 ### -field HwFlipQueueDrainAllSources
 
-Indicates that the the display hardware may require completion of pending flips on all VidPn sources in order to reallocate internal resources. In this case, the driver should set both the **HwFlipQueueDrainNeeded** and **HwFlipQueueDrainAllSources** flags. See [Hardware flip queue](/windows-hardware/drivers/display/hardware-flip-queue) for more information.
+Indicates that the display hardware may require completion of pending flips on all VidPn sources in order to reallocate internal resources. In this case, the driver should set both the **HwFlipQueueDrainNeeded** and **HwFlipQueueDrainAllSources** flags. See [Hardware flip queue](/windows-hardware/drivers/display/hardware-flip-queue) for more information.
 
 ### -field Reserved
 

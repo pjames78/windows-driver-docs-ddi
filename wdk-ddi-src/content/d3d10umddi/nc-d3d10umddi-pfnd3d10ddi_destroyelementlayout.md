@@ -1,7 +1,7 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYELEMENTLAYOUT
 title: PFND3D10DDI_DESTROYELEMENTLAYOUT (d3d10umddi.h)
-description: The DestroyElementLayout function destroys the specified element layout object. The element layout object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyElementLayout function destroys the specified element layout object. The element layout object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyelementlayout.htm
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYELEMENTLAYOUT callback function"]
@@ -45,7 +45,7 @@ api_name:
 
 ## -description
 
-The <b>DestroyElementLayout</b> function destroys the specified element layout object. The element layout object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyElementLayout</b> function destroys the specified element layout object. The element layout object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 

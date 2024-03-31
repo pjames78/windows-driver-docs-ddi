@@ -111,7 +111,7 @@ The host stack sets this flag to cause the offload target to reset the TotalRT v
 
 The host stack sets this flag to indicate that the default receive window size (InitialRcvWnd in
        the TCP_OFFLOAD_STATE_CACHED structure) has changed. If the value of InitialRcvWnd differs from the
-       offload target's currrent receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
+       offload target's current receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
        the offload target must advertise a new receive window size to the peer.
 
 ### -field InitialRcvWnd

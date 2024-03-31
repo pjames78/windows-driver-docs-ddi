@@ -58,7 +58,7 @@ NDIS calls a miniport driver's
 
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
-     The miniport driver uses this context area to maintain state information for an miniport adapter.
+     The miniport driver uses this context area to maintain state information for a miniport adapter.
 
 ### -param NetDevicePnPEvent [in]
 

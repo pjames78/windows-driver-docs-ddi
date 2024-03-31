@@ -42,7 +42,7 @@ An enumerator which runs through children of a symbol.
 
 ## -inheritance
 
-IDebugHostSymbolEnumerator interits from IUnknown.
+IDebugHostSymbolEnumerator inherits from IUnknown.
 
 ## -remarks
 

@@ -59,7 +59,7 @@ The number of the register for the portion of the stream output.
 
 ### -field RegisterMask [in]
 
-The xyzw register mask for the portion of the stream output. That is, the four least signifigant bits (LSBs) of the mask represent xyzw respectively.
+The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively.
 
 ## -see-also
 

@@ -44,7 +44,7 @@ The user interface which wishes to provide the capability of script debugging im
 
 ## -inheritance
 
-IDataModelScriptDebugClient interits from IUnknown.
+IDataModelScriptDebugClient inherits from IUnknown.
 
 ## -remarks
 

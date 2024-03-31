@@ -45,7 +45,7 @@ api_name:
 
 ## -description
 
-The <i>DestroyShader</i> function destroys the specified shader object. The shader object can be destoyed only if it is not currently bound to a display device.
+The <i>DestroyShader</i> function destroys the specified shader object. The shader object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 

@@ -61,7 +61,7 @@ Specifies the minimum buffer size in bytes that the hardware Audio Engine can su
 
 ### -field MaxBufferBytes
 
-Specifies the maximun available DMA buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called.  The capability and availability  of the DMA engine and the internal DSP buffer are all taken into consideration.
+Specifies the maximum available DMA buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called.  The capability and availability  of the DMA engine and the internal DSP buffer are all taken into consideration.
 
 ## -remarks
 

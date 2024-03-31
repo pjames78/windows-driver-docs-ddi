@@ -42,7 +42,7 @@ An interface to a stack in the script. The script provider implements this inter
 
 ## -inheritance
 
-IDataModelScriptDebugStack interits from IUnknown.
+IDataModelScriptDebugStack inherits from IUnknown.
 
 ## -remarks
 
