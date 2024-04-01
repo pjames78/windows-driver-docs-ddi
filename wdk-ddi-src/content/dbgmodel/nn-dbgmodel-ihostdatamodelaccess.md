@@ -42,7 +42,7 @@ When DebugExtensionInitialize is called, it creates a debug client and gets acce
 
 ## -inheritance
 
-IHostDataModelAccess interits from IUnknown.
+IHostDataModelAccess inherits from IUnknown.
 
 ## -remarks
 

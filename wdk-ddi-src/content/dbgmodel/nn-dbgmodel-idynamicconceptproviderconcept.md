@@ -44,7 +44,7 @@ The object is a dynamic provider of keys and wishes to take over all key queries
 
 ## -inheritance
 
-IDynamicConceptProviderConcept interits from IUnknown.
+IDynamicConceptProviderConcept inherits from IUnknown.
 
 ## -remarks
 

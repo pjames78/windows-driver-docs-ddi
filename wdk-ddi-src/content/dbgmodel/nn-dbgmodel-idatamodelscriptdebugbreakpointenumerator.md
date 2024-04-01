@@ -44,7 +44,7 @@ The script provider implements this to enumerate all of the breakpoints which cu
 
 ## -inheritance
 
-IDataModelScriptDebugBreakpointEnumerator interits from IUnknown.
+IDataModelScriptDebugBreakpointEnumerator inherits from IUnknown.
 
 ## -remarks
 

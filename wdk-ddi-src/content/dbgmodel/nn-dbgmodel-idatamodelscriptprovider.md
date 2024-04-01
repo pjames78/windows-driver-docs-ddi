@@ -42,7 +42,7 @@ Any script provider implementing a bridge between a dynamic language and the dat
 
 ## -inheritance
 
-IDataModelScriptProvider interits from IUnknown.
+IDataModelScriptProvider inherits from IUnknown.
 
 ## -remarks
 

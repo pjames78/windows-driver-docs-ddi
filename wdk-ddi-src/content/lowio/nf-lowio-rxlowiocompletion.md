@@ -56,7 +56,7 @@ A pointer to the RX_CONTEXT structure for this IRP.
 ## -returns
 
 <b>RxLowIoCompletion</b>
-      returns different values depending on whether the <i>RxContext</i> parameter indicates this is synchronous or asynchornous I/O.
+      returns different values depending on whether the <i>RxContext</i> parameter indicates this is synchronous or asynchronous I/O.
 
 If the <i>RxContext</i> parameter indicates this is synchronous I/O, then <b>RxLowIoCompletion</b> returns STATUS_MORE_PROCESSING_REQUIRED. 
 

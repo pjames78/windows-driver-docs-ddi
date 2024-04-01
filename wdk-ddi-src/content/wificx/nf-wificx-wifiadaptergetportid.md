@@ -52,7 +52,7 @@ The **WifiAdapterGetPortId** function gets the Wi-Fi adapter port ID.
 
 ## -returns
 
-Returns the the Wi-Fi adapter port ID.
+Returns the Wi-Fi adapter port ID.
 
 ## -remarks
 

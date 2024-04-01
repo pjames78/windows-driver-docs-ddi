@@ -44,7 +44,7 @@ The script provider implements this interface to expose the notion of a particul
 
 ## -inheritance
 
-IDataModelScriptDebugStackFrame interits from IUnknown.
+IDataModelScriptDebugStackFrame inherits from IUnknown.
 
 ## -remarks
 

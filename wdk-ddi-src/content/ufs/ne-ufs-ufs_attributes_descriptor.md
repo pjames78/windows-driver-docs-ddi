@@ -241,7 +241,7 @@ Specifies the context attribute.
 
 ### -field UFS_Obsolete
 
-Obselete
+Obsolete
 
 ### -field UFS_Reserved02
 

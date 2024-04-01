@@ -44,7 +44,7 @@ Clients which create data models implement this interface.  It is most frequentl
 
 ## -inheritance
 
-IDataModelConcept interits from IUnknown.
+IDataModelConcept inherits from IUnknown.
 
 ## -remarks
 

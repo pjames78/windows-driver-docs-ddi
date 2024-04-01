@@ -44,7 +44,7 @@ Represents a symbol within the publics table of a PDB. This does not have type i
 
 ## -inheritance
 
-IDebugHostPublic interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostPublic inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

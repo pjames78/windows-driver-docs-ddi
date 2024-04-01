@@ -42,7 +42,7 @@ Represents a constant within symbolic information (e.g.: a non-type template arg
 
 ## -inheritance
 
-IDebugHostConstant interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostConstant inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

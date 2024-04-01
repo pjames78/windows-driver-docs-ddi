@@ -42,7 +42,7 @@ An interface which enumerates the raw children (e.g.: base classes, fields, etc.
 
 ## -inheritance
 
-IRawEnumerator interits from IUnknown.
+IRawEnumerator inherits from IUnknown.
 
 ## -remarks
 

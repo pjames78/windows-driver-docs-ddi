@@ -100,7 +100,7 @@ The call manager has notified a client of an incoming call offer. When the CM's
 
 </li>
 <li>
-Abormal network conditions force the call manager to tear down active calls. For example, if the
+Abnormal network conditions force the call manager to tear down active calls. For example, if the
       call manager is notified when any link on the connection between this client and the remote party to
       the connection goes down, the CM would call 
       <b>NdisCmDispatchIncomingCloseCall</b> to prevent the client from attempting (or expecting) further data

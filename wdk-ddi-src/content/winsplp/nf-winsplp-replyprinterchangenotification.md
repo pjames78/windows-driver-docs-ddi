@@ -59,7 +59,7 @@ Optional. If not **NULL**, it receives spooler-supplied PRINTER_NOTIFY_INFO-pref
 
 ### -param pPrinterNotifyInfo [in, optional]
 
-Optional. Caller-supplieid address of a PRINTER_NOTIFY_INFO structure (described in the Windows SDK documentation). Can be **NULL** if no new notification information is being added.
+Optional. Caller-supplied address of a PRINTER_NOTIFY_INFO structure (described in the Windows SDK documentation). Can be **NULL** if no new notification information is being added.
 
 ## -returns
 

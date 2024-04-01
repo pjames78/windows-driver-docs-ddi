@@ -111,7 +111,7 @@ The status of the device services query operation.
 
 ### -field DeviceServices
 
-This member points to the list of the <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure that represents the list of supported device services and information about themby using the WWAN_LIST_HEADER structure
+This member points to the list of the <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure that represents the list of supported device services and information about them by using the WWAN_LIST_HEADER structure
 
 ## -see-also
 

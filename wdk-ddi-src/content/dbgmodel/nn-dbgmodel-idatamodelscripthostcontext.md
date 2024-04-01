@@ -42,7 +42,7 @@ Implemented by the underlying host debugger, represents information about where 
 
 ## -inheritance
 
-IDataModelScriptHostContext interits from IUnknown.
+IDataModelScriptHostContext inherits from IUnknown.
 
 ## -remarks
 

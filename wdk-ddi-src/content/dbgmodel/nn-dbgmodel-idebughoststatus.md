@@ -44,7 +44,7 @@ The IDebugHostStatus interface allows a client of the data model or the debug ho
 
 ## -inheritance
 
-IDebugHostStatus interits from IUnknown.
+IDebugHostStatus inherits from IUnknown.
 
 ## -remarks
 

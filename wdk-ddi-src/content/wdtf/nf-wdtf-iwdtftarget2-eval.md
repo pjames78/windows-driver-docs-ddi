@@ -56,7 +56,7 @@ The SDEL statement.
 ### -param pResult [out, retval]
 
 True if the SDEL statement matches this target; 
-otherwise, alse.
+otherwise, false.
 
 ## -returns
 
