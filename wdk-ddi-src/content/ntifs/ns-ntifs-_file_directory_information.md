@@ -111,7 +111,7 @@ Specifies the first character of the file name string. This is followed in memor
 
 This information can be queried in either of the following ways:
 
-* Call [**ZwQueryDirectoryFile**](nf-ntifs-zwqueryvirtualmemory.md), passing FileDirectoryInformation as the value of **FileInformationClass** and passing a caller-allocated, FILE_DIRECTORY_INFORMATION-structured buffer as the value of **FileInformation**.
+* Call [**ZwQueryDirectoryFile**](nf-ntifs-zwquerydirectoryfile.md), passing FileDirectoryInformation as the value of **FileInformationClass** and passing a caller-allocated, FILE_DIRECTORY_INFORMATION-structured buffer as the value of **FileInformation**.
 * Create an IRP with major function code IRP_MJ_DIRECTORY_CONTROL and minor function code IRP_MN_QUERY_DIRECTORY.
 
 No specific access rights are required to query this information.
@@ -126,4 +126,4 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 
 [**IRP_MJ_DIRECTORY_CONTROL**](/windows-hardware/drivers/ifs/irp-mj-directory-control)
 
-[**ZwQueryDirectoryFile**](nf-ntifs-zwqueryvirtualmemory.md)
+[**ZwQueryDirectoryFile**](nf-ntifs-zwquerydirectoryfile.md)
