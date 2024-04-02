@@ -1,8 +1,8 @@
 ---
 UID: NF:ntintsafe.__mulh
-tech.root: 
+tech.root: kernel
 title: __mulh
-ms.date: 
+ms.date: 04/02/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+For more info, see [ARM64 intrinsics](/cpp/intrinsics/arm64-intrinsics).
 
 ## -parameters
 

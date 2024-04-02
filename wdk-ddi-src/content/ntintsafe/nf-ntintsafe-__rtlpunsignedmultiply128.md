@@ -1,8 +1,8 @@
 ---
 UID: NF:ntintsafe.__RtlpUnsignedMultiply128
-tech.root: 
+tech.root: kernel
 title: __RtlpUnsignedMultiply128
-ms.date: 
+ms.date: 04/02/2024
 targetos: Windows
 description: 
 prerelease: true
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+Reserved for internal use.
 
 ## -parameters
 
