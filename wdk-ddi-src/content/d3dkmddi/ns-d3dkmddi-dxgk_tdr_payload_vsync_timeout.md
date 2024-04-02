@@ -66,7 +66,7 @@ For more information, see [TDR debuggability improvements](/windows-hardware/dri
 
 ## -see-also
 
-[**DXGK_TDR_TYPE**](nc-d3dkmddi-dxgk_tdr_type.md)
+[**DXGK_TDR_TYPE**](ne-d3dkmddi-dxgk_tdr_type.md)
 
 [**DXGKARG_COLLECTDBGINFO2**](ns-d3dkmddi-dxgkarg_collectdbginfo2.md)
 

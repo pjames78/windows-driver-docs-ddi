@@ -71,7 +71,7 @@ A pointer to an OS-allocated [**DXGKARG_COLLECTDBGINFO_EXT**](ns-d3dkmddi-_dxgka
 
 ### -field TdrType
 
-[in] A [**DXGK_TDR_TYPE**](nc-d3dkmddi-dxgk_tdr_type.md) value that specifies the type of TDR that occurred.
+[in] A [**DXGK_TDR_TYPE**](ne-d3dkmddi-dxgk_tdr_type.md) value that specifies the type of TDR that occurred.
 
 ### -field TdrPayloadSize
 
@@ -100,7 +100,7 @@ For more information, see [TDR debuggability improvements](/windows-hardware/dri
 
 ## -see-also
 
-[**DXGK_TDR_TYPE**](nc-d3dkmddi-dxgk_tdr_type.md)
+[**DXGK_TDR_TYPE**](ne-d3dkmddi-dxgk_tdr_type.md)
 
 [**DxgkDdiCollectDbgInfo**](nc-d3dkmddi-dxgkddi_collectdbginfo.md)
 
