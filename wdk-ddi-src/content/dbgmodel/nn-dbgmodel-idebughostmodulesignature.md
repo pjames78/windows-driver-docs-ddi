@@ -42,7 +42,7 @@ Represents a module signature -- a definition which will match a set of modules 
 
 ## -inheritance
 
-IDebugHostModuleSignature interits from IUnknown.
+IDebugHostModuleSignature inherits from IUnknown.
 
 ## -remarks
 

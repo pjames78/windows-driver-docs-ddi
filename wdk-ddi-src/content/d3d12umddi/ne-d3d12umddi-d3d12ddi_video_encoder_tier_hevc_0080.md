@@ -42,7 +42,7 @@ The **D3D12DDI_VIDEO_ENCODER_TIER_HEVC_0080** enumeration lists the possible HEV
 
 ### -field D3D12DDI_VIDEO_ENCODER_TIER_HEVC_0080_MAIN
 
-The Main tier, which can be used by most most applications.
+The Main tier, which can be used by most applications.
 
 ### -field D3D12DDI_VIDEO_ENCODER_TIER_HEVC_0080_HIGH
 

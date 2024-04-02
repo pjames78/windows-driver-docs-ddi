@@ -42,7 +42,7 @@ An enumerator which runs through keys on an object.
 
 ## -inheritance
 
-IKeyEnumerator interits from IUnknown.
+IKeyEnumerator inherits from IUnknown.
 
 ## -remarks
 

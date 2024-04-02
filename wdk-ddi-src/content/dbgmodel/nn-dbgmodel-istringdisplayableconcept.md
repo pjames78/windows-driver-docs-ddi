@@ -44,7 +44,7 @@ Clients should not rely on the form of this string conversion for programmatic p
 
 ## -inheritance
 
-IStringDisplayableConcept interits from IUnknown.
+IStringDisplayableConcept inherits from IUnknown.
 
 ## -remarks
 

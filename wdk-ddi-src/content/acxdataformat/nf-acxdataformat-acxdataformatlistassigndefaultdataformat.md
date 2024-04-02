@@ -48,7 +48,7 @@ The **AcxDataFormatListAssignDefaultDataFormat** function adds an [ACXDATAFORMAT
 
 ### -param AcxDataFormatList [in]
 
-The data format list to which the the [ACXDATAFORMAT](index.md) object is added and assigned as the default.
+The data format list to which the [ACXDATAFORMAT](index.md) object is added and assigned as the default.
 
 ### -param AcxDataFormat [in]
 

@@ -469,7 +469,7 @@ A miniport driver passes a pointer to an NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTE
     NdisMSetMiniportAttributes</a> function. A miniport driver calls 
     <b>NdisMSetMiniportAttributes</b> from its 
     <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function
-    during initialization. Miniport drivers should set the these attributes after they set the registration
+    during initialization. Miniport drivers should set these attributes after they set the registration
     attributes in the 
     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes">
     NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any other attributes.

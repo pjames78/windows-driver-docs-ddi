@@ -69,7 +69,7 @@ Reserved; set to 0. The accelerator ignores this field.
 
 ### -field anchor_frame
 
-Specifies an associated anchor_frame for the tile list OBU. This is to be translated to the the source frame buffer/surface index for the reference tile picture, from the anchor_frame_idx value in the specification. If this tile is not part of a Tile List OBU then this frame will have the standard invalid frame index of 255.
+Specifies an associated anchor_frame for the tile list OBU. This is to be translated to the source frame buffer/surface index for the reference tile picture, from the anchor_frame_idx value in the specification. If this tile is not part of a Tile List OBU then this frame will have the standard invalid frame index of 255.
 
 ### -field Reserved8Bits
 

@@ -58,7 +58,7 @@ Extensibility within this object model is very simple given this notion that eve
 
 ## -inheritance
 
-IModelObject interits from IUnknown.
+IModelObject inherits from IUnknown.
 
 ## -remarks
 

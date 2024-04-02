@@ -70,7 +70,7 @@ Indicates that the scaling transformation is the pivot of the enumeration.
 
 ### -field D3DKMDT_EPT_ROTATION
 
-Indicates that the rotatation transformation is the pivot of the enumeration.
+Indicates that the rotation transformation is the pivot of the enumeration.
 
 ### -field D3DKMDT_EPT_NOPIVOT
 

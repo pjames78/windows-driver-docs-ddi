@@ -44,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDebugHostSymbol2 interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostSymbol2 inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

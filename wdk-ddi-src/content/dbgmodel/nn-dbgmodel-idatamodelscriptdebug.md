@@ -44,7 +44,7 @@ Any script which is debuggable indicates this capability via the presence of the
 
 ## -inheritance
 
-IDataModelScriptDebug interits from IUnknown.
+IDataModelScriptDebug inherits from IUnknown.
 
 ## -remarks
 

@@ -44,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IModelKeyReference2 interits from [IModelKeyReference](nn-dbgmodel-imodelkeyreference.md).
+IModelKeyReference2 inherits from [IModelKeyReference](nn-dbgmodel-imodelkeyreference.md).
 
 ## -remarks
 

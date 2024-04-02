@@ -42,7 +42,7 @@ The core interface to the script management capabilities of the data model manag
 
 ## -inheritance
 
-IDataModelScriptManager interits from IUnknown.
+IDataModelScriptManager inherits from IUnknown.
 
 ## -remarks
 

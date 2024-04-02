@@ -150,7 +150,7 @@ Specifies the context attribute.
 
 ### -field UFS_Obsolete
 
-Obsolete.
+Obsolete
 
 ### -field UFS_Reserved_12
 

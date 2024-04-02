@@ -42,7 +42,7 @@ Supports the ability to compare this object to another (of arbitrary type) for e
 
 ## -inheritance
 
-IEquatableConcept interits from IUnknown.
+IEquatableConcept inherits from IUnknown.
 
 ## -remarks
 

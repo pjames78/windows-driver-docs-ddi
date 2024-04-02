@@ -42,7 +42,7 @@ An enumerator which returns a set of known script providers.
 
 ## -inheritance
 
-IDataModelScriptProviderEnumerator interits from IUnknown.
+IDataModelScriptProviderEnumerator inherits from IUnknown.
 
 ## -remarks
 

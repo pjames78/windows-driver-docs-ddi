@@ -44,7 +44,7 @@ This interface is never directly implemented by a client.
 
 ## -inheritance
 
-IDataModelManager interits from IUnknown.
+IDataModelManager inherits from IUnknown.
 
 ## -remarks
 

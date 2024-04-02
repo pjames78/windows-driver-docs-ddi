@@ -42,7 +42,7 @@ The core interface to the underlying debugger.
 
 ## -inheritance
 
-IDebugHost interits from IUnknown.
+IDebugHost inherits from IUnknown.
 
 ## -remarks
 

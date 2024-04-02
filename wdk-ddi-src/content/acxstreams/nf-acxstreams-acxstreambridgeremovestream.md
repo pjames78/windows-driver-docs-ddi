@@ -4,7 +4,7 @@ tech.root: audio
 title: AcxStreamBridgeRemoveStream
 ms.date: 12/16/2022
 targetos: Windows
-description: The AcxStreamBridgeRemoveStream function removes the specified stream from the the associated ACXSTREAMBRIDGE object.
+description: The AcxStreamBridgeRemoveStream function removes the specified stream from the associated ACXSTREAMBRIDGE object.
 prerelease: false
 req.assembly: 
 req.construct-type: function

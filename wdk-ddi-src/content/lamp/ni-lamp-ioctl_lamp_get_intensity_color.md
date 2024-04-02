@@ -80,7 +80,7 @@ Length of a [LAMP_INTENSITY_COLOR](./ns-lamp-lamp_intensity_color.md) structure.
 
 The driver sets `Irp->IoStatus.Status` to **STATUS_SUCCESS** or the appropriate error status.
 
-If the device has been acquired by a camera driver, the lamp driver should return a error **STATUS_RESOURCE_IN_USE** via `Irp->IoStatus.Status`.
+If the device has been acquired by a camera driver, the lamp driver should return an error **STATUS_RESOURCE_IN_USE** via `Irp->IoStatus.Status`.
 
 ## -remarks
 

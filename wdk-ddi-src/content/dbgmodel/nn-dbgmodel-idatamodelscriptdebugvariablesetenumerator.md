@@ -42,7 +42,7 @@ api_name:
 
 ## -inheritance
 
-IDataModelScriptDebugVariableSetEnumerator interits from IUnknown.
+IDataModelScriptDebugVariableSetEnumerator inherits from IUnknown.
 
 ## -remarks
 

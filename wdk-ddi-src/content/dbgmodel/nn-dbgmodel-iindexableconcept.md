@@ -44,7 +44,7 @@ It is legal for an object to be indexable (via support of IIndexableConcept) and
 
 ## -inheritance
 
-IIndexableConcept interits from IUnknown.
+IIndexableConcept inherits from IUnknown.
 
 ## -remarks
 

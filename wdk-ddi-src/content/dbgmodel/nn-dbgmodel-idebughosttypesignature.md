@@ -44,7 +44,7 @@ A definition which will match a set of types by module and/or name.
 
 ## -inheritance
 
-IDebugHostTypeSignature interits from IUnknown.
+IDebugHostTypeSignature inherits from IUnknown.
 
 ## -remarks
 

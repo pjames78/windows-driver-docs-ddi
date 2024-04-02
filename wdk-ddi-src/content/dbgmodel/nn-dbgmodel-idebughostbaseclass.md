@@ -42,7 +42,7 @@ An ([IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) derived) interface to a 
 
 ## -inheritance
 
-IDebugHostBaseClass interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostBaseClass inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

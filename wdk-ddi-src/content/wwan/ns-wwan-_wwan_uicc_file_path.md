@@ -67,7 +67,7 @@ The size of the file path, in bytes.
 
 ### -field FilePath
 
-The file path, which is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application desginated by **AppId**. Otherwise, it is an absolute path starting from the MF.
+The file path, which is an array of 16-bit file IDs. The first ID must be either **0x7FFF** or **0x3F00**. If the first ID is **0x7FFF**, then the path is relative to the ADF of the application designated by **AppId**. Otherwise, it is an absolute path starting from the MF.
 
 ## -remarks
 

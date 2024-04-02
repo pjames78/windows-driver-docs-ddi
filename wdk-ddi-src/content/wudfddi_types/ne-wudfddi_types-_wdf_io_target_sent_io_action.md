@@ -57,7 +57,7 @@ The <b>WDF_IO_TARGET_SENT_IO_ACTION</b> enumeration identifies the actions that 
 
 ### -field WdfIoTargetSentIoUndefined
 
-Reservied for system use.
+Reserved for system use.
 
 ### -field WdfIoTargetCancelSentIo
 

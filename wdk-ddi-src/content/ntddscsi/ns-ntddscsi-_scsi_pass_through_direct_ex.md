@@ -119,11 +119,11 @@ Indicates the size in bytes of the input data buffer. Many devices transfer chun
 
 ### -field DataOutBuffer
 
-A pointer to a output data buffer.
+A pointer to an output data buffer.
 
 ### -field DataInBuffer
 
-A pointer to a input data buffer.
+A pointer to an input data buffer.
 
 ### -field Cdb
 

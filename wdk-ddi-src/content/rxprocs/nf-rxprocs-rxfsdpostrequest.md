@@ -70,7 +70,7 @@ A pointer to the RX_CONTEXT containing the IRP to be queued to a worker thread.
 </dl>
 </td>
 <td width="60%">
-An asynchornous request was made and has been queued to a worker thread for later processing. The status of the request is pending.
+An asynchronous request was made and has been queued to a worker thread for later processing. The status of the request is pending.
 
 </td>
 </tr>

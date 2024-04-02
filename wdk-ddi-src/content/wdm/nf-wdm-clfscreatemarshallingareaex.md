@@ -76,7 +76,7 @@ The maximum number of allocated read buffers.
 
 ### -param cAlignmentSize
 
-The alignment size of mashalling buffers.
+The alignment size of marshalling buffers.
 
 ### -param fFlags
 

@@ -44,7 +44,7 @@ Any script provider must implement this to represent a script managed by that pr
 
 ## -inheritance
 
-IDataModelScript interits from IUnknown.
+IDataModelScript inherits from IUnknown.
 
 ## -remarks
 
