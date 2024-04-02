@@ -2,7 +2,7 @@
 UID: NE:storport._SCSI_ADAPTER_CONTROL_TYPE
 tech.root: storage
 title: SCSI_ADAPTER_CONTROL_TYPE
-ms.date: 02/28/2024
+ms.date: 04/02/2024
 targetos: Windows
 description: The SCSI_ADAPTER_CONTROL_TYPE enumeration contains adapter control operations, where each control type initiates an action on an adapter by the miniport driver. Storport specifies the control type when it calls a miniport's HwStorAdapterControl routine.
 req.construct-type: enumeration
@@ -199,7 +199,7 @@ Storport sends this control only if a miniport has also previously called [**Sto
 
 ### -field ScsiAdapterKsrPowerDown
 
-Storport sends this dedicated control code for KSR power down, miniport could then skip power down device since power is not lost during KSR. Available starting in Windows 11, version 24H2.
+Reserved for internal use. Do not use.
 
 ### -field ScsiAdapterPreparePLDR
 

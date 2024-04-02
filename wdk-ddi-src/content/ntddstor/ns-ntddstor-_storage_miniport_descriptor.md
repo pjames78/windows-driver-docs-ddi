@@ -4,7 +4,7 @@ title: STORAGE_MINIPORT_DESCRIPTOR (ntddstor.h)
 description: "Microsoft reserves the STORAGE_MINIPORT_DESCRIPTOR structure for internal use only. Don't use this structure in your code."
 old-location: storage\storage_miniport_descriptor.htm
 tech.root: storage
-ms.date: 02/28/2024
+ms.date: 04/02/2024
 keywords: ["STORAGE_MINIPORT_DESCRIPTOR structure"]
 ms.keywords: "*PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices], _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor"
 req.header: ntddstor.h
@@ -90,7 +90,7 @@ Indicates whether extra I/O info is supported. Introduced in Windows 8.1
 
 ### -field Flags.DUMMYSTRUCTNAME.ForwardIo
 
-Indicates whether forward I/O is enabled. Introduced in Windows 11.
+Reserved for internal use. Do not use.
 
 ### -field Flags.DUMMYSTRUCTNAME.Reserved
 

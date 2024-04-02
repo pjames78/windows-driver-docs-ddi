@@ -2,7 +2,7 @@
 UID: NF:storport.StorPortReadDriverRegistry
 tech.root: storage
 title: StorPortReadDriverRegistry
-ms.date: 03/27/2024
+ms.date: 04/02/2024
 targetos: Windows
 description: The StorPortReadDriverRegistry function is used by the miniport to read the registry data for a given driver object.
 prerelease: true
@@ -69,5 +69,7 @@ The buffer for the retrieved data.
 Returns TRUE if the registry data was read and copied into buffer successfully, otherwise returns FALSE.
 
 ## -remarks
+
+The values are located under the driver's service key, for example, HKLM\System\CurrentControlSet\Services\\<*DriverName*>\\<*ValueName*>. The value can be any REG_XXXX type.
 
 ## -see-also
