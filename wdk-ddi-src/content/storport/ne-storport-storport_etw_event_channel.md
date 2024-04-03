@@ -2,7 +2,7 @@
 UID: NE:storport._STORPORT_ETW_EVENT_CHANNEL
 tech.root: storage
 title: STORPORT_ETW_EVENT_CHANNEL
-ms.date: 02/28/2024
+ms.date: 04/02/2024
 targetos: Windows
 description: STORPORT_ETW_EVENT_CHANNEL identifies the event channels of Storport to which miniport can log an event.
 req.construct-type: enumeration
@@ -57,7 +57,7 @@ Storport's health channel (*Microsoft-Windows-Storage-Storport/Health*).
 
 ### -field StorportEtwEventIoPerformance
 
-Storport's I/O performance channel (*Microsoft-Windows-Storage-Storport/Performance*).
+Reserved for internal use. Do not use.
 
 ## -remarks
 

@@ -3,7 +3,7 @@ UID: NE:storport._STORPORT_FEATURE_TYPE
 title: STORPORT_FEATURE_TYPE
 description: The STORPORT_FEATURE_TYPE enum identifies a Storport feature supported by a miniport.
 tech.root: storage
-ms.date: 02/28/2024
+ms.date: 04/02/2024
 ms.keywords: STORPORT_FEATURE_TYPE, STORPORT_FEATURE_TYPE,
 req.header: storport.h
 req.include-header: 
@@ -82,11 +82,11 @@ Indicates whether the **ScsiAdapterRestoreEarlyDumpData** control operation is s
 
 ### -field StorportFeatureKsrAdapterPowerDownOptimization
 
-Indicates whether the **ScsiAdapterKsrPowerDown** control operation is supported.
+Reserved for internal use. Do not use.
 
 ### -field StorportFeatureKsrUnitPowerDownOptimization
 
-Indicates whether the **ScsiUnitKsrPowerDown** control operation is supported.
+Reserved for internal use. Do not use.
 
 ### -field StorportFeaturePreparePLDR
 

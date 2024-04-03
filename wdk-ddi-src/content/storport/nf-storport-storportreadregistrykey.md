@@ -2,7 +2,7 @@
 UID: NF:storport.StorPortReadRegistryKey
 tech.root: storage
 title: StorPortReadRegistryKey
-ms.date: 03/27/2024
+ms.date: 04/02/2024
 targetos: Windows
 description: The StorPortReadRegistryKey function is used by the miniport to read the specified registry key. The caller provides the absolute path to the key to be read.
 prerelease: true
@@ -62,7 +62,7 @@ The key path under the absolute path.
 
 ### -param ValueType
 
-The type of the registry key value in REG_XXXX format.
+The type of the registry key value in REG_XXXX format. Currently, only REG_DWORD value type is supported.
 
 ### -param ValueData
 
