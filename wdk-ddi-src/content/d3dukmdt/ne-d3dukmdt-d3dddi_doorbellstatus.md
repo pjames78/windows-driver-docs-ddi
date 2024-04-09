@@ -2,7 +2,7 @@
 UID: NE:d3dukmdt._D3DDDI_DOORBELLSTATUS
 tech.root: display
 title: D3DDDI_DOORBELLSTATUS
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DDDI_DOORBELLSTATUS structure.
 prerelease: true
@@ -12,7 +12,7 @@ req.header: d3dukmdt.h
 req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 
@@ -50,15 +50,19 @@ Indicates that the doorbell object is successfully connected to a hardware queue
 
 ### -field D3DDDI_DOORBELLSTATUS_CONNECTED_NOTIFY_KMD
 
-Indicates that the doorbell object is connected; however, UMD should [notify KMD](../d3dkmddi/nc-d3dkmddi-dxgkddi_notifyworksubmission.md) after every new work submission and doorbell ring.
+Indicates that the doorbell object is connected; however, after every new work submission and doorbell ring, UMD should notify KMD by calling [**D3DKMTNotifyWorkSubmission**](../d3dkmthk/nf-d3dkmthk-d3dkmtnotifyworksubmission.md).
 
 ### -field D3DDDI_DOORBELLSTATUS_DISCONNECTED_RETRY
 
-Indicates that the doorbell can't be connected at this time; however, UMD should retry to connect it.
+Indicates that the doorbell can't be connected at this time, but UMD should retry to connect it.
 
 ### -field D3DDDI_DOORBELLSTATUS_DISCONNECTED_ABORT
 
 Indicates that the doorbell won't be connected and UMD can't use this hardware queue for work submission. This failure typically implies a nonrecoverable scenario such as a GPU reset or stopped adapter.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

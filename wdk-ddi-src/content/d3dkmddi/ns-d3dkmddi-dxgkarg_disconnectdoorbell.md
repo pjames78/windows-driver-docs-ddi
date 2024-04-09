@@ -2,10 +2,10 @@
 UID: NS:d3dkmddi._DXGKARG_DISCONNECTDOORBELL
 tech.root: display
 title: DXGKARG_DISCONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARG_DISCONNECTDOORBELL structure.
-prerelease: false
+prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_DISCONNECTDOORBELL
@@ -55,6 +55,10 @@ The **DXGKARG_DISCONNECTDOORBELL** structure contains parameters for [**DxgkDdiD
 ### -field Flags
 
 [in] A bit field of [**DXGKARG_DISCONNECTDOORBELL_FLAGS**](ns-d3dkmddi-dxgkarg_disconnectdoorbell_flags.md) values specifying the doorbell disconnection flags.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

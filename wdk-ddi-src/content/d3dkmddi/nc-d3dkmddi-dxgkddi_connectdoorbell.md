@@ -2,10 +2,10 @@
 UID: NC:d3dkmddi.DXGKDDI_CONNECTDOORBELL
 tech.root: display
 title: DXGKDDI_CONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_CONNECTDOORBELL callback function.
-prerelease: false
+prerelease: true
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -64,6 +64,8 @@ When UMD calls [**D3DKMTConnectDoorbell**](../d3dkmthk/nf-d3dkmthk-d3dkmtconnect
 * Make the required connections between the hardware queue object, doorbell object, doorbell physical address, GPU scheduler, and so forth.
 
 On return from this DDI, KMD should consider this physical address as reserved for this particular hardware queue. However, the OS doesn't have a uniqueness requirement for the doorbell's physical address. That is, KMD can choose to share the same physical address with multiple logical doorbells/hardware queues depending on the hardware implementation. For example, some hardware might choose to assign the same physical address to all the hardware queues of a single hardware context. It's even possible that multiple logical doorbells share the same 4KB physical page but use a unique offset within the page.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 
