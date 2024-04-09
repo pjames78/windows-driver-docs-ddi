@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGK_QUERYADAPTERINFOTYPE
 title: DXGK_QUERYADAPTERINFOTYPE (d3dkmddi.h)
 description: Learn more about the DXGK_QUERYADAPTERINFOTYPE enumeration.
-ms.date: 03/28/2024
+ms.date: 04/03/2024
 keywords: ["DXGK_QUERYADAPTERINFOTYPE enumeration"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
@@ -220,6 +220,8 @@ Logical remapping can only be done if no existing physical memory is referenced 
 The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_fence_caps.md) structure that contains the driver's support details for native GPU fences. Supported starting in Windows 11, version 24H2. For more information, see [Native GPU fences](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ### -field DXGKQAITYPE_USERMODESUBMISSION_CAPS:38
+
+The KMD should populate a [**DXGK_USERMODESUBMISSION_CAPS**](ns-d3dkmddi-dxgk_usermodesubmission_caps.md) structure that contains the driver's support details for user-mode work submission. Supported starting in Windows 11, version 24H2. For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ### -field DXGKQAITYPE_DIRTYBITTRACKINGCAPS:39
 

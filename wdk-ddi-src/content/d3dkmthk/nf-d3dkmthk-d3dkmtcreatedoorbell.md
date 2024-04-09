@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTCreateDoorbell
 tech.root: display
 title: D3DKMTCreateDoorbell
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DKMTCreateDoorbell function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **D3DKMTCreateDoorbell** function creates a GPU doorbell for a D3D hardware queue for user-mode submission.
+The **D3DKMTCreateDoorbell** function creates a GPU doorbell for a D3D hardware queue for user-mode work submission.
 
 ## -parameters
 
@@ -61,6 +61,8 @@ The **D3DKMTCreateDoorbell** function creates a GPU doorbell for a D3D hardware 
 **D3DKMTCreateDoorbell** creates a doorbell object that is initialized as disconnected. UMD must call [**D3DKMTConnectDoorbell**](nf-d3dkmthk-d3dkmtconnectdoorbell.md) before using this doorbell to submit commands on the hardware queue.
 
 When UMD calls **D3DKMTCreateDoorbell**, the OS makes a corresponding call to KMD's [**DxgkDdiCreateDoorbell**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createdoorbell.md) callback in which KMD can initialize its doorbell state.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

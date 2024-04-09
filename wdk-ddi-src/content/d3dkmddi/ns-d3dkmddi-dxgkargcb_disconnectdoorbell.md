@@ -2,10 +2,10 @@
 UID: NS:d3dkmddi._DXGKARGCB_DISCONNECTDOORBELL
 tech.root: display
 title: DXGKARGCB_DISCONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARGCB_DISCONNECTDOORBELL structure.
-prerelease: false
+prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARGCB_DISCONNECTDOORBELL
@@ -50,7 +50,11 @@ The **DXGKARGCB_DISCONNECTDOORBELL** structure contains parameters for [**DXGKCB
 
 ### -field hHwQueue
 
-[in] KMD handle to the hardware queue object whose doorbell must be disconnected. This handle was previously created using [**D3DKMTCreateHwQueue**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatehwqueue.md).
+[in] Handle to the hardware queue whose doorbell must be disconnected. This handle was previously created using [**DxgkddiCreateHwQueue**](nc-d3dkmddi-dxgkddi_createhwqueue.md).
+
+### -field hDoorbell
+
+[in] Handle to the doorbell to disconnect. The doorbell was previously created on the hardware queue identified by **hHwQueue** using [**DxgkDdiCreateDoorbell**](nc-d3dkmddi-dxgkddi_createdoorbell.md).
 
 ### -field Flags
 
@@ -58,7 +62,11 @@ The **DXGKARGCB_DISCONNECTDOORBELL** structure contains parameters for [**DXGKCB
 
 ### -field DisconnectReason
 
-[in] A [**D3DDDI_DOORBELLSTATUS**](../d3dukmdt/ne-d3dukmdt-d3dddi_doorbellstatus.md) enumeration value that specifies the reason for the disconnection.
+[in] A [**D3DDDI_DOORBELLSTATUS**](../d3dukmdt/ne-d3dukmdt-d3dddi_doorbellstatus.md) enumeration value that specifies the reason for the disconnection. **DisconnectReason** must be one of the **D3DDDI_DOORBELLSTATUS_DISCONNECTED_*XXX*** values.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

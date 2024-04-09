@@ -2,10 +2,10 @@
 UID: NS:d3dkmthk._D3DKMT_CONNECT_DOORBELL
 tech.root: display
 title: D3DKMT_CONNECT_DOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DKMT_CONNECT_DOORBELL structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3DKMT_CONNECT_DOORBELL
@@ -44,17 +44,21 @@ helpviewer_keywords:
 
 ## -description
 
-The **D3DKMT_CONNECT_DOORBELL** structure describes the doorbell object that [**D3DKMTConnectDoorbell**](nf-d3dkmthk-d3dkmtconnectdoorbell.md) should connect to a hardware queue.
+The **D3DKMT_CONNECT_DOORBELL** structure describes the doorbell that [**D3DKMTConnectDoorbell**](nf-d3dkmthk-d3dkmtconnectdoorbell.md) should connect to a hardware queue.
 
 ## -struct-fields
 
-### -field hHwQueue
+### -field hDoorbell
 
-[in] UMD handle to the hardware queue whose doorbell is to be created. This handle was created in [**D3DKMTCreateHwQueue**](nf-d3dkmthk-d3dkmtcreatehwqueue.md) and passed in a previous call to [**D3DKMTCreateDoorbell**](nf-d3dkmthk-d3dkmtcreatedoorbell.md).
+[in] UMD handle of the doorbell to be connected. This handle was returned in a prior call to [**D3DKMTCreateDoorbell**](nf-d3dkmthk-d3dkmtcreatedoorbell.md).
 
 ### -field Flags
 
-[in] A D3DKMT_CONNECT_DOORBELL_FLAGS value that specifies how to connect the doorbell to the hardware queue. No flags are currently defined.
+[in] A [**D3DKMT_CONNECT_DOORBELL_FLAGS**](ns-d3dkmthk-d3dkmt_connect_doorbell_flags.md) value that specifies how to connect the doorbell to the hardware queue. No flags are currently defined.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

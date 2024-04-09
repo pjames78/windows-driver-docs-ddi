@@ -2,7 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_DESTROY_DOORBELL
 tech.root: display
 title: D3DKMT_DESTROY_DOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DKMT_DESTROY_DOORBELL structure.
 prerelease: true
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3DKMT_DESTROY_DOORBELL
@@ -44,13 +44,17 @@ helpviewer_keywords:
 
 ## -description
 
-The **D3DKMT_DESTROY_DOORBELL** structure identifies the doorbell object that [**D3DKMTDestroyDoorbell**](nf-d3dkmthk-d3dkmtdestroydoorbell.md) should destroy.
+The **D3DKMT_DESTROY_DOORBELL** structure identifies the doorbell that [**D3DKMTDestroyDoorbell**](nf-d3dkmthk-d3dkmtdestroydoorbell.md) should destroy.
 
 ## -struct-fields
 
-### -field hHwQueue
+### -field hDoorbell
 
-[in] User-mode driver handle to the hardware queue whose doorbell is to be destroyed. This handle was created in a previous call to  [**D3DKMTCreateHwQueue**](nf-d3dkmthk-d3dkmtcreatehwqueue.md).
+[in] UM handle of the doorbell to be destroyed. This handle was returned in a prior call to [**D3DKMTCreateDoorbell**](nf-d3dkmthk-d3dkmtcreatedoorbell.md).
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

@@ -2,10 +2,10 @@
 UID: NS:d3dkmddi._DXGKARG_NOTIFYWORKSUBMISSION
 tech.root: display
 title: DXGKARG_NOTIFYWORKSUBMISSION
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARG_NOTIFYWORKSUBMISSION structure.
-prerelease: false
+prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE 
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2) 
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_NOTIFYWORKSUBMISSION
@@ -50,11 +50,15 @@ The **DXGKARG_NOTIFYWORKSUBMISSION** structure contains parameters for [**DxgkDd
 
 ### -field hHwQueue
 
-[in] Handle to a KMD hardware queue object, which was created using [**D3DKMTCreateHwQueue**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatehwqueue.md).
+[in] Handle to a KMD hardware queue object, which was created using [**DxgkddiCreateHwQueue**](nc-d3dkmddi-dxgkddi_createhwqueue.md).
 
 ### -field Flags
 
 [in] A bit field of [**DXGKARG_NOTIFYWORKSUBMISSION_FLAGS**](ns-d3dkmddi-dxgkarg_notifyworksubmission_flags.md) values that specify work submission flags.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

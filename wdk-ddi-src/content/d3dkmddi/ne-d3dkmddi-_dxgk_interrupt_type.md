@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGK_INTERRUPT_TYPE
 title: DXGK_INTERRUPT_TYPE (d3dkmddi.h)
 description: Learn more about the DXGK_INTERRUPT_TYPE enumeration.
-ms.date: 03/28/2024
+ms.date: 04/08/2024
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -19,7 +19,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql:
 targetos: Windows
 tech.root: display
 req.typenames: DXGK_INTERRUPT_TYPE
@@ -44,7 +44,7 @@ api_name:
 
 ## -description
 
-The **DXGK_INTERRUPT_TYPE** enumeration indicates the type of the interrupt that the kernel-mode driver (KMD) is notifying the GPU scheduler about.
+The **DXGK_INTERRUPT_TYPE** enumeration indicates the type of the interrupt that the kernel-mode display driver (KMD) is notifying *Dxgkrnl* about.
 
 ## -enum-fields
 
@@ -134,7 +134,7 @@ A set of [native fence GPU objects](/windows-hardware/drivers/display/native-gpu
 
 ### -field DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE:20
 
-Available starting in Windows 11, version 22H2 (WDDM 3.1).
+An engine state transition has occurred that requires a CPU power action or timeout recovery. Available starting in Windows 11, version 22H2 (WDDM 3.1).
 
 ## -see-also
 

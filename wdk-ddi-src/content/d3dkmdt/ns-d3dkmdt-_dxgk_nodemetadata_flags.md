@@ -53,7 +53,7 @@ The engine supports the context-based scheduling model.
 
 ### -field RingBufferFenceRelease
 
-The engine supports ring buffer fence release. Available starting with Windows 10, version 1809.
+The engine supports ring buffer fence release. Supported starting with Windows 10, version 1809.
 
 ### -field SupportTrackedWorkload
 
@@ -61,7 +61,7 @@ The engine supports tracked workloads. Available starting with Windows 10, versi
 
 ### -field UserModeSubmission
 
-The engine supports user-mode submission. Available starting with Windows 10, version 1809.
+The engine supports user-mode work submission. For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission). Supported starting with Windows 11, version 24H2.
 
 ### -field MaxInFlightHwQueueBuffers
 
@@ -81,4 +81,4 @@ An alternative way to access the structure members.
 
 [**DXGKARG_GETNODEMETADATA**](ns-d3dkmdt-_dxgk_nodemetadata.md)
 
-[**DXGKDDI_GETNODEMETADATA**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getnodemetadata.md)
+[**DxgkDdiGetNodeMetadata**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getnodemetadata.md)
