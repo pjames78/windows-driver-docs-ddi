@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGK_USERMODESUBMISSION_CAPS
 tech.root: display
 title: DXGK_USERMODESUBMISSION_CAPS
-ms.date: 04/03/2024
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGK_USERMODESUBMISSION_CAPS structure.
 prerelease: true
@@ -82,6 +82,6 @@ For more information, see [User-mode work submission](/windows-hardware/drivers/
 
 ## -see-also
 
-[**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-dxgk_queryadapterinfotype.md)
+[**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md)
 
 [**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md)

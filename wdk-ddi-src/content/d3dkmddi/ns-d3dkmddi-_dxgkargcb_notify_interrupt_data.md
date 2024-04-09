@@ -452,7 +452,7 @@ KMD handle of the HWQueue running on the engine that raised the interrupt. If th
 
 ### -field EngineStateChange
 
-[in] Structure used when **InterruptType** is **DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE**. For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission.md). Available starting with Windows 11, version 24H2 (WDDM 3.2).
+[in] Structure used when **InterruptType** is **DXGK_INTERRUPT_GPU_ENGINE_STATE_CHANGE**. For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission). Available starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field EngineStateChange.NodeOrdinal
 
