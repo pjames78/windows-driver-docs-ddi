@@ -2,9 +2,8 @@
 UID: NS:d3dkmthk._D3DKMT_CREATEALLOCATIONFLAGS
 title: D3DKMT_CREATEALLOCATIONFLAGS (d3dkmthk.h)
 description: Learn more about the D3DKMT_CREATEALLOCATIONFLAGS structure.
-ms.date: 11/17/2023
+ms.date: 04/10/2024
 keywords: ["D3DKMT_CREATEALLOCATIONFLAGS structure"]
-ms.keywords: D3DKMT_CREATEALLOCATIONFLAGS, D3DKMT_CREATEALLOCATIONFLAGS structure [Display Devices], OpenGL_Structs_0b22984b-feef-4975-b7d9-596427c82b2b.xml, _D3DKMT_CREATEALLOCATIONFLAGS, d3dkmthk/D3DKMT_CREATEALLOCATIONFLAGS, display.d3dkmt_createallocationflags
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
@@ -151,6 +150,22 @@ When set, instructs *Dxgkrnl* to use the section handle ([**hSection**](../d3duk
 ### -field Zeroed
 
 Specifies whether the allocation is to be zero-filled when created. Supported starting with Windows 8.
+
+### -field AllowNotZeroed
+
+Indicates that the allocation can be created without zeroing the pages. Supported starting with Windows 10, version 1903 (WDDM 2.6).
+
+### -field PhysicallyContiguous
+
+Indicates that the allocation must be physically contiguous. Supported starting with Windows 10, version 2004 (WDDM 2.7).
+
+### -field NoKmdAccess
+
+Indicates that the KMD isn't notified about the allocation. Supported starting with Windows 10, version 2004 (WDDM 2.7).
+
+### -field SharedDisplayable
+
+Indicates that the allocation is a shared, displayable resource. Supported starting with Windows 11 (WDDM 3.0).
 
 ### -field Reserved
 

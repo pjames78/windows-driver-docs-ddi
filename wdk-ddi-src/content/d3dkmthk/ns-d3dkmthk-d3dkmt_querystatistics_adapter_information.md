@@ -78,9 +78,6 @@ Reserved for system use. Do not use.
 
 ### -field Flags
 
-### -field Reserved
+### -field Reserved[7]
 
-## -remarks
-
-## -see-also
-
+### -field Reserved[8]
