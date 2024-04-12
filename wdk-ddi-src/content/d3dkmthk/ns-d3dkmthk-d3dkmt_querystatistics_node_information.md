@@ -50,7 +50,9 @@ Reserved for system use. Do not use.
 
 ### -field NodePerfData
 
-### -field Reserved
+### -field Reserved[3]
+
+### -field Reserved[8]
 
 ## -remarks
 

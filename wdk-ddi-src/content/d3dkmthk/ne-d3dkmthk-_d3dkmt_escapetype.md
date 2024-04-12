@@ -1,8 +1,8 @@
 ---
 UID: NE:d3dkmthk._D3DKMT_ESCAPETYPE
-title: _D3DKMT_ESCAPETYPE (d3dkmthk.h)
-description: Do not use the D3DKMT_VIDMMESCAPETYPE enumeration; it is for testing purposes only.
-ms.date: 10/19/2018
+title: D3DKMT_ESCAPETYPE (d3dkmthk.h)
+description: Learn more about the D3DKMT_ESCAPETYPE enumeration.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_ESCAPETYPE enumeration"]
 ms.keywords: _D3DKMT_ESCAPETYPE, D3DKMT_ESCAPETYPE,
 req.header: d3dkmthk.h
@@ -33,12 +33,11 @@ api_name:
  - D3DKMT_ESCAPETYPE
 ---
 
-# _D3DKMT_ESCAPETYPE enumeration
-
+# D3DKMT_ESCAPETYPE enumeration
 
 ## -description
 
-<b>Do not use the D3DKMT_ESCAPETYPE enumeration; it is for testing purposes only.</b>
+Do not use the **D3DKMT_ESCAPETYPE** enumeration; it is for internal testing purposes only.
 
 ## -enum-fields
 
@@ -78,8 +77,6 @@ api_name:
 
 ### -field D3DKMT_ESCAPE_EDID_CACHE
 
-### -field D3DKMT_ESCAPE_GENERIC_ADAPTER_DIAG_INFO
-
 ### -field D3DKMT_ESCAPE_MIRACAST_DISPLAY_REQUEST
 
 ### -field D3DKMT_ESCAPE_HISTORY_BUFFER_STATUS
@@ -89,8 +86,6 @@ api_name:
 ### -field D3DKMT_ESCAPE_FORCE_BDDFALLBACK_HEADLESS
 
 ### -field D3DKMT_ESCAPE_REQUEST_MACHINE_CRASH
-
-### -field D3DKMT_ESCAPE_HMD_GET_EDID_BASE_BLOCK
 
 ### -field D3DKMT_ESCAPE_SOFTGPU_ENABLE_DISABLE_HMD
 
@@ -107,8 +102,6 @@ api_name:
 ### -field D3DKMT_ESCAPE_LOG_USERMODE_DAIG_PACKET
 
 ### -field D3DKMT_ESCAPE_GET_EXTERNAL_DIAGNOSTICS
-
-### -field D3DKMT_ESCAPE_GET_PREFERRED_MODE
 
 ### -field D3DKMT_ESCAPE_GET_DISPLAY_CONFIGURATIONS
 
@@ -132,15 +125,18 @@ api_name:
 
 ### -field D3DKMT_ESCAPE_WIN32K_USER_DETECTED_BLACK_SCREEN
 
-### -field D3DKMT_ESCAPE_WIN32K_HMD_ENUM
-
-### -field D3DKMT_ESCAPE_WIN32K_HMD_CONTROL
-
-### -field D3DKMT_ESCAPE_WIN32K_LPMDISPLAY_CONTROL
-
 ### -field D3DKMT_ESCAPE_WIN32K_DISPBROKER_TEST
+
+### -field D3DKMT_ESCAPE_CCD_DATABASE
+
+### -field D3DKMT_ESCAPE_QUERY_DMA_REMAPPING_STATUS
+
+### -field D3DKMT_ESCAPE_WIN32K_COLOR_PROFILE_INFO
+
+### -field D3DKMT_ESCAPE_WIN32K_SET_DIMMED_STATE
+
+### -field D3DKMT_ESCAPE_WIN32K_SPECIALIZED_DISPLAY_TEST
 
 ## -remarks
 
-## -see-also
-
+For internal use only.

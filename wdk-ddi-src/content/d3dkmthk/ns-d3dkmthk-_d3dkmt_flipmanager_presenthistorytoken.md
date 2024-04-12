@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN
-title: _D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN (d3dkmthk.h)
+title: D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN (d3dkmthk.h)
 description: Identifies a flip present-history token.
-ms.date: 10/19/2018
+ms.date: 04/10/2024
 keywords: ["D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN structure"]
-ms.keywords: _D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN, D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN,
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
@@ -36,14 +35,21 @@ api_name:
  - D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN
 ---
 
-# _D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN structure
-
+# D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN structure
 
 ## -description
 
-Identifies a flip present-history token.
+The **D3DKMT_FLIPMANAGER_PRESENTHISTORYTOKEN** structure identifies a flip present-history token.
 
 ## -struct-fields
+
+### -field hPrivateData
+
+Handle to the token's private data.
+
+### -field PresentAtQpc
+
+Present the frame at this QPC (Query Performance Counter) time.
 
 ### -field Flags
 
@@ -57,15 +63,14 @@ Discard the token.
 
 Present the token.
 
+### -field Flags.hPrivateDataIsPointer
+
+The handle to the private data (**hPrivateData**) is a pointer.
+
 ### -field Flags.Reserved
 
 This member is reserved.
 
 ### -field Flags.Value
 
-Value.
-
-### -field hPrivateData
-
-Token private data.
-
+An alternative way to access the flags.

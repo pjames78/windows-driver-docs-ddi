@@ -2,7 +2,7 @@
 UID: NE:d3dkmthk._D3DKMT_STANDARDALLOCATIONTYPE
 title: D3DKMT_STANDARDALLOCATIONTYPE (d3dkmthk.h)
 description: Learn more about the D3DKMT_STANDARDALLOCATIONTYPE enumeration.
-ms.date: 07/12/2023
+ms.date: 04/10/2024
 keywords: ["D3DKMT_STANDARDALLOCATIONTYPE enumeration"]
 ms.keywords: D3DKMT_STANDARDALLOCATIONTYPE, D3DKMT_STANDARDALLOCATIONTYPE enumeration [Display Devices], D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP, _D3DKMT_STANDARDALLOCATIONTYPE, d3dkmthk/D3DKMT_STANDARDALLOCATIONTYPE, d3dkmthk/D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP, display.d3dkmt-standardallocationtype
 req.header: d3dkmthk.h
@@ -50,13 +50,17 @@ The **D3DKMT_STANDARDALLOCATIONTYPE** enumeration specifies the standard allocat
 
 ## -enum-fields
 
-### -field D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP:1
+### -field D3DKMT_STANDARDALLOCATIONTYPE_EXISTINGHEAP
 
 The allocation type is an existing heap.
 
-### -field D3DKMT_STANDARDALLOCATIONTYPE_INTERNALBACKINGSTORE:2
+### -field D3DKMT_STANDARDALLOCATIONTYPE_INTERNALBACKINGSTORE
 
 The allocation type is an internal backing store.
+
+### -field D3DKMT_STANDARDALLOCATIONTYPE_MAX
+
+Maximum value for the enumeration.
 
 ## -see-also
 

@@ -2,8 +2,7 @@
 UID: NS:d3dkmthk._D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN
 title: D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN (d3dkmthk.h)
 description: Learn more about the D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure.
-old-location: display\d3dkmt_flipmodel_presenthistorytoken.htm
-ms.date: 05/10/2018
+ms.date: 04/10/2024
 keywords: ["D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure"]
 ms.keywords: D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure [Display Devices], OpenGL_Structs_819c22ef-0bae-476a-9cbc-0169cd7fc82f.xml, _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, d3dkmthk/D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, display.d3dkmt_flipmodel_presenthistorytoken
 req.header: d3dkmthk.h
@@ -91,6 +90,8 @@ Supported starting with Windows 8.
 
 ### -field compSurfLuid
 
+LUID for the composition surface.
+
 ### -field confirmationCookie
 
 Confirmation cookie.
@@ -125,7 +126,7 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-### -field RevealColor
+### -field RevealColor[4]
 
 This member is reserved and should be set to zero.
 
@@ -149,9 +150,9 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-### -field Reserved
+### -field InkCookie
 
-Reserved for internal use.
+Cookie for token's ink.
 
 ### -field SourceRect
 
@@ -169,13 +170,21 @@ The destination height.
 
 The target rectangle.
 
-### -field Transform
+### -field Transform[6]
+
+Transformation matrix.
 
 ### -field CustomDuration
 
+Custom duration of the transition.
+
 ### -field CustomDurationFlipInterval
 
+Custom interval of the transition.
+
 ### -field PlaneIndex
+
+Index of the plane.
 
 ### -field ColorSpace
 
