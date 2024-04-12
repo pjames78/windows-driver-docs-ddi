@@ -60,8 +60,8 @@ Reserved for system use. Do not use.
 
 ### -field ProcessInterferenceCounters
 
-### -field Reserved
+### -field Reserved[9]
 
-## -remarks
+### -field ClientHint
 
-## -see-also
+### -field Reserve
