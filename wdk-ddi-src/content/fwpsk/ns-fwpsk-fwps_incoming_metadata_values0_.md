@@ -528,6 +528,13 @@ Reserved.
 <div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
 <div> </div>
 
+### -field l2ConnectionProfileIndex
+
+The layer 2 connection profile index. 
+
+<div class="alert"><b>Note</b>  Available only in <i>Windows 8</i> and later versions of Windows.</div>
+<div> </div>
+
 ## -remarks
 
 The filter engine passes a pointer to an FWPS_INCOMING_METADATA_VALUES0 structure to a callout's 
