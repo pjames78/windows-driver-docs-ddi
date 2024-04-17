@@ -97,7 +97,7 @@ Bit flags to specify extra attributes of this NLO from the following table:
 </tr>
 <tr>
 <td>DOT11_NLO_FLAG_SCAN_AT_SYSTEM_RESUME </td>
-<td>Specifies that NLO is meant to be used at system resume on non-AOAC platfroms, which is never the case for AOAC platforms.  The NLO OID may be sent beforehand, when the systems is being suspended. Miniport/hardware should not start NLO scan right away. The list should be kept in miniport driver or hardware. When the system resumes, the miniport/hardware should try to connect to the previous connected network. The list should be scan right after the effort failed or when there is no previous connected AP to reconnect to.</td>
+<td>Specifies that NLO is meant to be used at system resume on non-AOAC platforms, which is never the case for AOAC platforms.  The NLO OID may be sent beforehand, when the systems is being suspended. Miniport/hardware should not start NLO scan right away. The list should be kept in miniport driver or hardware. When the system resumes, the miniport/hardware should try to connect to the previous connected network. The list should be scan right after the effort failed or when there is no previous connected AP to reconnect to.</td>
 </tr>
 </table>
 

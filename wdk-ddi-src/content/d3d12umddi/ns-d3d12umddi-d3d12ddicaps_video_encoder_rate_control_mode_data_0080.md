@@ -54,7 +54,7 @@ The **D3D12DDICAPS_VIDEO_ENCODER_RATE_CONTROL_MODE_DATA_0080** structure is used
 
 ### -field RateControlMode
 
-[in] A [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_rate_control_mode_0080.md) alue that specifies the rate control mode to check support for.
+[in] A [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_rate_control_mode_0080.md) value that specifies the rate control mode to check support for.
 
 ### -field IsSupported
 

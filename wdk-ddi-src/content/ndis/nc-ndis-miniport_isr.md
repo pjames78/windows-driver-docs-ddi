@@ -156,7 +156,7 @@ All NICs can share line-based interrupts with other devices on the I/O bus. If t
     the driver of the device that generated the interrupt. If the 
     <i>QueueDefaultInterruptDpc</i> is set to <b>FALSE</b> and the 
     <i>TargetProcessors</i> parameter is set to zero, NDIS will not schedule any DPCs.
-    Otherwise, NDIS will schedule DPCs egardless of the re<i>MiniportInterrupt</i>turn value from 
+    Otherwise, NDIS will schedule DPCs regardless of the re<i>MiniportInterrupt</i>turn value from 
     <i>MiniportInterrupt</i>.
 
 If the interrupt is for the NIC,

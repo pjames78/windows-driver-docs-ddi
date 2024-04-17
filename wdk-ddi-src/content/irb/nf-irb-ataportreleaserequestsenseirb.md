@@ -1,7 +1,7 @@
 ---
 UID: NF:irb.AtaPortReleaseRequestSenseIrb
 title: AtaPortReleaseRequestSenseIrb function (irb.h)
-description: The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB tha is allocated by using AtaPortBuildRequestSenseIrb.
+description: The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB that is allocated by using AtaPortBuildRequestSenseIrb.
 old-location: storage\ataportreleaserequestsenseirb.htm
 tech.root: storage
 ms.date: 03/29/2018

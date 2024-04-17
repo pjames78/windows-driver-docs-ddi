@@ -56,7 +56,7 @@ A kernel mode handle to the VMBus vdev of the partition.
 
 ## -returns
 
-Returns STATUS_SUCCESS if the operation is successful. Otherwise, returns an approprite NTSTATUS error code.
+Returns STATUS_SUCCESS if the operation is successful. Otherwise, returns an appropriate NTSTATUS error code.
 
 ## -prototype
 
