@@ -98,7 +98,7 @@ The NIC should queue any transmit packets on this SQ for a given TC if other SQs
 
 ### -field TcReceiveBandwidthCapTable
 
-An array of ULONG elements that specify receive bandwidth caps for each TC, in Mbps. Elements are only valid if if the `NDIS_QOS_SQ_RECEIVE_CAP_ENABLED` flag is set and their corresponding element in **TcEnabledTable** is **TRUE**. An element with a value of **0** has no cap.
+An array of ULONG elements that specify receive bandwidth caps for each TC, in Mbps. Elements are only valid if the `NDIS_QOS_SQ_RECEIVE_CAP_ENABLED` flag is set and their corresponding element in **TcEnabledTable** is **TRUE**. An element with a value of **0** has no cap.
 
 This is an optional feature for enabling receive bandwidth capping. NICs that advertise receive cap support should drop any receive packet after a given TC on this SQ has exceeded the rate specified in this array (based on the NIC’s scheduling implementation).  
 

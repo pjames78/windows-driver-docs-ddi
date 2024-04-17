@@ -175,7 +175,7 @@ For more information, see <a href="/windows-hardware/drivers/network/ndis-qos-fo
 
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities">NDIS_QOS_CAPABILITIES</a> structure. This structure specifies the hardware capabilities that are currently enabled on the network adapter for NDIS QoS over the DCB interface. This value can be <b>NULL</b> if the network adapter does not support NDIS QoS hardware capabilities for DCB. 
 
-If the adapter supports NDIS QoS capabilties but those capabilities are disabled, the miniport driver must set all members of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities">NDIS_QOS_CAPABILITIES</a> structure (with the exception of the <b>Header</b> member) to zero.
+If the adapter supports NDIS QoS capabilities but those capabilities are disabled, the miniport driver must set all members of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities">NDIS_QOS_CAPABILITIES</a> structure (with the exception of the <b>Header</b> member) to zero.
 
 <div class="alert"><b>Note</b>  If this member is not set to NULL, the <b>HardwareQosCapabilities</b> member must not be set to <b>NULL</b>.</div>
 <div> </div>

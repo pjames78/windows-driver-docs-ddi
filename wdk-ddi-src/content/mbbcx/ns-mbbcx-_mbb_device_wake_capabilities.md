@@ -56,7 +56,7 @@ A boolean value indicating if the net adapter can generate wake-up events if its
 
 ### -field SmsReceive
 
-A boolean value indicating if the net adapter can generate wake-up events if it recieves a Short Message Service (SMS) message that it must report to the mobile broadband service.
+A boolean value indicating if the net adapter can generate wake-up events if it receives a Short Message Service (SMS) message that it must report to the mobile broadband service.
 
 ### -field UssdReceive
 

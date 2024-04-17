@@ -117,7 +117,7 @@ By using the
     <b>SDP_TYPE_SEQUENCE</b>, the node is an SDP sequence. If the data type of the node is 
     <b>SDP_TYPE_ALTERNATIVE</b>, the node is an SDP alternative sequence. In the first case, the sequence
     member is valid and contains the information necessary to access the portion of the tree corresponding
-    with the sequnce. In the second case, the alternative member is valid and contains the information
+    with the sequence. In the second case, the alternative member is valid and contains the information
     necessary to access the portion of the tree corresponding to the alternative. The 
     <b>sequence</b> or 
     <b>alternative</b> member, when used, contains an extra SDP_NODE_HEADER structure that is used to access

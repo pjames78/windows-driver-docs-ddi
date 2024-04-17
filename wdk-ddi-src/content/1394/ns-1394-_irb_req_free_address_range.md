@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
+This structure contains the fields necessary for the 1394 stack to carry out a free address range request.
 
 ## -struct-fields
 
