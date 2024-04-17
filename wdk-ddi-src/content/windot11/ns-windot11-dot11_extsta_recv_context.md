@@ -150,7 +150,7 @@ The size, in bytes, of the media specific information at the
 
 ### -field pvMediaSpecificInfo
 
-A pointer to a buffer that contains media-specific infomration. The mininiport driver can set this
+A pointer to a buffer that contains media-specific information. The miniport driver can set this
      member if the miniport driver passes media-specific OOB data to an IHV-specific 802.3 protocol driver.
 
 

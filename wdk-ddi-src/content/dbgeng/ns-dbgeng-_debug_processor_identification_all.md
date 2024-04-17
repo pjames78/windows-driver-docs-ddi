@@ -65,7 +65,7 @@ An AMD64 processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-
 
 ### -field Ia64
 
-An Itanium architecture processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_ia64">DEBUG_PROCESSOR_IDENTIFICATION_IA64</a> stuct.
+An Itanium architecture processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_ia64">DEBUG_PROCESSOR_IDENTIFICATION_IA64</a> struct.
 
 ### -field X86
 

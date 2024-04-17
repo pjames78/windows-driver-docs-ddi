@@ -198,7 +198,7 @@ UNICODE_STRING RemainingComponent;
 
 /*
 Do not allocate storage for the Buffer members of CurrentComponent
-and RemainingComponent in that they will point into the previoulsy
+and RemainingComponent in that they will point into the previously
 allocated storage of FullPathName's Buffer member:
 */
 FsRtlDissectDbcs (FullPathName, &CurrentComponent, &RemainingComponent);

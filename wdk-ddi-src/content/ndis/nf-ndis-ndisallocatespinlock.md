@@ -79,7 +79,7 @@ As a general rule, to improve performance a driver should use different locks to
     critical sections. Thus, a driver might initialize more than one spin lock with 
     <b>NdisAllocateSpinLock</b>.
 
-Each spin lock that a driver allocates protects a discrete set of shared resources from simultanous
+Each spin lock that a driver allocates protects a discrete set of shared resources from simultaneous
     access by driver functions that run at IRQL <= DISPATCH_LEVEL. For example, a driver that maintains an
     internal queue of packets might initialize one spin lock to protect its queue and another to protect a
     set of state variables that several driver functions, not including the 

@@ -65,7 +65,7 @@ The following code snippet shows how to flush data to a data stream. Note that e
 // Declare a pointer to an IPrintWriteStreamFlush interface
 IPrintWriteStreamFlush *pIFlush;
 
-// Retireve a pointer to an IPrintWriteStream interface
+// Retrieve a pointer to an IPrintWriteStream interface
 // by using the RequestWriter() method in InitializeFilter()
 IPrintWriteStream      *pIWrite;
 
