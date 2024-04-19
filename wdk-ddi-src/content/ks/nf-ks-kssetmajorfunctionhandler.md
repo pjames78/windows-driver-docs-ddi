@@ -46,7 +46,7 @@ api_name:
 
 ## -description
 
-The **KsSetMajorFunctionHandler** function sets the handler for a specified major function to use the internal dispatching. It routes through a KSDISPATCH_TABLE contained in the opaque object header to be the first element within a structure pointed to by an **FsContext** within a file object. The dispatching assumes the table and **FsContext** structure are initialized by the device using **KsAllocateObjectHeader**.
+The **KsSetMajorFunctionHandler** function sets the handler for a specified major function to use the internal dispatching. It routes through a KSDISPATCH_TABLE contained in the opaque object header to be the first element within a structure pointed to by a **FsContext** within a file object. The dispatching assumes the table and **FsContext** structure are initialized by the device using **KsAllocateObjectHeader**.
 
 ## -parameters
 

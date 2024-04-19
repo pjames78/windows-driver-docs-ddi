@@ -64,7 +64,7 @@ A doorbell can be disconnected for several reasons, such as the following:
 
 * When a [doorbell is created](nf-d3dkmthk-d3dkmtcreatedoorbell.md), the OS initializes it in a "disconnected" state, and it is only connected when UMD calls **D3DKMTConnectDoorbell** for the first time.
 * The doorbell was "victimized" on hardware that supports the dedicated doorbell model. That is, this hardware queue's physical doorbell was assigned to another hardware queue. This reassignment is likely because there are more hardware queues created on the GPU than physical doorbells.
-* The doorbell was was disconnected as a part of suspending the hardware queue or powering down the GPU.
+* The doorbell was disconnected as a part of suspending the hardware queue or powering down the GPU.
 
 When UMD calls **D3DKMTConnectDoorbell** to connect the doorbell assigned to a hardware queue, the OS makes a corresponding [**DxgkDdiConnectDoorbell**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createdoorbell.md) call to KMD, so that the KMD can find a physical doorbell, assign it to this hardware queue, and make the required connections between the hardware queue, doorbell, GPU scheduler and so forth.
 

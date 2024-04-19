@@ -60,7 +60,7 @@ Opaque pointer to the **FILE_LOCK_INFO** structure for the byte-range lock.
 
 A filter (legacy filter or minifilter) can optionally specify a PUNLOCK_ROUTINE-typed routine as the filter's *UnlockRoutine* callback for a byte-range file lock.
 
-If the filter specifies a *UnlockRoutine* routine for a FILE_LOCK structure, this routine is called when the lock is removed from a locked byte range in a file.
+If the filter specifies an *UnlockRoutine* routine for a FILE_LOCK structure, this routine is called when the lock is removed from a locked byte range in a file.
 
 A minifilter specifies this routine by passing a pointer to the routine as the *UnlockRoutine* parameter for [**FltAllocateFileLock**](../fltkernel/nf-fltkernel-fltallocatefilelock.md).
 

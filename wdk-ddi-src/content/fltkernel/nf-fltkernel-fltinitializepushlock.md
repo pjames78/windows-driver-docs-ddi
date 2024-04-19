@@ -115,7 +115,7 @@ EX_PUSH_LOCK structures are much smaller than ERESOURCE structures.
 
 </li>
 </ul>
-Unless any of these advantages are compelling an ERESOURCE is usually the more robust and maintainable solution to the Read/Write syncrhonization problem.
+Unless any of these advantages are compelling an ERESOURCE is usually the more robust and maintainable solution to the Read/Write synchronization problem.
 
 To acquire a push lock for exclusive access, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltacquirepushlockexclusive">FltAcquirePushLockExclusive</a>. 
 

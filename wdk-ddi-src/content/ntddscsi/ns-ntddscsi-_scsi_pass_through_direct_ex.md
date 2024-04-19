@@ -64,7 +64,7 @@ The version of this structure. Set to 0.
 
 ### -field Length
 
-The size of the this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
+The size of this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
 
 ### -field CdbLength
 
