@@ -1,7 +1,7 @@
 ---
 UID: NF:storport.StorPortGetPfns
 title: StorPortGetPfns function (storport.h)
-description: The StorPortGetPfns routine can be called when a miniport needs to retreive PFNs associated with a MDL for a SRB.
+description: The StorPortGetPfns routine can be called when a miniport needs to retrieve PFNs associated with a MDL for a SRB.
 old-location: storage\storportgetpfns.htm
 tech.root: storage
 ms.date: 03/29/2018

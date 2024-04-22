@@ -105,7 +105,7 @@ For more information about calling <b>WdfRequestComplete</b>, see <a href="/wind
 
 #### Examples
 
-The following code example is a section of a request handler. The request handler accepts only read and write requests, and it completes a each request with an error status if the request type is not read or write.
+The following code example is a section of a request handler. The request handler accepts only read and write requests, and it completes each request with an error status if the request type is not read or write.
 
 ```cpp
 VOID

@@ -62,7 +62,7 @@ The size of structure represented as a LONG (32-bit) value.
 
 ### -field Flags.DisableLpmForAllDownstreamDevices
 
-Indicates that LPM should be disabled for all devices/hubs behind the this hub.
+Indicates that LPM should be disabled for all devices/hubs behind this hub.
 
 ### -field Flags.HubIsHighSpeedCapable
 
@@ -78,7 +78,7 @@ Indicates that U1 transitions should be disabled.
 
 ### -field DisableLpmForAllDownstreamDevices
 
-Indicates that LPM should be disabled for all devices/hubs behind the this hub.
+Indicates that LPM should be disabled for all devices/hubs behind this hub.
 
 ### -field HubIsHighSpeedCapable
 

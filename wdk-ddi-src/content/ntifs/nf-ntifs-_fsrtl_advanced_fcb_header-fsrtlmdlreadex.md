@@ -80,7 +80,7 @@ A pointer to an [**IO_STATUS_BLOCK**](../wdm/ns-wdm-_io_status_block.md) structu
 
 | Return code | Description |
 | ----------- | ----------- |
-| STATUS_INSUFFICIENT_RESOURCES | The IRP for an the IRP based read could not be allocated. |
+| STATUS_INSUFFICIENT_RESOURCES | The IRP for an IRP based read could not be allocated. |
 
 ## -remarks
 

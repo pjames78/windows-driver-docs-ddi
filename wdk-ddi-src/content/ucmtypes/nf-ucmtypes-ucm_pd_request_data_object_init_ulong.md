@@ -60,7 +60,8 @@ The ULONG value to set in the <b>Ul</b> member of   <a href="/windows-hardware/d
 
 ## -remarks
 
-For information about Request Data Objects, see the Power Delivery specification. There are different types of Request Data Objects and the type depends on the Power Data Object that is specified in the <b>ObjectPosition</b> member of <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_pd_request_data_object">UCM_PD_REQUEST_DATA_OBJECT</a>. The  source buffer is little-endian format and the client driver can memcopy the Request Data Objects from the hardware into an array of <b>UCM_PD_REQUEST_DATA_OBJECT</b> structures.
+For information about Request Data Objects, see the Power Delivery specification. There are different types of Request Data Objects and the type depends on the Power Data Object that is specified in the <b>ObjectPosition</b> member of <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_pd_request_data_object">UCM_PD_REQUEST_DATA_OBJECT</a>. The source buffer is little-endian format. The client driver can call the [**memcpy**](/cpp/c-runtime-library/reference/memcpy-wmemcpy) function to get the Request Data Objects from the hardware into an array of <b>UCM_PD_REQUEST_DATA_OBJECT</b> structures.
+
 
 ## -see-also
 

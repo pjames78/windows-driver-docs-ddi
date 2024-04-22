@@ -54,7 +54,7 @@ Indicates the maximum number that can be used in [**D3D12DDI_VIDEO_ENCODER_INTRA
 
 ### -field SubregionBlockPixelsSize
 
-Indicates, for the associated resolution, the size in pixels of the squared regions that will be used to partition the frame for the subregion layout (slices) semantics. The resolution of the frame will be rounded up to be aligned to this value when the rame is partitioned in bloks. The configuration of the suregion partitioning will use a number of squared subregions that have their size in pixels according to the value of this member.
+Indicates, for the associated resolution, the size in pixels of the squared regions that will be used to partition the frame for the subregion layout (slices) semantics. The resolution of the frame will be rounded up to be aligned to this value when the frame is partitioned in blocks. The configuration of the subregion partitioning will use a number of squared subregions that have their size in pixels according to the value of this member.
 
 > [!NOTE]
 >

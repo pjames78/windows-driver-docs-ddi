@@ -1,7 +1,7 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
 title: _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR (sidebandaudio.h)
-description: "The SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure describes the characteristics of an Sideband audio Endpoint."
+description: "The SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure describes the characteristics of a Sideband audio Endpoint."
 ms.date: 06/26/2023
 keywords: ["SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure"]
 ms.keywords: _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR,
