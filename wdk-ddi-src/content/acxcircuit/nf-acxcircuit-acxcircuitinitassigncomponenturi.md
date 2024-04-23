@@ -60,7 +60,7 @@ Returns `STATUS_SUCCESS` if the call was successful. Otherwise, it returns an ap
 
 ## -remarks
 
-The driver must initialize the circuit's identity by setting the its URI and/or its ID (AcxCircuitInitSetComponentId).
+The driver must initialize the circuit's identity by setting its URI and/or its ID (AcxCircuitInitSetComponentId).
 
 ### Example
 

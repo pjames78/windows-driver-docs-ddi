@@ -250,7 +250,7 @@ The M4x4 instruction computes the product of a 4-component vector and a 4x4 matr
 
 ### -field D3DSIO_M4x3
 
-TThe M4x3 instruction computes the product of a 4-component vector and a 4x3 matrix, and stores the result in the destination.
+The M4x3 instruction computes the product of a 4-component vector and a 4x3 matrix, and stores the result in the destination.
 <br/><br/>**Format**
 <br/>[instruction token](/windows-hardware/drivers/display/instruction-token) that contains D3DSIO_M4x3. Instruction length is 3.
 <br/>[destination parameter token](/windows-hardware/drivers/display/destination-parameter-token). The XYZ mask is required.

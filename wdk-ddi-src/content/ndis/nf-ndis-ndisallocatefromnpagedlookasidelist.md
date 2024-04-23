@@ -10,7 +10,7 @@ ms.keywords: NdisAllocateFromNPagedLookasideList, NdisAllocateFromNPagedLookasid
 req.header: ndis.h
 req.include-header: Ndis.h
 req.target-type: Desktop
-req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP.
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -70,7 +70,7 @@ If the lookaside list is not empty,
     NdisInitializeNPagedLookasideList</a> function, that the caller specified at list initialization, if
     any, or it allocates an entry on behalf of the caller. 
     <b>NdisAllocateFromNPagedLookasideList</b> returns <b>NULL</b> if the caller-supplied 
-    <i>Allocate</i> function, if any, or if this function itself cannot allocate an nonpaged entry.
+    <i>Allocate</i> function, if any, or if this function itself cannot allocate a nonpaged entry.
 
 All entries that are allocated from a nonpaged lookaside list are of a fixed size, that was specified
     when the driver originally called 

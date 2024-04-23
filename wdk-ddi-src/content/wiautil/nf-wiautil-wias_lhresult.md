@@ -67,7 +67,7 @@ if (hr != S_OK)
    WIAS_LHRESULT(g_pIWiaLog, hr);
 ```
 
-The WIAS_LHRESULT macro is obslete. It is recommended that the [WIAS_HRESULT](../wiamdef/nf-wiamdef-wias_hresult.md) macro be used instead.
+The WIAS_LHRESULT macro is obsolete. It is recommended that the [WIAS_HRESULT](../wiamdef/nf-wiamdef-wias_hresult.md) macro be used instead.
 
 ## -see-also
 
