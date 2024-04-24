@@ -74,6 +74,10 @@ The **FltGetContexts** routine retrieves a minifilter driver's contexts for the 
 * Contexts that the caller did not request.
 * Contexts that the caller requested but *FltMgr* couldn't find.
 
+## -returns
+
+None.
+
 ## -remarks
 
 For more information about contexts, see [About minifilter contexts](/windows-hardware/drivers/ifs/managing-contexts-in-a-minifilter-driver).

@@ -1,10 +1,9 @@
 ---
 UID: NE:ntifs._TOKEN_INFORMATION_CLASS
 title: TOKEN_INFORMATION_CLASS (ntifs.h)
-description: The TOKEN_INFORMATION_CLASS enumeration type contains values that specify the type of information being assigned to or retrieved from an access token.
-old-location: ifsk\token_information_class.htm
+description: Learn more about the TOKEN_INFORMATION_CLASS enumeration.
 tech.root: ifsk
-ms.date: 05/24/2022
+ms.date: 04/23/2024
 keywords: ["TOKEN_INFORMATION_CLASS enumeration"]
 ms.keywords: "*PTOKEN_INFORMATION_CLASS, MaxTokenInfoClass, PTOKEN_INFORMATION_CLASS, PTOKEN_INFORMATION_CLASS enumeration pointer [Installable File System Drivers], TOKEN_INFORMATION_CLASS, TOKEN_INFORMATION_CLASS enumeration [Installable File System Drivers], TokenAccessInformation, TokenAppContainerNumber, TokenAppContainerSid, TokenAuditPolicy, TokenCapabilities, TokenDefaultDacl, TokenDeviceClaimAttributes, TokenDeviceGroups, TokenElevation, TokenGroups, TokenGroupsAndPrivileges, TokenHasRestrictions, TokenImpersonationLevel, TokenIntegrityLevel, TokenIsAppContainer, TokenIsRestricted, TokenLinkedToken, TokenLogonSid, TokenMandatoryPolicy, TokenOrigin, TokenOwner, TokenPrimaryGroup, TokenPrivileges, TokenProcessTrustLevel, TokenRestrictedDeviceClaimAttributes, TokenRestrictedDeviceGroups, TokenRestrictedSids, TokenRestrictedUserClaimAttributes, TokenSandBoxInert, TokenSecurityAttributes, TokenSessionId, TokenSessionReference, TokenSource, TokenStatistics, TokenType, TokenUIAccess, TokenUser, TokenUserClaimAttributes, TokenVirtualizationAllowed, TokenVirtualizationEnabled, _TOKEN_INFORMATION_CLASS, ifsk.token_information_class, ntifs/MaxTokenInfoClass, ntifs/PTOKEN_INFORMATION_CLASS, ntifs/TOKEN_INFORMATION_CLASS, ntifs/TokenAccessInformation, ntifs/TokenAppContainerNumber, ntifs/TokenAppContainerSid, ntifs/TokenAuditPolicy, ntifs/TokenCapabilities, ntifs/TokenDefaultDacl, ntifs/TokenDeviceClaimAttributes, ntifs/TokenDeviceGroups, ntifs/TokenElevation, ntifs/TokenGroups, ntifs/TokenGroupsAndPrivileges, ntifs/TokenHasRestrictions, ntifs/TokenImpersonationLevel, ntifs/TokenIntegrityLevel, ntifs/TokenIsAppContainer, ntifs/TokenIsRestricted, ntifs/TokenLinkedToken, ntifs/TokenLogonSid, ntifs/TokenMandatoryPolicy, ntifs/TokenOrigin, ntifs/TokenOwner, ntifs/TokenPrimaryGroup, ntifs/TokenPrivileges, ntifs/TokenProcessTrustLevel, ntifs/TokenRestrictedDeviceClaimAttributes, ntifs/TokenRestrictedDeviceGroups, ntifs/TokenRestrictedSids, ntifs/TokenRestrictedUserClaimAttributes, ntifs/TokenSandBoxInert, ntifs/TokenSecurityAttributes, ntifs/TokenSessionId, ntifs/TokenSessionReference, ntifs/TokenSource, ntifs/TokenStatistics, ntifs/TokenType, ntifs/TokenUIAccess, ntifs/TokenUser, ntifs/TokenUserClaimAttributes, ntifs/TokenVirtualizationAllowed, ntifs/TokenVirtualizationEnabled, securitystructures_525fb6c8-0030-40ea-927a-72fe89eff87e.xml"
 req.header: ntifs.h
@@ -78,7 +77,7 @@ The buffer receives a [**TOKEN_PRIMARY_GROUP**](ns-ntifs-_token_primary_group.md
 
 ### -field TokenDefaultDacl
 
-The buffer receives a [**TOKEN_DEFAULT_DACL**](ns-ntifs-_token_default_dacl.md) structure containing the default discretionary ACL (DACL)) for newly created objects.
+The buffer receives a [**TOKEN_DEFAULT_DACL**](ns-ntifs-_token_default_dacl.md) structure containing the default discretionary ACL (DACL) for newly created objects.
 
 ### -field TokenSource
 
@@ -226,17 +225,35 @@ Reserved for system use.
 
 ### -field TokenPrivateNameSpace
 
+Reserved for system use.
+
 ### -field TokenSingletonAttributes
+
+Reserved for system use.
 
 ### -field TokenBnoIsolation
 
+Reserved for system use.
+
 ### -field TokenChildProcessFlags
+
+Reserved for system use.
 
 ### -field TokenIsLessPrivilegedAppContainer
 
+Returns a **DWORD** value that is nonzero if the token is for a less privileged app container.
+
 ### -field TokenIsSandboxed
 
+Returns a **DWORD** value that is nonzero if the token is for a sandboxed process or app.
+
 ### -field TokenIsAppSilo
+
+Returns a **DWORD** value that is nonzero if the token is associated with an app silo.
+
+### -field TokenLoggingInformation
+
+The buffer receives a **TOKEN_LOGGING_INFORMATION** structure with logging information associated with the token.
 
 ### -field MaxTokenInfoClass
 
