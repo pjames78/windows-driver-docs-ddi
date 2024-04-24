@@ -4,7 +4,7 @@ title: FSRTL_ADVANCED_FCB_HEADER (ntifs.h)
 description: The FSRTL_ADVANCED_FCB_HEADER structure contains context information that a file system maintains about a file.
 old-location: ifsk\fsrtl_advanced_fcb_header.htm
 tech.root: ifsk
-ms.date: 05/24/2022
+ms.date: 04/23/2024
 keywords: ["FSRTL_ADVANCED_FCB_HEADER structure"]
 ms.keywords: "*PFSRTL_ADVANCED_FCB_HEADER, *PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_ADVANCED_FCB_HEADER structure [Installable File System Drivers], FSRTL_UNC_PROVIDER_REGISTRATION, PFSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER structure pointer [Installable File System Drivers], _FSRTL_ADVANCED_FCB_HEADER, contextstructures_cede2315-2c72-496f-a192-3ef25a8b0516.xml, ifsk.fsrtl_advanced_fcb_header, ntifs/FSRTL_ADVANCED_FCB_HEADER, ntifs/PFSRTL_ADVANCED_FCB_HEADER"
 req.header: ntifs.h
@@ -100,6 +100,12 @@ This field is reserved for system use. It is only used in Windows 8.1 through W
 Tracks how many handles are currently open with [BypassIO](/windows-hardware/drivers/ifs/bypassio) enabled on this stream.
 
 This field is available starting in Windows 11 (that is, if the **Version** bit-field of the [**FSRTL_COMMON_FCB_HEADER**](ns-ntifs-_fsrtl_common_fcb_header.md) structure is greater than or equal to **FSRTL_FCB_HEADER_V4**).
+
+### -field _FSTRL_ADVANCED_FCB_HEADER
+
+Reserved for system use.
+
+This field is available starting in Windows 11, version 22H2 (that is, if the **Version** bit-field of the [**FSRTL_COMMON_FCB_HEADER**](ns-ntifs-_fsrtl_common_fcb_header.md) structure is greater than or equal to **FSRTL_FCB_HEADER_V5**).
 
 ## -remarks
 

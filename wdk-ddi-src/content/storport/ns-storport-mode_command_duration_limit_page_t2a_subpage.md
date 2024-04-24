@@ -66,11 +66,11 @@ Described in the specification.
 
 Described in the specification.
 
-### -field PageLength
+### -field PageLength[2]
 
 Described in the specification.
 
-### -field Reserved
+### -field Reserved[3]
 
 Reserved.
 
@@ -78,11 +78,11 @@ Reserved.
 
 Reserved.
 
-### -field PerfvsComandDurationGuidelines
+### -field PerfvsCommandDurationGuidelines
 
 Described in the specification.
 
-### -field T2CommandDurationLimitDescriptors
+### -field T2CommandDurationLimitDescriptors[DURATION_LIMIT_T2_DESCRIPTOR_COUNT]
 
 An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** [**T2_COMMAND_DURATION_LIMIT_DESCRIPTOR**](ns-storport-t2_command_duration_limit_descriptor.md) structures, where each structure contains a T2 command duration limit descriptor.
 
