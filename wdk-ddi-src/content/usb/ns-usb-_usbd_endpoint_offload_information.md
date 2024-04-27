@@ -1,10 +1,10 @@
 ---
 UID: NS:usb._USBD_ENDPOINT_OFFLOAD_INFORMATION
 title: _USBD_ENDPOINT_OFFLOAD_INFORMATION (usb.h)
-description: Stores xHCI-specific information that is used by client drivers to transfer data to and from the offloaded endpoints.
+description: Stores xHCI-specific V2 information that is used by client drivers to transfer data to and from the offloaded endpoints.
 old-location: buses\usbd_endpoint_offload_information.htm
 tech.root: usbref
-ms.date: 01/19/2022
+ms.date: 04/26/2024
 keywords: ["USBD_ENDPOINT_OFFLOAD_INFORMATION structure"]
 ms.keywords: "*PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION structure pointer [Buses], USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION structure [Buses], _USBD_ENDPOINT_OFFLOAD_INFORMATION, buses.usbd_endpoint_offload_information, usb/PUSBD_ENDPOINT_OFFLOAD_INFORMATION, usb/USBD_ENDPOINT_OFFLOAD_INFORMATION"
 req.header: usb.h
@@ -50,7 +50,7 @@ api_name:
 
 ## -description
 
-Stores xHCI-specific information that is used by client drivers to transfer data to and from the offloaded endpoints.
+Stores xHCI-specific V2 information that is used by client drivers to transfer data to and from the offloaded endpoints.
 
 ## -struct-fields
 
@@ -68,7 +68,7 @@ The resource identifier.
 
 ### -field Mode
 
-A [USBD_ENDPOINT_OFFLOAD_MODE](ne-usb-_usbd_endpoint_offload_mode.md)-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
+A **[USBD_ENDPOINT_OFFLOAD_MODE](ne-usb-_usbd_endpoint_offload_mode.md)** value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
 
 ### -field RootHubPortNumber
 
@@ -102,9 +102,15 @@ Reserved.
 
 ### -field TransferSegmentLA
 
+The transfer segment link address.
+
 ### -field TransferSegmentVA
 
+The transfer segment virtual address.
+
 ### -field TransferRingSize
+
+The size of the transfer ring buffer.
 
 ### -field TransferRingInitialCycleBit
 
@@ -112,8 +118,46 @@ Reserved.
 
 ### -field EventRingSegmentLA
 
+The event ring segment link address.
+
 ### -field EventRingSegmentVA
+
+The event ring segment virtual address.
 
 ### -field EventRingSize
 
+The size of the event ring buffer.
+
 ### -field EventRingInitialCycleBit
+
+### -field ClientTransferRingSegmentPAIn
+
+The physical address of the page-aligned client transfer ring input segment.
+
+### -field ClientTransferRingSizeIn
+
+The size of the client transfer ring input segment.
+
+### -field ClientDataBufferPAIn
+
+The physical address of the page-aligned client data input buffer.
+
+### -field ClientDataBufferSizeIn
+
+The size of the client data input buffer.
+
+### -field ClientDataBufferLAOut
+
+The physical address of the client data output buffer.
+
+### -field ClientDataBufferVAOut
+
+Pointer to the client data output buffer.
+
+## remarks
+
+This structure duplicates and extends **[USBD_ENDPOINT_OFFLOAD_INFORMATION_V1](ns-usb-usbd_endpoint_offload_information_v1.md)**.
+
+## see-also
+
+- **[USBD_ENDPOINT_OFFLOAD_INFORMATION_V1](ns-usb-usbd_endpoint_offload_information_v1.md)**
