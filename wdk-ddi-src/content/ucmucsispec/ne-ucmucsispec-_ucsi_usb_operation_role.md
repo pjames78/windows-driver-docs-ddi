@@ -3,7 +3,7 @@ UID: NE:ucmucsispec._UCSI_USB_OPERATION_ROLE
 title: _UCSI_USB_OPERATION_ROLE (ucmucsispec.h)
 tech.root: usbref
 description: Used in the SET_UOR command. The SET_UOR command is used to set the USB operation role dictated by the OS Policy Manager (OPM), for the current connection.
-ms.date: 04/26/2024
+ms.date: 05/01/2024
 keywords: ["UCSI_USB_OPERATION_ROLE enumeration"]
 ms.keywords: _UCSI_USB_OPERATION_ROLE, UCSI_USB_OPERATION_ROLE,
 req.header: ucmucsispec.h
@@ -36,25 +36,25 @@ Used in the SET_UOR command. The SET_UOR command is used to set the USB operatio
 
 ## -enum-fields
 
-### -field UcsiUsbOperationRoleDfp
+### -field UcsiUsbOperationRoleDfp:0x1
 
 The connector initiates swap to downstream-facing port (DFP), if not already operating in DFP mode.
 
-### -field UcsiUsbOperationRoleUfp
+### -field UcsiUsbOperationRoleUfp:0x2
 
 The connector initiates swap to upstream-facing port (UFP), if not already operating in UFP mode.
 
-### -field UcsiUsbOperationRoleAcceptSwap
+### -field UcsiUsbOperationRoleAcceptSwap:0x4
 
-The connector accepts role swap change requests from the port partner. If this bit is cleared, connector rejects role swap change requests from the port partner.
+The connector accepts USB operation role swap requests from the port partner. If this bit is cleared, connector rejects role swap requests from the port partner.
 
-### -field UcsiUsbOperationRoleDfpAcceptSwap
+### -field UcsiUsbOperationRoleDfpAcceptSwap:0x5
 
-This field combines the *UcsiUsbOperationRoleDfp* and *UcsiUsbOperationRoleAcceptSwap* fields.
+This field combines the *UcsiUsbOperationRoleDfp* and *UcsiUsbOperationRoleAcceptSwap* values.
 
-### -field UcsiUsbOperationRoleUfpAcceptSwap
+### -field UcsiUsbOperationRoleUfpAcceptSwap:0x6
 
-This field combines the *UcsiUsbOperationRoleUfp* and *UcsiUsbOperationRoleAcceptSwap* fields.
+This field combines the *UcsiUsbOperationRoleUfp* and *UcsiUsbOperationRoleAcceptSwap* values.
 
 ## -remarks
 
