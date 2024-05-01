@@ -2,10 +2,11 @@
 UID: NS:usb._USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
 tech.root: usbref
 title: USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
-ms.date: 04/26/2024
+ms.date: 04/30/2024
 targetos: Windows
 description: Stores xHCI-specific V1 information that is used by client drivers to transfer data to and from the offloaded endpoints.
 prerelease: true
+ai-usage: ai-assisted
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -69,29 +70,31 @@ A **[USBD_ENDPOINT_OFFLOAD_MODE](ne-usb-_usbd_endpoint_offload_mode.md)** value 
 
 ### -field RootHubPortNumber
 
-The port number of the root hub.
+The port number of the root hub to which the device is connected.
 
 ### -field RouteString
 
-The route string.
+The route string describing the path from the root hub to the device.
 
 ### -field Speed
 
-The speed.
+The speed of the USB device.
 
 ### -field UsbDeviceAddress
 
-The USB device address.
+The address of the USB device.
 
 ### -field SlotId
 
-The slot identifier.
+The identifier for the slot in which the device is inserted.
 
 ### -field MultiTT
 
-Transaction Translator (TT) hub.
+Indicates if the device supports multiple Transaction Translators.
 
 ### -field LSOrFSDeviceConnectedToTTHub
+
+Indicates if a low-speed or full-speed device is connected to a hub with a Transaction Translator.
 
 ### -field Reserved0
 
@@ -99,33 +102,39 @@ Reserved.
 
 ### -field TransferSegmentLA
 
-The transfer segment link address.
+The physical address of the transfer ring segment.
 
 ### -field TransferSegmentVA
 
-The transfer segment virtual address.
+The virtual address of the transfer ring segment.
 
 ### -field TransferRingSize
 
-The size of the transfer ring buffer.
+The size of the transfer ring.
 
 ### -field TransferRingInitialCycleBit
 
+The initial cycle bit of the transfer ring.
+
 ### -field MessageNumber
+
+The message number for the secondary event ring.
 
 ### -field EventRingSegmentLA
 
-The event ring segment link address.
+The physical address of the event ring segment.
 
 ### -field EventRingSegmentVA
 
-The event ring segment virtual address.
+The virtual address of the event ring segment.
 
 ### -field EventRingSize
 
-The size of the event ring buffer.
+The size of the event ring.
 
 ### -field EventRingInitialCycleBit
+
+The initial cycle bit of the event ring.
 
 ## see-also
 

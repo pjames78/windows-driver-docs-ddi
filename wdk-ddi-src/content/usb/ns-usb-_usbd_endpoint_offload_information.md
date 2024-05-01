@@ -7,6 +7,7 @@ tech.root: usbref
 ms.date: 04/26/2024
 keywords: ["USBD_ENDPOINT_OFFLOAD_INFORMATION structure"]
 ms.keywords: "*PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION structure pointer [Buses], USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION structure [Buses], _USBD_ENDPOINT_OFFLOAD_INFORMATION, buses.usbd_endpoint_offload_information, usb/PUSBD_ENDPOINT_OFFLOAD_INFORMATION, usb/USBD_ENDPOINT_OFFLOAD_INFORMATION"
+ai-usage: ai-assisted
 req.header: usb.h
 req.include-header: 
 req.target-type: Windows
@@ -72,29 +73,31 @@ A **[USBD_ENDPOINT_OFFLOAD_MODE](ne-usb-_usbd_endpoint_offload_mode.md)** value 
 
 ### -field RootHubPortNumber
 
-The port number of the root hub.
+The port number of the root hub to which the device is connected.
 
 ### -field RouteString
 
-The route string.
+The route string describing the path from the root hub to the device.
 
 ### -field Speed
 
-The speed.
+The speed of the USB device.
 
 ### -field UsbDeviceAddress
 
-The USB device address.
+The address of the USB device.
 
 ### -field SlotId
 
-The slot identifier.
+The identifier for the slot in which the device is inserted.
 
 ### -field MultiTT
 
-Transaction Translator (TT) hub.
+Indicates if the device supports multiple Transaction Translators.
 
 ### -field LSOrFSDeviceConnectedToTTHub
+
+Indicates if a low-speed or full-speed device is connected to a hub with a Transaction Translator.
 
 ### -field Reserved0
 
@@ -102,61 +105,69 @@ Reserved.
 
 ### -field TransferSegmentLA
 
-The transfer segment link address.
+The physical address of the transfer ring segment.
 
 ### -field TransferSegmentVA
 
-The transfer segment virtual address.
+The virtual address of the transfer ring segment.
 
 ### -field TransferRingSize
 
-The size of the transfer ring buffer.
+The size of the transfer ring.
 
 ### -field TransferRingInitialCycleBit
 
+The initial cycle bit of the transfer ring.
+
 ### -field MessageNumber
+
+The message number for the secondary event ring.
 
 ### -field EventRingSegmentLA
 
-The event ring segment link address.
+The physical address of the event ring segment.
 
 ### -field EventRingSegmentVA
 
-The event ring segment virtual address.
+The virtual address of the event ring segment.
 
 ### -field EventRingSize
 
-The size of the event ring buffer.
+The size of the event ring.
 
 ### -field EventRingInitialCycleBit
 
+The initial cycle bit of the event ring.
+
 ### -field ClientTransferRingSegmentPAIn
 
-The physical address of the page-aligned client transfer ring input segment.
+The physical address of the client-provided transfer ring segment.
 
 ### -field ClientTransferRingSizeIn
 
-The size of the client transfer ring input segment.
+The size of the client-provided transfer ring segment.
 
 ### -field ClientDataBufferPAIn
 
-The physical address of the page-aligned client data input buffer.
+The physical address of the client-provided data buffer.
 
 ### -field ClientDataBufferSizeIn
 
-The size of the client data input buffer.
+The size of the client-provided data buffer.
 
 ### -field ClientDataBufferLAOut
 
-The physical address of the client data output buffer.
+The physical address of the mapped data buffer.
 
 ### -field ClientDataBufferVAOut
 
-Pointer to the client data output buffer.
+The virtual address of the mapped data buffer.
 
 ## remarks
 
 This structure duplicates and extends **[USBD_ENDPOINT_OFFLOAD_INFORMATION_V1](ns-usb-usbd_endpoint_offload_information_v1.md)**.
+
+This structure supports two versions, indicated by `USBD_ENDPOINT_OFFLOAD_INFORMATION` and `USBD_ENDPOINT_OFFLOAD_INFORMATION_V2`, with the latter possibly including additional fields beyond what is documented here. The structure facilitates detailed configuration and management of USB endpoint offload.
 
 ## see-also
 
