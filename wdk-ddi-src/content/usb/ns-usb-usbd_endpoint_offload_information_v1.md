@@ -2,7 +2,7 @@
 UID: NS:usb._USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
 tech.root: usbref
 title: USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
-ms.date: 04/30/2024
+ms.date: 05/03/2024
 targetos: Windows
 description: Stores xHCI-specific V1 information that is used by client drivers to transfer data to and from the offloaded endpoints.
 prerelease: true
@@ -82,19 +82,19 @@ The speed of the USB device.
 
 ### -field UsbDeviceAddress
 
-The address of the USB device.
+The USB address of the device.
 
 ### -field SlotId
 
-The identifier for the slot in which the device is inserted.
+The slot ID of the device.
 
 ### -field MultiTT
 
-Indicates if the device supports multiple Transaction Translators.
+Indicates if the device is connected to a hub with transaction translators.
 
 ### -field LSOrFSDeviceConnectedToTTHub
 
-Indicates if a low-speed or full-speed device is connected to a hub with a Transaction Translator.
+Indicates if the device is a low-speed or full-speed device connected to a hub with transaction translators.
 
 ### -field Reserved0
 
@@ -130,7 +130,7 @@ The virtual address of the event ring segment.
 
 ### -field EventRingSize
 
-The size of the event ring.
+The size of the event ring, in bytes, unless it is assumed by precedence or practices.
 
 ### -field EventRingInitialCycleBit
 

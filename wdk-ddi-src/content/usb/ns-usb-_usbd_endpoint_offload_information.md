@@ -4,7 +4,7 @@ title: _USBD_ENDPOINT_OFFLOAD_INFORMATION (usb.h)
 description: Stores xHCI-specific V2 information that is used by client drivers to transfer data to and from the offloaded endpoints.
 old-location: buses\usbd_endpoint_offload_information.htm
 tech.root: usbref
-ms.date: 04/26/2024
+ms.date: 05/03/2024
 keywords: ["USBD_ENDPOINT_OFFLOAD_INFORMATION structure"]
 ms.keywords: "*PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION structure pointer [Buses], USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION structure [Buses], _USBD_ENDPOINT_OFFLOAD_INFORMATION, buses.usbd_endpoint_offload_information, usb/PUSBD_ENDPOINT_OFFLOAD_INFORMATION, usb/USBD_ENDPOINT_OFFLOAD_INFORMATION"
 ai-usage: ai-assisted
@@ -85,19 +85,19 @@ The speed of the USB device.
 
 ### -field UsbDeviceAddress
 
-The address of the USB device.
+The USB address of the device.
 
 ### -field SlotId
 
-The identifier for the slot in which the device is inserted.
+The slot ID of the device.
 
 ### -field MultiTT
 
-Indicates if the device supports multiple Transaction Translators.
+Indicates if the device is connected to a hub with transaction translators.
 
 ### -field LSOrFSDeviceConnectedToTTHub
 
-Indicates if a low-speed or full-speed device is connected to a hub with a Transaction Translator.
+Indicates if the device is a low-speed or full-speed device connected to a hub with transaction translators.
 
 ### -field Reserved0
 
@@ -133,7 +133,7 @@ The virtual address of the event ring segment.
 
 ### -field EventRingSize
 
-The size of the event ring.
+The size of the event ring, in bytes, unless it is assumed by precedence or practices.
 
 ### -field EventRingInitialCycleBit
 
