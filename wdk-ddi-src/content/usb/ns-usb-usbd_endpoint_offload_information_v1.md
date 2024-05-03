@@ -130,7 +130,7 @@ The virtual address of the event ring segment.
 
 ### -field EventRingSize
 
-The size of the event ring, in bytes, unless it is assumed by precedence or practices.
+The size of the event ring, in bytes.
 
 ### -field EventRingInitialCycleBit
 
