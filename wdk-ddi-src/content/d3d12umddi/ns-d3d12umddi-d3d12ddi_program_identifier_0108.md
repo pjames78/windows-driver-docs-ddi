@@ -58,5 +58,3 @@ For more information, see [Work graphs](/windows-hardware/drivers/display/work-g
 ## -see-also
 
 [**PFNDDI_GET_PROGRAM_IDENTIFIER_0108**](nc-d3d12umddi-pfnd3d12ddi_get_program_identifier_0108.md)
-
-[**PFND3D12DDI_SET_PROGRAM_IDENTIFIER_0108**](nc-d3d12umddi-pfnd3d12ddi_set_program_identifier_0108.md)

@@ -331,12 +331,18 @@ Pointer to a [**PFND3D12DDI_BARRIER_0094**](nc-d3d12umddi-pfnd3d12ddi_barrier_00
 
 ### -field pfnSetProgram
 
-Pointer to a [**](nc-d3d12umddi-pfnd3d12ddi_set_program_108.md) callback function.
+Pointer to a [**PFND3D12DDI_SET_PROGRAM_0108**](nc-d3d12umddi-pfnd3d12ddi_set_program_0108.md) callback function.
 
 ### -field pfnDispatchGraph
 
-Pointer to a [**](nc-d3d12umddi-pfnd3d12ddi_dispatch_graph_108.md) callback function.
+Pointer to a [**PFND3D12DDI_DISPATCH_GRAPH_0108**](nc-d3d12umddi-pfnd3d12ddi_dispatch_graph_0108.md) callback function.
+
 ## -remarks
+
+The graphics kernel calls the user mode-driver's [**PFND3D12DDI_FILLDDITTABLE**](nc-d3d12umddi-pfnd3d12ddi_fillddittable.md) callback with a [**tableType**](ne-d3d12umddi-d3d12ddi_table_type.md) value of **D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D** to obtain the UMD's 3D command list functions for this DDI version.
 
 ## -see-also
 
+[**D3D12DDI_TABLE_TYPE**](ne-d3d12umddi-d3d12ddi_table_type.md)
+
+[**PFND3D12DDI_FILLDDITTABLE**](nc-d3d12umddi-pfnd3d12ddi_fillddittable.md)

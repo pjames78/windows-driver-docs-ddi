@@ -47,7 +47,7 @@ The **D3D12DDI_SET_PROGRAM_DESC_0108** structure describes the program that [**P
 
 ### -field Type
 
-A [**D3D12DDI_PROGRAM_TYPE_0108**](ns-d3d12umddi-d3d12ddi_program_type_0108.md) enumeration that specifies the type of program to set.
+A [**D3D12DDI_PROGRAM_TYPE_0108**](ne-d3d12umddi-d3d12ddi_program_type_0108.md) enumeration that specifies the type of program to set.
 
 ### -field GenericPipeline
 
@@ -67,7 +67,7 @@ For more information, see [Work graphs](/windows-hardware/drivers/display/work-g
 
 ## -see-also
 
-[**D3D12DDI_PROGRAM_TYPE_0108**](ns-d3d12umddi-d3d12ddi_program_type_0108.md)
+[**D3D12DDI_PROGRAM_TYPE_0108**](ne-d3d12umddi-d3d12ddi_program_type_0108.md)
 
 [**D3D12DDI_SET_GENERIC_PIPELINE_DESC_0108**](ns-d3d12umddi-d3d12ddi_set_generic_pipeline_desc_0108.md)
 

@@ -83,7 +83,7 @@ The HIT group configuration. A hit group is one or more shaders consisting of:
 
 ### -field D3D12DDI_STATE_SUBOBJECT_TYPE_WORK_GRAPH:13
 
-Subobject type is a work graph; **pDesc** points to a [**D3D12DDI_WORK_GRAPH_DESC_0054**](ns-d3d12umddi-d3d12ddi_work_graph_desc_0054.md) structure.
+Subobject type is a work graph; **pDesc** points to a [**D3D12DDI_WORK_GRAPH_DESC_0108**](ns-d3d12umddi-d3d12ddi_work_graph_desc_0108.md) structure.
 
 ### -field D3D12DDI_STATE_SUBOBJECT_TYPE_STREAM_OUTPUT:14
 

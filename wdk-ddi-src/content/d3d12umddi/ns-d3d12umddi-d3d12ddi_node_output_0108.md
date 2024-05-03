@@ -87,7 +87,7 @@ The number of nodes in the array of nodes being output to. If this is 1, the out
 
 ### -field pOutputs
 
-List ([**D3D12DDI_NODE_LIST_ENTRY**](ns-d3d12umddi-d3d12ddi_node_list_entry.md)) of nodes ([**D3D12DDI_NODE_0108**](ns-d3d12umddi-d3d12ddi_node_0108.md)) that this node outputs to. If **pOutputs** is ```nullptr``` this node doesn't output to other nodes. If **bAllowSparseNodes** is true, this list isn't necessarily as long as **ArraySize**. Regardless of **bAllowSparseNodes** state, drivers shouldn't assume the list entries is in array index order. The array index of a given output can be found in its node ID. When [AddToStateObject()](https://github.com/microsoft/DirectX-Specs/blob/master/d3d/WorkGraphs.md#addtostateobject) adds outputs, additions will appear at the start of the list, which is another reason not to assume they are array index order.
+List ([**D3D12DDI_NODE_LIST_ENTRY**](ns-d3d12umddi-d3d12ddi_node_list_entry_0108.md)) of nodes ([**D3D12DDI_NODE_0108**](ns-d3d12umddi-d3d12ddi_node_0108.md)) that this node outputs to. If **pOutputs** is ```nullptr``` this node doesn't output to other nodes. If **bAllowSparseNodes** is true, this list isn't necessarily as long as **ArraySize**. Regardless of **bAllowSparseNodes** state, drivers shouldn't assume the list entries is in array index order. The array index of a given output can be found in its node ID. When [AddToStateObject()](https://github.com/microsoft/DirectX-Specs/blob/master/d3d/WorkGraphs.md#addtostateobject) adds outputs, additions will appear at the start of the list, which is another reason not to assume they are array index order.
 
 ## -remarks
 
