@@ -1,6 +1,6 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_GET_WORK_GRAPH_MEMORY_REQUIREMENTS_0108
-tech.root:display
+tech.root: display
 title: PFND3D12DDI_GET_WORK_GRAPH_MEMORY_REQUIREMENTS_0108
 ms.date: 05/03/2024
 targetos: Windows
