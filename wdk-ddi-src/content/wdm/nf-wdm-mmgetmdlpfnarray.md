@@ -38,6 +38,7 @@ f1_keywords:
  - wdm/MmGetMdlPfnArray
 dev_langs:
  - c++
+returns-override: true
 ---
 
 ## -description

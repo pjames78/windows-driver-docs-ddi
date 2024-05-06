@@ -37,6 +37,7 @@ api_location:
  - Wdm.h
 api_name:
  - MmGetMdlByteCount
+returns-override: true
 ---
 
 ## -description
