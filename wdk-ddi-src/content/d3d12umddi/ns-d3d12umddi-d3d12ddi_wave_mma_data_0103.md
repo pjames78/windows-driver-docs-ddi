@@ -5,7 +5,7 @@ title: D3D12DDI_WAVE_MMA_DATA_0103
 ms.date: 05/06/2024
 targetos: Windows
 description: Learn about the D3D12DDI_WAVE_MMA_DATA_0103 structure.
-prerelease: false
+prerelease: true
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -41,21 +41,21 @@ helpviewer_keywords:
 
 ## -description
 
-The **D3D12DDI_WAVE_MMA_DATA_0103** structure describes the data that is required to execute a matrix-multiply-accumulate (MMA) operation.
+The **D3D12DDI_WAVE_MMA_DATA_0103** structure describes a driver's support for Direct3D matrix-multiply-accumulate (MMA) operations.
 
 ## -struct-fields
 
 ### -field InputDataType
 
-[in] A [**D3D12DDI_WAVE_MMA_INPUT_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_input_datatype.md) enumeration that specifies the data type of the input data.
+[in] A [**D3D12DDI_WAVE_MMA_INPUT_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_input_datatype.md) enumeration that specifies the type of the input data.
 
 ### -field M
 
-[in] The dimension of the matrix operation that corresponds to the number of rows in the left matrix.
+[in] A [**D3D12DDI_WAVE_MMA_DIMENSION**](ne-d3d12umddi-d3d12ddi_wave_mma_dimension.md) enumeration that specifies the dimension of the matrix operation that corresponds to the number of rows in the left matrix.
 
 ### -field N
 
-[in] The dimension of the matrix operation that corresponds to the number of columns in the right matrix.
+[in] A [**D3D12DDI_WAVE_MMA_DIMENSION**](ne-d3d12umddi-d3d12ddi_wave_mma_dimension.md) enumeration that specifies the dimension of the matrix operation that corresponds to the number of columns in the right matrix.
 
 ### -field Supported
 
@@ -63,24 +63,32 @@ The **D3D12DDI_WAVE_MMA_DATA_0103** structure describes the data that is require
 
 ### -field K
 
-[out] The shared dimension between the two matrices (the number of columns in the left matrix and the number of rows in the right matrix) for which the hardware supports the operation.
+[out] Specifies the shared dimension size supported by the device for the given combination of **M** and ((N)). This value must be an even multiple of 16.
 
 ### -field AccumDataTypes
 
-[out] The [**D3D12DDI_WAVE_MMA_ACCUM_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_accum_datatype.md) enumeration that specifies the supported data types for the accumulation buffer, which holds the result of the matrix operation. I
+[out] The [**D3D12DDI_WAVE_MMA_ACCUM_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_accum_datatype.md) enumeration that specifies the supported accumulation data types.
 
 ### -field RequiredWaveLaneCountMin
 
-[out] The minimum number of wave lanes required to perform the operation.
+[out] The minimum number of wave lanes required to support the wave MMA intrinsics.
 
 ### -field RequiredWaveLaneCountMax
 
-[out] The maximum number of wave lanes that can be used to perform the operation.
+[out] The maximum number of wave lanes that can be used to support the wave MMA intrinsics.
 
 ## -remarks
 
-The dimensions of the matrix multiplication unit is device specific, so HLSL defines the dimensions of the Wave Matrix to preserve as much flexibility in the hardware implementation that is feasible while also trying to make it useable for HLSL developers. The matrix multiplication unit is defined by three dimensions M, N, and K. The matrix multiplication unit then would defined to be a multiplication of two matrices of dimensions, MxK and KxN with a resulting matrix of size MxN.
+The matrix multiplication unit is defined by three dimensions **M**, **N**, and **K**. The matrix multiplication unit thus is defined to be a multiplication of two matrices of dimensions **MxK** (left matrix) and **KxN** (right matrix) with a resulting matrix of size **MxN**.
 
-The Wave Matrix object is defined to have sizes M, N, and K. This means that for the matrix multiply of AxB, matrix A is M rows of K elements and matrix B is K rows of N elements. A hardware implementation might support only one K value for each combination of M, N, and datatype. The possible dimensions of M and N are restricted to the allowed enum values defined by D3D12DDI_WAVE_MMA_DIMENSION M and D3D12DDI_WAVE_MMA_DIMENSION N. The K dimension is defined to be an even multiple of 16 provided by the driver through the D3D12_FEATURE_DATA_WAVE_MMA CheckFeatureSupport Caps. The K value also accessible via a function on the input matrices. This allows for programable shaders and hardcoded shaders. The K value is considered a constant and the driver should unroll loops using it, if possible.
+A hardware implementation can support only one **K** value for each combination of **M**, **N**, and **InputDataType**. The possible dimensions of **M** and **N** are restricted to the allowed enum values defined by [**D3D12DDI_WAVE_MMA_DIMENSION**](ne-d3d12umddi-d3d12ddi_wave_mma_dimension.md) **M** and **D3D12DDI_WAVE_MMA_DIMENSION** **N**. The K dimension is defined to be an even multiple of 16 provided by the driver through the D3D12_FEATURE_DATA_WAVE_MMA CheckFeatureSupport Caps. The **K** value is considered a constant and the driver should unroll loops using it, if possible.
+
+For more information, see [Wave MMA](https://microsoft.github.io/DirectX-Specs/d3d/HLSL_SM_6_x_WaveMatrix.html).
 
 ## -see-also
+
+[**D3D12DDI_WAVE_MMA_ACCUM_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_accum_datatype.md)
+
+[**D3D12DDI_WAVE_MMA_DIMENSION**](ne-d3d12umddi-d3d12ddi_wave_mma_dimension.md)
+
+[**D3D12DDI_WAVE_MMA_INPUT_DATATYPE**](ne-d3d12umddi-d3d12ddi_wave_mma_input_datatype.md)
