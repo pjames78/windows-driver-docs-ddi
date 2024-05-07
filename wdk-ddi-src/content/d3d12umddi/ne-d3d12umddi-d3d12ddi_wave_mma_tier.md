@@ -2,10 +2,10 @@
 UID: NE:d3d12umddi.D3D12DDI_WAVE_MMA_TIER
 tech.root: display
 title: D3D12DDI_WAVE_MMA_TIER
-ms.date: 10/19/2023
+ms.date: 05/06/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_WAVE_MMA_TIER enumeration.
-prerelease: false
+prerelease: true
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h
@@ -47,9 +47,11 @@ The driver doesn't support WaveMMA operations.
 
 ### -field D3D12DDI_WAVE_MMA_TIER_0_5_EXPERIMENTAL:5
 
-The driver supports WaveMMA operations.
+The driver supports experimental WaveMMA operations.
 
 ## -remarks
+
+For more information, see [Wave MMA](https://microsoft.github.io/DirectX-Specs/d3d/HLSL_SM_6_x_WaveMatrix.html).
 
 ## -see-also
 
