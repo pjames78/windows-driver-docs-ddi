@@ -75,7 +75,7 @@ If the SPB controller driver needs to change the mode of its controller to tempo
 
 If the lock operation completes in a DPC, the SPB controller driver should previously have allocated all the resources that it needs for the lock operation.
 
-An *EvtSpbControllerLock* callback must avoid failing a lock request. If [Driver Verifier](/windows-hardware/drivers/what-s-new-in-driver-development) is enabled, such a failure will trigger a verifier trap, which will report to the Plug and Play manager that the controller has failed. SpbCx ignores the failure of an lock request and does not try to handle or mitigate the failure.
+An *EvtSpbControllerLock* callback must avoid failing a lock request. If [Driver Verifier](/windows-hardware/drivers/what-s-new-in-driver-development) is enabled, such a failure will trigger a verifier trap, which will report to the Plug and Play manager that the controller has failed. SpbCx ignores the failure of a lock request and does not try to handle or mitigate the failure.
 
 The *EvtSpbControllerLock* function does not return a value. Instead, the SPB controller driver indicates the status of the lock operation in the completion status of the I/O request that is identified by the *LockRequest* parameter. Set the completion status to STATUS_SUCCESS.
 

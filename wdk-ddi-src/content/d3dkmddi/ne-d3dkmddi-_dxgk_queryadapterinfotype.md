@@ -2,7 +2,7 @@
 UID: NE:d3dkmddi._DXGK_QUERYADAPTERINFOTYPE
 title: DXGK_QUERYADAPTERINFOTYPE (d3dkmddi.h)
 description: Learn more about the DXGK_QUERYADAPTERINFOTYPE enumeration.
-ms.date: 03/21/2024
+ms.date: 04/03/2024
 keywords: ["DXGK_QUERYADAPTERINFOTYPE enumeration"]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
@@ -48,7 +48,7 @@ dev_langs:
 
 ## -description
 
-The **DXGK_QUERYADAPTERINFOTYPE** enumeration indicates the type of information the kernel-mode display miniport driver (KMD) should return in the buffer that **pOutputData** points to when its [**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md) function is called.
+The **DXGK_QUERYADAPTERINFOTYPE** enumeration indicates the type of information the kernel-mode display miniport driver (KMD) should return in the buffer that **pOutputData** points to when its [**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md) function is called. See [**DXGKARG_QUERYADAPTERINFO**](ns-d3dkmddi-_dxgkarg_queryadapterinfo.md) for details regarding those types that require input (**pInputData**).
 
 ## -enum-fields
 
@@ -217,9 +217,23 @@ Logical remapping can only be done if no existing physical memory is referenced 
 
 ### -field DXGKQAITYPE_NATIVE_FENCE_CAPS:37
 
-The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_fence_caps.md) structure that contains the driver's support details for native GPU fences. Supported starting in Windows 11, version 24H2. For more information, see [Native GPU fences](/windows-hardware/drivers/display/native-gpu-fences).
+The KMD should populate a [**DXGK_NATIVE_FENCE_CAPS**](ns-d3dkmddi-dxgk_native_fence_caps.md) structure that contains the driver's support details for native GPU fences. Supported starting in Windows 11, version 24H2. For more information, see [Native GPU fences](/windows-hardware/drivers/display/native-gpu-fence-objects).
 
 ### -field DXGKQAITYPE_USERMODESUBMISSION_CAPS:38
+
+The KMD should populate a [**DXGK_USERMODESUBMISSION_CAPS**](ns-d3dkmddi-dxgk_usermodesubmission_caps.md) structure that contains the driver's support details for user-mode work submission. Supported starting in Windows 11, version 24H2. For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
+
+### -field DXGKQAITYPE_DIRTYBITTRACKINGCAPS:39
+
+The KMD should populate a [**DXGK_DIRTY_BIT_TRACKING_CAPS**](ns-d3dkmddi-dxgk_dirty_bit_tracking_caps.md) structure that contains the driver's support details for dirty bit tracking. Supported starting in Windows 11, version 24H2. For more information, see [Dirty bit tracking](/windows-hardware/drivers/display/dirty-bit-tracking).
+
+### -field DXGKQAITYPE_DIRTYBITTRACKINGSEGMENTCAPS:40
+
+The KMD should populate a [**DXGK_DIRTY_BIT_TRACKING_SEGMENT_CAPS**](ns-d3dkmddi-dxgk_dirty_bit_tracking_segment_caps.md) structure that contains the driver's support details for dirty bit tracking on a specific memory segment. Supported starting in Windows 11, version 24H2. For more information, see [Dirty bit tracking](/windows-hardware/drivers/display/dirty-bit-tracking).
+
+### -field DXGKQAITYPE_SCATTER_RESERVE:41
+
+The KMD should populate a [**DXGK_QUERYSCATTERRESERVEOUT**](ns-d3dkmddi-dxgk_queryscatterreserveout.md) structure that contains the driver's support details for scatter reserve. Supported starting in Windows 11, version 24H2. For more information, see [Live migration on GPU-P devices](/windows-hardware/drivers/display/live-migration-on-gpup-devices).
 
 ## -remarks
 

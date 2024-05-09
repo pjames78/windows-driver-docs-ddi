@@ -44,7 +44,7 @@ An interface implemented by callers to receive errors from certain portions of t
 
 ## -inheritance
 
-IDebugHostErrorSink interits from IUnknown.
+IDebugHostErrorSink inherits from IUnknown.
 
 ## -remarks
 

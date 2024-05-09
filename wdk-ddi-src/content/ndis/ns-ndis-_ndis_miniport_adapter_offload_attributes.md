@@ -74,7 +74,7 @@ A pointer to an
 
 ### -field HardwareOffloadCapabilities
 
-A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilites that are
+A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilities that are
      supported by the miniport adapter. These capabilities include capabilities that are currently disabled
      by standardized keywords in the registry.
 
@@ -88,7 +88,7 @@ A pointer to an
 ### -field TcpConnectionOffloadHardwareCapabilities
 
 A pointer to an NDIS_TCP_CONNECTION_OFFLOAD structure that indicates all the connection offload
-     capabilites that are supported by the miniport adapter. These capabilities include capabilities that are
+     capabilities that are supported by the miniport adapter. These capabilities include capabilities that are
      currently disabled by standardized keywords in the registry.
 
 ## -remarks

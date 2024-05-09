@@ -42,7 +42,7 @@ Interface a component directly using debugger script must implement as a multi-w
 
 ## -inheritance
 
-IDataModelScriptClient interits from IUnknown.
+IDataModelScriptClient inherits from IUnknown.
 
 ## -remarks
 

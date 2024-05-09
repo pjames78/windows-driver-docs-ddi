@@ -63,7 +63,7 @@ A [**DXGI_FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) str
 
 ### -field pBuffer
 
-Pointer in system memory to the surface buffer. **pBuffer** must be at lease 16-byte aligned.
+Pointer in system memory to the surface buffer. **pBuffer** must be at least 16-byte aligned.
 
 ## -remarks
 

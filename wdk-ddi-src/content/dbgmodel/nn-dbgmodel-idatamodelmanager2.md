@@ -46,7 +46,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDataModelManager2 interits from [IDataModelManager](nn-dbgmodel-idatamodelmanager.md).
+IDataModelManager2 inherits from [IDataModelManager](nn-dbgmodel-idatamodelmanager.md).
 
 ## -remarks
 

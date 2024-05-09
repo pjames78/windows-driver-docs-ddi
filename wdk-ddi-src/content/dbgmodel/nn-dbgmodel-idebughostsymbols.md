@@ -44,7 +44,7 @@ The IDebugHostSymbols interface is the main starting point to access symbols in 
 
 ## -inheritance
 
-IDebugHostSymbols interits from IUnknown.
+IDebugHostSymbols inherits from IUnknown.
 
 ## -remarks
 

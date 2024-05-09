@@ -23,7 +23,7 @@ req.target-min-winverclnt: Windows 11, version 22H2
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.unicode-ansi: 
 topic_type:
  - apiref
@@ -50,7 +50,7 @@ The **NetAdapterLightweightInitAllocate** function allocates a NETADAPTER_INIT s
 
 ### -param NetworkInterfaceGuid [_In_]
 
-The GUID of a valid network interface using the to-be-created deviceless adpater.
+The GUID of a valid network interface using the to-be-created deviceless adapter.
 
 ## -returns
 

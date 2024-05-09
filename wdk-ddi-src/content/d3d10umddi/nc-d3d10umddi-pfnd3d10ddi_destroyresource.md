@@ -1,7 +1,7 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRESOURCE
 title: PFND3D10DDI_DESTROYRESOURCE (d3d10umddi.h)
-description: The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
+description: The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destroyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
 old-location: display\destroyresource_d3d10_.htm
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYRESOURCE callback function"]
@@ -45,7 +45,7 @@ api_name:
 
 ## -description
 
-The <b>DestroyResource(D3D10)</b> function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
+The <b>DestroyResource(D3D10)</b> function destroys the specified resource object. The resource object can be destroyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
 
 ## -parameters
 

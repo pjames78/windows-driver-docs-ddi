@@ -49,7 +49,7 @@ The <b>GetStdBool</b> method returns a <b>bool</b> version of the <a href="/wind
 
 ## -returns
 
-The <b>bool</b> version ofthe <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData</a> object.
+The <b>bool</b> version of the <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData</a> object.
 
 ## -remarks
 

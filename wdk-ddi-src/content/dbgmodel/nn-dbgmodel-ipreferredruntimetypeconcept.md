@@ -44,7 +44,7 @@ The object understands more about types derived from it than the underlying type
 
 ## -inheritance
 
-IPreferredRuntimeTypeConcept interits from IUnknown.
+IPreferredRuntimeTypeConcept inherits from IUnknown.
 
 ## -remarks
 

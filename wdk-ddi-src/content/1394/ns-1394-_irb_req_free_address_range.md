@@ -1,7 +1,7 @@
 ---
 UID: NS:1394._IRB_REQ_FREE_ADDRESS_RANGE
 title: _IRB_REQ_FREE_ADDRESS_RANGE (1394.h)
-description: This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
+description: This structure contains the fields necessary for the 1394 stack to carry out a free address range request.
 old-location: ieee\irb_req_free_address_range.htm
 tech.root: IEEE
 ms.date: 02/15/2018
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
+This structure contains the fields necessary for the 1394 stack to carry out a free address range request.
 
 ## -struct-fields
 

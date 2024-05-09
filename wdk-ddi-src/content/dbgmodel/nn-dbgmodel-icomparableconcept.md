@@ -42,7 +42,7 @@ Compares this object to another (of arbitrary type).  If the comparison cannot b
 
 ## -inheritance
 
-IComparableConcept interits from IUnknown.
+IComparableConcept inherits from IUnknown.
 
 ## -remarks
 

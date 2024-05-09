@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_DESTROYDOORBELL
 tech.root: display
 title: DXGKARG_DESTROYDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARG_DESTROYDOORBELL structure.
 prerelease: true
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_DESTROYDOORBELL
@@ -51,6 +51,10 @@ The **DXGKARG_DESTROYDOORBELL** structure contains parameters for [**DxgkDdiDest
 ### -field hDoorbell
 
 [in] KMD handle to the doorbell object being destroyed. This handle was previously created using [**DxgkDdiCreateDoorbell**](nc-d3dkmddi-dxgkddi_createdoorbell.md).
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

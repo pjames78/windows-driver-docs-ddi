@@ -45,10 +45,9 @@ api_name:
 
 # DXGK_BRIGHTNESS_INTERFACE_2 structure
 
-
 ## -description
 
-The **DXGK_BRIGHTNESS_INTERFACE_2** structure contins pointers to functions in the Panel Brightness Control Interface Version 2. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive and smooth brightness control.
+The **DXGK_BRIGHTNESS_INTERFACE_2** structure contains pointers to functions in the Panel Brightness Control Interface Version 2. Used by WDDM 1.2 and later kernel-mode display miniport drivers (KMDs) that support adaptive and smooth brightness control.
 
 ## -struct-fields
 
@@ -66,39 +65,39 @@ A pointer to a private context block.
 
 ### -field InterfaceReference [out]
 
-A pointer to an interface reference function that is implemented by the display miniport driver.
+Pointer to a KMD-implemented interface reference function.
 
 ### -field InterfaceDereference [out]
 
-A pointer to an interface dereference function that is implemented by the display miniport driver.
+Pointer to a KMD-implemented interface dereference function.
 
 ### -field GetPossibleBrightness [out]
 
-A pointer to the display miniport driver's [**DxgkDdiGetPossibleBrightness**](nc-dispmprt-dxgk_brightness_get_possible.md) function.
+A pointer to KMD's [**DxgkDdiGetPossibleBrightness**](nc-dispmprt-dxgk_brightness_get_possible.md) function.
 
 ### -field SetBrightness [out]
 
-A pointer to the display miniport driver's [**DxgkDdiSetBrightness**](nc-dispmprt-dxgk_brightness_set.md) function.
+A pointer to KMD's [**DxgkDdiSetBrightness**](nc-dispmprt-dxgk_brightness_set.md) function.
 
 ### -field GetBrightness [out]
 
-A pointer to the display miniport driver's [**DxgkDdiGetBrightness**](nc-dispmprt-dxgk_brightness_get.md) function.
+A pointer to KMD's [**DxgkDdiGetBrightness**](nc-dispmprt-dxgk_brightness_get.md) function.
 
 ### -field GetBrightnessCaps [out]
 
-A pointer to the display miniport driver's [**DxgkDdiGetBrightnessCaps**](nc-dispmprt-dxgk_brightness_get_caps.md) function. This function is available starting with Windows 8.
+A pointer to KMD's [**DxgkDdiGetBrightnessCaps**](nc-dispmprt-dxgk_brightness_get_caps.md) function. This function is available starting with Windows 8.
 
 ### -field SetBrightnessState [out]
 
-A pointer to the display miniport driver's  [**DxgkDdiSetBrightnessState**](nc-dispmprt-dxgk_brightness_set_state.md) function. This function is available starting with Windows 8.
+A pointer to KMD's [**DxgkDdiSetBrightnessState**](nc-dispmprt-dxgk_brightness_set_state.md) function. This function is available starting with Windows 8.
 
 ### -field SetBacklightOptimization [out]
 
-A pointer to the display miniport driver's  [**DxgkDdiSetBacklightOptimization**](nc-dispmprt-dxgk_brightness_set_backlight_optimization.md) function. This function is available starting with Windows 8.
+A pointer to KMD's [**DxgkDdiSetBacklightOptimization**](nc-dispmprt-dxgk_brightness_set_backlight_optimization.md) function. This function is available starting with Windows 8.
 
 ### -field GetBacklightReduction [out]
 
-A pointer to the display miniport driver's  [**DxgkDdiGetBacklightReduction**](nc-dispmprt-dxgk_brightness_get_backlight_reduction.md) function. This function is available starting with Windows 8.
+A pointer to KMD's [**DxgkDdiGetBacklightReduction**](nc-dispmprt-dxgk_brightness_get_backlight_reduction.md) function. This function is available starting with Windows 8.
 
 ## -remarks
 
@@ -109,4 +108,3 @@ For more information on this interface, see [Brightness Control Interface V. 2 (
 ## -see-also
 
 [**DXGK_BRIGHTNESS_INTERFACE**](ns-dispmprt-dxgk_brightness_interface.md)
-

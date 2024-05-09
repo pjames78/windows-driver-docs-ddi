@@ -44,7 +44,7 @@ The script provider implements this interface to expose the notion of and contro
 
 ## -inheritance
 
-IDataModelScriptDebugBreakpoint interits from IUnknown.
+IDataModelScriptDebugBreakpoint inherits from IUnknown.
 
 ## -remarks
 

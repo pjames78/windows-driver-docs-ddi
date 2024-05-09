@@ -54,29 +54,33 @@ Reserved for system use. Do not use.
 
 ### -field Aperture
 
-### -field TotalBytesEvictedByPriority
-
 ### -field SystemMemoryEndAddress
 
 ### -field PowerFlags
 
-### -field PowerFlags.PreservedDuringStandby
+### -field D3DKMT_ALIGN64
 
-### -field PowerFlags.PreservedDuringHibernate
+### -field D3DKMT_ALIGN64.PreservedDuringStandby
 
-### -field PowerFlags.PartiallyPreservedDuringHibernate
+### -field D3DKMT_ALIGN64.PreservedDuringHibernate
 
-### -field PowerFlags.Reserved
+### -field D3DKMT_ALIGN64.PartiallyPreservedDuringHibernate
+
+### -field D3DKMT_ALIGN64.Reserved
 
 ### -field SegmentProperties
 
-### -field SegmentProperties.SystemMemory
+### -field D3DKMT_ALIGN64.SystemMemory
 
-### -field SegmentProperties.PopulatedByReservedDDRByFirmware
+### -field D3DKMT_ALIGN64.PopulatedByReservedDDRByFirmware
 
-### -field SegmentProperties.Reserved
+### -field D3DKMT_ALIGN64.SegmentType
 
-### -field Reserved
+### -field Reserved[5]
+
+### -field Reserved[6]
+
+### -field Reserved[8]
 
 ## -remarks
 

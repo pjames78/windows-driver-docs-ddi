@@ -92,7 +92,7 @@ The caller can obtain the object name through the *ObjectName* parameter. The st
 
 First, **CmCallbackGetKeyObjectIDEx** enables a registry filter driver to explicitly control the lifetime of the *ObjectName* structure. The driver can call **CmCallbackReleaseKeyObjectIDEx** at any time to free this structure. In contrast, the driver cannot explicitly free the *ObjectName* structure received from **CmCallbackGetKeyObjectID**. This structure is automatically released when all handles to the key are closed.
 
-Second, if a registry filter driver calls **CmCallbackReleaseKeyObjectID** to get an *ObjectName* structure pointer, and, after this call, the name of the registry key changes, subsequent calls to **CmCallbackGetKeyObjectID** get a pointer to a stale copy of the *ObjectName* structure, which contains the old key name. The stale copy of this structure persists until all handles to the key are closed. In contrast, the *ObjectName* structure obtained from **CmCallbackGetKeyObjectIDEx** always contains the most up-to-date key name.
+Second, if a registry filter driver calls **CmCallbackGetKeyObjectID** to get an *ObjectName* structure pointer, and, after this call, the name of the registry key changes, subsequent calls to **CmCallbackGetKeyObjectID** get a pointer to a stale copy of the *ObjectName* structure, which contains the old key name. The stale copy of this structure persists until all handles to the key are closed. In contrast, the *ObjectName* structure obtained from **CmCallbackGetKeyObjectIDEx** always contains the most up-to-date key name.
 
 For more information about registry filter drivers, see [Filtering Registry Calls](/windows-hardware/drivers/kernel/filtering-registry-calls).
 

@@ -111,7 +111,7 @@ The driver in this example can call the <i>GetIdleWakeInfo</i> routine to determ
 </ul>
 The driver should interpret either of these results to mean that the device cannot signal a wake event when the computer is in S0. Based on this information, the driver should keep the device in D0 until the computer prepares to exit S0.
 
-The drivers for most devices can treat an output value of <b>DeviceWakeDepthD0</b> the same as <b>DeviceWakeDepthNotWakeable</b>. Only a few drivers might have a reason to arm a wake signal when their devices are in D0. These are drivers for simple devices that monitor external events that trigger wake signals regardless of the whether the devices are in D0 or low-power Dx states. An example of such a device is a power button or a sleep button on a computer.
+The drivers for most devices can treat an output value of <b>DeviceWakeDepthD0</b> the same as <b>DeviceWakeDepthNotWakeable</b>. Only a few drivers might have a reason to arm a wake signal when their devices are in D0. These are drivers for simple devices that monitor external events that trigger wake signals regardless of whether the devices are in D0 or low-power Dx states. An example of such a device is a power button or a sleep button on a computer.
 
 The <i>GetIdleWakeInfo</i> routine queries the underlying bus driver and ACPI system firmware to determine the lowest device power state from which the device can signal a wake event. If the bus driver and firmware cannot supply this information, the routine fails and returns an error status code.
 

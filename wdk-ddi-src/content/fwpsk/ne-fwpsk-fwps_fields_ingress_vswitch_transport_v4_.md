@@ -118,7 +118,3 @@ The compartment that the network interface belongs to.
 The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.
 
 
-### -field FWPS_FIELD_INGRESS_VSWITCH_TRANSPORT_V4_FLAGS
-
-The virtual switch ingress flags field.
-

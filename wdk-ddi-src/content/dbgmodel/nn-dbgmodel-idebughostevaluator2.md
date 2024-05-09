@@ -44,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDebugHostEvaluator2 interits from [IDebugHostEvaluator](nn-dbgmodel-idebughostevaluator.md).
+IDebugHostEvaluator2 inherits from [IDebugHostEvaluator](nn-dbgmodel-idebughostevaluator.md).
 
 ## -remarks
 

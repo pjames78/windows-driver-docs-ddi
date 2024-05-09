@@ -1,7 +1,7 @@
 ---
 UID: NF:irb.AtaPortReleaseRequestSenseIrb
 title: AtaPortReleaseRequestSenseIrb function (irb.h)
-description: The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB tha is allocated by using AtaPortBuildRequestSenseIrb.
+description: The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB that is allocated by using AtaPortBuildRequestSenseIrb.
 old-location: storage\ataportreleaserequestsenseirb.htm
 tech.root: storage
 ms.date: 03/29/2018
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB tha is allocated by using <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportbuildrequestsenseirb">AtaPortBuildRequestSenseIrb</a>. 
+The <b>AtaPortReleaseRequestSenseIrb</b> routine frees the request sense IRB that is allocated by using <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportbuildrequestsenseirb">AtaPortBuildRequestSenseIrb</a>. 
 <div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="/windows-hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## -parameters

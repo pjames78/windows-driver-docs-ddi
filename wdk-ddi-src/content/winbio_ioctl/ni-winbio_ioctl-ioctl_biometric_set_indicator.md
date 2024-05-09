@@ -65,7 +65,7 @@ The AssociatedIrp.SystemBuffer member points to a buffer that contains a WINBIO_
 
 ### -output-buffer-length
 
-The smallest valid output buffer size is the size of DWORD.  If the driver receives an DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
+The smallest valid output buffer size is the size of DWORD.  If the driver receives a DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
 
 ### -in-out-buffer
 

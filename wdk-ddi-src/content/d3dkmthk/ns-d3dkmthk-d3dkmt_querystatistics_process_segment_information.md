@@ -52,13 +52,10 @@ Reserved for system use. Do not use.
 
 ### -field NbReferencedAllocationEvictedInPeriod
 
+### -field Padding
+
 ### -field VideoMemory
 
 ### -field _Policy
 
-### -field Reserved
-
-## -remarks
-
-## -see-also
-
+### -field Reserved[8]

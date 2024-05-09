@@ -2,9 +2,9 @@
 UID: NS:d3dkmthk._D3DKMT_QUERYSTATISTICS
 tech.root: display
 title: D3DKMT_QUERYSTATISTICS
-ms.date: 05/13/2021
+ms.date: 04/11/2024
 targetos: Windows
-description: "Learn more about: D3DKMT_QUERYSTATISTICS"
+description: Learn more about the D3DKMT_QUERYSTATISTICS structure.
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -40,7 +40,7 @@ dev_langs:
 
 ## -description
 
-Reserved for system use. Do not use.
+**D3DKMT_QUERYSTATISTICS** is reserved for system use. Do not use.
 
 ## -struct-fields
 
@@ -68,7 +68,20 @@ Reserved for system use. Do not use.
 
 ### -field QueryPhysAdapter
 
-## -remarks
+### -field QueryAdapter2
 
-## -see-also
+### -field QuerySegment2
 
+### -field QueryProcessAdapter2
+
+### -field QueryProcessSegment2
+
+### -field QueryProcessSegmentGroup2
+
+### -field QuerySegmentUsage
+
+### -field QuerySegmentGroupUsage
+
+### -field QueryNode2
+
+### -field QueryProcessNode2

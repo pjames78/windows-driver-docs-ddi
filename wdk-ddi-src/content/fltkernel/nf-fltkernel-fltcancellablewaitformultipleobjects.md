@@ -59,7 +59,7 @@ A pointer to an array of pointers to dispatcher objects (events, mutexes, semaph
 
 ### -param WaitType [in]
 
-An enumumeration with the value of either **WaitAll**, which indicates that all of the specified objects must attain a signaled state before the wait is satisfied; or **WaitAny**, which indicates that any one of the objects must attain a signaled state before the wait is satisfied.
+An enumeration with the value of either **WaitAll**, which indicates that all of the specified objects must attain a signaled state before the wait is satisfied; or **WaitAny**, which indicates that any one of the objects must attain a signaled state before the wait is satisfied.
 
 ### -param Timeout [in, optional]
 

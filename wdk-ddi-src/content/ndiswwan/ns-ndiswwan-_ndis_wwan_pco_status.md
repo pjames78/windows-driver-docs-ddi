@@ -132,7 +132,7 @@ WWAN_STATUS_CONTEXT_NOT_ACTIVATED
 
 </td>
 <td>
-TThe PCO value is not available because the PDP context is not activated.
+The PCO value is not available because the PDP context is not activated.
 
 </td>
 </tr>
@@ -192,7 +192,7 @@ WWAN_STATUS_NOT_INITIALIZED
 
 </td>
 <td>
-TThe PCO value is not available because the device is initializing. Retry after the ready-state has changed to <b>WwanReadyStateInitialized.</b>
+The PCO value is not available because the device is initializing. Retry after the ready-state has changed to <b>WwanReadyStateInitialized.</b>
 
 </td>
 </tr>

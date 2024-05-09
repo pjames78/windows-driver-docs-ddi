@@ -77,7 +77,7 @@ The HID class driver sets the following fields of <b>Irp->IoStatus</b>:
 
 <ul>
 <li>
-<b>Information</b> is set to size, in bytes, of the preparesed data.
+<b>Information</b> is set to size, in bytes, of the preparsed data.
 
 </li>
 <li>

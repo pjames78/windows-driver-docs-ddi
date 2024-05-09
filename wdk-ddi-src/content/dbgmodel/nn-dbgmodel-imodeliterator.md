@@ -42,7 +42,7 @@ An iterator of contained objects (client implemented and returned by [IIterableC
 
 ## -inheritance
 
-IModelIterator interits from IUnknown.
+IModelIterator inherits from IUnknown.
 
 ## -remarks
 

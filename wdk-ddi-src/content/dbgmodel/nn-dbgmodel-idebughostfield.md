@@ -42,7 +42,7 @@ Represents a field within a structure or class.
 
 ## -inheritance
 
-IDebugHostField interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostField inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

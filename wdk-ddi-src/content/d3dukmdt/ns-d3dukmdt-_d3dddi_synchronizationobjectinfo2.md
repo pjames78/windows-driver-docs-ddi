@@ -3,9 +3,8 @@ UID: NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECTINFO2
 title: D3DDDI_SYNCHRONIZATIONOBJECTINFO2 (d3dukmdt.h)
 description: Learn more about the D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure.
 tech.root: display
-ms.date: 07/12/2023
+ms.date: 04/12/2024
 keywords: ["D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure"]
-ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure [Display Devices], D3D_other_Structs_0efa3a96-3e04-4232-bf7a-53c3f038d6ec.xml, _D3DDDI_SYNCHRONIZATIONOBJECTINFO2, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO2, display.d3dddi_synchronizationobjectinfo2
 req.header: d3dukmdt.h
 req.include-header: D3dumddi.h, D3dkmddi.h
 req.target-type: Windows
@@ -98,6 +97,8 @@ The handle to the CPU notification event.
 
 A structure that contains information about a monitored fence. If the **Type** member is equal to **D3DDDI_MONITORED_FENCE**, the union in **D3DDDI_SYNCHRONIZATIONOBJECTINFO2** holds a **MonitoredFence** structure.
 
+Monitored fences can be shared only by using NT handles for security reasons, so the [**NtSecuritySharing**](ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) flag must be set when using a monitored fence.
+
 Supported starting with Windows 10.
 
 ### -field MonitoredFence.InitialFenceValue
@@ -114,7 +115,7 @@ Supported starting with Windows 10.
 
 ### -field MonitoredFence.FenceValueGPUVirtualAddress
 
-[out] A read-write mapping of the fence value for the GPU. A driver can signal a new fence value by inserting a GPU write command for this address into a command buffer, and the DirectX graphics kernel will unblock waiters for this fence object value. Depending on the value of **No64BitAtomics** cap, this address points to either a 32 bit or a 64 bit underlying value.
+[out] A read-write mapping of the fence value for the GPU. A driver can signal a new fence value by inserting a GPU write command for this address into a command buffer, and *Dxgkrnl* will unblock waiters for this fence object value. Depending on the value of **No64BitAtomics** cap, this address points to either a 32 bit or a 64 bit underlying value. If the device doesn’t support cache coherency with the CPU, it shouldn't write to the fence value using the GPU virtual address. Access to the fence value should be done only by the CPU.
 
 Supported starting with Windows 10.
 

@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTDestroyDoorbell
 tech.root: display
 title: D3DKMTDestroyDoorbell
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DKMTDestroyDoorbell function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-**D3DKMTDestroyDoorbell** destroys a doorbell object.
+**D3DKMTDestroyDoorbell** destroys a doorbell.
 
 ## -parameters
 
@@ -61,11 +61,13 @@ helpviewer_keywords:
 When UMD calls **D3DKMTDestroyDoorbell**, the OS does the following:
 
 * Removes its reference to **hRingBuffer** and to **hRingBufferControl** allocations belonging to this doorbell.
-* Frees the mapping that **pDoorbellStatusCPUVirtualAddress** points to.
-* Frees both the user-mode and kernel-mode mappings that **pDoorbellCPUVirtuslAddress** points to.
+* Frees the mapping that **DoorbellStatusCPUVirtualAddress** points to.
+* Frees both the user-mode and kernel-mode mappings that **DoorbellCPUVirtuslAddress** points to.
 * Calls KMD's [**DxgkDdiDestroyDoorbell**] so that KMD can disconnect the physical doorbell location and destroy its doorbell objects.
 
 The UMD must not use the handle after calling **D3DKMTDestroyDoorbell**.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

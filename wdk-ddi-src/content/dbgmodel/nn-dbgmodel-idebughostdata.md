@@ -44,7 +44,7 @@ Represents data within a module (were this within a structure or class it would 
 
 ## -inheritance
 
-IDebugHostData interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostData inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntifs._SE_EXPORTS
 title: SE_EXPORTS (ntifs.h)
-description: The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers.
-old-location: ifsk\seexports.htm
+description: Learn more about the SE_EXPORTS structure.
 tech.root: ifsk
-ms.date: 05/24/2022
+ms.date: 04/23/2024
 keywords: ["SE_EXPORTS structure"]
 ms.keywords: "*PSE_EXPORTS, PSE_EXPORTS, PSE_EXPORTS structure pointer [Installable File System Drivers], SE_EXPORTS, SE_EXPORTS structure [Installable File System Drivers], SeExports, SeExports structure [Installable File System Drivers], _SE_EXPORTS, ifsk.seexports, ntifs/PSE_EXPORTS, ntifs/SeExports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml"
 req.header: ntifs.h
@@ -456,7 +455,7 @@ Available starting in Windows Vista.
 
 ### -field SeAllAppPackagesSid
 
-The SID for a group that represents all application packages.
+The SID for a group that represents all application packages. This SID is used to grant or deny permissions to all app packages installed on the system.
 
 Available starting in Windows 8.
 
@@ -466,19 +465,35 @@ The SID for a user-mode driver.
 
 ### -field SeProcTrustWinTcbSid
 
-The SID that identifies its holder as a part of a trusted computer base.
+The SID that identifies its holder as a part of a trusted computer base. Such processes are considered highly privileged and trusted by the OS.
 
 ### -field SeTrustedInstallerSid
 
-The SID for a trusted installer.
+The SID for the Trusted Installer.
 
 ### -field SeDelegateSessionUserImpersonatePrivilege
 
+Locally unique identifier (LUID) that represents the privilege to impersonate a user during session delegation.
+
 ### -field SeAppSiloSid
+
+SID that represents an app silo, which is a security boundary within which Windows Store apps run.
 
 ### -field SeAppSiloVolumeRootMinimalCapabilitySid
 
+SID that represents the minimal capabilitues for accessing the profiles root within an app silo.
+
 ### -field SeAppSiloProfilesRootMinimalCapabilitySid
+
+SID that represents the minimal capabilitues for accessing the profiles root within an app silo.
+
+### -fieldSeAppSiloPromptForAccessCapabilitySid
+
+SID that represents the capability to prompt for access within an app silo.
+
+### -field SeAppSiloAccessToPublisherDirectoryCapabilitySid
+
+SID that represents the capability to access the publisher directory within an app silo.
 
 ## -remarks
 

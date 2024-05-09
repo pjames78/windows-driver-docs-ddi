@@ -1,7 +1,7 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRENDERTARGETVIEW
 title: PFND3D10DDI_DESTROYRENDERTARGETVIEW (d3d10umddi.h)
-description: The DestroyRenderTargetView function destroys the specified render target view object. The render target view object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyRenderTargetView function destroys the specified render target view object. The render target view object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyrendertargetview.htm
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYRENDERTARGETVIEW callback function"]
@@ -45,7 +45,7 @@ api_name:
 
 ## -description
 
-The <b>DestroyRenderTargetView</b> function destroys the specified render target view object. The render target view object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyRenderTargetView</b> function destroys the specified render target view object. The render target view object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 

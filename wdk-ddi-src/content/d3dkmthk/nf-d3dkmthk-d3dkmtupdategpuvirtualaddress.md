@@ -77,7 +77,7 @@ In a single **UpdateVirtualAddress** call:
 - The source virtual address range in copy operations is allowed to be from a different reserved (zero) range.
 - The source virtual address range in all copy operations must belong to the same reserved (zero) range.
 
-Drivers can submit many **UpdateGpuVirtualAddress** calls, which will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
+Drivers can submit many **UpdateGpuVirtualAddress** calls, which will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the previous operations are processed by the video memory manager.
 
 ## -see-also
 

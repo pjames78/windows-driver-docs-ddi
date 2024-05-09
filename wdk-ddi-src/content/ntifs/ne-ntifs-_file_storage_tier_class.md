@@ -50,7 +50,7 @@ Defines values for the type of desired storage class.
 
 ### -field FileStorageTierClassUnspecified 
 
-Unspecificed class type.
+Unspecified class type.
 
 ### -field FileStorageTierClassCapacity 
 

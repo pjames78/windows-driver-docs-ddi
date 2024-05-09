@@ -1,15 +1,13 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_QUERYADAPTERINFO
-title: _DXGKARG_QUERYADAPTERINFO (d3dkmddi.h)
-description: The DXGKARG_QUERYADAPTERINFO structure contains parameters for a query.
-old-location: display\dxgkarg_queryadapterinfo.htm
-ms.date: 05/10/2018
+title: DXGKARG_QUERYADAPTERINFO (d3dkmddi.h)
+description: Learn more about the DXGKARG_QUERYADAPTERINFO structure.
+ms.date: 03/28/2024
 keywords: ["DXGKARG_QUERYADAPTERINFO structure"]
-ms.keywords: DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO structure [Display Devices], DmStructs_82a38a66-d65c-4b88-be6d-974590e9472a.xml, _DXGKARG_QUERYADAPTERINFO, d3dkmddi/DXGKARG_QUERYADAPTERINFO, display.dxgkarg_queryadapterinfo
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -22,7 +20,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql:
 targetos: Windows
 tech.root: display
 req.typenames: DXGKARG_QUERYADAPTERINFO
@@ -43,51 +41,45 @@ api_name:
  - DXGKARG_QUERYADAPTERINFO
 ---
 
-# _DXGKARG_QUERYADAPTERINFO structure
-
+# DXGKARG_QUERYADAPTERINFO structure
 
 ## -description
 
-The DXGKARG_QUERYADAPTERINFO structure contains parameters for a query.
+The **DXGKARG_QUERYADAPTERINFO** structure contains parameters for a [**DXGKDDI_QUERYADAPTERINFO**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md) query.
 
 ## -struct-fields
 
 ### -field Type [in]
 
-A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype">DXGK_QUERYADAPTERINFOTYPE</a>-typed value that indicates the type of information to retrieve.
+A [**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md)-typed value that indicates the type of information to retrieve. This value determines what **pInputData** and **pOutputData** point to.
 
 ### -field pInputData [in]
 
-A pointer to input information for the query.
+A pointer to input information for the query. The following table describes the input buffer for **Type** values requiring input. Other types don't require input, so **pInputData** is NULL.
 
-When <b>Type</b> specifies DXGKQAITYPE_UMDRIVERPRIVATE, <b>pInputData</b> points to a proprietary buffer that contains information about the query. When <b>Type</b> specifies DXGKQAITYPE_QUERYSEGMENT, <b>pInputData</b> points to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentin">DXGK_QUERYSEGMENTIN</a> structure. When <b>Type</b> specifies <b>DXGKQAITYPE_POWERCOMPONENTINFO</b>, <b>pInputData</b> points to an input buffer that contains the power component index.
-
-An input buffer is not required when <b>Type</b> specifies the DXGKQAITYPE_DRIVERCAPS value.
+| Value of **Type** | Contents of **pInputData** |
+| --- | --- |
+| DXGKQAITYPE_UMDRIVERPRIVATE | A proprietary buffer that contains information about the query. |
+| DXGKQAITYPE_QUERYSEGMENT | A [**DXGK_QUERYSEGMENTIN**](ns-d3dkmddi-_dxgk_querysegmentin.md) structure. |
+| DXGKQAITYPE_POWERCOMPONENTINFO | Buffer containing the power component index. |
+| DXGKQAITYPE_DIRTYBITTRACKINGSEGMENTCAPS | Buffer containing the driver's segment ID. The driver should fill out the output caps for this particular segment. |
+| DXGKQAITYPE_SCATTER_RESERVE | A [**DXGK_QUERYSCATTERRESERVEIN**](ns-d3dkmddi-dxgk_queryscatterreservein.md) structure. |
 
 ### -field InputDataSize [in]
 
-The size, in bytes, of the input data that <b>pInputData</b> points to.
+The size, in bytes, of the input data that **pInputData** points to.
 
 ### -field pOutputData [out]
 
-A pointer to an output buffer that the display miniport driver fills with the required information.
-
-| **Value of Type** | **Contents of output buffer pointed to by pOutputData** |
-|:--|:--|
-| **DXGKQAITYPE_UMDRIVERPRIVATE** | Proprietary buffer |
-| **DXGKQAITYPE_DRIVERCAPS** | Populated [DXGK_DRIVERCAPS](./ns-d3dkmddi-_dxgk_drivercaps.md) structure | 
-| **DXGKQAITYPE_QUERYSEGMENT** | Populated [DXGK_QUERYSEGMENTOUT](./ns-d3dkmddi-_dxgk_querysegmentout.md) structure | 
-| **DXGKQAITYPE_QUERYSEGMENT3** | Populated [DXGK_QUERYSEGMENTOUT3](./ns-d3dkmddi-_dxgk_querysegmentout3.md)  structure |
-| **DXGKQAITYPE_NUMPOWERCOMPONENTS** | A UINT value that specifies the number of power components used by the display miniport driver. |
-| **DXGKQAITYPE_POWERCOMPONENTINFO** | Populated [DXGK_POWER_RUNTIME_COMPONENT](./ns-d3dkmddi-_dxgk_power_runtime_component.md) structure that provides information about the nth power component, where n is the component index specified by pInputData in a call to the [DxgkDdiQueryAdapterInfo](./nc-d3dkmddi-dxgkddi_queryadapterinfo.md)  function. |
+A pointer to an output buffer that the display miniport driver fills with the required information. See [**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md) for the type of structure that **pOutputData** points to.
 
 ### -field OutputDataSize [in]
 
-The size, in bytes, of the output data that <b>pOutputData</b> points to.
+The size, in bytes, of the output data that **pOutputData** points to.
 
 ### -field Flags [in]
 
-A set of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_queryadapterinfoflags.md">DXGK_QUERYADAPTERINFOFLAGS</a>-typed flags that indicates the query of graphics information.
+A set of [**DXGK_QUERYADAPTERINFOFLAGS**](ns-d3dkmddi-_dxgk_queryadapterinfoflags.md)-typed flags that indicates the query of graphics information.
 
 ### -field hKmdProcessHandle [in]
 
@@ -95,33 +87,10 @@ A handle, return by the KMD from DxgkDdiCreateProcess. The driver must check the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps">DXGK_DRIVERCAPS</a>
+[**DXGK_DRIVERCAPS**](ns-d3dkmddi-_dxgk_drivercaps.md)
 
+[**DXGK_QUERYADAPTERINFOFLAGS**](ns-d3dkmddi-_dxgk_queryadapterinfoflags.md)
 
+[**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md)
 
-<a href="/windows-hardware/drivers/display/dxgk-power-p-component">DXGK_POWER_P_COMPONENT</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_power_runtime_component">DXGK_POWER_RUNTIME_COMPONENT</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype">DXGK_QUERYADAPTERINFOTYPE</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentin">DXGK_QUERYSEGMENTIN</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentout">DXGK_QUERYSEGMENTOUT</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentout3">DXGK_QUERYSEGMENTOUT3</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
-
+[**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md)

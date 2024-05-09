@@ -1,7 +1,7 @@
 ---
 UID: NS:1394._IRB_REQ_ASYNC_LOCK
 title: _IRB_REQ_ASYNC_LOCK (1394.h)
-description: This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
+description: This structure contains the fields necessary for the 1394 stack to carry out an asynchronous lock request.
 old-location: ieee\irb_req_async_lock.htm
 tech.root: IEEE
 ms.date: 02/15/2018
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure contains the fields necessary for the 1394 stack to carry out an asychronous lock request.
+This structure contains the fields necessary for the 1394 stack to carry out an asynchronous lock request.
 
 ## -struct-fields
 

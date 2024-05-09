@@ -2,7 +2,7 @@
 UID: NS:storport._MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE
 tech.root: storage
 title: MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (storport.h)
-ms.date: 05/24/2022
+ms.date: 02/28/2024
 targetos: Windows
 description: Learn more about the MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (storport.h) structure.
 prerelease: false
@@ -66,11 +66,11 @@ Described in the specification.
 
 Described in the specification.
 
-### -field PageLength
+### -field PageLength[2]
 
 Described in the specification.
 
-### -field Reserved
+### -field Reserved[3]
 
 Reserved.
 
@@ -78,13 +78,13 @@ Reserved.
 
 Reserved.
 
-### -field PerfvsComandDurationGuidelines
+### -field PerfvsCommandDurationGuidelines
 
 Described in the specification.
 
-### -field T2CommandDurationLimitDescriptors
+### -field T2CommandDurationLimitDescriptors[DURATION_LIMIT_T2_DESCRIPTOR_COUNT]
 
-An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** [**T2_COMMAND_DURATION_LIMIT_DESCRIPTOR**](ns-storport-t2_command_duration_limit_descriptor.md) structures, where each structure contains a T2 command duration limit descriptor.
+An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** **[T2_COMMAND_DURATION_LIMIT_DESCRIPTOR](ns-storport-t2_command_duration_limit_descriptor.md)** structures, where each structure contains a T2 command duration limit descriptor.
 
 ## -remarks
 
@@ -92,6 +92,5 @@ See Section 7.5.11 of the T10 SCSI Primary Commands specification (SPC-6) for de
 
 ## -see-also
 
-[**MODE_COMMAND_DURATION_LIMIT_PAGE_T2B_SUBPAGE**](ns-storport-mode_command_duration_limit_page_t2b_subpage.md)
-
-[**MODE_PAGE_SUBPAGE_HEADER**](ns-storport-mode_page_subpage_header.md)
+- **[MODE_COMMAND_DURATION_LIMIT_PAGE_T2B_SUBPAGE](ns-storport-mode_command_duration_limit_page_t2b_subpage.md)**
+- **[MODE_PAGE_SUBPAGE_HEADER](ns-storport-mode_page_subpage_header.md)**

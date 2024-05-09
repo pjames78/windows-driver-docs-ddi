@@ -64,7 +64,7 @@ The version of this structure. Set to 0.
 
 ### -field Length
 
-The size of the this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
+The size of this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
 
 ### -field CdbLength
 
@@ -119,11 +119,11 @@ Indicates the size in bytes of the input data buffer. Many devices transfer chun
 
 ### -field DataOutBuffer
 
-A pointer to a output data buffer.
+A pointer to an output data buffer.
 
 ### -field DataInBuffer
 
-A pointer to a input data buffer.
+A pointer to an input data buffer.
 
 ### -field Cdb
 

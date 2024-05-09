@@ -62,7 +62,7 @@ Specifies the number of threads whose IDs are requested.
 ### -param Ids [out, optional]
 
 
-Receives the engine thread IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG valuess.
+Receives the engine thread IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG values.
 
 ### -param SysIds [out, optional]
 

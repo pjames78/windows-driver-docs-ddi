@@ -64,7 +64,7 @@ The value indicating whether the finalization should be done recursively.
 
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
-If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the NET_ROOT strcuture pointed to by <i>ThisNetRoot </i>must be 1 for the NET_ROOT to be finalized.
+If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the NET_ROOT structure pointed to by <i>ThisNetRoot </i>must be 1 for the NET_ROOT to be finalized.
 
 ## -returns
 
@@ -76,7 +76,7 @@ The <b>RxFinalizeNetRoot</b> routine is not normally called by network mini-redi
 
 Before calling <b>RxFinalizeNetRoot</b>, a lock on the netname table associated with the device object must be acquired in exclusive mode. 
 
-If the <i>RecursiveFinalize</i> parameter is <b>TRUE</b>, then <b>RxFinalizeNetRoot</b> will purge any orphaned FCB structures associated with this NET_ROOT. These ophaned FCBs are structures where the <b>FcbState</b> member has the FCB_STATE_ORPHANED flag set on.
+If the <i>RecursiveFinalize</i> parameter is <b>TRUE</b>, then <b>RxFinalizeNetRoot</b> will purge any orphaned FCB structures associated with this NET_ROOT. These orphaned FCBs are structures where the <b>FcbState</b> member has the FCB_STATE_ORPHANED flag set on.
 
 ## -see-also
 

@@ -97,7 +97,7 @@ The MCM driver has notified a client of an incoming call offer. When the minipor
 
 </li>
 <li>
-Abormal network conditions force the MCM driver to tear down active calls. For example, if the MCM
+Abnormal network conditions force the MCM driver to tear down active calls. For example, if the MCM
       driver is notified when any link on the connection between this client and the remote party to the
       connection goes down, the miniport driver would call 
       <b>NdisCmDispatchIncomingCloseCall</b> to prevent the client from attempting (or expecting) further data

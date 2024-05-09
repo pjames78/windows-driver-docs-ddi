@@ -177,7 +177,7 @@ Supported starting with Windows 10.
 
 ### -field ExplicitResidencyNotification
 
-When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, commited). The flag can only be set when the **AccessedPhysically** flag is set.
+When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, committed). The flag can only be set when the **AccessedPhysically** flag is set.
 
 Setting this member is equivalent to setting the seventeenth bit of the 32-bit **Value** member (0x00010000).
 

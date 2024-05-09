@@ -66,7 +66,6 @@ Reserved for system use. Do not use.
 
 ### -field ProcessSegmentGroupInformation
 
-## -remarks
+### -field SegmentUsageInformation
 
-## -see-also
-
+### -field SegmentGroupUsageInformation

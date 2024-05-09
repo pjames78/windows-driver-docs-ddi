@@ -42,7 +42,7 @@ The data model representation of a  property accessor (get/set).
 
 ## -inheritance
 
-IModelPropertyAccessor interits from IUnknown.
+IModelPropertyAccessor inherits from IUnknown.
 
 ## -remarks
 

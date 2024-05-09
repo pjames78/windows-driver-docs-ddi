@@ -42,7 +42,7 @@ A reference to a key on a data model object.
 
 ## -inheritance
 
-IModelKeyReference interits from IUnknown.
+IModelKeyReference inherits from IUnknown.
 
 ## -remarks
 

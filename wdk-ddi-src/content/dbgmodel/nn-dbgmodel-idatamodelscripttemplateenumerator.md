@@ -44,7 +44,7 @@ An enumerator interface that the script provider implements in order to advertis
 
 ## -inheritance
 
-IDataModelScriptTemplateEnumerator interits from IUnknown.
+IDataModelScriptTemplateEnumerator inherits from IUnknown.
 
 ## -remarks
 

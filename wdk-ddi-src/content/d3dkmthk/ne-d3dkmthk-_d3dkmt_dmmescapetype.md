@@ -47,7 +47,7 @@ DMM (display mode manager) escape type.
 
 ### -field D3DKMT_DMMESCAPETYPE_UNINITIALIZED 
 
-Unintialized.
+Uninitialized.
 
 ### -field D3DKMT_DMMESCAPETYPE_GET_SUMMARY_INFO 
 

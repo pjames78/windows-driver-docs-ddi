@@ -59,7 +59,7 @@ Indicates that if an ACXOBJECTBAG with the same identity is already present, cre
 
 ### -field AcxObjectBagConfigOpenWithHandle
 
-Indicates to open the ACXOBJECTBAG whose handle is specified in the configuration stracture.
+Indicates to open the ACXOBJECTBAG whose handle is specified in the configuration structure.
 
 ### -field AcxObjectBagConfigValidFlags
 

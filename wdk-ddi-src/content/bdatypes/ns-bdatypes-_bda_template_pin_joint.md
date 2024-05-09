@@ -57,7 +57,7 @@ The BDA_TEMPLATE_PIN_JOINT structure describes a joint in a template topology.
 
 ### -field uliTemplateConnection
 
-Index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array) that represents the joint.
+Index of an element in an array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array) that represents the joint.
 
 ### -field ulcInstancesMax
 

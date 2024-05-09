@@ -46,7 +46,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDebugHostType2 interits from [IDebugHostType](nn-dbgmodel-idebughosttype.md).
+IDebugHostType2 inherits from [IDebugHostType](nn-dbgmodel-idebughosttype.md).
 
 ## -remarks
 

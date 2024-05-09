@@ -44,7 +44,7 @@ The default name binder for script providers.
 
 ## -inheritance
 
-IDataModelNameBinder interits from IUnknown.
+IDataModelNameBinder inherits from IUnknown.
 
 ## -remarks
 

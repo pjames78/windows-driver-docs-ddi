@@ -44,7 +44,7 @@ Script providers can provide one or more templates which serve as starting point
 
 ## -inheritance
 
-IDataModelScriptTemplate interits from IUnknown.
+IDataModelScriptTemplate inherits from IUnknown.
 
 ## -remarks
 

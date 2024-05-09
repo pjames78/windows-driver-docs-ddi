@@ -47,7 +47,7 @@ The GetDefaultIndexDimensionality method returns the number of dimensions to the
 
 - The object supports the indexable concept via support of [IIndexableConcept](nn-dbgmodel-iindexableconcept.md)
 - The GetNext method of the [IModelIterator](nn-dbgmodel-imodeliterator.md) returned from the GetIterator method of the iterable concept will return a unique default index for each produced element. Such index will have the number of dimensions as indicated here.
-- Passing the indicies returned from the GetNext method of the [IModelIterator](nn-dbgmodel-imodeliterator.md) to the GetAt method on the indexable concept ([IIndexableConcept](nn-dbgmodel-iindexableconcept.md)) will refer to the same object that GetNext produced. The same value is returned.
+- Passing the indices returned from the GetNext method of the [IModelIterator](nn-dbgmodel-imodeliterator.md) to the GetAt method on the indexable concept ([IIndexableConcept](nn-dbgmodel-iindexableconcept.md)) will refer to the same object that GetNext produced. The same value is returned.
 
 ## -parameters
 

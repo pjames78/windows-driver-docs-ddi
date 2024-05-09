@@ -42,7 +42,7 @@ An interface to a particular symbol.
 
 ## -inheritance
 
-IDebugHostSymbol interits from IUnknown.
+IDebugHostSymbol inherits from IUnknown.
 
 ## -remarks
 

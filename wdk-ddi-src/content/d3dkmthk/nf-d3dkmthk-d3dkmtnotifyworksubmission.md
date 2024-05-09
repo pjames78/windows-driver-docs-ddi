@@ -2,7 +2,7 @@
 UID: NF:d3dkmthk.D3DKMTNotifyWorkSubmission
 tech.root: display
 title: D3DKMTNotifyWorkSubmission
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the D3DKMTNotifyWorkSubmission function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.type-library: 
 req.umdf-ver: 
@@ -43,7 +43,7 @@ helpviewer_keywords:
 
 ## -description
 
-**D3DKMTNotifyWorkSubmission** notifies the kernel-mode display driver that the user-mode display driver has submitted work to the GPU.
+**D3DKMTNotifyWorkSubmission** notifies the kernel-mode display driver (KMD) that the user-mode display driver (UMD) has submitted work to the GPU.
 
 ## -parameters
 
@@ -57,14 +57,24 @@ Pointer to a [**D3DKMT_NOTIFY_WORK_SUBMISSION**](ns-d3dkmthk-d3dkmt_notify_work_
 
 ## -remarks
 
-KMD can specify the doorbell connection status as D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY at [doorbell creation time](../d3dkmddi/nc-d3dkmddi-dxgkddi_createdoorbell.md). Whenever UMD sees this doorbell status, it adjusts its work submission workflow such that after writing a new command and ringing the doorbell, it calls into the kernel using **D3DKMTNotifyWorkSubmission**. *Dxgkrnl* forwards this call to KMD using [**DxgkDdiNotifyWorkSubmission**](../d3dkmddi/nc-d3dkmddi-dxgkddi_notifyworksubmission.md).
+In the [user-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission) model, KMD isn't involved in work submission and so isn't aware when new work is submitted on a HWQueue. This low latency work submission path is the main motivation of the model. However, there are certain niche scenarios and hardware limitations when KMD needs to be notified whenever work is submitted on a HWQueue. For example, a GPU hardware scheduler requires KMD to switch the hardware runlist from normal to realtime when a realtime context submits work. If KMD isn't involved in work submission then it can't trigger the runlist switch immediately, which results in delaying the realtime work execution.
+
+To accommodate this need, KMD can specify the doorbell connection status as D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY at [doorbell creation time](nf-d3dkmthk-d3dkmtcreatedoorbell.md). Whenever UMD sees this doorbell status, it adjusts its work submission workflow such that after writing a new command and ringing the doorbell, it calls into the kernel using **D3DKMTNotifyWorkSubmission**. *Dxgkrnl* forwards this call to KMD using [**DxgkDdiNotifyWorkSubmission**](../d3dkmddi/nc-d3dkmddi-dxgkddi_notifyworksubmission.md).
+
+**D3DKMTNotifyWorkSubmission** is a simple ping from UMD to *Dxgkrnl* to KMD, notifying the latter that new work has been submitted on a particular HWQueue so that KMD can initiate specific actions such as switching a runlist to realtime.
 
 KMD can also request notification dynamically after doorbell creation. If KMD detects a condition where it should be notified of work submission on this hardware queue, then it can first disconnect the doorbell by calling *Dxgkrnl*'s [**DxgkCbDisconnectDoorbell**](../d3dkmddi/nc-d3dkmddi-dxgkcb_disconnectdoorbell.md) with status D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY. Later, when UMD tries to reconnect the doorbell, KMD can make the connection with status D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY.
 
-See [**DxgkDdiNotifyWorkSubmission**](../d3dkmddi/nc-d3dkmddi-dxgkddi_notifyworksubmission.md) for details on how and when KMD should use this functionality.
+Drivers should use this mechanism in very specific and infrequent scenarios because it involves a round trip from UMD to KMD on every work submission, and if it is used for broad scenarios then it defeats the purpose of a low latency user mode submission model.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 
 [**D3DKMT_NOTIFY_WORK_SUBMISSION**](ns-d3dkmthk-d3dkmt_notify_work_submission.md)
+
+[**D3DKMTCreateDoorbell**](nf-d3dkmthk-d3dkmtcreatedoorbell.md)
+
+[**DxgkCbDisconnectDoorbell**](../d3dkmddi/nc-d3dkmddi-dxgkcb_disconnectdoorbell.md)
 
 [**DxgkDdiNotifyWorkSubmission**](../d3dkmddi/nc-d3dkmddi-dxgkddi_notifyworksubmission.md)

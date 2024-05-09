@@ -20,7 +20,7 @@ api_name:
 
 ## -description
 
-Thsi header defines function prototypes for accessing I/O ports and     memory on I/O adapters.
+This header defines function prototypes for accessing I/O ports and     memory on I/O adapters.
 
 For information about accessing device registers, see:
 

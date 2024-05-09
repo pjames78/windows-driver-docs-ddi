@@ -3,7 +3,7 @@ UID: NS:netadapter._NET_ADAPTER_TX_CAPABILITIES
 title: _NET_ADAPTER_TX_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_TX_CAPABILITIES structure describes the transmit capabilities of a net adapter.
 tech.root: netvista
-ms.date: 09/27/2019
+ms.date: 03/26/2024
 keywords: ["NET_ADAPTER_TX_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_TX_CAPABILITIES, NET_ADAPTER_TX_CAPABILITIES, *PNET_ADAPTER_TX_CAPABILITIES,
 req.header: netadapter.h
@@ -12,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -51,7 +51,9 @@ The size of this structure, in bytes.
 
 ### -field MappingRequirement
 
-A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map transmit data buffers.
+A [**NET_MEMORY_MAPPING_REQUIREMENT**](ne-netadapter-_net_memory_mapping_requirement.md) value that specifies how the operating system should map transmit data buffers. 
+
+UMDF drivers must set **MappingRequirement** to **NetMemoryMappingRequirementNone**.
 
 ### -field PayloadBackfill
 
@@ -76,6 +78,8 @@ The maximum number of transmit queues that the adapter supports.
 ### -field DmaCapabilities
 
 A pointer to a driver-allocated and initialized [**NET_DMA_CAPABILITIES**](ns-netadapter-_net_adapter_dma_capabilities.md) structure that describes the adapter's DMA capabilities on the transmit path. This member is ignored by NetAdapterCx if **MappingRequirement** is not set to **NetMemoryMappingRequirementDmaMapped**.
+
+UMDF NetAdapterCX doesn't support **DmaCapabilities**. UMDF drivers must set this member to **NULL**.
 
 ## -remarks
 

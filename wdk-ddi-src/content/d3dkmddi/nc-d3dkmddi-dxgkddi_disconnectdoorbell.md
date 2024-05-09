@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_DISCONNECTDOORBELL
 tech.root: display
 title: DXGKDDI_DISCONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_DISCONNECTDOORBELL callback function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **DxgkDdiDisconnectDoorbell** function disconnects a previously connected doorbell object from a hardware queue.
+The **DxgkDdiDisconnectDoorbell** function disconnects a previously connected doorbell from a hardware queue.
 
 ## -parameters
 
@@ -66,6 +66,8 @@ On return from this DDI call, *Dxgkrnl* does the following steps to disconnect t
 
 * Rotates the user-mode [**DoorbellCpuVirtualAddress**](../d3dkmthk/ns-d3dkmthk-d3dkmt_create_doorbell.md) to a dummy page so that UMD can no longer write to the physical doorbell location.
 * Writes [D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY](../d3dukmdt/ne-d3dukmdt-d3dddi_doorbellstatus.md) into **DoorbellStatusCpuVirtualAddress** so that UMD knows the doorbell is disconnected.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

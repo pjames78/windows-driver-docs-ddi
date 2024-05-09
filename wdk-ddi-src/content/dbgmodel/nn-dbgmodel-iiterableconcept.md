@@ -42,7 +42,7 @@ The object is a container and can be iterated.
 
 ## -inheritance
 
-IIterableConcept interits from IUnknown.
+IIterableConcept inherits from IUnknown.
 
 ## -remarks
 

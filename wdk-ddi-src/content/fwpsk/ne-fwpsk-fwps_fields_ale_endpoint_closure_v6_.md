@@ -119,6 +119,13 @@ The compartment that the network interface belongs to.
 <div class="alert"><b>Note</b>  Supported starting with Windows 10, version 1703.</div>
 <div> </div>
 
+### -field FWPS_FIELD_ALE_ENDPOINT_CLOSURE_V6_PACKAGE_FAMILY_NAME
+
+The Package Family Name of the application.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows Server 2022 23H2.</div>
+<div> </div>
+
 ### -field FWPS_FIELD_ALE_ENDPOINT_CLOSURE_V6_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS

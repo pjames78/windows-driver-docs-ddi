@@ -54,7 +54,7 @@ The length of the SIDEBANDAUDIO_SIOP_REQUEST_PARAM union.
 
 ### -output-buffer
 
-An output buffer to hold teh returned SIOP.
+An output buffer to hold the returned SIOP.
 
 ### -output-buffer-length
 

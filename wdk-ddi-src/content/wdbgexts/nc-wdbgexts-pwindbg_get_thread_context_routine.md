@@ -50,7 +50,7 @@ The <b>PWINDBG_GET_THREAD_CONTEXT_ROUTINE</b> (<b>GetContext</b>) function imple
 
 ### -param Processor
 
-Specifies the the index of the processor.
+Specifies the index of the processor.
 
 ### -param lpContext [out]
 

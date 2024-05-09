@@ -44,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDataModelScriptDebug2 interits from [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md).
+IDataModelScriptDebug2 inherits from [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md).
 
 ## -remarks
 

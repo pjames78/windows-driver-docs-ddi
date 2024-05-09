@@ -42,7 +42,7 @@ The extensibility interface to the underlying debugger.
 
 ## -inheritance
 
-IDebugHostExtensibility interits from IUnknown.
+IDebugHostExtensibility inherits from IUnknown.
 
 ## -remarks
 

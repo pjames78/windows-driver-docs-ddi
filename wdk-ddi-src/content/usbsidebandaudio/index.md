@@ -23,7 +23,7 @@ The header defines the types, constants, and functions that are exposed to devic
 
 Audio drivers that want to provide Sideband path for USB Audio 1.0 devices should wait for Pnp notification for the Sideband interface to be published by the USB Audio 1.0 class driver - `GUID_DEVINTERFACE_USB_SIDEBAND_AUDIO_HS_HCIBYPASS`.
 
-When Audio driver recieves Pnp notification, it can use the symbolic link to send I/O and interact with the USB Audio 1.0 class device.
+When Audio driver receives Pnp notification, it can use the symbolic link to send I/O and interact with the USB Audio 1.0 class device.
 
 The IOCTLs are specified in the [sidebandaudio.h](../sidebandaudio/index.md) header for all standard Sideband Audio operations.
 

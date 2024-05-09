@@ -117,7 +117,7 @@ Receives the values of the registers.  The number of elements that this array ho
 
 ## -returns
 
-This list does not contain all the erros that might occur.  For a list of possible errors, see <a href="/windows-hardware/drivers/debugger/hresult-values">HRESULT Values</a>.
+This list does not contain all the errors that might occur.  For a list of possible errors, see <a href="/windows-hardware/drivers/debugger/hresult-values">HRESULT Values</a>.
 
 <table>
 <tr>
