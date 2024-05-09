@@ -2,9 +2,9 @@
 UID: NS:wificx._WIFI_ADAPTER_WAKE_CAPABILITIES
 tech.root: netvista
 title: WIFI_ADAPTER_WAKE_CAPABILITIES (wificx.h)
-ms.date: 09/14/2021
+ms.date: 03/04/2024
 targetos: Windows
-description: The WIFI_ADAPTER_WAKE_CAPABILITIES structure describes a WiFiCx net adapter's wake-on-LAN (WoL) capabilities.
+description: The WIFI_ADAPTER_WAKE_CAPABILITIES structure describes a WiFiCx network adapter's wake-on-LAN (WoL) capabilities.
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -40,7 +40,7 @@ dev_langs:
 
 ## -description
 
-The **WIFI_ADAPTER_WAKE_CAPABILITIES** structure describes a WiFiCx net adapter's wake-on-LAN (WoL) capabilities.
+The **WIFI_ADAPTER_WAKE_CAPABILITIES** structure describes a WiFiCx network adapter's wake-on-LAN (WoL) capabilities.
 
 ## -struct-fields
 
@@ -63,6 +63,14 @@ A boolean value indicating if the net adapter can generate wake-up events when t
 ### -field FourWayHandshakeRequest
 
 A boolean value indicating if the net adapter can generate wake-up events when it receives a 4-Way Handshake request.
+
+### -field IncomingActionFrame
+
+A boolean value indicating if the net adapter can generate wake-up events upon receiving action frames.
+
+### -field ClientDriverDiagnostic
+
+A boolean value indicating if the net adapter can generate wake-up events triggered by client driver diagnostic events.
 
 ## -remarks
 

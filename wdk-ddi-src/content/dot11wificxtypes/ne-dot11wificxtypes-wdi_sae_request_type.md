@@ -2,7 +2,7 @@
 UID: NE:dot11wificxtypes._WDI_SAE_REQUEST_TYPE
 tech.root: netvista
 title: WDI_SAE_REQUEST_TYPE (dot11wificxtypes.h)
-ms.date: 07/30/2021
+ms.date: 07/10/2023
 targetos: Windows
 description: The WDI_SAE_REQUEST_TYPE enum defines the type of SAE request frame to send to the BSSID.
 prerelease: false
@@ -44,11 +44,11 @@ The **WDI_SAE_REQUEST_TYPE** enumeration defines the type of Simultaneous Authen
 
 ## -enum-fields
 
-### -field WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST:0
+### -field WDI_SAE_REQUEST_TYPE_COMMIT_PARAMS:0
 
 Send a Commit request. SAECommitRequest will be included.
 
-### -field WDI_SAE_REQUEST_TYPE_CONFIRM_REQUEST:1
+### -field WDI_SAE_REQUEST_TYPE_CONFIRM_PARAMS:1
 
 Send a Confirm request. SAEConfirmRequest will be included.
 
@@ -60,7 +60,7 @@ Request SAE authentication parameters failed. SAEStatus will be included.
 
 Request SAE authentication parameters succeeded.
 
-### -field WDI_SAE_REQUEST_TYPE_COMMIT_REQUEST_H2E:4
+### -field WDI_SAE_REQUEST_TYPE_COMMIT_H2E_PARAMS:4
 
 Send a Commit Request using H2E. When Anti-Clogging token is specified, it will be encoded as Anti-Clogging Element instead of a field.
 

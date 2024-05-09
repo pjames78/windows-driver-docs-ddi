@@ -126,7 +126,7 @@ The channel entry is defined, in units of megahertz (MHz), by a channel center f
 The length, in bytes, of the
      <b>ucChannelListBuffer</b> array. Each entry in this array is formatted as a ULONG data type.
 
-### -field ucChannelListBuffer
+### -field ucChannelListBuffer[1]
 
 An array containing channel descriptions for the PHY type specified in the
      <b>dot11PhyType</b> member.

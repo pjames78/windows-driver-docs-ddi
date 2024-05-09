@@ -251,7 +251,7 @@ Reserved.
 
 ### -field UdpRecvSegCoalesceOffloadInfo
 
-Identifies UDP Receive Segment Coalescing Offload (URO) information. When **UdpRecvSegCoalesceOffloadInfo** is specified, [NET_BUFFER_LIST_INFO](../network/net-buffer-list-info.md) returns an [NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md) structure. This structure contains a union that enables drivers to access the information as a single PVOID value.
+Identifies UDP Receive Segment Coalescing Offload (URO) information. When **UdpRecvSegCoalesceOffloadInfo** is specified, [NET_BUFFER_LIST_INFO](../nblaccessors/nf-nblaccessors-net_buffer_list_info.md) returns an [NDIS_UDP_RSC_OFFLOAD_NET_BUFFER_LIST_INFO](../nbluro/ns-nbluro-ndis_udp_rsc_offload_net_buffer_list_info.md) structure. This structure contains a union that enables drivers to access the information as a single PVOID value.
 
 ### -field SwitchForwardingReserved
 

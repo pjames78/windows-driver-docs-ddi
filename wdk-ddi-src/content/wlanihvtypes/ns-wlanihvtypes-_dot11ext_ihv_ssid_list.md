@@ -4,7 +4,7 @@ title: _DOT11EXT_IHV_SSID_LIST (wlanihvtypes.h)
 description: The DOT11EXT_IHV_SSID_LIST structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_ssid_list.htm
 tech.root: netvista
-ms.date: 02/16/2018
+ms.date: 03/07/2024
 keywords: ["DOT11EXT_IHV_SSID_LIST structure"]
 ms.keywords: "*PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c4e6c252-de57-4173-b6e1-df48dca0404f.xml, PDOT11EXT_IHV_SSID_LIST, PDOT11EXT_IHV_SSID_LIST structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_SSID_LIST, netvista.dot11ext_ihv_ssid_list, wlanihvtypes/DOT11EXT_IHV_SSID_LIST, wlanihvtypes/PDOT11EXT_IHV_SSID_LIST"
 req.header: wlanihvtypes.h
@@ -56,24 +56,15 @@ api_name:
 
 ## -struct-fields
 
-### -field ulCount
+### -field SSIDs[*]
 
 The number of SSIDs in the list.
 
-### -field SSIDs
+### -field SSIDs[1]
 
 An SSID of type
      <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a>. This is the first SSID in the
      list.
-
-## -syntax
-
-```cpp
-typedef struct _DOT11EXT_IHV_SSID_LIST {
-  ULONG      ulCount;
-  DOT11_SSID SSIDs[1];
-} DOT11EXT_IHV_SSID_LIST, *PDOT11EXT_IHV_SSID_LIST;
-```
 
 ## -remarks
 

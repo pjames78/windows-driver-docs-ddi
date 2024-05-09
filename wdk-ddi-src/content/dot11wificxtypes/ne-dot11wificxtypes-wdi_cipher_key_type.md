@@ -2,7 +2,7 @@
 UID: NE:dot11wificxtypes._WDI_CIPHER_KEY_TYPE
 tech.root: netvista
 title: WDI_CIPHER_KEY_TYPE
-ms.date: 07/22/2021
+ms.date: 03/07/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WDI_CIPHER_KEY_TYPE enum defines the cipher key types.
@@ -44,6 +44,10 @@ dev_langs:
 The **WDI_CIPHER_KEY_TYPE** enumeration defines the cipher key types.
 
 ## -enum-fields
+
+### -field WDI_CIPHER_KEY_TYPE_NONE:0
+
+The key is not valid.
 
 ### -field WDI_CIPHER_KEY_TYPE_PAIRWISE_KEY:1
 

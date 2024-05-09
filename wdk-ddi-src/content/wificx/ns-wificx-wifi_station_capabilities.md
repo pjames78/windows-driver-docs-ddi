@@ -153,17 +153,45 @@ The number of secondary STA band combinations. If this value is **0**, then the 
 
 A pointer to an array of [**WIFI_STA_BANDS_COMBINATION**](ns-wificx-wifi_sta_bands_combination.md) structures. If this value is **NULL**, then the Secondary STA capability will not be set.
 
-### -field MaxMultiLinkConnectionsSupported
+### -field MaxMLOLinksSupported
 
-The maximum number of links supported by hardware for MLO connections.
+The maximum number of links that the hardware supports for Multi-Link Operation (MLO) connections.
 
-### -field MultiLinkConnectionsEnabled
+### -field MLOAddressesList
 
-Specifies whether multi-Link connectivity is enabled. Valid values are 0 (disabled) and 1 (enabled).
+A pointer to an array of [**WDI_MAC_ADDRESS**](../dot11wificxintf/ns-dot11wificxintf-wdi_mac_address.md) structures that represent MLO MAC addresses with **MaxMLOLinksSupported** elements. The number of entries in **MLOAddressesList** must match **MaxMLOLinksSupported**. This will indicate that the driver is capable of setting up MLO links.
 
-### -field MultiLinkAddressesList
+### -field NumAkmsSupported
 
-A pointer to an array of [**WDI_MAC_ADDRESS**](../dot11wificxintf/ns-dot11wificxintf-wdi_mac_address.md) structure that represent multiLink MAC addresses with **MaxMultiLinkConnectionsSupported** elements.
+The max number of authentication and key management (AKM) suites that the driver supports.
+
+### -field AkmsList
+
+A pointer to an array of [**RSNA_AKM_SUITE**](../windot11/ne-windot11-rsna_akm_suite.md) structures that represent AKM suites, with **NumAkmsSupported** elements. This list should include all the AKM suites that the driver supports and must include the AKM 24 if the OS is expected to support Simultaneous Authentication of Equals (SAE) with a 384-bit Pairwise Master Key (PMK). The number of entries in **MLOAddressesList** must match **NumAkmsSupported**.
+
+### -field NumFIPSCertifiedCipherAlgorithms
+
+Number of cipher algorithms for which the device has received FIPS 140 certification.
+
+### -field FIPSCertifiedCipherAlgorithmsList
+
+A pointer to an array of [**DOT11_CIPHER_ALGORITHM**](..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md) structures for which the device has received FIPS 140 certification, with **NumFIPSCertifiedCipherAlgorithms** elements.
+
+### -field MSCSSupported
+
+A BOOLEAN that indicates whether the driver supports Mirrored Stream Classification Service (MSCS).
+
+### -field DSCPToUPMappingSupported
+
+A BOOLEAN that indicates whether the driver supports QoS Mapping (Differentiated Services Code Point (DSCP) to User Priority (UP) Mapping).
+
+### -field MaxNumConfigurableActionFrameWakePatterns
+
+The maximum number of action frame wake patterns that the device supports. Drivers must set **MaxNumConfigurableActionFrameWakePatterns** to at least:
+* **1** to support MSCS.
+* **2** to support DSCP-to-UP mapping.
+
+If **MaxNumConfigurableActionFrameWakePatterns** is less than the minimum value required for each feature, the OS will disable the feature. 
 
 ## -remarks
 

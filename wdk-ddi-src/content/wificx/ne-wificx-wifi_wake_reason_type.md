@@ -56,6 +56,14 @@ The WiFiCx net adapter generated the wake-up event because of a GTK handshake er
 
 The WiFiCx net adapter generated the wake-up event because it received a 4-Way Handshake request.
 
+### -field WifiWakeReasonTypeIncomingActionFrame
+
+The WiFiCx net adapter generated the wake-up event because it received an incoming action frame.
+
+### -field WifiWakeReasonTypeClientDriverDiagnostic
+
+The WiFiCx net adapter generated the wake-up event as a result of a client driver diagnostic event.
+
 ## -remarks
 
 This enumeration is passed as an input parameter to [**WifiAdapterReportWakeReason**](nf-wificx-wifiadapterreportwakereason.md).
