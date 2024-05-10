@@ -24,7 +24,8 @@ req.target-min-winversvr:
 req.target-type: 
 req.type-library: 
 req.umdf-ver: 
-req.unicode-ansi: 
+req.unicode-ansi:
+returns-override: true 
 topic_type:
  - apiref
 api_type:

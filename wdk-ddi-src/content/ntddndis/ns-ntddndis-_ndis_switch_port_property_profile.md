@@ -135,11 +135,6 @@ A UINT32 value that specifies a unique identifier for the data that is contained
 
 An  NDIS_SWITCH_PORT_PROPERTY_PROFILE_CDN_LABEL value that specifies the PCI Express (PCIe) CDN label for the location of the physical network adapter. A CDN label provides consistent device locations across similar hardware locations.
 
-
-### -field BindingType
-
-A UINT32 value that contains a proprietary value that is defined by the independent software vendor (ISV).
-
 ## -remarks
 
 The <b>NDIS_SWITCH_PORT_PROPERTY_PROFILE</b> structure is used by the extension to reference a policy property within a private policy store instead of the Hyper-V policy store. This allows the independent software vendor (ISV) to populate and manage this private policy store through private channels and interfaces.  Vendors can distinguish their profiles from other vendors' profiles using the <i>VendorName</i> and <i>VendorId</i> fields. 

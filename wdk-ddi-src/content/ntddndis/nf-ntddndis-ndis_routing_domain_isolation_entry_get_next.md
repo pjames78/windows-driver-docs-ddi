@@ -24,6 +24,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
+returns-override: true
 f1_keywords:
  - NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY_GET_NEXT
  - ntddndis/NDIS_ROUTING_DOMAIN_ISOLATION_ENTRY_GET_NEXT
