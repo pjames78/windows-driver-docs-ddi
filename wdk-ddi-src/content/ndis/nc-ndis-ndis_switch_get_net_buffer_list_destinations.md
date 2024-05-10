@@ -26,6 +26,7 @@ req.dll:
 req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
+returns-override: true
 f1_keywords:
  - NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS
  - ndis/NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS

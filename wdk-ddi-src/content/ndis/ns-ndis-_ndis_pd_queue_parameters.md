@@ -100,10 +100,6 @@ This is a handle to the transmit queue counter for transmit queues and a receive
 For queues that are not directly created by the client, such as RSS receive queues obtained using the <a href="/windows-hardware/drivers/ddi/ntddndis/index">NdisPDOnRssReceiveQueues</a>routine, the provider must always have an associated counter handle with the queue. That is, for a given set of RSS receive queues, the provider must have one dedicated receive queue counter for each receive queue.
 
 
-### -field UserPriority
-
-Used by the provider to determine the traffic class for the queue.
-
 ## -remarks
 
 This structure must be aligned on an 8-byte boundary.

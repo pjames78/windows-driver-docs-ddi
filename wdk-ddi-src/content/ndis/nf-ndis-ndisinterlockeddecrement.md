@@ -26,6 +26,7 @@ req.dll:
 req.irql: Any level
 targetos: Windows
 req.typenames: 
+returns-override: true
 f1_keywords:
  - NdisInterlockedDecrement
  - ndis/NdisInterlockedDecrement

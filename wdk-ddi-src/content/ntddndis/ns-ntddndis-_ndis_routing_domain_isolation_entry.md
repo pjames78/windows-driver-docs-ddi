@@ -81,34 +81,13 @@ An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_isolation_n
 
 ### -field VirtualSubnetId
 
+The virtual switch port ID that will be set on all sent or received packets if untagged packets are allowed..
+
 ### -field VlanId
 
+The virtual local area network (VLAN) ID that will be set on all sent or received packets if untagged packets are allowed..
+
 ### -field IsolationId
-
- 
-
-
-
-
-### -field ( unnamed union )
-
-The default virtual switch port ID or virtual local area network (VLAN) ID that will be set on all sent or received packets if untagged packets are allowed. (See the <b>AllowUntaggedTraffic</b> member of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_isolation_parameters">NDIS_ISOLATION_PARAMETERS</a> structure.)
-
-
-
-#### VirtualSubnetId
-
-The virtual switch port ID.
-
-
-
-#### VlanId
-
-The virtual local area network (VLAN) ID.
-
-
-
-#### IsolationId
 
 The default isolation ID that will be set on all sent or received packets if untagged packets are allowed. (See the <b>AllowUntaggedTraffic</b> member of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_isolation_parameters">NDIS_ISOLATION_PARAMETERS</a> structure.)
 

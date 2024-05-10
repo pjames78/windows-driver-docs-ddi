@@ -24,6 +24,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
+returns-override: true
 f1_keywords:
  - NDIS_SWITCH_PROPERTY_ENUM_INFO_GET_NEXT
  - ntddndis/NDIS_SWITCH_PROPERTY_ENUM_INFO_GET_NEXT

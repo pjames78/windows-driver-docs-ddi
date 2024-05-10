@@ -23,6 +23,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
+returns-override: true
 targetos: Windows
 f1_keywords:
  - NDIS_MAKE_RID
