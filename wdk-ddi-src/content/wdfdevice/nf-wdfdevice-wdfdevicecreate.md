@@ -68,71 +68,16 @@ A pointer to a location that receives a handle to the new framework device objec
 
 ## -returns
 
-If the <b>WdfDeviceCreate</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
+If the **WdfDeviceCreate** method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>
-</td>
-<td width="60%">
-An invalid <i>Device</i> or <i>DeviceInit</i> handle is supplied.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The driver has already created a device object for the device.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_SECURITY_DESCR</b></dt>
-</dl>
-</td>
-<td width="60%">
-the driver called <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a> or <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetdeviceclass">WdfDeviceInitSetDeviceClass</a> but did not provide a name for the device object.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>
-</td>
-<td width="60%">
-A  device object could not be allocated.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_OBJECT_NAME_COLLISION</b></dt>
-</dl>
-</td>
-<td width="60%">
-The device name that was specified by a call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignname">WdfDeviceInitAssignName</a> already exists. The driver can call <b>WdfDeviceInitAssignName</b> again to assign a new name.
-
-</td>
-</tr>
-</table>
+|Return code|Description|
+|--- |--- |
+|**STATUS_INVALID_PARAMETER**|An invalid *Device* or *DeviceInit* handle is supplied.|
+|**STATUS_INVALID_DEVICE_STATE**|The driver has already created a device object for the device.|
+|**STATUS_INVALID_SECURITY_DESCR**|the driver called **WdfDeviceInitAssignSDDLString** or **WdfDeviceInitSetDeviceClass** but did not provide a name for the device object.|
+|**STATUS_INSUFFICIENT_RESOURCES**|A  device object could not be allocated.|
+|**STATUS_OBJECT_NAME_COLLISION**|The device name that was specified by a call to **WdfDeviceInitAssignName** already exists. The driver can call **WdfDeviceInitAssignName** again to assign a new name.|
  
-
 For a list of other return values that WdfDeviceCreate can return, see <a href="/windows-hardware/drivers/wdf/framework-object-creation-errors">Framework Object Creation Errors</a>.
 
 The method might return other <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
