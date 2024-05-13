@@ -74,11 +74,11 @@ If the **WdfDeviceCreate** method encounters no errors, it returns STATUS_SUCCES
 |--- |--- |
 |**STATUS_INVALID_PARAMETER**|An invalid *Device* or *DeviceInit* handle is supplied.|
 |**STATUS_INVALID_DEVICE_STATE**|The driver has already created a device object for the device.|
-|**STATUS_INVALID_SECURITY_DESCR**|the driver called **WdfDeviceInitAssignSDDLString** or **WdfDeviceInitSetDeviceClass** but did not provide a name for the device object.|
-|**STATUS_INSUFFICIENT_RESOURCES**|A  device object could not be allocated.|
+|**STATUS_INVALID_SECURITY_DESCR**|The driver called **WdfDeviceInitAssignSDDLString** or **WdfDeviceInitSetDeviceClass** but did not provide a name for the device object.|
+|**STATUS_INSUFFICIENT_RESOURCES**|A device object could not be allocated.|
 |**STATUS_OBJECT_NAME_COLLISION**|The device name that was specified by a call to **WdfDeviceInitAssignName** already exists. The driver can call **WdfDeviceInitAssignName** again to assign a new name.|
- 
-For a list of other return values that WdfDeviceCreate can return, see <a href="/windows-hardware/drivers/wdf/framework-object-creation-errors">Framework Object Creation Errors</a>.
+
+For a list of other return values that **WdfDeviceCreate** can return, see <a href="/windows-hardware/drivers/wdf/framework-object-creation-errors">Framework Object Creation Errors</a>.
 
 The method might return other <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 
