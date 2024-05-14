@@ -1,13 +1,13 @@
 schedules:
-- cron: "10 6 * * 1-5"
-  displayName: "Morning run at 6:10 AM M-F"
+- cron: "10 13 * * 1-5"
+  displayName: "Morning run at 6:10 AM PT M-F"
   branches:
     include:
     - main
   always: true
 
-- cron: "52 13 * * 1-5"
-  displayName: "Afternoon run at 1:52 PM M-F"
+- cron: "52 20 * * 1-5"
+  displayName: "Afternoon run at 1:52 PM PT M-F"
   branches:
     include:
     - main
