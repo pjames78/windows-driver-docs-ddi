@@ -5,7 +5,7 @@ title: NET_BUFFER_LIST_IS_URO_SET
 ms.date: 01/18/2024
 targetos: Windows
 description: NET_BUFFER_LIST_IS_URO_SET returns whether the UDP RSC (URO) offload information is set for a NET_BUFFER_LIST structure.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

@@ -5,7 +5,7 @@ title: NET_BUFFER_LIST_IS_USO_SET
 ms.date: 05/10/2024
 targetos: Windows
 description: NET_BUFFER_LIST_IS_USO_SET returns whether the UDP segment offload (USO) offload information is set for a NET_BUFFER_LIST structure.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
