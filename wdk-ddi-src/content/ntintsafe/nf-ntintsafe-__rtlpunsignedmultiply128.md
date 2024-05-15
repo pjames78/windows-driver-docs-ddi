@@ -5,7 +5,6 @@ title: __RtlpUnsignedMultiply128
 ms.date: 04/02/2024
 targetos: Windows
 description: 
-prerelease: true
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
