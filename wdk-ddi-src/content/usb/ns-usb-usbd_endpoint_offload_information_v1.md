@@ -2,10 +2,10 @@
 UID: NS:usb._USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
 tech.root: usbref
 title: USBD_ENDPOINT_OFFLOAD_INFORMATION_V1
-ms.date: 05/03/2024
+ms.date: 05/15/2024
 targetos: Windows
 description: Stores xHCI-specific V1 information that is used by client drivers to transfer data to and from the offloaded endpoints.
-prerelease: true
+prerelease: false
 ai-usage: ai-assisted
 req.construct-type: structure
 req.ddi-compliance: 
