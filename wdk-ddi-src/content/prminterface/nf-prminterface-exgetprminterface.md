@@ -5,7 +5,7 @@ title: ExGetPrmInterface
 ms.date: 02/05/2024
 targetos: Windows
 description: "Retrieves pointers to PRM interfaces."
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

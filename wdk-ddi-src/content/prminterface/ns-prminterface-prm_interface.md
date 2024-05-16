@@ -5,7 +5,7 @@ title: PRM_INTERFACE
 ms.date: 02/05/2024
 targetos: Windows
 description: "Provides a set of pointers to functions that control the operation of a PRM interface."
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
