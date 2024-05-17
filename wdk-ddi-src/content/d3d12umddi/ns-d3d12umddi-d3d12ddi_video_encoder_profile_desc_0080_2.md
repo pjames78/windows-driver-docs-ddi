@@ -2,7 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_ENCODER_PROFILE_DESC_0080_2
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_PROFILE_DESC_0080_2
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about D3D12DDI_VIDEO_ENCODER_PROFILE_DESC_0080_2
 prerelease: false
@@ -48,13 +48,15 @@ The size of the referenced data, in bytes.
 
 ### -field pH264Profile
 
-Pointer to a [**D3D12DDI_VIDEO_ENCODER_PROFILE_H264_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_profile_h264_0080.md
-) value that indicates an H.264 profile.
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_PROFILE_H264_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_profile_h264_0080.md) value that indicates an H.264 profile.
 
 ### -field pHEVCProfile
 
-Pointer to a [**D3D12DDI_VIDEO_ENCODER_PROFILE_HEVC_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_profile_hevc_0080.md
-) value that indicates an HEVC profile.
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_PROFILE_HEVC_0080**](ne-d3d12umddi-d3d12ddi_video_encoder_profile_hevc_0080.md) value that indicates an HEVC profile.
+
+### -field pAV1Profile
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_PROFILE_0095**](ne-d3d12umddi-d3d12ddi_video_encoder_av1_profile_0095.md) value that indicates an AV1 profile. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

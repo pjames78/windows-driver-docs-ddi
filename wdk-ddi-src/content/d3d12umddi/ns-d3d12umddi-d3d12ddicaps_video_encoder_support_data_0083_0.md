@@ -38,7 +38,7 @@ dev_langs:
 
 ## -description
 
-The **D3D12DDICAPS_VIDEO_ENCODER_SUPPORT_DATA_0083_0** structure provides support details for the passed input configurations.
+The **D3D12DDICAPS_VIDEO_ENCODER_SUPPORT_DATA_0083_0** structure provides the driver's support details for the requested input configurations.
 
 ## -struct-fields
 
@@ -113,6 +113,8 @@ The D3D runtime calls [**PFND3D12DDI_VIDEO_GETCAPS**](nc-d3d12umddi-pfnd3d12ddi_
 The support granted or rejected by this query indicates simultaneous support for all the features selected to be used in the same encoding session. There can be features that are supported individually when queried with individual query calls but not supported simultaneously.
 
 For example, there can be support for intra refresh when checking **D3D12DDICAPS_TYPE_VIDEO_0080_ENCODER_INTRA_REFRESH_MODE** and there can be support for B frames when checking that [**D3D12_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264.MaxL1ReferencesForB**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_picture_control_support_h264_0080_2.md) is greater than 0. However, there can be the case that intra refresh and B frames are not supported simultaneously. In this case, querying **D3D12DDICAPS_TYPE_VIDEO_0080_ENCODER_SUPPORT** with **CodecGopSequence** containing B frames and intra refresh row-based mode, the D3D12_VIDEO_ENCODER_SUPPORT_FLAG_GENERAL_SUPPORT_OK flag must be set off.
+
+This structure doesn't work for AV1 codec input. Use [**D3D12DDICAPS_VIDEO_ENCODER_SUPPORT1_DATA_0096**](ns-d3d12umddi-d3d12ddicaps_video_encoder_support1_data_0096.md) for AV1 codec support instead.
 
 See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12) for general information.
 

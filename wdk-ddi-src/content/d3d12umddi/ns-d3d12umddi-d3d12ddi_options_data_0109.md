@@ -1,11 +1,11 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_OPTIONS_0109
-tech.root: 
+tech.root: display
 title: D3D12DDI_OPTIONS_DATA_0109
-ms.date: 
+ms.date: 05/14/2024
 targetos: Windows
-description: 
-prerelease: true
+description: Learn more about the D3D12DDI_OPTIONS_DATA_0109 structure.
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3D12DDI_OPTIONS_DATA_0109

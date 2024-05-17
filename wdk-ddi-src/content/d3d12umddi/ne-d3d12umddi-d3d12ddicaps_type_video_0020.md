@@ -267,6 +267,16 @@ Retrieve the alignment requirements for resource access. The associated structur
 
 Available starting in Windows 11 (WDDM 3.0).
 
+### -field D3D12DDICAPS_TYPE_VIDEO_0095_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG:44
+
+Used with struct [**D3D12DDI_FEATURE_DATA_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_CONFIG_0095**](ns-d3d12umddi-d3d12ddi_feature_data_video_encoder_frame_subregion_layout_config_0095.md). Available starting in Windows 11, version 24H2 (WDDM 3.2).
+
+### -field D3D12DDICAPS_TYPE_VIDEO_0096_ENCODER_SUPPORT1:45
+
+Indicates the driver supports the extended [**D3D12DDICAPS_VIDEO_ENCODER_SUPPORT1_DATA_0096**](ns-d3d12umddi-d3d12ddicaps_video_encoder_support1_data_0096.md) structure. Available starting in Windows 11, version 24H2 (WDDM 3.2).
+
+### -field D3D12DDICAPS_TYPE_VIDEO_0098_ARCHITECTURE:46
+
 ## -see-also
 
 [**D3D12DDIARG_VIDEO_GETCAPS_0020**](ns-d3d12umddi-d3d12ddiarg_video_getcaps_0020.md)

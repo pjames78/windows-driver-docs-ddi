@@ -54,6 +54,10 @@ Pointer to a [**D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_H264_0082_0**]
 
 Pointer to a [**D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_CODEC_DATA_HEVC_0082_0**](ns-d3d12umddi-d3d12ddi_video_encoder_picture_control_codec_data_hevc_0082_0.md) structure containing the picture-level control data for HEVC encoding.
 
+### -field pAV1PicData
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_PICTURE_CONTROL_CODEC_DATA_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_av1_picture_control_codec_data_0095.md) structure containing the picture-level control data for AV1 encoding. Added in Windows 11, version 24H2 (WDDM 3.2).
+
 ## -remarks
 
 Slice-level picture reference lists reordering is not supported.
