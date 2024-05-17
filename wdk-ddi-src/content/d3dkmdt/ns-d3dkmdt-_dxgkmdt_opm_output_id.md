@@ -10,7 +10,7 @@ ms.keywords: DXGKMDT_OPM_OUTPUT_ID, DXGKMDT_OPM_OUTPUT_ID structure [Display Dev
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

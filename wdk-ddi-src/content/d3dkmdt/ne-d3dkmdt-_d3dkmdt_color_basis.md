@@ -10,7 +10,7 @@ ms.keywords: D3DKMDT_CB_INTENSITY, D3DKMDT_CB_SCRGB, D3DKMDT_CB_SRGB, D3DKMDT_CB
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

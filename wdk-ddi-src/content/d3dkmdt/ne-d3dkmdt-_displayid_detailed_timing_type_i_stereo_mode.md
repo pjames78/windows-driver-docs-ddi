@@ -10,7 +10,7 @@ ms.keywords: DIDDT1_Dependent, DIDDT1_Monoscopic, DIDDT1_Stereo, DISPLAYID_DETAI
 req.header: d3dkmdt.h
 req.include-header:
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
