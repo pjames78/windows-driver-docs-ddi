@@ -142,7 +142,7 @@ A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_LOOP_FILTER_CONFIG_0095**](ns-d3d12umddi-d
 
 ### -field LoopFilterDelta
 
-A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_LOOP_FILTER_DELTA_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_loop_filter_delta_0095.md) structure that specifies the loop filter delta parameters to be used.
+A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_LOOP_FILTER_DELTA_CONFIG_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_loop_filter_delta_config_0095.md) structure that specifies the loop filter delta parameters to be used.
 
 ### -field Quantization
 
@@ -150,7 +150,7 @@ A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_QUANTIZATION_CONFIG_0095**](ns-d3d12umddi-
 
 ### -field QuantizationDelta
 
-A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_QUANTIZATION_DELTA_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_quantization_delta_0095.md) structure that specifies the quantization delta parameters to be used.
+A [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_QUANTIZATION_DELTA_CONFIG_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_quantization_delta_config_0095.md) structure that specifies the quantization delta parameters to be used.
 
 ### -field CDEF
 

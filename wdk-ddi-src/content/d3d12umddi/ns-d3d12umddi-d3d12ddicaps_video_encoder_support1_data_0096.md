@@ -115,7 +115,7 @@ The **D3D12DDICAPS_VIDEO_ENCODER_SUPPORT1_DATA_0096** structure provides the dri
 
 ### -field MaxQualityVsSpeed
 
-[out] The maximum quality vs speed trade-off value that the driver supports. This value is used as the maximum value allowed for the **QualityVsSpeed** parameter in the rate control structures. This value must be reported as zero if the driver doesn't set [**D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0096_RATE_CONTROL_QUALITY_VS_SPEED_AVAILABLE**](ne-d3d12umddi-d3d12ddi_video_encoder_support_flags_0083.md).
+[out] The maximum quality vs speed trade-off value that the driver supports. This value is used as the maximum value allowed for the **QualityVsSpeed** parameter in the rate control structures. This value must be reported as zero if the driver doesn't set [**D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0096_RATE_CONTROL_QUALITY_VS_SPEED_AVAILABLE**](ne-d3d12umddi-d3d12ddi_video_encoder_support_flags_0083_0.md).
 
 ## -remarks
 

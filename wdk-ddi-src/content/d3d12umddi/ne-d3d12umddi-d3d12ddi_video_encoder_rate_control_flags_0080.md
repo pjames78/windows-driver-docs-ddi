@@ -76,25 +76,27 @@ When set, enable the usage of **VBVCapacity** and **InitialVBVFullness**.
 
 ### -field D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_FLAG_0096_ENABLE_EXTENSION1_SUPPORT:0x40
 
-Requires [**D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_RATE_CONTROL_EXTENSION1_SUPPORT**](ne-d3d12umddi-d3d12ddi_video_encoder_support_flags_0083_0.md).
+Requires [**D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_RATE_CONTROL_EXTENSION1_SUPPORT**](ne-d3d12umddi-d3d12ddi_video_encoder_support_flags_0083_0.md) to be set.
 
-When enabled, indicates that the rate control structures extended for AV1 encoding will be used in [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS.pConfiguration_*Xxx***](ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_configuration_params_0080_2.md). Otherwise, the legacy structures will be used when disabled, as per the following table.
+When enabled, indicates that the rate control structures extended for AV1 encoding will be used in [**D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS.pConfiguration_*Xxx***](ns-d3d12umddi-d3d12ddi_video_encoder_rate_control_configuration_params_0080_2.md), as per the following table.
+
+| Rate control mode when flag is enabled | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS type | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS DataSize |
+| -------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------- |
+| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_ABSOLUTE_QP_MAP | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP) |
+| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CQP             | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1            | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1) |
+| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CBR             | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1            | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1) |
+| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_VBR             | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1            | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1) |
+| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_QVBR            | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1           | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1) |
+
+Otherwise, the legacy structures will be used when disabled, as per the following table.
 
 | Rate control mode when flag is disabled | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS type  | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS DataSize |
-| --------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- |
+| --------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------- |
 | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_ABSOLUTE_QP_MAP | NULL | 0 |
 | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CQP | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP) |
 | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR) |
 | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_VBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR) |
 | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_QVBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR) |
-
-| Rate control mode when flag is enabled | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS type | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CONFIGURATION_PARAMS DataSize |
-| -------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------- |
-| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_ABSOLUTE_QP_MAP | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_ABSOLUTE_QP_MAP) |
-| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CQP | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1 | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CQP1) |
-| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_CBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1 | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_CBR1) |
-| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_VBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1 | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_VBR1) |
-| D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_MODE_QVBR | D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1 | sizeof(D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_QVBR1) |
 
 ### -field D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_FLAG_0096_ENABLE_QUALITY_VS_SPEED:0x80
 

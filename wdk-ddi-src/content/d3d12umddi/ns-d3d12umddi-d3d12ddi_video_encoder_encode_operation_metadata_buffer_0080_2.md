@@ -62,4 +62,4 @@ See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d1
 
 [**D3D12DDI_VIDEO_ENCODER_RESOLVE_METADATA_INPUT_ARGUMENTS_0080_2**](ns-d3d12umddi-d3d12ddi_video_encoder_resolve_metadata_input_arguments_0080_2.md)
 
-[**D3D12DDI_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS_0082_0**](ns-d3d12umddi-d3d12ddi_video_encoder_resolve_metadata_output_arguments_0082.md)
+[**D3D12DDI_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS_0082_0**](ns-d3d12umddi-d3d12ddi_video_encoder_resolve_metadata_output_arguments_0082_0.md)
