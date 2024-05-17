@@ -2,7 +2,7 @@
 UID: NE:d3d12umddi.D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080
 prerelease: false
@@ -53,6 +53,10 @@ Indicates that the precision for motion estimation vectors has to be at most hal
 ### -field D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0080_QUARTER_PIXEL
 
 Indicates that the precision for motion estimation vectors has to be at most quarter-pixel.
+
+### -field D3D12DDI_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE_0095_EIGHTH_PIXEL
+
+Indicates that the precision for motion estimation vectors has to be at most eighth-pixel. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

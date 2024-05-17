@@ -2,7 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0082_0
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0082_0
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_0082_0 structure.
 prerelease: false
@@ -53,6 +53,10 @@ Pointer to a [*D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_H264_0082_0**](ns-d
 ### -field pHEVCGroupOfPictures
 
 Pointer to a [*D3D12DDI_VIDEO_ENCODER_SEQUENCE_GOP_STRUCTURE_HEVC_0082_0**](ns-d3d12umddi-d3d12ddi_video_encoder_sequence_gop_structure_hevc_0082_0.md) structure representing the GOP structure for HEVC encoding.
+
+### -field pAV1SequenceStructure
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_SEQUENCE_STRUCTURE_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_av1_sequence_structure_0095.md) structure representing the GOP structure for AV1 encoding. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

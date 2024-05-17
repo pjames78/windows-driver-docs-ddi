@@ -44,7 +44,7 @@ The **D3D12DDI_VIDEO_ENCODER_RESOLVE_METADATA_OUTPUT_ARGUMENTS_0082_0** structur
 
 ### -field ResolvedLayoutEncoderMetadataDrvBuffer
 
-A [**D3D12DDI_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER_0080_2**](ns-d3d12umddi-d3d12ddi_video_encoder_encode_operation_metadata_buffer_0080_2.md) structure in which to store the resolved metadata buffer. The user needs to read back this buffer to the CPU and cast it to [**D3D12DDI_VIDEO_ENCODER_OUTPUT_METADATA_0083_0**](ns-d3d12umddi-d3d12ddi_video_encoder_output_metadata_0083_0.md). The remaining data in the buffer is **D3D12DDI_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER_0080_2.WrittenSubregionsCount** *packed* entries of type [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_METADATA_0083_0**](ns-d3d12umddi-d3d12ddi_video_encoder_frame_subregion_metadata_0083_0.md).
+A [**D3D12DDI_VIDEO_ENCODER_ENCODE_OPERATION_METADATA_BUFFER_0080_2**](ns-d3d12umddi-d3d12ddi_video_encoder_encode_operation_metadata_buffer_0080_2.md) structure in which the driver should store the resolved metadata. The caller needs to read back this buffer to the CPU and cast it to [**D3D12DDI_VIDEO_ENCODER_OUTPUT_METADATA_0083_0**](ns-d3d12umddi-d3d12ddi_video_encoder_output_metadata_0083_0.md). The remaining data in the buffer is **D3D12DDI_VIDEO_ENCODER_OUTPUT_METADATA_0083_0.WrittenSubregionsCount** *packed* entries of type [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_METADATA_0083_0**](ns-d3d12umddi-d3d12ddi_video_encoder_frame_subregion_metadata_0083_0.md).
 
 ## -remarks
 

@@ -2,7 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_0080_2
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_0080_2
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_0080_2 structure.
 prerelease: false
@@ -55,6 +55,10 @@ Pointer to a [**D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SL
 ### -field pSlicesPartition_HEVC
 
 Pointer to a [**D3D12DDI_VIDEO_ENCODER_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_SLICES_0080**](ns-d3d12umddi-d3d12ddi_video_encoder_picture_control_subregions_layout_data_slices_0080.md) structure that defines subregions as slices for HEVC encoding.
+
+### -field pTilesPartition_AV1
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_PICTURE_CONTROL_SUBREGIONS_LAYOUT_DATA_TILES_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_av1_picture_control_subregions_layout_data_tiles_0095.md) structure that defines subregions as tiles for AV1 encoding. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 
