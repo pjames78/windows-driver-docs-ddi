@@ -5,7 +5,7 @@ title: PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0088
 ms.date: 02/28/2023
 targetos: Windows
 description: Learn more about the PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0088 callback function.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

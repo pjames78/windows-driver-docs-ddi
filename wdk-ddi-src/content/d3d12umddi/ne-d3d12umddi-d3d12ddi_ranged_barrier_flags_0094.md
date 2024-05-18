@@ -5,14 +5,14 @@ title: D3D12DDI_RANGED_BARRIER_FLAGS_0094
 ms.date: 10/17/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_RANGED_BARRIER_FLAGS_0094 enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h
 req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11, version 24H2
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: 

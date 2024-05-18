@@ -5,7 +5,7 @@ title: D3D12DDI_GLOBAL_BARRIER_0088
 ms.date: 09/29/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_GLOBAL_BARRIER_0088 structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

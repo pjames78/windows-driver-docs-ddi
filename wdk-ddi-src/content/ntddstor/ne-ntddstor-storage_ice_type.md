@@ -5,7 +5,7 @@ title: STORAGE_ICE_TYPE
 ms.date: 03/15/2024
 targetos: Windows
 description: The STORAGE_ICE_TYPE enum indicates the ICE type of the storage device.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: ntddstor.h

@@ -5,7 +5,7 @@ title: StorPortNvmeIceIoComplete
 ms.date: 03/25/2024
 targetos: Windows
 description: The StorPortNvmeIceIoComplete function signals the completion of a Non-Volatile Memory Express (NVMe) input/output (IO) operation that was initiated by a previous call to StorPortNvmeIceIoStart.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

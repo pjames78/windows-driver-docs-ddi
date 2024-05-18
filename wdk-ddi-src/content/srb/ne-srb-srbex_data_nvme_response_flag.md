@@ -5,7 +5,7 @@ title: SRBEX_DATA_NVME_RESPONSE_FLAG
 ms.date: 03/12/2024
 targetos: Windows
 description: Enumerates the properties of a SRBEX data NVMe response.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: srb.h

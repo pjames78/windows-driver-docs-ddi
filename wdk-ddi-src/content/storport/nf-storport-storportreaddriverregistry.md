@@ -5,7 +5,7 @@ title: StorPortReadDriverRegistry
 ms.date: 04/02/2024
 targetos: Windows
 description: The StorPortReadDriverRegistry function is used by the miniport to read the registry data for a given driver object.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

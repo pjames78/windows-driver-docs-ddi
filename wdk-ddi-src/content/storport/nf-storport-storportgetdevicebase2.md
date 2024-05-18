@@ -5,7 +5,7 @@ title: StorPortGetDeviceBase2
 ms.date: 03/19/2024
 targetos: Windows
 description: The StorPortGetDeviceBase2 function is like StorPortGetDeviceBase, but the Flags parameter allows for additional optional behavior.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

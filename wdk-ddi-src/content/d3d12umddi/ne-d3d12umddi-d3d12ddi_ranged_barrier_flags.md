@@ -5,7 +5,7 @@ title: D3D12DDI_RANGED_BARRIER_FLAGS
 ms.date: 10/17/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_RANGED_BARRIER_FLAGS enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h
