@@ -1,16 +1,15 @@
 ---
 UID: NE:d3dkmdt._DXGKMDT_OPM_ACP_PROTECTION_LEVEL
-title: _DXGKMDT_OPM_ACP_PROTECTION_LEVEL (d3dkmdt.h)
-description: The DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports Analog Copy Protection (ACP).
-old-location: display\dxgkmdt_opm_acp_protection_level.htm
+title: DXGKMDT_OPM_ACP_PROTECTION_LEVEL (d3dkmdt.h)
+description: Learn more about the DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration.
 tech.root: display
-ms.date: 05/10/2018
+ms.date: 05/17/2024
 keywords: ["DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration"]
 ms.keywords: DXGKMDT_OPM_ACP_FORCE_ULONG, DXGKMDT_OPM_ACP_LEVEL_ONE, DXGKMDT_OPM_ACP_LEVEL_THREE, DXGKMDT_OPM_ACP_LEVEL_TWO, DXGKMDT_OPM_ACP_OFF, DXGKMDT_OPM_ACP_PROTECTION_LEVEL, DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration [Display Devices], DmEnums_8ddb5546-7305-4b58-85e9-8e38a9bdf8af.xml, _DXGKMDT_OPM_ACP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_ACP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_ONE, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_THREE, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_TWO, d3dkmdt/DXGKMDT_OPM_ACP_OFF, d3dkmdt/DXGKMDT_OPM_ACP_PROTECTION_LEVEL, display.dxgkmdt_opm_acp_protection_level
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,12 +42,12 @@ api_name:
  - DXGKMDT_OPM_ACP_PROTECTION_LEVEL
 ---
 
-# _DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration
+# DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration
 
 
 ## -description
 
-The DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports [Analog Copy Protection (ACP)](https://business.tivo.com/services/acp-technology).
+The DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports Analog Copy Protection (ACP).
 
 ## -enum-fields
 
@@ -89,4 +88,3 @@ Display miniport drivers use the values in DXGKMDT_OPM_ACP_PROTECTION_LEVEL to r
 [**DxgkDdiOPMGetCOPPCompatibleInformation**](../dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md)
 
 [**DxgkDdiOPMGetInformation**](../dispmprt/nc-dispmprt-dxgkddi_opm_get_information.md)
-
