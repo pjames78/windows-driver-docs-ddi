@@ -9,7 +9,7 @@ prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
-req.dll: 
+req.dll:
 req.header: d3d12umddi.h
 req.idl: 
 req.include-header: 
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,17 +44,22 @@ helpviewer_keywords:
 
 ## -description
 
-The 
+UMD's **PFND3D12DDI_EXECUTECOMMANDLISTS** function executes an array of command lists submitted by an application.
 
 ## -parameters
 
 ### -param unnamedParam1
 
+[in] Handle to the driver's command queue.
+
 ### -param Count
 
+[in] Number of command lists in the array that **pCommandLists** points to.
+
 ### -param pCommandLists
+
+[in] Pointer to an array of **Count** handles to the command lists (D3D12DDI_HCOMMANDLIST) that need to be executed.
 
 ## -remarks
 
 ## -see-also
-

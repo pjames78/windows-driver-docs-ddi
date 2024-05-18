@@ -5,7 +5,7 @@ title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0088
 ms.date: 10/17/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_COMMAND_LIST_FUNCS_3D_0088 structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

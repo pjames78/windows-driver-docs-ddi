@@ -5,7 +5,7 @@ title: StorPortReadRegistryKey
 ms.date: 04/02/2024
 targetos: Windows
 description: The StorPortReadRegistryKey function is used by the miniport to read the specified registry key. The caller provides the absolute path to the key to be read.
-prerelease: true
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

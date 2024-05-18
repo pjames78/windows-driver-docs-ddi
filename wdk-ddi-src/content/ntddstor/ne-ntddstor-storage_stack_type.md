@@ -5,7 +5,7 @@ title: STORAGE_STACK_TYPE
 ms.date: 03/15/2024
 targetos: Windows
 description: The STORAGE_STACK_TYPE enum indicates the storage stack type for the device, such as SCSI, NVMe, and so on.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: ntddstor.h

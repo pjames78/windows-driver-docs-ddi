@@ -5,7 +5,7 @@ title: D3D12DDI_RANGED_BARRIER_0094
 ms.date: 10/17/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_RANGED_BARRIER_0094 structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_NEXT
+req.target-min-winverclnt: Windows 11 (WDDM 3.0)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: D3D12DDI_RANGED_BARRIER_0094

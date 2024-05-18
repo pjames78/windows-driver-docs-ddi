@@ -5,7 +5,7 @@ title: SRBEX_DATA_NVMEOF_OPERATION
 ms.date: 03/28/2024
 targetos: Windows
 description: For internal use only. Do not use.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

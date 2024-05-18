@@ -5,7 +5,7 @@ title: DEVICE_DSM_QUERY_PREFER_LOCAL_REPAIR_OUTPUT
 ms.date: 03/15/2024
 targetos: Windows
 description: The DEVICE_DSM_QUERY_PREFER_LOCAL_REPAIR_OUTPUT structure indicates if the device prefers local repair of storage spaces.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

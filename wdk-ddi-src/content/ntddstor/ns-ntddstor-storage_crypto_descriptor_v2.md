@@ -5,7 +5,7 @@ title: STORAGE_CRYPTO_DESCRIPTOR_V2
 ms.date: 03/15/2024
 targetos: Windows
 description: Microsoft reserves the STORAGE_CRYPTO_DESCRIPTOR_V2 structure for internal use only. Don't use this structure in your code.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

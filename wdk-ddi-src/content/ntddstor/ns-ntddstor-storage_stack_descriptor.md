@@ -5,7 +5,7 @@ title: STORAGE_STACK_DESCRIPTOR
 ms.date: 03/15/2024
 targetos: Windows
 description: The STORAGE_STACK_DESCRIPTOR structure describes the storage stack for the device.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
