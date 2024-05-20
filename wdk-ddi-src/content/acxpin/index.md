@@ -2,7 +2,7 @@
 UID: NA:acxpin
 tech.root: audio
 title: acxpin.h header
-ms.date: 07/28/2022
+ms.date: 05/20/2024
 targetos: Windows
 description: acxpin.h header
 prerelease: false
