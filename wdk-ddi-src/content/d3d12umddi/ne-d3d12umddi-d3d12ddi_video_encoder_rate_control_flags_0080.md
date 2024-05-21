@@ -102,10 +102,6 @@ Otherwise, the legacy structures will be used when disabled, as per the followin
 
 Requires **D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_RATE_CONTROL_EXTENSION1_SUPPORT** and **D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_RATE_CONTROL_QUALITY_VS_SPEED_AVAILABLE**. When enabled, indicates the use of **QualityVsSpeed** in the rate control structure.
 
-### -field D3D12DDI_VIDEO_ENCODER_RATE_CONTROL_FLAG_0096_MASK:0xFF
-
-Internal flag used to mask support flags up to version 0096.
-
 ## -remarks
 
 See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12) for general information.

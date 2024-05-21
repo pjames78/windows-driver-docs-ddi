@@ -40,19 +40,19 @@ A **D3D12DDI_BARRIER_LAYOUT** value describes the possible layouts used by D3D12
 
 ## -enum-fields
 
-### -field D3D12DDI_BARRIER_LAYOUT_UNDEFINED:0xffffffff
+### -field D3D12DDI_BARRIER_LAYOUT_UNDEFINED
 
 Provides support for subresource layout changes where the previous layout is irrelevant or undefined. Typically, this is used for full-subresource or full-resource Clear, Discard, and Copy commands.
 
 A layout transition with both **LayoutBefore** and **LayoutAfter** set to **D3D12_BARRIER_LAYOUT_UNDEFINED** indicates a memory-access-only barrier. Many read/write operations support **D3D12_BARRIER_LAYOUT_COMMON**. In particular, Copy commands can write to textures using either the **D3D12_BARRIER_LAYOUT_COMMON** or **D3D12_BARRIER_LAYOUT_COPY**. A memory-access-only barrier can be used to flush copy writes to a texture without changing the texture layout.
 
-### -field D3D12DDI_BARRIER_LAYOUT_COMMON:0
+### -field D3D12DDI_BARRIER_LAYOUT_COMMON
 
 This is the layout used by [**D3D12_RESOURCE_STATE_COMMON**](ne-d3d12umddi-d3d12ddi_resource_states.md). Subresources with this layout are readable in any queue type without requiring a layout change. They are also writeable as a copy destination in any queue type.
 
 Swap chain presentation requires that the back buffer is using **D3D12_BARRIER_LAYOUT_COMMON**.
 
-### -field D3D12DDI_BARRIER_LAYOUT_PRESENT:0
+### -field D3D12DDI_BARRIER_LAYOUT_PRESENT
 
 Alias for **D3D12_BARRIER_LAYOUT_COMMON**.
 
@@ -180,7 +180,11 @@ Same as **D3D12_BARRIER_LAYOUT_COPY_DEST** except with optimizations specific fo
 
 Supports common (barrier free) usage on video queues only. May be more optimal than the more general **D3D12_BARRIER_LAYOUT_COMMON**. Can only be used in barriers on video queues.
 
-### -field D3D12DDI_BARRIER_LAYOUT_LEGACY_COPY_SOURCE:0x80000000
+### -field D3D12DDI_BARRIER_LAYOUT_LEGACY_DIRECT_QUEUE_GENERIC_READ_COMPUTE_QUEUE_ACCESSIBLE
+
+Supports an internally-translated legacy resource state. No enhanced barrier APIs map to this value.
+
+### -field D3D12DDI_BARRIER_LAYOUT_LEGACY_COPY_SOURCE
 
 Supports an internally-translated legacy resource state. No enhanced barrier APIs map to this value.
 

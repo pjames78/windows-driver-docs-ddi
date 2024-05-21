@@ -52,7 +52,7 @@ A [**D3D12DDI_RANGED_BARRIER_FLAGS_0094**](ne-d3d12umddi-d3d12ddi_ranged_barrier
 
 The handle of the resource using the barrier. A NULL value means that the entire GPU cache must be flushed or invalidated. A non-NULL value means that the flush or invalidate action affects a smaller subset of the cache that can contain data for that resource.
 
-### -field Subresources
+### -field Subresource
 
 A [**D3D12DDI_BARRIER_SUBRESOURCE_RANGE_0088**](ns-d3d12umddi-d3d12ddi_barrier_subresource_range_0088.md) structure that specifies the range of subresources being barriered.
 

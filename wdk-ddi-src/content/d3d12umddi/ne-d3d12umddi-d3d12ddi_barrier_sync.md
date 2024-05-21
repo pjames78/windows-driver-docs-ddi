@@ -77,6 +77,10 @@ A **SyncAfter** value of **D3D12DDI_BARRIER_SYNC_DRAW** indicates all subsequent
 
 Synchronize against Input Assembler stage execution.
 
+### -field D3D12DDI_BARRIER_SYNC_INDEX_INPUT:0x4
+
+Maps to D3D12DDI_BARRIER_SYNC_INPUT_ASSEMBLER.
+
 ### -field D3D12DDI_BARRIER_SYNC_VERTEX_SHADING:0x8
 
 Synchronize against all vertex shading stages, including vertex, domain, hull, tessellation, geometry, amplification and mesh shading.

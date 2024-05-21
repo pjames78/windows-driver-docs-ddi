@@ -2,7 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0082_0
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0082_0
-ms.date: 02/16/2022
+ms.date: 05/20/2024
 targetos: Windows
 description: Learn more about D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_0082_0
 prerelease: false
@@ -53,6 +53,10 @@ Pointer to a [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_H264_0082_0**](ns-d3d
 ### -field pHEVCConfig
 
 Pointer to a [**D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_HEVC_0082_0**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_configuration_hevc_0082_0.md) structure that contains HEVC codec configuration information.
+
+### -field pAV1Config
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_CODEC_CONFIGURATION_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_av1_codec_configuration_0095.md) structure that contains AV1 codec configuration information. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

@@ -2,7 +2,7 @@
 UID: NE:d3d12umddi.D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS_0080
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS_0080
-ms.date: 02/16/2022
+ms.date: 05/20/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAGS_0080 enumeration.
 prerelease: false
@@ -71,6 +71,10 @@ Indicates support for temporal direct mode.
 ### -field D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAG_0080_CONSTRAINED_INTRAPREDICTION_SUPPORT
 
 Indicates whether support is available for constrained intra-prediction. When constrained intra-prediction is activated, it forces the encoding of each intra-coded block with residual data only from other intra-coded blocks (and not from inter-coded blocks). This flag refers to *constrained_intra_pred_flag* in the picture parameter set (PPS).
+
+### -field D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_H264_FLAG_0099_0_NUM_REF_IDX_ACTIVE_OVERRIDE_FLAG_SLICE_SUPPORT
+
+Indicates that the encoder supports overriding the number of active reference indices at the slice level. This allows for more fine-grained control of reference frames used for prediction on a per-slice basis. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 
