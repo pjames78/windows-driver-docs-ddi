@@ -49,10 +49,6 @@ The main tier (MainMbps).
 
 The high performance tier (HighMbps).
 
-### -field D3D12DDI_VIDEO_ENCODER_AV1_TIER_0095_MAX_VALID
-
-The maximum enumeration value.
-
 ## -remarks
 
 See [D3D12 AV1 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12-av1.md) for more information.

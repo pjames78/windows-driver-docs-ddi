@@ -90,6 +90,10 @@ Texture layout. Deprecated. Use D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT instead.
 
 Shader models.
 
+### -field D3D12DDICAPS_TYPE_OPTIONS1_0103
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0103**](ns-d3d12umddi-d3d12ddi_options_data_0103.md) structure.
+
 ### -field D3D12DDICAPS_TYPE_0030_PROTECTED_RESOURCE_SESSION_SUPPORT
 
 Protected resource session support.
@@ -193,6 +197,10 @@ Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_01
 ### -field D3D12DDI_FEATURE_D3D12_PREDICATION_106
 
 Queries the driver's support for predication.
+
+### -field D3D12DDI_FEATURE_PLACED_RESOURCE_SUPPORT_INFO_106
+
+Queries the driver's support for placed resource support information.
 
 ### -field D3D12DDI_FEATURE_HARDWARE_COPY_106
 

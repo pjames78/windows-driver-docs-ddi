@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_INDIRECT_ARGUMENT_TYPE
 title: D3D12DDI_INDIRECT_ARGUMENT_TYPE
-description: Specifies the type of the indirect parameter for indirect dispatch.
+description: Learn more about the D3D12DDI_INDIRECT_ARGUMENT_TYPE enumeration.
 tech.root: display
-ms.date: 08/22/2022
+ms.date: 05/20/2024
 keywords: ["D3D12DDI_INDIRECT_ARGUMENT_TYPE enumeration"]
 ms.keywords: D3D12DDI_INDIRECT_ARGUMENT_TYPE, D3D12DDI_INDIRECT_ARGUMENT_TYPE,
 req.header: d3d12umddi.h
@@ -37,7 +37,7 @@ dev_langs:
 
 ## -description
 
-Specifies the type of the indirect parameter for indirect dispatch.
+The **D3D12DDI_INDIRECT_ARGUMENT_TYPE** enumeration specifies the type of the indirect parameter for indirect dispatch.
 
 ## -enum-fields
 
@@ -84,6 +84,10 @@ Indicates the type is a DispatchRays call. Available starting with Windows 10, v
 ### -field D3D12DDI_INDIRECT_ARGUMENT_TYPE_DISPATCH_MESH
 
 Indicates the type is a DispatchMesh call. Available starting with Windows 10, version 2004.
+
+### -field D3D12DDI_INDIRECT_ARGUMENT_TYPE_INCREMENTING_CONSTANT
+
+Indicates the type is an incrementing constant.
 
 ## -remarks
 

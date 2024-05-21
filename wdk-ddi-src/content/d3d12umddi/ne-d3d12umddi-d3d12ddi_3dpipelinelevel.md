@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_3DPIPELINELEVEL
 title: D3D12DDI_3DPIPELINELEVEL
-description: Contains values that identify the pipeline level that the driver supports.
+description: Learn more about the D3D12DDI_3DPIPELINELEVEL enumeration.
 tech.root: display
-ms.date: 05/13/2021
+ms.date: 05/20/2024
 keywords: ["D3D12DDI_3DPIPELINELEVEL enumeration"]
 ms.keywords: D3D12DDI_3DPIPELINELEVEL, D3D12DDI_3DPIPELINELEVEL,
 req.header: d3d12umddi.h
@@ -37,37 +37,41 @@ dev_langs:
 
 ## -description
 
-Contains values that identify the pipeline level that the driver supports.
+The **D3D12DDI_3DPIPELINELEVEL** enumeration contains values that identify the pipeline level that the driver supports.
 
 ## -enum-fields
 
-### -field D3D12DDI_3DPIPELINELEVEL_11_0
+### -field D3D12DDI_3DPIPELINELEVEL_1_0_GENERIC:1
 
-The driver supports Direct3D version 11 pipeline.
+The driver supports the baseline Direct3D version 1.0 pipeline.
 
-### -field D3D12DDI_3DPIPELINELEVEL_1_0_CORE
+### -field D3D12DDI_3DPIPELINELEVEL_1_0_CORE:2
 
 Internal.
 
-### -field D3D12DDI_3DPIPELINELEVEL_11_1
+### -field D3D12DDI_3DPIPELINELEVEL_11_0:10
+
+The driver supports Direct3D version 11 pipeline.
+
+### -field D3D12DDI_3DPIPELINELEVEL_11_1:11
 
 The driver supports Direct3D version 11.1 pipeline.
 
-### -field D3D12DDI_3DPIPELINELEVEL_12_0
+### -field D3D12DDI_3DPIPELINELEVEL_12_0:12
 
 The driver supports Direct3D version 12.0 pipeline.
 
-### -field D3D12DDI_3DPIPELINELEVEL_12_1
+### -field D3D12DDI_3DPIPELINELEVEL_12_1:13
 
 The driver supports Direct3D version 12.1 pipeline.
 
-### -field D3D12DDI_3DPIPELINELEVEL_12_2
+### -field D3D12DDI_3DPIPELINELEVEL_12_2:14
 
 The driver supports Direct3D version 12.2 pipeline.
 
 ## -remarks
 
- Drivers only report the maximum level they support.
+Drivers only report the maximum level they support.
 
 ## -see-also
 
