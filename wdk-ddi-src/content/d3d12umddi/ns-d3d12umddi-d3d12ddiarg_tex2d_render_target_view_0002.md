@@ -38,7 +38,6 @@ dev_langs:
 
 # D3D12DDIARG_TEX2D_RENDER_TARGET_VIEW_0002 structure
 
-
 ## -description
 
 Describes a two-dimensional (2-D) texture that is used to create a render target view.
@@ -59,10 +58,8 @@ The number of array slices for the texture.
 
 ### -field PlaneSlice
 
- 
 The index (plane slice number) of the plane to use in the texture.
 
 ## -remarks
 
 ## -see-also
-

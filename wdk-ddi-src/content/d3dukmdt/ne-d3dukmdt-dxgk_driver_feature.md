@@ -186,7 +186,11 @@ The OS bugfix for 64K page table demotion.
 
 The OS bugfix for GPU paravirtualization and hardware scheduling enabled.
 
-### -field DXGK_DRIVER_FEATURE_NATIVE_FENCE:36
+### -field DXGK_DRIVER_FEATURE_GPUVAIOMMU:36
+
+The usage of GPU virtual addresses with IoMmu feature.
+
+### -field DXGK_DRIVER_FEATURE_NATIVE_FENCE:37
 
 The native GPU fence feature.
 

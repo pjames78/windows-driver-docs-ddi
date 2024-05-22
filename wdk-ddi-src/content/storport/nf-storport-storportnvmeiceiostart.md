@@ -56,6 +56,10 @@ A pointer to the hardware device extension. This is a per HBA (Host Bus Adapter)
 
 A pointer to a SCSI request block. This structure represents a single I/O request.
 
+### -field LbaCount
+
+The number of logical block addresses (LBAs) to be transferred.
+
 ### -param PrpCount
 
 The number of physical region pages (PRPs) to be transferred.

@@ -487,7 +487,7 @@ SID that represents the minimal capabilitues for accessing the profiles root wit
 
 SID that represents the minimal capabilitues for accessing the profiles root within an app silo.
 
-### -fieldSeAppSiloPromptForAccessCapabilitySid
+### -field SeAppSiloPromptForAccessCapabilitySid
 
 SID that represents the capability to prompt for access within an app silo.
 

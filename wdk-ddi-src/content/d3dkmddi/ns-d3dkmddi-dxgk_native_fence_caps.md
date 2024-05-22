@@ -52,7 +52,7 @@ A kernel-mode display miniport driver (KMD) returns the GPU's native fence capab
 
 Stride in bytes for monitored values of native fences that are packed in the same page.
 
-### -field MapToCmpAddressSpace
+### -field MapToGpuSystemProcess
 
 Specifies whether native fence current and monitored values should be mapped to a GPU system process address space for use by the context management processor.
 
@@ -64,7 +64,7 @@ Minimum virtual address for GPU VA mappings (optional).
 
 Maximum virtual address for GPU VA mappings (optional).
 
-### -field Reserved[32]
+### -field Reserved[28]
 
 Reserved for system use.
 

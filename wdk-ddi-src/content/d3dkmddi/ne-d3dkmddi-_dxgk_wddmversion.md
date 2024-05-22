@@ -1,9 +1,8 @@
 ---
 UID: NE:d3dkmddi._DXGK_WDDMVERSION
 title: DXGK_WDDMVERSION (d3dkmddi.h)
-description: The DXGK_WDDMVERSION enumeration is reserved for system use. Except for the case noted below, do not use it in your driver.
-old-location: display\dxgk_wddmversion.htm
-ms.date: 04/26/2022
+description: Learn more about the DXGK_WDDMVERSION enumeration.
+ms.date: 05/20/2024
 keywords: ["DXGK_WDDMVERSION enumeration"]
 ms.keywords: DXGKDDI_WDDMv1, DXGKDDI_WDDMv1_2, DXGKDDI_WDDMv2, DXGK_WDDMVERSION, DXGK_WDDMVERSION enumeration [Display Devices], DmEnums_3a73843a-4967-4faa-a217-42487ae4f865.xml, _DXGK_WDDMVERSION, d3dkmddi/DXGKDDI_WDDMv1, d3dkmddi/DXGKDDI_WDDMv1_2, d3dkmddi/DXGKDDI_WDDMv2, d3dkmddi/DXGK_WDDMVERSION, display.dxgk_wddmversion
 req.header: d3dkmddi.h
@@ -117,6 +116,10 @@ WDDM version for Windows 11.
 ### -field DXGKDDI_WDDMv3_1
 
 WDDM version for Windows 11, version 22H2.
+
+### -field DXGKDDI_WDDMv3_2
+
+WDDM version for Windows 11, version 24H2.
 
 ### -field DXGKDDI_WDDM_LATEST
 

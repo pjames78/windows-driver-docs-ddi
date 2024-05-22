@@ -10,7 +10,7 @@ ms.keywords: DXGKCB_IS_DEVICE_PRESENT, DXGKCB_IS_DEVICE_PRESENT callback, DpFunc
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
