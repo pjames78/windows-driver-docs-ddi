@@ -2,9 +2,8 @@
 UID: NS:d3dukmdt.DXGK_MIRACAST_CHUNK_ID
 title: DXGK_MIRACAST_CHUNK_ID (d3dukmdt.h)
 description: Learn how DXGK_MIRACAST_CHUNK_ID stores info that identifies a wireless display (Miracast) encode chunk.
-old-location: display\dxgk_miracast_chunk_id.htm
 tech.root: display
-ms.date: 05/10/2018
+ms.date: 09/26/2022
 keywords: ["DXGK_MIRACAST_CHUNK_ID structure"]
 ms.keywords: DXGK_MIRACAST_CHUNK_ID, DXGK_MIRACAST_CHUNK_ID union [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_ID, display.dxgk_miracast_chunk_id
 req.header: d3dukmdt.h
@@ -40,9 +39,6 @@ api_name:
  - DXGK_MIRACAST_CHUNK_ID
 ---
 
-# DXGK_MIRACAST_CHUNK_ID structure
-
-
 ## -description
 
 Stores info that identifies a wireless display (Miracast) encode chunk.
@@ -60,4 +56,3 @@ The frame part number.
 ### -field Value
 
 Holds a 64-bit value that identifies the encode chunk.
-

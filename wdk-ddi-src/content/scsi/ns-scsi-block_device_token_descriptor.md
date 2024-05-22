@@ -3,7 +3,7 @@ UID: NS:scsi.BLOCK_DEVICE_TOKEN_DESCRIPTOR
 title: BLOCK_DEVICE_TOKEN_DESCRIPTOR (scsi.h)
 description: The BLOCK_DEVICE_TOKEN_DESCRIPTOR structure (storport.h) contains the token returned from the POPULATE TOKEN command for an offload read data operation.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["BLOCK_DEVICE_TOKEN_DESCRIPTOR structure"]
 ms.keywords: "*PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR structure [Storage Devices], PBLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure pointer [Storage Devices], scsi/BLOCK_DEVICE_TOKEN_DESCRIPTOR, scsi/PBLOCK_DEVICE_TOKEN_DESCRIPTOR, storage.block_device_token_descriptor"
 req.header: scsi.h

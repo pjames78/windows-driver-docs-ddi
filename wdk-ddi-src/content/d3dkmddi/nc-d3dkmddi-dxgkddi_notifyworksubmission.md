@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_NOTIFYWORKSUBMISSION
 tech.root: display
 title: DXGKDDI_NOTIFYWORKSUBMISSION
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_NOTIFYWORKSUBMISSION callback function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **DxgkDdiNotifyWorkSubmission** function notifies KMD that new work has been submitted.
+The **DxgkDdiNotifyWorkSubmission** function notifies KMD that UMD has submitted new work.
 
 ## -parameters
 
@@ -64,9 +64,11 @@ To solve this problem, KMD can specify the doorbell connection status as D3DDDI_
 
 **DxgkDdiNotifyWorkSubmission** is a simple ping from UMD to *Dxgkrnl* to KMD, notifying the latter that new work has been submitted on a particular hardware queue, thus allowing KMD to initiate specific actions such as switching the runlist to real time.
 
-KMD can also request notification dynamically after doorbell creation. If KMD detects a condition where it should be notified of work submission on this hardware queue, then it can first disconnect the doorbell using [**DxgkCbDisconnectDoorbell**](../d3dkmddi/nc-d3dkmddi-dxgkcb_disconnectdoorbell.md) with status D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY. Later, when UMD tries to reconnect the doorbell, KMD can make the connection with status D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY.
+KMD can also request notification dynamically after doorbell creation. If KMD detects a condition where it should be notified of work submission on this hardware queue, then it can first disconnect the doorbell by calling [**DxgkCbDisconnectDoorbell**](nc-d3dkmddi-dxgkcb_disconnectdoorbell.md) with status D3DDDI_DOORBELL_STATUS_DISCONNECTED_RETRY. Later, when UMD tries to reconnect the doorbell, KMD can make the connection with status D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY.
 
 Drivers should use this mechanism in very specific and infrequent scenarios because it involves a round trip from UMD to KMD on every work submission, and if it is used for broad scenarios then it defeats the purpose of a low latency user mode submission model.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

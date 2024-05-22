@@ -5,7 +5,7 @@ title: D3D12DDI_BARRIER_ACCESS
 ms.date: 09/29/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_BARRIER_ACCESS enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h

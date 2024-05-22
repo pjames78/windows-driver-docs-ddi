@@ -1,5 +1,5 @@
 ---
-description: "Learn more about: D3D12Umddi.h header"
+description: "Learn more about the D3D12Umddi.h header"
 UID: NA:d3d12umddi
 title: D3D12Umddi.h header
 ms.assetid: f0332247-492e-3990-bccc-5ec7fc2fd910
@@ -17,7 +17,6 @@ api_name:
 
 # D3D12Umddi.h header
 
-
 ## -description
 
 This header is used by display. For more information, see:
@@ -26,4 +25,3 @@ This header is used by display. For more information, see:
 
 >[!NOTE]
 >The D3D12 runtime and SDK layers is expected to handle parameter validation for video operations. This includes picture parameters for decode operations. Drivers should assume that parameters are correct.
-

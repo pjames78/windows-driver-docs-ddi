@@ -24,6 +24,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
+returns-override: true
 f1_keywords:
  - NET_BUFFER_LIST_RECEIVE_FILTER_ID
  - ndis/NET_BUFFER_LIST_RECEIVE_FILTER_ID

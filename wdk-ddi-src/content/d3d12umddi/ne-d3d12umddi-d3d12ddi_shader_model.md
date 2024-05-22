@@ -1,8 +1,8 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_SHADER_MODEL
 title: D3D12DDI_SHADER_MODEL (d3d12umddi.h)
-description: Specifies the Shader Model.
-ms.date: 05/24/2022
+description: Learn more about the D3D12DDI_SHADER_MODEL enumeration.
+ms.date: 05/20/2024
 keywords: ["D3D12DDI_SHADER_MODEL enumeration"]
 ms.keywords: D3D12DDI_SHADER_MODEL, D3D12DDI_SHADER_MODEL,
 req.header: d3d12umddi.h
@@ -34,7 +34,7 @@ api_name:
 
 ## -description
 
-A **D3D12DDI_SHADER_MODEL** value specifies the Shader Model.
+A **D3D12DDI_SHADER_MODEL** value specifies the shader model.
 
 ## -enum-fields
 
@@ -101,3 +101,19 @@ Shader Model 6.6 Release.
 ### -field D3D12DDI_SHADER_MODEL_6_7_EXPERIMENTAL_0082:0x00060070
 
 Shader Model 6.7 Preview.
+
+### -field D3D12DDI_SHADER_MODEL_6_7_RELEASE_0093:0x00060075
+
+Shader Model 6.7 Release.
+
+### -field D3D12DDI_SHADER_MODEL_6_8_EXPERIMENTAL_0093:0x00060080
+
+Shader Model 6.8 Preview.
+
+### -field D3D12DDI_SHADER_MODEL_6_8_RELEASE_0108:0x00060085
+
+Shader Model 6.8 Release.
+
+### -field D3D12DDI_SHADER_MODEL_6_9_EXPERIMENTAL_0108:0x00060090
+
+Shader Model 6.9 Preview.

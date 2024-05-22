@@ -48,7 +48,7 @@ The **WDI_PHY_TYPE** enumeration defines the PHY types.
 
 Specifies an unknown or uninitialized PHY type.
 
-### -field WDI_PHY_TYPE_ANY:1
+### -field WDI_PHY_TYPE_ANY:0
 
 Specifies an unknown or uninitialized PHY type.
 

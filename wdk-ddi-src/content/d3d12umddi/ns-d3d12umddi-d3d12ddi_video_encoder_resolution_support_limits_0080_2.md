@@ -46,7 +46,9 @@ The **D3D12DDI_VIDEO_ENCODER_RESOLUTION_SUPPORT_LIMITS_0080_2** structure repres
 
 ### -field MaxSubregionsNumber
 
-Indicates the maximum number of subregions per frame supported by the encoder for the associated resolution. **MaxSubregionsNumber** is expected to be an absolute maximum limit of subregions per frame to be coded when mode is [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0080_BYTES_PER_SUBREGION**](ne-d3d12umddi-d3d12ddi_video_encoder_frame_subregion_layout_mode_0080.md)
+For H264 and HEVC, indicates the maximum number of subregions per frame supported by the encoder for the associated resolution. **MaxSubregionsNumber** is expected to be an absolute maximum limit of subregions per frame to be coded when mode is [**D3D12DDI_VIDEO_ENCODER_FRAME_SUBREGION_LAYOUT_MODE_0080_BYTES_PER_SUBREGION**](ne-d3d12umddi-d3d12ddi_video_encoder_frame_subregion_layout_mode_0080.md)
+
+For AV1, indicates the maximum number of tiles supported by the hardware for the associated resolution.
 
 ### -field MaxIntraRefreshFrameDuration
 
@@ -54,7 +56,9 @@ Indicates the maximum number that can be used in [**D3D12DDI_VIDEO_ENCODER_INTRA
 
 ### -field SubregionBlockPixelsSize
 
-Indicates, for the associated resolution, the size in pixels of the squared regions that will be used to partition the frame for the subregion layout (slices) semantics. The resolution of the frame will be rounded up to be aligned to this value when the frame is partitioned in blocks. The configuration of the subregion partitioning will use a number of squared subregions that have their size in pixels according to the value of this member.
+For H264 and HEVC, indicates, for the associated resolution, the size in pixels of the squared regions that will be used to partition the frame for the subregion layout (slices) semantics. The resolution of the frame will be rounded up to be aligned to this value when the frame is partitioned in blocks. The configuration of the subregion partitioning will use a number of squared subregions that have their size in pixels according to the value of this member.
+
+For AV1, indicates the tiles block sizes in pixels for the associated resolution. This value must be equal or a multiple of the superblock size, which is passed in the input **D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION** parameter.
 
 > [!NOTE]
 >
@@ -62,7 +66,9 @@ Indicates, for the associated resolution, the size in pixels of the squared regi
 
 ### -field QPMapRegionPixelsSize
 
-Indicates the size in pixels of the squared regions for the associated resolution that will be affected by each of the values in the QP map buffer in absolute or delta QP modes. The resolution of the frame will be rounded up to be aligned to this value when it's partitioned in blocks for QP maps and the number of QP values in those maps will be the number of blocks of these indicated pixel size that comprise a full frame.
+For H264 and HEVC, indicates the size in pixels of the squared regions for the associated resolution that will be affected by each of the values in the QP map buffer in absolute or delta QP modes. The resolution of the frame will be rounded up to be aligned to this value when it's partitioned in blocks for QP maps and the number of QP values in those maps will be the number of blocks of these indicated pixel size that comprise a full frame.
+
+For AV1, indicates for the associated resolution, the size in pixels of the squared regions that will be affected by each of the values in the QP map buffer in absolute or delta QP modes. The resolution of the frame will be rounded up to be aligned to this value when it’s partitioned in blocks for QP maps and the number of QP values in those maps will be the number of blocks of these indicated pixel size that comprise a full frame. This value must be equal or a multiple of the superblock size, which is passed in the input **D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION** parameter.
 
 ## -remarks
 

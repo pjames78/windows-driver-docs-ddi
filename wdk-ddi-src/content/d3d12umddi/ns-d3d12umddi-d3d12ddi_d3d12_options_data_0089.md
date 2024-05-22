@@ -5,7 +5,7 @@ title: D3D12DDI_D3D12_OPTIONS_DATA_0089
 ms.date: 09/29/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_D3D12_OPTIONS_DATA_0089 structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

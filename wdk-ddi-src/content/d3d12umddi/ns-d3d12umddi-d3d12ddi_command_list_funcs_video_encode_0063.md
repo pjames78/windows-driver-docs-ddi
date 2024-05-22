@@ -38,10 +38,9 @@ dev_langs:
 
 # D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063 structure
 
-
 ## -description
 
-Command list functions for video encode, version D3D12DDI_FEATURE_VERSION_VIDEO_0063.
+The **D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063** structure contains pointers to command list functions for video encode, version D3D12DDI_FEATURE_VERSION_VIDEO_0063.
 
 ## -struct-fields
 

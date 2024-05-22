@@ -72,6 +72,10 @@ This constant value is available beginning with Windows 7.
 
 Indicates that the surface is an allocation for a virtual graphics processing unit (GPU). Available starting in WDDM 2.1.
 
+### -field D3DKMDT_STANDARDALLOCATION_FENCESTORAGE:6
+
+Indicates that the surface is an allocation for a fence.
+
 ## -see-also
 
 [**D3DKMDT_SHADOWSURFACEDATA**](ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md)

@@ -4,7 +4,7 @@ tech.root: netvista
 title: WifiAdapterReportWakeReason (wificx.h)
 ms.date: 09/14/2021
 targetos: Windows
-description: The WifiAdapterReportWakeReason method reports to the framework the reason that a Wi-Fi device has generated a wake-up event.
+description: The WifiAdapterReportWakeReason function reports to the framework the reason that a Wi-Fi device has generated a wake-up event.
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -41,7 +41,7 @@ dev_langs:
 
 ## -description
 
-The **WifiAdapterReportWakeReason** method reports to the framework the reason that a Wi-Fi device has generated a wake-up event.
+The **WifiAdapterReportWakeReason** function reports to the framework the reason that a Wi-Fi device has generated a wake-up event.
 
 ## -parameters
 

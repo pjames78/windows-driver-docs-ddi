@@ -2,7 +2,7 @@
 UID: NS:scsi._MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE
 tech.root: storage
 title: MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (scsi.h)
-ms.date: 05/24/2022
+ms.date: 09/20/2022
 targetos: Windows
 description: Learn more about the MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (scsi.h) structure.
 prerelease: false

@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CONNECTDOORBELL
 tech.root: display
 title: DXGKARG_CONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARG_CONNECTDOORBELL structure.
 prerelease: true
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_CONNECTDOORBELL
@@ -58,7 +58,7 @@ The **DXGKARG_CONNECTDOORBELL** structure contains parameters for [**DxgkDdiConn
 
 ### -field KernelCpuVirtualAddress
 
-[out] Kernel-mode CPU virtual address mapped to the physical address that KMD wants to assign to this doorbell. *Dxgkrnl* will map this address to a process address space CPU virtual address that was provided to the UMD in [**D3DKMTCreateDoorbell**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatedoorbell.md). UMD will write a specific value to this address, effectively "ringing the doorbell" to notify the GPU scheduler of new work submission on HwQueue1.
+[out] Kernel-mode CPU virtual address mapped to the physical address that KMD wants to assign to this doorbell. *Dxgkrnl* will map this address to a process address space CPU virtual address that was provided to the UMD in [**D3DKMTCreateDoorbell**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatedoorbell.md). UMD will write a specific value to this address, effectively "ringing the doorbell" to notify the GPU scheduler of a new work submission on **hHwQueue**.
 
 ### -field SecondaryKernelCpuVirtualAddress
 
@@ -67,6 +67,10 @@ The **DXGKARG_CONNECTDOORBELL** structure contains parameters for [**DxgkDdiConn
 ### -field Status
 
 [out] A [**D3DDDI_DOORBELLSTATUS**](../d3dukmdt/ne-d3dukmdt-d3dddi_doorbellstatus.md) value that KMD wants *Dxgkrnl* to write into the UMD-visible page that [**pDoorbellStatusCpuVirtualAddress**](../d3dkmthk/ns-d3dkmthk-d3dkmt_create_doorbell.md) points to. This value can only be D3DDDI_DOORBELL_STATUS_CONNECTED or D3DDDI_DOORBELL_STATUS_CONNECTED_NOTIFY.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

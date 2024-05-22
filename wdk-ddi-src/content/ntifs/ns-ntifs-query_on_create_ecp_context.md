@@ -2,7 +2,7 @@
 UID: NS:ntifs._QUERY_ON_CREATE_ECP_CONTEXT
 tech.root: ifsk
 title: QUERY_ON_CREATE_ECP_CONTEXT
-ms.date: 03/11/2021
+ms.date: 05/21/2024
 targetos: Windows
 description: QUERY_ON_CREATE_ECP_CONTEXT is reserved for system use.
 req.construct-type: structure
@@ -72,5 +72,29 @@ Reserved.
 Reserved.
 
 ### -field EaInformation
+
+Reserved.
+
+### -field Reserved
+
+Reserved.
+
+### -field CommonBufferSize
+
+Reserved.
+
+### -field CommonBuffer
+
+Reserved.
+
+### -field UsnInformation
+
+Reserved.
+
+### -field SecurityInformationRequested
+
+Reserved.
+
+### -field SecurityInformation
 
 Reserved.

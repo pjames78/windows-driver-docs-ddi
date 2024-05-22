@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "wdk-ddi-src/content/dot11wificxtypes/ne-dot11wificxtypes-wdi_radio_measurement_type.md",
+      "redirect_URL": "/windows-hardware/drivers/ddi/dot11wificxtypes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "wdk-ddi-src/content/dot11wificxtypes/ne-dot11wificxtypes-wdi_measurement_request_status.md",
+      "redirect_URL": "/windows-hardware/drivers/ddi/dot11wificxtypes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "wdk-ddi-src/content/dot11wificxtypes/ne-dot11wificxtypes-wdi_beacon_request_mode.md",
+      "redirect_URL": "/windows-hardware/drivers/ddi/dot11wificxtypes",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "wdk-ddi-src/content/wwan/ns-wwan-_wwan_modem_config_status.md",
       "redirect_URL": "/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_config_info",
       "redirect_document_id": false

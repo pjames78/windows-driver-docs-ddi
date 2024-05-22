@@ -59,8 +59,6 @@ The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the 
 
 Device is initially in this state and has not changed since.
 
-### -field WDI_POWER_MODE_REASON_CODE_NONCOMPLANT_AP
-
 ### -field WDI_POWER_MODE_REASON_CODE_LEGACY_P2P_DEVICE
 
 WFD device is legacy.

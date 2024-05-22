@@ -3,7 +3,7 @@ UID: NS:minitape.PRO_PARAMETER_LIST
 title: PRO_PARAMETER_LIST (minitape.h)
 description: The PRO_PARAMETER_LIST structure (minitape.h) contains reservation information that is sent in a Persistent Reserve Out (PRO) command to a device server.
 tech.root: storage
-ms.date: 08/26/2022
+ms.date: 09/26/2022
 keywords: ["PRO_PARAMETER_LIST structure"]
 ms.keywords: "*PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST structure pointer [Storage Devices], PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], storage.pro_parameter_list, storport/PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml"
 req.header: minitape.h

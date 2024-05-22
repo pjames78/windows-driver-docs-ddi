@@ -3,7 +3,7 @@ UID: NS:scsi.WRITE_USING_TOKEN_HEADER
 title: WRITE_USING_TOKEN_HEADER (scsi.h)
 description: The WRITE_USING_TOKEN_HEADER structure (scsi.h) describes the destination data locations for an offload write data operation.
 tech.root: storage
-ms.date: 09/19/2022
+ms.date: 09/20/2022
 keywords: ["WRITE_USING_TOKEN_HEADER structure"]
 ms.keywords: "*PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER structure [Storage Devices], scsi/PWRITE_USING_TOKEN_HEADER, scsi/WRITE_USING_TOKEN_HEADER, storage.write_using_token_header"
 req.header: scsi.h

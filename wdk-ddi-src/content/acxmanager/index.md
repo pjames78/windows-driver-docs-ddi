@@ -2,7 +2,7 @@
 UID: NA:acxmanager
 tech.root: audio
 title: acxmanager
-ms.date: 11/10/2023
+ms.date: 05/20/2024
 targetos: Windows
 description: The acxmanager header is used by the ACX audio class extensions.
 prerelease: false
@@ -53,5 +53,3 @@ For more information, see:
 
 acxmanager.h contains the following programming interfaces:
 
->[!NOTE]
-> The ACX headers and libraries are not included in the  WDK 10.0.22621.2428 (released October 24, 2023), but are available in previous versions, as well as the latest (25000 series builds) Insider Preview of the WDK. For more information about preview versions of the WDK, see [Installing preview versions of the Windows Driver Kit (WDK)](/windows-hardware/drivers/installing-preview-versions-wdk).

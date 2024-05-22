@@ -143,6 +143,10 @@ Defines the **pHalSetPciErrorHandlerCallback** member **HalSetPciErrorHandlerCal
 
 Defines the **pHalGetPrmCache** member **HalGetPrmCache**.
 
+### -field HalInvokePrmFwHandler
+
+Defines the **pHalInvokePrmFwHandler** member **HalInvokePrmFwHandler**.
+
 ## -remarks
 
 ## -see-also

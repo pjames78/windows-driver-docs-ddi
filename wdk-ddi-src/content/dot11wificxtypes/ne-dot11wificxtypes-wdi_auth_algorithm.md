@@ -2,7 +2,7 @@
 UID: NE:dot11wificxtypes._WDI_AUTH_ALGORITHM
 tech.root: netvista
 title: WDI_AUTH_ALGORITHM (dot11wificxtypes.h)
-ms.date: 06/17/2021
+ms.date: 03/07/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WDI_AUTH_ALGORITHM enumeration defines authentication algorithm values.
@@ -43,6 +43,10 @@ dev_langs:
 The **WDI_AUTH_ALGORITHM** enumeration defines the authentication algorithm values.
 
 ## -enum-fields
+
+### -field WDI_AUTH_ALGO_UNKNOWN:0
+
+Specifies an unknown authentication algorithm.
 
 ### -field WDI_AUTH_ALGO_80211_OPEN:1
 

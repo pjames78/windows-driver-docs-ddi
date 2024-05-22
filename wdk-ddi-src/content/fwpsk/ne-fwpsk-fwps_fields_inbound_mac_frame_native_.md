@@ -95,7 +95,3 @@ The maximum value for this enumeration. This value might change in future versio
      header files and binaries.
 
 
-### -field FWPS_FIELD_INBOUND_MAC_FRAME_NATIVE_FLAGS
-
-The inbound MAC frame native flags field.
-

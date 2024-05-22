@@ -54,6 +54,8 @@ This enumeration is not supported.
 
 ### -field ImagePolicyIdNone
 
+Reserved.
+
 ### -field ImagePolicyIdEtw
 
 Reserved.
@@ -98,7 +100,14 @@ Reserved.
 
 Reserved.
 
-### -field ImagePolicyIdMaximum
+### -field ImagePolicyIdCapabilityOverridable
 
 Reserved.
 
+### -field ImagePolicyIdTrustletIdOverridable
+
+Reserved.
+
+### -field ImagePolicyIdMaximum
+
+Reserved.

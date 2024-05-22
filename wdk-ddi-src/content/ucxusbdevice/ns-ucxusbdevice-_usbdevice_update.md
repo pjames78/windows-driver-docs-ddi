@@ -4,7 +4,7 @@ title: _USBDEVICE_UPDATE (ucxusbdevice.h)
 description: Passed by UCX to update the specified device. This structure is in the request parameters (Parameters.Others.Arg1) of a framework request object passed in the EVT_UCX_USBDEVICE_UPDATE callback function.
 old-location: buses\_usbdevice_update.htm
 tech.root: usbref
-ms.date: 01/14/2022
+ms.date: 06/07/2022
 keywords: ["USBDEVICE_UPDATE structure"]
 ms.keywords: "*PUSBDEVICE_UPDATE, P_USBDEVICE_UPDATE, P_USBDEVICE_UPDATE structure pointer [Buses], USBDEVICE_UPDATE, USBDEVICE_UPDATE structure [Buses], _USBDEVICE_UPDATE, buses._usbdevice_update, ucxusbdevice/P_USBDEVICE_UPDATE, ucxusbdevice/_USBDEVICE_UPDATE"
 req.header: ucxusbdevice.h
@@ -56,7 +56,7 @@ Passed by UCX to update the specified device. This structure is in the request p
 
 ### -field Header
 
-A [USBDEVICE_MGMT_HEADER](ns-ucxusbdevice-_usbdevice_mgmt_header.md) structure that contains  the handle for the USB hub or device.
+A [USBDEVICE_MGMT_HEADER](ns-ucxusbdevice-_usbdevice_mgmt_header.md) structure that contains the handle for the USB hub or device.
 
 ### -field Flags
 
@@ -68,7 +68,7 @@ A pointer a [USB_DEVICE_DESCRIPTOR](../usbspec/ns-usbspec-_usb_device_descriptor
 
 ### -field BosDescriptor
 
-A pointer a **USB_BOS_DESCRIPTOR** structure that contains the device descriptor. See Usbspec.h.
+A pointer a **USB_BOS_DESCRIPTOR** structure that contains the device descriptor. See [Usbspec.h](../usbspec/index.md).
 
 ### -field MaxExitLatency
 
@@ -89,6 +89,10 @@ A [USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS](ns-ucxusbdevice-_usbdevice_updat
 ### -field RootPortResumeTime
 
 The resume time for the root port.
+
+### -field IsNative
+
+Indicates if the USB device to update is native (TRUE) or not (FALSE).
 
 ## -see-also
 

@@ -50,25 +50,25 @@ The DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure describes a standard alloc
 
 ## -struct-fields
 
-### -field StandardAllocationType [in]
+### -field StandardAllocationType
 
-A [**D3DKMDT_STANDARDALLOCATION_TYPE**](../d3dkmdt/ne-d3dkmdt-_d3dkmdt_standardallocation_type.md)-typed value that identifies the type of standard allocation to describe.
+[in] A [**D3DKMDT_STANDARDALLOCATION_TYPE**](../d3dkmdt/ne-d3dkmdt-_d3dkmdt_standardallocation_type.md)-typed value that identifies the type of standard allocation to describe.
 
-### -field pCreateSharedPrimarySurfaceData [in]
+### -field pCreateSharedPrimarySurfaceData
 
-A pointer to a [**D3DKMDT_SHAREDPRIMARYSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE.
+[in] A pointer to a [**D3DKMDT_SHAREDPRIMARYSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE.
 
-### -field pCreateShadowSurfaceData [in]
+### -field pCreateShadowSurfaceData
 
-A pointer to a [**D3DKMDT_SHADOWSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE.
+[in] A pointer to a [**D3DKMDT_SHADOWSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE.
 
-### -field pCreateStagingSurfaceData [in]
+### -field pCreateStagingSurfaceData
 
-A pointer to a [**D3DKMDT_STAGINGSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE.
+[in] A pointer to a [**D3DKMDT_STAGINGSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md) structure, if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE.
 
-### -field pCreateGdiSurfaceData [in]
+### -field pCreateGdiSurfaceData
 
-A pointer to a [**D3DKMDT_GDISURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md) structure, only available if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_GDISURFACE.
+[in] A pointer to a [**D3DKMDT_GDISURFACEDATA**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md) structure, only available if **StandardAllocationType** specifies D3DKMDT_STANDARDALLOCATION_GDISURFACE.
 
 This member is available beginning with Windows 7.
 
@@ -76,23 +76,23 @@ This member is available beginning with Windows 7.
 
 Pointer to a [**D3DKMDT_VIRTUALGPUSURFACEDATA**](../d3dkmdt/ns-d3dkmdt-d3dkmdt_virtualgpusurfacedata.md) structure if **StandardAllocationType** is **D3DKMDT_STANDARDALLOCATION_VIRTUALGPUSURFACE**. Available starting in WDDM 2.1.
 
-### -field pAllocationPrivateDriverData [in/out]
+### -field pAllocationPrivateDriverData
 
-A pointer to a block of allocation private data that describes the standard allocation type; otherwise, this member is NULL. The allocation private data that the display miniport driver's [**DxgkDdiGetStandardAllocationDriverData**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md) function returns depends on the type that the driver requests in **StandardAllocationType**.
+[in/out] A pointer to a block of allocation private data that describes the standard allocation type; otherwise, this member is NULL. The allocation private data that the display miniport driver's [**DxgkDdiGetStandardAllocationDriverData**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md) function returns depends on the type that the driver requests in **StandardAllocationType**.
 
-### -field AllocationPrivateDriverDataSize [out]
+### -field AllocationPrivateDriverDataSize
 
-The size, in bytes, of the allocation private data that **pAllocationPrivateDriverData** points to. If the driver sets **pAllocationPrivateDriverData** to NULL, the driver should set **AllocationPrivateDriverDataSize** to the size of the buffer that the driver requires to describe the given standard allocation type.
+[out] The size, in bytes, of the allocation private data that **pAllocationPrivateDriverData** points to. If the driver sets **pAllocationPrivateDriverData** to NULL, the driver should set **AllocationPrivateDriverDataSize** to the size of the buffer that the driver requires to describe the given standard allocation type.
 
 If the driver does not use private data for each allocation for standard allocations types, the driver can set **AllocationPrivateDriverDataSize** to zero.
 
-### -field pResourcePrivateDriverData [in/out]
+### -field pResourcePrivateDriverData
 
-A pointer to a block of resource private data that describes the standard allocation type; otherwise, this member is NULL. The resource private data that the display miniport driver's [**DxgkDdiGetStandardAllocationDriverData**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md) function returns depends on the type that the driver requests in **StandardAllocationType**.
+[in/out] A pointer to a block of resource private data that describes the standard allocation type; otherwise, this member is NULL. The resource private data that the display miniport driver's [**DxgkDdiGetStandardAllocationDriverData**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md) function returns depends on the type that the driver requests in **StandardAllocationType**.
 
-### -field ResourcePrivateDriverDataSize [out]
+### -field ResourcePrivateDriverDataSize
 
-The size, in bytes, of the resource private data that **pResourcePrivateDriverData** points to. If the driver sets **pResourcePrivateDriverData** to NULL, the driver should set **ResourcePrivateDriverDataSize** to the size of the buffer that the driver requires to describe the given standard allocation type.
+[out] The size, in bytes, of the resource private data that **pResourcePrivateDriverData** points to. If the driver sets **pResourcePrivateDriverData** to NULL, the driver should set **ResourcePrivateDriverDataSize** to the size of the buffer that the driver requires to describe the given standard allocation type.
 
 If the driver does not use private data for each resource for standard allocations types, the driver can set **ResourcePrivateDriverDataSize** to zero.
 

@@ -2,7 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080_2
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080_2
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_LEVEL_SETTING_0080_2 structure.
 prerelease: false
@@ -55,6 +55,10 @@ Pointer to a [**D3D12DDI_VIDEO_ENCODER_LEVELS_H264_0080**](ne-d3d12umddi-d3d12dd
 ### -field pHEVCLevelSetting
 
 Pointer to a [**D3D12DDI_VIDEO_ENCODER_LEVEL_TIER_CONSTRAINTS_HEVC_0080**](ns-d3d12umddi-d3d12ddi_video_encoder_level_tier_constraints_hevc_0080.md) structure that identifies the level and tier for an HVEC level configuration.
+
+### -field pAV1LevelSetting
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_AV1_LEVEL_TIER_CONSTRAINTS_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_av1_level_tier_constraints_0095.md) structure that identifies the level and tier for an AV1 level configuration. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

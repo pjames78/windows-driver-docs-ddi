@@ -54,6 +54,10 @@ The **WDI_AUTH_ALGORITHM** enumeration defines the authentication algorithm valu
 
 ## -enum-fields
 
+### -field WDI_AUTH_ALGO_UNKNOWN
+
+Specifies an unknown authentication algorithm.
+
 ### -field WDI_AUTH_ALGO_80211_OPEN
 
 Specifies an IEEE 802.11 Open System authentication algorithm.

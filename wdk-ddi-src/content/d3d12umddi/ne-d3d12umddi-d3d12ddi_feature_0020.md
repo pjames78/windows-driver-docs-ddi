@@ -1,8 +1,7 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_FEATURE_0020
 title: D3D12DDI_FEATURE_0020 (d3d12umddi.h)
-description: Contains available features.
-old-location: display\d3d12ddi_feature_0020.htm
+description: Learn more about the D3D12DDI_FEATURE_0020 enumeration.
 ms.date: 03/24/2020
 keywords: ["D3D12DDI_FEATURE_0020 enumeration"]
 ms.keywords: D3D12DDI_FEATURE_0020, D3D12DDI_FEATURE_0020 enumeration [Display Devices], D3D12DDI_FEATURE_0020_VIDEO, d3d12umddi/D3D12DDI_FEATURE_0020, d3d12umddi/D3D12DDI_FEATURE_0020_VIDEO, display.d3d12ddi_feature_0020
@@ -42,10 +41,9 @@ api_name:
 
 # D3D12DDI_FEATURE_0020 enumeration
 
-
 ## -description
 
-Direct3D 12 feature options that are supported by the current graphics driver.
+The **D3D12DDI_FEATURE_0020** enumeration describes the D3D12 feature options that are supported by the current graphics driver.
 
 ## -enum-fields
 
@@ -85,3 +83,6 @@ Supports down level.
 
 Supports resource pinning. Supported starting with Windows 10, version 2004.
 
+### -field D3D12DDI_FEATURE_0084_STATE_OBJECTS_EXPERIMENT
+
+Do not use.

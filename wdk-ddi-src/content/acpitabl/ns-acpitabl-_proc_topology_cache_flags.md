@@ -1,12 +1,12 @@
 ---
 UID: NS:acpitabl._PROC_TOPOLOGY_CACHE_FLAGS
-title: _PROC_TOPOLOGY_CACHE_FLAGS (acpitabl.h)
+title: PROC_TOPOLOGY_CACHE_FLAGS (acpitabl.h)
 description: Defines the processor topology cache flags structure.
-ms.date: 11/19/2020
+ms.date: 10/03/2022
 keywords: ["PROC_TOPOLOGY_CACHE_FLAGS structure"]
 ms.keywords: _PROC_TOPOLOGY_CACHE_FLAGS, PROC_TOPOLOGY_CACHE_FLAGS, *PPROC_TOPOLOGY_CACHE_FLAGS,
 req.header: acpitabl.h
-req.include-header: 
+req.include-header: Acpitabl.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,9 +40,6 @@ api_name:
  - PROC_TOPOLOGY_CACHE_FLAGS
 ---
 
-# _PROC_TOPOLOGY_CACHE_FLAGS structure
-
-
 ## -description
 
 Defines the processor topology cache flags structure.
@@ -51,17 +48,35 @@ Defines the processor topology cache flags structure.
 
 ### -field SizeValid
 
+Defines the **ULONG** member **SizeValid**.
+
 ### -field SetsValid
+
+Defines the **ULONG** member **SetsValid**.
 
 ### -field AssociativityValid
 
+Defines the **ULONG** member **AssociativityValid**.
+
 ### -field AllocationTypeValid
+
+Defines the **ULONG** member **AllocationTypeValid**
 
 ### -field CacheTypeValid
 
+Defines the **ULONG** member **CacheTypeValid**.
+
 ### -field WritePolicyValid
 
+Defines the **ULONG** member **WritePolicyValid**.
+
 ### -field LineSizeValid
+
+Defines the **ULONG** member **LineSizeValid**.
+
+### -field CacheIdValid
+
+Defines the **ULONG** member **CacheIdValid**.
 
 ### -field Reserved
 
@@ -69,7 +84,8 @@ Reserved for future use.
 
 ### -field AsULONG
 
+Defines the **ULONG** member **AsULONG**.
+
 ## -remarks
 
 ## -see-also
-

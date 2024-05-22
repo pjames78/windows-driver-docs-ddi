@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKDDI_CREATEDOORBELL
 tech.root: display
 title: DXGKDDI_CREATEDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKDDI_CREATEDOORBELL callback function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -61,6 +61,8 @@ The OS calls KMD's **DxgkDdiCreateDoorbell** callback function to create a doorb
 When UMD calls [**D3DKMTCreateDoorbell**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatedoorbell.md) to create a doorbell for a hardware queue, the OS makes a corresponding **DxgkDdiCreateDoorbell** call to KMD so that KMD can initialize its doorbell structures.
 
 KMD's **DxgkDdiCreateDoorbell** function should only create and initialize its doorbell data structures. It should not assign a physical doorbell location to this doorbell object yet as that is done during a subsequent call to [**DxgkDdiConnectDoorbell**](nc-d3dkmddi-dxgkddi_connectdoorbell.md). This lazy assignment ensures that a physical doorbell is not used up during hardware queue and doorbell creation, only to go wasted in the event that UMD never submits commands to it or starts submitting commands at a later time. In this way, physical doorbells are used only when actually required.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

@@ -2,7 +2,7 @@
 UID: NS:acpitabl._PROC_TOPOLOGY_NODE
 tech.root: acpi
 title: PROC_TOPOLOGY_NODE (acpitabl.h)
-ms.date: 03/01/2022
+ms.date: 10/03/2022
 targetos: Windows
 description: Defines the processor topology node structure.
 prerelease: false
@@ -58,7 +58,7 @@ Defines the **UCHAR** member **Type**.
 
 Defines the **UCHAR** member **Length**.
 
-### -field Reserved
+### -field Reserved[2]
 
 Reserved for future use.
 
@@ -78,7 +78,7 @@ Defines the **ULONG** member **Parent**.
 
 Defines the **ULONG** member **ACPIProcessorId**.
 
-### -field HierarchyNode.NumberPrivateResources
+### -field HierarchyNode.NumberPrivateResources[ANYSIZE_ARRAY]
 
 Defines the **ULONG** member **NumberPrivateResources**.
 
@@ -92,31 +92,35 @@ Defines the **CacheNode** member structure.
 
 ### -field CacheNode.Flags
 
-Defines the **PROC_TOPOLOGY_CACHE_FLAGS** member Flags.
+Defines the **PROC_TOPOLOGY_CACHE_FLAGS** member **Flags**.
 
 ### -field CacheNode.NextLevelCacheOffset
 
-Defines the ULONG member NextLevelCacheOffset.
+Defines the **ULONG** member **NextLevelCacheOffset**.
 
 ### -field CacheNode.Size
 
-Defines the ULONG member Size.
+Defines the **ULONG** member **Size**.
 
 ### -field CacheNode.Sets
 
-Defines the ULONG member Sets.
+Defines the **ULONG** member **Sets**.
 
 ### -field CacheNode.Associativity
 
-Defines the UCHAR member Associativity.
+Defines the **UCHAR** member **Associativity**.
 
 ### -field CacheNode.Attributes
 
-Defines the PROC_TOPOLOGY_CACHE_ATTRIBUTES member Attributes.
+Defines the **PROC_TOPOLOGY_CACHE_ATTRIBUTES** member **Attributes**.
 
 ### -field CacheNode.LineSize
 
-Defines the USHORT member LineSize.
+Defines the **USHORT** member **LineSize**.
+
+### -field CacheNode.CacheId
+
+Defines the **ULONG** member **CacheId**.
 
 ### -field IdNode
 

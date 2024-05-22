@@ -44,7 +44,7 @@ api_name:
 
 ## -description
 
-The PRI_REGISTRATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS.
+The **PRI_REGISTRATION_LIST** structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_KEYS.
 
 ## -struct-fields
 

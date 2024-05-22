@@ -66,4 +66,8 @@ The UINT collection of bitfields for the different GPU-P capabilities.
 
 ## -remarks
 
-The KMD must fill out these caps in response to a **DXGKQAITYPE_GPUPCAPS** [**QueryAdapterInfo**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md) request. These are queried by the OS during device initialization after [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) is called and only if the adapter supports GPU partitioning.
+The KMD must fill out these caps in response to a **DXGKQAITYPE_GPUPCAPS** [**QueryAdapterInfo**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md) request. The OS queries for these during device initialization after it calls [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) and only if the adapter supports GPU partitioning.
+
+## -see-also
+
+

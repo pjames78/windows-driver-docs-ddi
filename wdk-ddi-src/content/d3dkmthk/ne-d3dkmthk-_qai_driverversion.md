@@ -1,8 +1,8 @@
 ---
 UID: NE:d3dkmthk._QAI_DRIVERVERSION
-title: _QAI_DRIVERVERSION (d3dkmthk.h)
+title: QAI_DRIVERVERSION (d3dkmthk.h)
 description: Learn more about the D3DKMT_DRIVERVERSION enumeration.
-ms.date: 10/04/2023
+ms.date: 05/21/2024
 keywords: ["QAI_DRIVERVERSION enumeration"]
 ms.keywords: D3DKMT_DRIVERVERSION, D3DKMT_DRIVERVERSION enumeration [Display Devices], KMT_DRIVERVERSION_WDDM_1_0, KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, KMT_DRIVERVERSION_WDDM_1_2, KMT_DRIVERVERSION_WDDM_1_3, KMT_DRIVERVERSION_WDDM_2_0, OpenGL_Structs_2f7fe9d6-ec67-46b1-9c05-51d06d186fe1.xml, _QAI_DRIVERVERSION, _QAI_DRIVERVERSION enumeration [Display Devices], d3dkmthk/, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_0, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_3, d3dkmthk/KMT_DRIVERVERSION_WDDM_2_0, d3dkmthk/_QAI_DRIVERVERSION, display.d3dkmt_driverversion
 req.header: d3dkmthk.h
@@ -45,81 +45,85 @@ dev_langs:
  - c++
 ---
 
-# _QAI_DRIVERVERSION enumeration
+# QAI_DRIVERVERSION enumeration
 
 ## -description
 
-A **_QAI_DRIVERVERSION** (**D3DKMT_DRIVERVERSION**) enumeration value identifies the version of the display driver model that the display miniport driver (KMD) supports.
+A **QAI_DRIVERVERSION** (**D3DKMT_DRIVERVERSION**) enumeration value identifies the WDDM version that the display miniport driver (KMD) supports.
 
 ## -enum-fields
 
 ### -field KMT_DRIVERVERSION_WDDM_1_0:1000
 
-The display miniport driver supports the Windows Vista display driver model (WDDM) without Windows 7 features.
+KMD supports WDDM 1.0 (the Windows Vista display driver model without Windows 7 features).
 
 ### -field KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE:1102
 
-The display miniport driver supports the Windows Vista display driver model with prereleased Windows 7 features.
+KMD supports the Windows Vista display driver model with prereleased Windows 7 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_1_1:1105
 
-The display miniport driver supports the Windows Vista display driver model with released Windows 7 features.
+KMD supports the Windows Vista display driver model with released Windows 7 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_1_2:1200
 
-The display miniport driver supports the Windows Vista display driver model with released Windows 8 features.
+KMD supports the Windows Vista display driver model with released Windows 8 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_1_3:1300
 
-The display miniport driver supports the Windows display driver model with released Windows 8.1 features.
+KMD supports the Windows display driver model with released Windows 8.1 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_0:2000
 
-The display miniport driver supports the Windows display driver model with released Windows 10 features.
+KMD supports the Windows display driver model with released Windows 10 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_1:2100
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1607 features.
+KMD supports the Windows display driver model with released Windows 10, version 1607 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_2:2200
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1703 features.
+KMD supports the Windows display driver model with released Windows 10, version 1703 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_3:2300
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1709 features.
+KMD supports the Windows display driver model with released Windows 10, version 1709 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_4:2400
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1803 features.
+KMD supports the Windows display driver model with released Windows 10, version 1803 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_5:2500
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1809 features.
+KMD supports the Windows display driver model with released Windows 10, version 1809 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_6:2600
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 1903 features.
+KMD supports the Windows display driver model with released Windows 10, version 1903 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_7:2700
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 2004 features.
+KMD supports the Windows display driver model with released Windows 10, version 2004 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_8:2800
 
-The display miniport driver supports the Windows display driver model with released Windows 10, version 2004 features.
+KMD supports the Windows display driver model with released Windows 10, version 2004 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_2_9:2900
 
-The display miniport driver supports the Windows display driver model with released Windows Server 2022 features.
+KMD supports the Windows display driver model with released Windows Server 2022 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_3_0:3000
 
-The display miniport driver supports the Windows display driver model with released Windows 11, version 21H2 features.
+KMD supports the Windows display driver model with released Windows 11, version 21H2 features.
 
 ### -field KMT_DRIVERVERSION_WDDM_3_1:3100
 
-The display miniport driver supports the Windows display driver model with released Windows 11, version 22H2 features.
+KMD supports the Windows display driver model with released Windows 11, version 22H2 features.
+
+### -field KMT_DRIVERVERSION_WDDM_3_2:3200
+
+KMD supports the Windows display driver model with released Windows 11, version 24H2 features.
 
 ## -remarks
 

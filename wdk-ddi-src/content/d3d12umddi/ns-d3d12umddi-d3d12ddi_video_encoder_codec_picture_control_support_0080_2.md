@@ -56,6 +56,10 @@ Pointer to a [**D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_H264_0080_2
 
 Pointer to a [**D3D12DDI_VIDEO_ENCODER_CODEC_PICTURE_CONTROL_SUPPORT_HEVC_0080_2**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_picture_control_support_hevc_0080_2.md) structure that contains picture control support parameters for HEVC encoding.
 
+### -field pAV1Support
+
+Pointer to a [**D3D12DDI_VIDEO_ENCODER_CODEC_AV1_PICTURE_CONTROL_SUPPORT_0095**](ns-d3d12umddi-d3d12ddi_video_encoder_codec_av1_picture_control_support_0095.md) structure that contains picture control support parameters for AV1 encoding. Added in Windows 11, version 24H2 (WDDM 3.2).
+
 ## -remarks
 
 See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12) for general information.

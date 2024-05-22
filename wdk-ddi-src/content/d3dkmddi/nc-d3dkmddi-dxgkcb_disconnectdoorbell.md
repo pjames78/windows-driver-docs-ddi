@@ -2,7 +2,7 @@
 UID: NC:d3dkmddi.DXGKCB_DISCONNECTDOORBELL
 tech.root: display
 title: DXGKCB_DISCONNECTDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKCB_DISCONNECTDOORBELL callback function.
 prerelease: true
@@ -19,7 +19,7 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.type-library: 
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-KMD calls this **DxgkCbDisconnectDoorbell** function to notify *Dxgkrnl* that KMD needs to disconnect a previously connected doorbell object from a hardware queue.
+KMD calls **DxgkCbDisconnectDoorbell** to notify *Dxgkrnl* that KMD needs to disconnect a previously connected doorbell from a hardware queue.
 
 ## -parameters
 
@@ -54,7 +54,7 @@ KMD calls this **DxgkCbDisconnectDoorbell** function to notify *Dxgkrnl* that KM
 
 ## -returns
 
-**DxgkCbDisconnectDoorbell** returns STATUS_INVALID_PARAMETER if *Dxgkrnl* can't find the associated doorbell object for **hHwQueue**. In all other cases this function succeeds, even when the doorbell is already disconnected.
+**DxgkCbDisconnectDoorbell** returns STATUS_INVALID_PARAMETER if *Dxgkrnl* can't find the associated **hDoorbell** for **hHwQueue**, or if **DisconnectReason** isn't one of the **D3DDDI_DOORBELLSTATUS_DISCONNECTED_*XXX*** values. In all other cases this function succeeds, even when the doorbell is already disconnected.
 
 ## -remarks
 
@@ -64,6 +64,8 @@ KMD calls this function to notify *Dxgkrnl* when it needs to disconnect a doorbe
 
 * Rotates the user-mode [**DoorbellCpuVirtualAddress**](../d3dkmthk/ns-d3dkmthk-d3dkmt_create_doorbell.md) to a dummy page so that UMD can no longer write to the physical doorbell location.
 * Writes the **DisconnectReason** into **DoorbellStatusCpuVirtualAddress** so that UMD knows that the doorbell is disconnected and the reason why.
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

@@ -1,10 +1,10 @@
 ---
 UID: NF:wdm.MmGetMdlByteOffset
-tech.root: 
+tech.root: kernel
 title: MmGetMdlByteOffset
-ms.date: 07/16/2021
+ms.date: 10/04/2022
 targetos: Windows
-description: "Learn more about: MmGetMdlByteOffset"
+description: The **MmGetMdlByteOffset** macro returns the byte offset within the initial page of the buffer described by the given MDL.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -12,7 +12,7 @@ req.ddi-compliance:
 req.dll: 
 req.header: wdm.h
 req.idl: 
-req.include-header: 
+req.include-header: Wdm.h
 req.irql: Any level (see Remarks)
 req.kmdf-ver: 
 req.lib: 
@@ -48,7 +48,6 @@ The **MmGetMdlByteOffset** macro returns the byte offset within the initial page
 
 ### -param Mdl [in]
 
-
 Pointer to an MDL.
 
 ## -remarks
@@ -56,5 +55,3 @@ Pointer to an MDL.
 **MmGetMdlByteOffset** returns the offset in bytes.
 
 Callers of **MmGetMdlByteOffset** can be running at any IRQL. Usually, callers are running at IRQL <= DISPATCH_LEVEL.
-
-

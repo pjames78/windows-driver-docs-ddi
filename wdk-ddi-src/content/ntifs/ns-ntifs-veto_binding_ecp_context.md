@@ -5,7 +5,7 @@ title: VETO_BINDING_ECP_CONTEXT
 ms.date: 02/12/2024
 targetos: Windows
 description: Learn more about the VETO_BINDING_ECP_CONTEXT structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

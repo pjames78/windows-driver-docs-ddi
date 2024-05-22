@@ -58,6 +58,10 @@ The version number of the **DMA_ADAPTER_INFO_***XXX* structure that follows this
 
 The capabilities of the bus-master DMA device or the system DMA controller. For more information, see [DMA_ADAPTER_INFO_V1](./ns-wdm-_dma_adapter_info_v1.md).
 
+### -field Reserved
+
+Reserved for future use.
+
 ### -field Crashdump
 
 Defines the **DMA_ADAPTER_INFO_CRASHDUMP** member **Crashdump**.

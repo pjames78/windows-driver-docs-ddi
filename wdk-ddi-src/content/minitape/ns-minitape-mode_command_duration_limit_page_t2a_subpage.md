@@ -2,7 +2,7 @@
 UID: NS:minitape._MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE
 tech.root: storage
 title: MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (minitape.h)
-ms.date: 05/24/2022
+ms.date: 02/14/2024
 targetos: Windows
 description: Learn more about the MODE_COMMAND_DURATION_LIMIT_PAGE_T2A_SUBPAGE (minitape.h) structure.
 prerelease: false
@@ -84,7 +84,7 @@ Described in the specification.
 
 ### -field T2CommandDurationLimitDescriptors[DURATION_LIMIT_T2_DESCRIPTOR_COUNT]
 
-An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** [**T2_COMMAND_DURATION_LIMIT_DESCRIPTOR**](ns-minitape-t2_command_duration_limit_descriptor.md) structures, where each structure contains a T2 command duration limit descriptor.
+An array of **DURATION_LIMIT_T2_DESCRIPTOR_COUNT** **[T2_COMMAND_DURATION_LIMIT_DESCRIPTOR](ns-minitape-t2_command_duration_limit_descriptor.md)** structures, where each structure contains a T2 command duration limit descriptor.
 
 ## -remarks
 
@@ -92,6 +92,5 @@ See Section 7.5.11 of the T10 SCSI Primary Commands specification (SPC-6) for de
 
 ## -see-also
 
-[**MODE_COMMAND_DURATION_LIMIT_PAGE_T2B_SUBPAGE**](ns-minitape-mode_command_duration_limit_page_t2b_subpage.md)
-
-[**MODE_PAGE_SUBPAGE_HEADER**](ns-minitape-mode_page_subpage_header.md)
+- **[MODE_COMMAND_DURATION_LIMIT_PAGE_T2B_SUBPAGE](ns-minitape-mode_command_duration_limit_page_t2b_subpage.md)**
+- **[MODE_PAGE_SUBPAGE_HEADER](ns-minitape-mode_page_subpage_header.md)**

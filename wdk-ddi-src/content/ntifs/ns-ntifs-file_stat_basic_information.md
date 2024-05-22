@@ -5,7 +5,7 @@ title: FILE_STAT_BASIC_INFORMATION
 ms.date: 02/09/2024
 targetos: Windows
 description: Learn more about FILE_STAT_BASIC_INFORMATION structure.
-prerelease: true
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

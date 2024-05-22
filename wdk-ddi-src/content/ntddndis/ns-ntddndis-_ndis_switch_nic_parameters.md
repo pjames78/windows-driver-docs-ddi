@@ -139,8 +139,6 @@ The Hyper-V child partition is also known as a virtual machine (VM).
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicSyntheticNic</b> or <b>NdisSwitchNicEmulatedNic.</b></div>
 <div> </div>
 
-### -field VmFriendlyName
-
 ### -field NetCfgInstanceId
 
 A GUID value that specifies the <b>NetCfgInstanceId</b> registry value of the
@@ -173,15 +171,15 @@ A <b>USHORT</b> value that specifies the identifier for the preferred Non-Unifor
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member is set to <b>NdisSwitchNicTypeSynthetic</b> or <b>NdisSwitchNicTypeEmulated</b>.</div>
 <div> </div>
 
-### -field PermanentMacAddress
+### -field PermanentMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the media access control (MAC) address as configured on the host partition for  the network adapter. This can be different from the MAC address currently in use by the network adapter.
 
-### -field VMMacAddress
+### -field VMMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_security">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i>
 
-### -field CurrentMacAddress
+### -field CurrentMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the MAC address that is currently being used in the switch for the network adapter. If <i>AllowMacSpoofing</i> and <i>AllowTeaming</i> are both FALSE, then this value will be equal to <i>PermanentMacAddress</i>. If <i>AllowMacSpoofing</i> is TRUE, this value will be equal to the <i>VMMacAddress</i>. If <i>AllowTeaming</i> is TRUE and teaming failover has occurred inside the VM, the <i>CurrentMacAddress</i> will be equal to the MAC address that was failed over to the network adapter or <i>PermanentMacAddress</i> if no failover has occurred.
 
@@ -194,7 +192,7 @@ For more information, see the Remarks section.
 <div class="alert"><b>Note</b>  The <b>VFAssigned</b> member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeEmulated</b> or <b>NdisSwitchNicTypeSynthetic</b>. This member must be set to <b>FALSE</b> if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeExternal</b> or <b>NdisSwitchNicTypeInternal</b>.</div>
 <div> </div>
 
-### -field NdisReserved
+### -field NdisReserved[2]
 
  
 

@@ -4,7 +4,7 @@ title: _NDIS_MINIPORT_DRIVER_CHARACTERISTICS (ndis.h)
 description: An NDIS driver initializes an NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure to define its miniport driver characteristics, including the entry points for its MiniportXxx functions.
 old-location: netvista\ndis_miniport_driver_characteristics.htm
 tech.root: netvista
-ms.date: 05/03/2019
+ms.date: 03/08/2024
 keywords: ["NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, miniport_structures_ref_9a538743-5c3f-40c7-a83d-07d5efde350c.xml, ndis/NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, netvista.ndis_miniport_driver_characteristics"
 req.header: ndis.h
@@ -123,6 +123,9 @@ The minor NDIS version. The following are the available minor version value sett
 |84|NDIS 6.84|
 |85|NDIS 6.85|
 |86|NDIS 6.86|
+|87|NDIS 6.87|
+|88|NDIS 6.88|
+|89|NDIS 6.89|
 
 ### -field MajorDriverVersion
 

@@ -3,7 +3,7 @@ UID: NE:d3d12umddi.D3D12DDICAPS_TYPE
 title: D3D12DDICAPS_TYPE (d3d12umddi.h)
 description: Learn more about the D3D12DDICAPS_TYPE enumeration.
 old-location: display\d3d12ddicaps_type.htm
-ms.date: 03/31/2023
+ms.date: 05/03/2024
 req.header: d3d12umddi.h
 req.include-header: D3d12umddi.h
 req.target-type: Windows
@@ -90,6 +90,10 @@ Texture layout. Deprecated. Use D3D12DDICAPS_TYPE_0022_TEXTURE_LAYOUT instead.
 
 Shader models.
 
+### -field D3D12DDICAPS_TYPE_OPTIONS1_0103
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0103**](ns-d3d12umddi-d3d12ddi_options_data_0103.md) structure.
+
 ### -field D3D12DDICAPS_TYPE_0030_PROTECTED_RESOURCE_SESSION_SUPPORT
 
 Protected resource session support.
@@ -148,7 +152,7 @@ Supports sampler feedback. See the [Sampler Feedback Specification](https://micr
 
 ### -field D3D12DDICAPS_TYPE_0073_SUPPORT_BATCHED_MARKERS
 
-Supports batched markers.
+Indicates whether UMD supports batched markers.
 
 ### -field D3D12DDICAPS_TYPE_0074_PROTECTED_RESOURCE_SESSION_TYPE_COUNT
 
@@ -162,13 +166,57 @@ Supports protected resource session types. Starting with D3D12DDI_FEATURE_VERSIO
 
 Support for 3D pipeline; [**pData**](../d3dumddi/ns-d3dumddi-_d3dddiarg_getcaps.md) points to a [**D3D12DDI_3DPIPELINESUPPORT1_DATA_0081**](ns-d3d12umddi-d3d12ddi_3dpipelinesupport1_data_0081.md) structure. The driver reports the [**D3D12DDI_3DPIPELINELEVEL**](ne-d3d12umddi-d3d12ddi_3dpipelinelevel.md) value that represents the maximum feature level that it supports in the **MaximumDriverSupportedFeatureLevel** field. See Remarks.
 
+### -field D3D12DDICAPS_TYPE_0103_WAVE_MMA
+
+Queries the device's support for wave-level matrix multiply accumulate (MMA) operations, with the data returned in a [**D3D12DDI_WAVE_MMA_DATA_0103**](ns-d3d12umddi-d3d12ddi_wave_mma_data_0103.md) structure.
+
 ### -field D3D12DDICAPS_TYPE_OPTIONS_0090
 
-The driver should indicate support for capabilities in the [**D3D12DDI_OPTIONS_0090**](ns-d3d12umddi-d3d12ddi_options_data_0090.md) structure.
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0090**](ns-d3d12umddi-d3d12ddi_options_data_0090.md) structure.
 
 ### -field D3D12DDICAPS_TYPE_OPTIONS_0091
 
-The driver should indicate support for capabilities in the [**D3D12DDI_OPTIONS_0091**](ns-d3d12umddi-d3d12ddi_options_data_0091.md) structure.
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0091**](ns-d3d12umddi-d3d12ddi_options_data_0091.md) structure.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0093
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0093**] structure.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0098
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0098**] structure.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0101
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0101**] structure.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0102
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0102**] structure.
+
+### -field D3D12DDI_FEATURE_D3D12_PREDICATION_106
+
+Queries the driver's support for predication.
+
+### -field D3D12DDI_FEATURE_PLACED_RESOURCE_SUPPORT_INFO_106
+
+Queries the driver's support for placed resource support information.
+
+### -field D3D12DDI_FEATURE_HARDWARE_COPY_106
+
+Queries the device's support for hardware copy operations.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0109
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0109**](ns-d3d12umddi-d3d12ddi_options_data_0109.md) structure.
+
+### -field D3D12DDICAPS_TYPE_OPTIONS_0110
+
+Queries the driver's support for capabilities in the [**D3D12DDI_OPTIONS_DATA_0110**](ns-d3d12umddi-d3d12ddi_options_data_0110.md) structure.
+
+### -field D3D12DDICAPS_TYPE_SHADER_MODEL_6_8_OPTIONS_0110
+
+Queries the device's support for Shader Model 6.8 options.
 
 ## -remarks
 

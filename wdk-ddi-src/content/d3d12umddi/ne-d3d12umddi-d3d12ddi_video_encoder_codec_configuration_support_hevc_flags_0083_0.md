@@ -82,6 +82,10 @@ Indicates that frames being encoded with type [**D3D12DDI_VIDEO_ENCODER_FRAME_TY
 >
 > When operating in this mode, it is the caller's responsibility to code the correct frame type in _AUD_NUT_ and other parts of the HEVC bit stream, taking into account that P frames will be treated as generalized B frames with only references to past frames in picture order count (POC) order.
 
+### -field D3D12DDI_VIDEO_ENCODER_CODEC_CONFIGURATION_SUPPORT_HEVC_FLAG_0099_0_NUM_REF_IDX_ACTIVE_OVERRIDE_FLAG_SLICE_SUPPORT
+
+Indicates that the encoder supports overriding the number of active reference indices at the slice level. This allows for more fine-grained control of reference frames used for prediction on a per-slice basis. Added in Windows 11, version 24H2 (WDDM 3.2).
+
 ## -remarks
 
 See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12) for general information.

@@ -4,7 +4,7 @@ title: DOT11_VWIFI_ATTRIBUTES (windot11.h)
 description: The DOT11_VWIFI_ATTRIBUTES structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_vwifi_attributes.htm
 tech.root: netvista
-ms.date: 02/16/2018
+ms.date: 03/07/2024
 keywords: ["DOT11_VWIFI_ATTRIBUTES structure"]
 ms.keywords: "*PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_fdecf787-d328-4546-a4fc-ac7205851ebf.xml, PDOT11_VWIFI_ATTRIBUTES, PDOT11_VWIFI_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_vwifi_attributes, windot11/DOT11_VWIFI_ATTRIBUTES, windot11/PDOT11_VWIFI_ATTRIBUTES"
 req.header: windot11.h
@@ -87,27 +87,17 @@ This member must be set to
 For more information about these members, see
      <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
-### -field uTotalNumOfEntries
+### -field Combinations[*]
 
 The maximum number of entries that the
      <b>Combinations</b> array can contain.
 
-### -field Combinations
+### -field Combinations[1]
 
 The list of supported combinations of 802.11 MAC entities that an 802.11 miniport driver can
      simultaneously support when it is virtualized. Each entry in this list is specified through an array of
      <a href="..\windot11\ns-windot11-_dot11_vwifi_combination.md">DOT11_VWIFI_COMBINATION</a>,  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v2.md">
      DOT11_VWIFI_COMBINATION_V2</a>, or <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> structures.
-
-## -syntax
-
-```cpp
-typedef struct DOT11_VWIFI_ATTRIBUTES {
-  NDIS_OBJECT_HEADER      Header;
-  ULONG                   uTotalNumOfEntries;
-  DOT11_VWIFI_COMBINATION Combinations[1];
-} DOT11_VWIFI_ATTRIBUTES, *PDOT11_VWIFI_ATTRIBUTES;
-```
 
 ## -see-also
 

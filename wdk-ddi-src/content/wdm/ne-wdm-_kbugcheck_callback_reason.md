@@ -88,6 +88,10 @@ Specifies that the callback is executed to add virtual memory ranges the driver 
 
 Reserved for system use. Do not use.
 
+### -field KbCallbackReserved3
+
+Reserved for system use. Do not use.
+
 ## -remarks
 
 A driver uses this enumeration to specify the type of [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md) callback routine to register when it calls the [**KeRegisterBugCheckReasonCallback**](./nf-wdm-keregisterbugcheckreasoncallback.md) function.

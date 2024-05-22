@@ -1,11 +1,11 @@
 ---
-UID: NF:fwpsk.FwpsAllocateCloneNetBufferList0
+UID: NF:fwpsk.FwpsAllocateDeepCloneNetBufferList0
 tech.root: netvista
-title: FwpsAllocateCloneNetBufferList0
-ms.date: 07/10/2023
+title: FwpsAllocateDeepCloneNetBufferList0
+ms.date: 03/08/2024
 targetos: Windows
-description: The FwpsAllocateCloneNetBufferList0 function allocates a NET_BUFFER_LIST structure that is a deep clone of an existing NET_BUFFER_LIST structure.
-prerelease: true
+description: The FwpsAllocateDeepCloneNetBufferList0 function allocates a NET_BUFFER_LIST structure that is a deep clone of an existing NET_BUFFER_LIST structure.
+prerelease: false
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -32,19 +32,19 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
- - FwpsAllocateCloneNetBufferList0
+ - FwpsAllocateDeepCloneNetBufferList0
 f1_keywords:
- - FwpsAllocateCloneNetBufferList0
- - fwpsk/FwpsAllocateCloneNetBufferList0
+ - FwpsAllocateDeepCloneNetBufferList0
+ - fwpsk/FwpsAllocateDeepCloneNetBufferList0
 dev_langs:
  - c++
 helpviewer_keywords:
- - FwpsAllocateCloneNetBufferList0
+ - FwpsAllocateDeepCloneNetBufferList0
 ---
 
 ## -description
 
-The **FwpsAllocateCloneNetBufferList0** function allocates a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure that is a deep clone of an existing **NET_BUFFER_LIST** structure.
+The **FwpsAllocateDeepCloneNetBufferList0** function allocates a [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure that is a deep clone of an existing **NET_BUFFER_LIST** structure.
 
 ## -parameters
 
@@ -66,7 +66,7 @@ A pointer to a variable that receives a pointer to the deep clone [**NET_BUFFER_
 
 ## -returns
 
-The **FwpsAllocateCloneNetBufferList0** function returns one of the following NTSTATUS codes.
+The **FwpsAllocateDeepCloneNetBufferList0** function returns one of the following NTSTATUS codes.
 
 |Return code|Description|
 |--- |--- |
@@ -75,13 +75,13 @@ The **FwpsAllocateCloneNetBufferList0** function returns one of the following NT
 
 ## -remarks
 
-A callout driver calls the **FwpsAllocateCloneNetBufferList0** function to allocate a deep clone [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure of an existing **NET_BUFFER_LIST** structure.
+A callout driver calls the **FwpsAllocateDeepCloneNetBufferList0** function to allocate a deep clone [**NET_BUFFER_LIST**](../nbl/ns-nbl-net_buffer_list.md) structure of an existing **NET_BUFFER_LIST** structure.
 
 This function is a wrapper around the [**NdisAllocateCloneNetBufferList**](../ndis/nf-ndis-ndisallocateclonenetbufferlist.md) function, but it is specialized for use by WFP [packet injection functions](/windows-hardware/drivers/network/packet-injection-functions).
 
 If the deep clone **NET_BUFFER_LIST** structure should have attributes that are associated with a specific pool, the callout driver must specify the pool handle in the _NetBufferListPoolHandle_ or _NetBufferPoolHandle_ parameter. If these parameters are **NULL**, the default pool preallocated by NDIS is used.
 
-The deep clone **NET_BUFFER_LIST** structure describes the same data that is described by the original **NET_BUFFER_LIST** structure. The **FwpsAllocateCloneNetBufferList0** function copies the data that is described by the original MDLs to new data buffers. The clone **NET_BUFFER_LIST** structure includes an initial [**NET_BUFFER_LIST_CONTEXT**](../nbl/ns-nbl-net_buffer_list_context.md) structure.
+The deep clone **NET_BUFFER_LIST** structure describes the same data that is described by the original **NET_BUFFER_LIST** structure. The **FwpsAllocateDeepCloneNetBufferList0** function copies the data that is described by the original MDLs to new data buffers. The clone **NET_BUFFER_LIST** structure includes an initial [**NET_BUFFER_LIST_CONTEXT**](../nbl/ns-nbl-net_buffer_list_context.md) structure.
 
 This function sets the **ParentNetBufferList** member of the newly created clone **NET_BUFFER_LIST** structure to point to the parent **NET_BUFFER_LIST** structure. The parent structure's **ChildRefCount** member is incremented by **1**.
 

@@ -5,7 +5,7 @@ title: D3D12DDI_BARRIER_SYNC
 ms.date: 09/29/2022
 targetos: Windows
 description: Learn more about the D3D12DDI_BARRIER_SYNC enumeration.
-prerelease: true
+prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h
@@ -76,6 +76,10 @@ A **SyncAfter** value of **D3D12DDI_BARRIER_SYNC_DRAW** indicates all subsequent
 ### -field D3D12DDI_BARRIER_SYNC_INPUT_ASSEMBLER:0x4
 
 Synchronize against Input Assembler stage execution.
+
+### -field D3D12DDI_BARRIER_SYNC_INDEX_INPUT:0x4
+
+Maps to D3D12DDI_BARRIER_SYNC_INPUT_ASSEMBLER.
 
 ### -field D3D12DDI_BARRIER_SYNC_VERTEX_SHADING:0x8
 

@@ -2,7 +2,7 @@
 UID: NS:d3dkmddi._DXGKARG_CREATEDOORBELL
 tech.root: display
 title: DXGKARG_CREATEDOORBELL
-ms.date: 05/22/2023
+ms.date: 04/08/2024
 targetos: Windows
 description: Learn more about the DXGKARG_CREATEDOORBELL structure.
 prerelease: true
@@ -15,7 +15,7 @@ req.kmdf-ver:
 req.lib: 
 req.max-support: 
 req.redist: 
-req.target-min-winverclnt: WIN11_FUTURE
+req.target-min-winverclnt: Windows 11, version 24H2 (WDDM 3.2)
 req.target-min-winversvr: 
 req.target-type: 
 req.typenames: DXGKARG_CREATEDOORBELL
@@ -50,11 +50,11 @@ The **DXGKARG_CREATEDOORBELL** structure contains parameters for KMD's [**DxgkDd
 
 ### -field hHwQueue
 
-[in] Handle to a KMD hardware queue object, which was created in a previous call to [**D3DKMTCreateHwQueue**](../d3dkmthk/nf-d3dkmthk-d3dkmtcreatehwqueue.md).
+[in] Handle to a KMD hardware queue object, which was created in a previous call to [**DxgkddiCreateHwQueue**](nc-d3dkmddi-dxgkddi_createhwqueue.md).
 
 ### -field hDoorbell
 
-[in/out] As input, contains the OS's handle to the doorbell. KMD can store the input handle in its tracking structures. As output, **hDoorbell** contains KMD's kernel-mode handle to the doorbell.
+[in/out] As input, contains the runtime's handle to the doorbell. KMD can store the input handle in its tracking structures. As output, when KMD finishes creating the doorbell, **hDoorbell** contains KMD's kernel-mode handle to the doorbell.
 
 ### -field PrivateDriverDataSize
 
@@ -75,6 +75,10 @@ The **DXGKARG_CREATEDOORBELL** structure contains parameters for KMD's [**DxgkDd
 ### -field Flags
 
 A bit field of [**DXGKARG_CREATEDOORBELL_FLAGS**](ns-d3dkmddi-dxgkarg_createdoorbell_flags.md) values specifying the doorbell creation flags.
+
+## -remarks
+
+For more information, see [User-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission).
 
 ## -see-also
 

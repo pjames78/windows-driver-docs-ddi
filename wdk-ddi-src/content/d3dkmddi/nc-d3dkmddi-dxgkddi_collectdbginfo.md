@@ -4,7 +4,6 @@ title: DXGKDDI_COLLECTDBGINFO (d3dkmddi.h)
 description: Learn more about the DXGKDDI_COLLECTDBGINFO callback function.
 ms.date: 05/25/2023
 keywords: ["DXGKDDI_COLLECTDBGINFO callback function"]
-ms.keywords: DXGKDDI_COLLECTDBGINFO, DXGKDDI_COLLECTDBGINFO callback, DmFunctions_3b0ed5a8-f56d-4dbd-8426-667ff8f37ee5.xml, DxgkDdiCollectDbgInfo, DxgkDdiCollectDbgInfo callback function [Display Devices], d3dkmddi/DxgkDdiCollectDbgInfo, display.dxgkddicollectdbginfo
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
@@ -21,7 +20,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks)
 targetos: Windows
 tech.root: display
 req.typenames: 

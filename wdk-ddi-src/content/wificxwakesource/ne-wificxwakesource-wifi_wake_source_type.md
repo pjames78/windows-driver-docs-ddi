@@ -2,7 +2,7 @@
 UID: NE:wificxwakesource._WIFI_WAKE_SOURCE_TYPE
 tech.root: netvista
 title: WIFI_WAKE_SOURCE_TYPE (wificxwakesource.h)
-ms.date: 09/14/2021
+ms.date: 03/04/2024
 targetos: Windows
 description: The WIFI_WAKE_SOURCE_TYPE enumeration specifies the type of a wake-on-LAN (WoL) wake-up event for a WiFiCx net adapter.
 req.construct-type: enumeration
@@ -55,6 +55,14 @@ GTK handshake error.
 ### -field WifiWakeSourceTypeFourWayHandshakeRequest
 
 4-Way Handshake request.
+
+### -field WifiWakeSourceTypeIncomingActionFrame
+
+Incoming action frame.
+
+### -field WifiWakeSourceTypeClientDriverDiagnostic
+
+Client driver diagnostic event.
 
 ## -remarks
 

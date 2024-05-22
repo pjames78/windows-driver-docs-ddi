@@ -2,9 +2,8 @@
 UID: NS:d3dukmdt.DXGK_MIRACAST_CHUNK_INFO
 title: DXGK_MIRACAST_CHUNK_INFO (d3dukmdt.h)
 description: The DXGK_MIRACAST_CHUNK_INFO structure contains information about a specified wireless display (Miracast) encode chunk.
-old-location: display\dxgk_miracast_chunk_info.htm
 tech.root: display
-ms.date: 05/10/2018
+ms.date: 09/26/2022
 keywords: ["DXGK_MIRACAST_CHUNK_INFO structure"]
 ms.keywords: DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_INFO, display.dxgk_miracast_chunk_info
 req.header: d3dukmdt.h
@@ -40,9 +39,6 @@ api_name:
  - DXGK_MIRACAST_CHUNK_INFO
 ---
 
-# DXGK_MIRACAST_CHUNK_INFO structure
-
-
 ## -description
 
 Contains info about a specified wireless display (Miracast) encode chunk.
@@ -51,11 +47,11 @@ Contains info about a specified wireless display (Miracast) encode chunk.
 
 ### -field ChunkType
 
-The type of chunk that is to be processed, specified as a <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_dxgk_miracast_chunk_type">DXGK_MIRACAST_CHUNK_TYPE</a> enumeration value.
+The type of chunk that is to be processed, specified as a [DXGK_MIRACAST_CHUNK_TYPE](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_dxgk_miracast_chunk_type) enumeration value.
 
 ### -field ChunkId
 
-The identifier for this chunk, of type <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_id">DXGK_MIRACAST_CHUNK_ID</a>.
+The identifier for this chunk, of type [**DXGK_MIRACAST_CHUNK_ID**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_id).
 
 ### -field ProcessingTime
 
@@ -67,9 +63,6 @@ The encode bit rate, in kilobits per second, that the display miniport driver re
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_id">DXGK_MIRACAST_CHUNK_ID</a>
+[**DXGK_MIRACAST_CHUNK_ID**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-dxgk_miracast_chunk_id)
 
-
-
-<a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_dxgk_miracast_chunk_type">DXGK_MIRACAST_CHUNK_TYPE</a>
-
+[DXGK_MIRACAST_CHUNK_TYPE](/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_dxgk_miracast_chunk_type)

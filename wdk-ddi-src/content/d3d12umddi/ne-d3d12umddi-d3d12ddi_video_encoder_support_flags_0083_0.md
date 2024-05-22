@@ -2,7 +2,7 @@
 UID: NE:d3d12umddi.D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0083_0
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0083_0
-ms.date: 02/16/2022
+ms.date: 05/14/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0083_0 enumeration.
 prerelease: false
@@ -34,27 +34,27 @@ dev_langs:
 
 ## -description
 
-The **D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0083_0** enumeration reports the support for a given configuration.
+The **D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAGS_0083_0** enumeration is a bit-wise OR of flags that report the capabilities and features that a video encoder supports for a given configuration.
 
 ## -enum-fields
 
-### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_NONE:0x00
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_NONE:0x0
 
 No flags are set (indicates no support).
 
-### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_GENERAL_SUPPORT_OK:0x01
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_GENERAL_SUPPORT_OK:0x1
 
 Indicates whether the given configuration is generally supported by the encoder, in combination with the remaining flags to convey certain limitations or no general support. The D3D12 Debug layer can provide further information.
 
-### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RATE_CONTROL_RECONFIGURATION_AVAILABLE:0x02
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RATE_CONTROL_RECONFIGURATION_AVAILABLE:0x2
 
 Indicates support for changing the rate control in the middle of the encoding session.
 
-### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RESOLUTION_RECONFIGURATION_AVAILABLE:0x04
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RESOLUTION_RECONFIGURATION_AVAILABLE:0x4
 
 Indicates support for changing the resolution in the middle of the encoding session.
 
-### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RATE_CONTROL_VBV_SIZE_CONFIG_AVAILABLE:0x08
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_RATE_CONTROL_VBV_SIZE_CONFIG_AVAILABLE:0x8
 
 When set, enables configuring the video buffering verifier (VBV) initial fullness and capacity for rate control algorithms.
 
@@ -93,6 +93,14 @@ Indicates support for dynamic group of pictures (GOP) changes during an encoding
 ### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0083_0_MOTION_ESTIMATION_PRECISION_MODE_LIMIT_AVAILABLE::0x1000
 
 If the driver sets this bit, the user can limit the precision used for motion search on frame encode.
+
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0096_RATE_CONTROL_EXTENSION1_SUPPORT:0x2000
+
+When enabled, indicates the use of [**D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAG_ENABLE_EXTENSION1_SUPPORT**](ne-d3d12umddi-d3d12ddi_video_encoder_rate_control_flags_0080.md) is available. Available starting with Windows 11, version 24H2 (WDDM 3.2).
+
+### -field D3D12DDI_VIDEO_ENCODER_SUPPORT_FLAG_0096_RATE_CONTROL_QUALITY_VS_SPEED_AVAILABLE:0x4000
+
+Requires **D3D12_VIDEO_ENCODER_SUPPORT_FLAG_RATE_CONTROL_EXTENSION1_SUPPORT**. When enabled, indicates the use of [**D3D12_VIDEO_ENCODER_RATE_CONTROL_FLAG_ENABLE_QUALITY_VS_SPEED**](ne-d3d12umddi-d3d12ddi_video_encoder_rate_control_flags_0080.md) is available. Available starting with Windows 11, version 24H2 (WDDM 3.2).
 
 ## -remarks
 

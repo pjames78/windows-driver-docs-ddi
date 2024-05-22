@@ -2,9 +2,9 @@
 UID: NE:dot11wificxtypes._WDI_RADIO_MEASUREMENT_ACTION
 tech.root: netvista
 title: WDI_RADIO_MEASUREMENT_ACTION
-ms.date: 04/30/2021
+ms.date: 03/08/2024
 targetos: Windows
-description: "Microsoft reserves the WDI_RADIO_MEASUREMENT_ACTION enumeration for internal use only. Don't use this enumeration in your code."
+description: The WDI_RADIO_MEASUREMENT_ACTION enumeration defines the radio measurement actions.
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: dot11wificxtypes.h
@@ -39,30 +39,37 @@ dev_langs:
 > [!IMPORTANT]
 > This topic is part of the [WiFiCx driver model](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx). WiFiCx is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. The previous Wi-Fi driver model [WDI](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) is in maintenance mode and will only receive high priority fixes.
 
-> [!WARNING]
-> Some information in this topic relates to prereleased product, which may be substantially modified before it is commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-This function is reserved for system use and should not be called in your code.
+The **WDI_RADIO_MEASUREMENT_ACTION** enumeration defines the radio measurement action frames.
 
 ## -enum-fields
 
-### -field WDI_RADIO_MEASUREMENT_ACTION_RADIO_MEASUREMENT_REQUEST
+### -field WDI_RADIO_MEASUREMENT_ACTION_RADIO_MEASUREMENT_REQUEST:0
 
-Reserved.
+The message is a radio measurement request action frame sent by the client to the AP.
 
-### -field WDI_RADIO_MEASUREMENT_ACTION_RADIO_MEASUREMENT_REPORT
+### -field WDI_RADIO_MEASUREMENT_ACTION_RADIO_MEASUREMENT_REPORT:1
 
-Reserved.
+The message is a radio measurement report action frame from the AP.
 
-### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST
+### -field WDI_RADIO_MEASUREMENT_ACTION_LINK_MEASUREMENT_REQUEST:2
 
-Reserved.
+The message is a link measurement request action frame sent by the client to the AP.
 
-### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE
+### -field WDI_RADIO_MEASUREMENT_ACTION_LINK_MEASUREMENT_RESPONSE:3
 
-Reserved.
+The message is a link measurement response action frame from the AP.
+
+### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_REQUEST:4
+
+The message is a neighbor report request action frame sent by the client to the AP.
+
+### -field WDI_RADIO_MEASUREMENT_ACTION_NEIGHBOR_REPORT_RESPONSE:5
+
+The message is a neighbor report response action frame from the AP.
 
 ## -remarks
 
 ## -see-also
+
+[**WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT**](ne-dot11wificxtypes-wdi_action_frame_category.md)
 

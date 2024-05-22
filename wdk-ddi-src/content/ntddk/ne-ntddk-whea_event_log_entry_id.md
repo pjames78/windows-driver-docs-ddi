@@ -2,7 +2,7 @@
 UID: NE:ntddk._WHEA_EVENT_LOG_ENTRY_ID
 tech.root: whea
 title: WHEA_EVENT_LOG_ENTRY_ID (ntddk.h)
-ms.date: 07/12/2022
+ms.date: 02/22/2023
 targetos: Windows
 description: The WHEA_EVENT_LOG_ENTRY_ID enumeration is reserved for system use. Do not use.
 prerelease: false
@@ -200,17 +200,49 @@ The **WHEA_EVENT_LOG_ENTRY_ID** enumeration is reserved for system use. Do not u
 
 ### -field WheaEventLogEntryIdBadHestNotifyData
 
+### -field WheaEventLogEntryIdRowFailure
+
 ### -field WheaEventLogEntryIdSrasTableNotFound
 
 ### -field WheaEventLogEntryIdSrasTableError
 
 ### -field WheaEventLogEntryIdSrasTableEntries
 
-### -field WheaEventLogEntryIdRowFailure
+### -field WheaEventLogEntryIdPFANotifyCallbackAction
+
+### -field WheaEventLogEntryIdSELBugCheckCpusQuiesced
+
+### -field WheaEventLogEntryIdPshedPiCpuid
+
+### -field WheaEventLogEntryIdSrasTableBadData
+
+### -field WheaEventLogEntryIdDriFsStatus
 
 ### -field WheaEventLogEntryIdCpusFrozen
 
 ### -field WheaEventLogEntryIdCpusFrozenNoCrashDump
+
+### -field WheaEventLogEntryIdRegNotifyPolicyChange
+
+### -field WheaEventLogEntryIdRegError
+
+### -field WheaEventLogEntryIdRowOfflineEvent
+
+### -field WheaEventLogEntryIdBitOfflineEvent
+
+### -field WheaEventLogEntryIdBadGasFields
+
+### -field WheaEventLogEntryIdCrashDumpError
+
+### -field WheaEventLogEntryIdCrashDumpCheckpoint
+
+### -field WheaEventLogEntryIdCrashDumpProgressPercent
+
+### -field WheaEventLogEntryIdPreviousCrashBugCheckProgress
+
+### -field WheaEventLogEntryIdSELBugCheckStackDump
+
+### -field WheaEventLogEntryIdPciePromotedAerErr
 
 ### -field WheaEventLogEntryIdPshedPiTraceLog
 

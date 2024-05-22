@@ -2,9 +2,8 @@
 UID: NS:storport.PRI_REGISTRATION_LIST
 title: PRI_REGISTRATION_LIST (storport.h)
 description: The PRI_REGISTRATION_LIST structure (storport.h) contains information about persistent reservations and reservation keys that are active within a device server.
-old-location: storage\pri_registration_list.htm
 tech.root: storage
-ms.date: 08/26/2022
+ms.date: 09/26/2022
 keywords: ["PRI_REGISTRATION_LIST structure"]
 ms.keywords: "*PPRI_REGISTRATION_LIST, PPRI_REGISTRATION_LIST, PPRI_REGISTRATION_LIST structure pointer [Storage Devices], PRI_REGISTRATION_LIST, PRI_REGISTRATION_LIST structure [Storage Devices], storage.pri_registration_list, storport/PPRI_REGISTRATION_LIST, storport/PRI_REGISTRATION_LIST, structs-general_ad5a83a3-3ac6-4579-be4f-c24181e9d59e.xml"
 req.header: storport.h
@@ -60,7 +59,7 @@ The Generation field contains a 32-bit counter that is maintained by the device 
 
 The AdditionalLength field contains a count of the number of bytes in the reservation key list.
 
-### -field ReservationKeyList[0][8]
+### -field ReservationKeyList[0]
 
 The reservation key list contains the 8-byte reservation keys for all initiators that have registered by using all ports with the device server.
 

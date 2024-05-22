@@ -4,7 +4,7 @@ title: NdisOffloadTcpReceiveReturn function (ndischimney.h)
 description: A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target.
 old-location: netvista\ndisoffloadtcpreceivereturn.htm
 tech.root: netvista
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["NdisOffloadTcpReceiveReturn function"]
 ms.keywords: NdisOffloadTcpReceiveReturn, NdisOffloadTcpReceiveReturn function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpReceiveReturn, netvista.ndisoffloadtcpreceivereturn, tcp_chim_ndis_func_2fe6d15f-5e88-4aec-9c5b-281b0e002d8f.xml
 req.header: ndischimney.h
@@ -73,11 +73,6 @@ A pointer to a
      <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_receive_indicate">
      NdisTcpOffloadReceiveHandler</a> function.
 
-## -returns
-
-The 
-     <b>NdisOffloadTcpReceiveReturn</b> function always returns NDIS_STATUS_SUCCESS. The receive return
-     operation is always completed synchronously.
 
 ## -remarks
 

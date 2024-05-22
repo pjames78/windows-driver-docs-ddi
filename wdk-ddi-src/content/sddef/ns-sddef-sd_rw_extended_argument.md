@@ -50,6 +50,14 @@ The SD_RW_DIRECT_ARGUMENT structure is used in conjunction with the [**SdBusSubm
 
 ## -struct-fields
 
+### -field u
+
+Name of the union
+
+### -field u.bits
+
+A structure that contains the following members.
+
 ### -field u.bits.Count
 
 This member is ignored when submitting a device command to the bus driver. The transfer length is determined by SDBUS_REQUEST_PACKET.Parameters.DeviceCommand.Length, which is always in bytes irrespective of whether BlockMode is set to 0 or 1.

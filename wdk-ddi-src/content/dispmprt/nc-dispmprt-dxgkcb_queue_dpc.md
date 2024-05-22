@@ -10,7 +10,7 @@ ms.keywords: DXGKCB_QUEUE_DPC, DXGKCB_QUEUE_DPC callback, DpFunctions_0d1685f8-b
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

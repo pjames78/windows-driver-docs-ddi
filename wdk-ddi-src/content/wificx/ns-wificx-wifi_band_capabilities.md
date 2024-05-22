@@ -2,7 +2,7 @@
 UID: NS:wificx._WIFI_BAND_CAPABILITIES
 tech.root: netvista
 title: WIFI_BAND_CAPABILITIES (wificx.h)
-ms.date: 08/27/2021
+ms.date: 03/06/2024
 ms.topic: language-reference
 targetos: Windows
 description: The WIFI_BAND_CAPABILITIES structure describes the band capabilities for a WiFiCx device.
@@ -59,11 +59,12 @@ A pointer to a list of [**WIFI_BAND_INFO**](ns-wificx-wifi_band_info.md) structu
 
 ## -remarks
 
-Client drivers pass **WIFI_BAND_CAPABILITIES** as a parameter to [**WifiDeviceSetBandCapabilities**](nf-wificx-wifidevicesetbandcapabilities.md) to report band capabilities to WiFiCx.
-
+Call [**WIFI_BAND_CAPABILITIES_INIT**](nf-wificx-wifi_band_capabilities_init.md) to initialize this structure and fill in its **Size** field. Then call [**WifiDeviceSetBandCapabilities**](nf-wificx-wifidevicesetbandcapabilities.md) to report band capabilities to WiFiCx.
 
 ## -see-also
 
 [**WIFI_BAND_INFO**](ns-wificx-wifi_band_info.md)
+
+[**WIFI_BAND_CAPABILITIES_INIT**](nf-wificx-wifi_band_capabilities_init.md)
 
 [**WifiDeviceSetBandCapabilities**](nf-wificx-wifidevicesetbandcapabilities.md)

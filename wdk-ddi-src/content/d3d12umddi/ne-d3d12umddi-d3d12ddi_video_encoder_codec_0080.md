@@ -46,6 +46,10 @@ The codec is an H.264 codec.
 
 The codec is an HEVC (H.265) codec.
 
+### -field D3D12DDI_VIDEO_ENCODER_CODEC_0095_AV1
+
+The codec is an AV1 codec.
+
 ## -remarks
 
 See [D3D12 video encoding](/windows-hardware/drivers/display/video-encoding-d3d12) for general information.
