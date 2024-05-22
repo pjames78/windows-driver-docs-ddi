@@ -1,7 +1,7 @@
 ---
 UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_FLAGS
 title: DXGK_MULTIPLANE_OVERLAY_FLAGS (d3dkmddi.h)
-description: Learn more about: DXGK_MULTIPLANE_OVERLAY_FLAGS structure
+description: Learn more about the DXGK_MULTIPLANE_OVERLAY_FLAGS structure.
 ms.date: 05/20/2024
 keywords: ["DXGK_MULTIPLANE_OVERLAY_FLAGS structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_FLAGS, DXGK_MULTIPLANE_OVERLAY_FLAGS structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_FLAGS, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_FLAGS, display.dxgk_multiplane_overlay_flags

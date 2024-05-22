@@ -1,7 +1,7 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_CREATECONTEXTFLAGS
 title: D3DDDI_CREATECONTEXTFLAGS (d3dukmdt.h)
-description: Learn more about: D3DDDI_CREATECONTEXTFLAGS
+description: Learn more about the D3DDDI_CREATECONTEXTFLAGS structure.
 tech.root: display
 ms.date: 05/21/2024
 keywords: ["D3DDDI_CREATECONTEXTFLAGS structure"]
