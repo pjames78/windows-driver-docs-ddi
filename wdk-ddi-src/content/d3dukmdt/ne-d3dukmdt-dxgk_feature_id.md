@@ -96,6 +96,10 @@ The native GPU fence feature. The feature category is DXGK_FEATURE_CATEGORY_DRIV
 
 The GPU virtual address with IoMmu feature. The feature category is DXGK_FEATURE_CATEGORY_DRIVER.
 
+### -field DXGK_FEATURE_QUERYSTATISTICS_EXTENSIONS
+
+The query statistics feature. The feature category is DXGK_FEATURE_CATEGORY_OS.
+
 ## -remarks
 
 A WDDM feature is identified by its feature ID (**DXGK_FEATURE_ID**) which is composed of:

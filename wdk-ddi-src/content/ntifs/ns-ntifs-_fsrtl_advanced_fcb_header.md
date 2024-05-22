@@ -91,7 +91,7 @@ An auto-expand push lock that is used instead of **PushLock** to synchronize acc
 
 **AePushlock** is available starting with Windows 10, version 20H2 (that is, if the **Version** bit-field of the [**FSRTL_COMMON_FCB_HEADER**](ns-ntifs-_fsrtl_common_fcb_header.md) structure is greater than or equal to **FSRTL_FCB_HEADER_V3**), and must be initialized by calling [**FsRtlSetupAdvancedHeaderEx2**](nf-ntifs-fsrtlsetupadvancedheaderex2.md).
 
-### -field ReservedContext
+### -field ReservedContextLegacy
 
 This field is reserved for system use. It is only used in Windows 8.1 through Windows 10, version 1803 (if the **Version** bit-field of the [**FSRTL_COMMON_FCB_HEADER**](ns-ntifs-_fsrtl_common_fcb_header.md) structure is greater than or equal to **FSRTL_FCB_HEADER_V3**).
 
@@ -101,7 +101,7 @@ Tracks how many handles are currently open with [BypassIO](/windows-hardware/dri
 
 This field is available starting in Windows 11 (that is, if the **Version** bit-field of the [**FSRTL_COMMON_FCB_HEADER**](ns-ntifs-_fsrtl_common_fcb_header.md) structure is greater than or equal to **FSRTL_FCB_HEADER_V4**).
 
-### -field _FSTRL_ADVANCED_FCB_HEADER
+### -field ReservedContext
 
 Reserved for system use.
 

@@ -1,9 +1,9 @@
 ---
 UID: NS:ntddvdeo._MIPI_DSI_CAPS
 title: MIPI_DSI_CAPS
-description: Mipi (mobile industry processor interface) DSI-2 (display serial interface) caps.
+description: Learn more about the MIPI_DSI_CAPS structure.
 tech.root: display
-ms.date: 04/04/2019
+ms.date: 05/21/2024
 keywords: ["MIPI_DSI_CAPS structure"]
 f1_keywords:
  - "ntddvdeo/MIPI_DSI_CAPS"
@@ -40,70 +40,84 @@ ms.custom: 19H1
 
 ## -description
 
-Mipi (mobile industry processor interface) DSI-2 (display serial interface) caps.
+The **MIPI_DSI_CAPS** structure is used to describe the capabalities and characteristics of a MIPI (mobile industry processor interface) DSI-2 (display serial interface) device.
 
 ## -struct-fields
 
-### -field DSI2VersionMajor
+### -field DSITypeMajor
 
-DSI-2 version major.
+Major version of the DSI type.
 
-### -field DSI2VersionMinor
+### -field DSITypeMinor
 
-DSI-2 version minor.
+Minor version of the DSI type.
+
+### -field SpecVersionMajor
+
+Major version of the MIPI DSI specification.
+
+### -field SpecVersionMinor
+
+Minor version of the MIPI DSI specification.
+
+### -field SpecVersionPatch
+
+Patch level of the MIPI DSI specification.
 
 ### -field TargetMaximumReturnPacketSize
 
-Target maximum return packet size.
+The maximum size, in bytes, of the return packet that the DSI device can handle.
 
 ### -field ResultCodeFlags
 
-Result code flags.
+Flags that provide additional information about the result of querying the capabilities.
 
 ### -field ResultCodeStatus
 
-Result code status.
+The status code resulting from the query operation.
 
 ### -field Revision
 
-Revision.
+Revision number of the DSI device.
 
 ### -field Level
 
-Level.
+Level of compliance or functionality of the DSI device.
 
 ### -field DeviceClassHi
 
-Device class high.
+High byte of the device class identifier.
 
 ### -field DeviceClassLo
 
-Device class low.
+Low byte of the device class identifier.
 
 ### -field ManufacturerHi
 
-Manufacturer high.
+High byte of the manufacturer identifier.
 
 ### -field ManufacturerLo
 
-Manufacturer Low.
+Low byte of the manufacturer identifier.
 
 ### -field ProductHi
 
-Product high.
+High byte of the product identifier.
 
 ### -field ProductLo
 
-Product low.
+Low byte of the product identifier.
 
 ### -field LengthHi
 
-Length high.
+High byte indicating the length of additional data or descriptors.
 
 ### -field LengthLo
  
-Length low.
+Low byte indicating the length of additional data or descriptors.
 
 ## -remarks
 
 ## -see-also
+
+[**IOCTL_MIPI_DSI_QUERY_CAPS**](ni-ntddvdeo-mipi_dsi_query_caps.md)

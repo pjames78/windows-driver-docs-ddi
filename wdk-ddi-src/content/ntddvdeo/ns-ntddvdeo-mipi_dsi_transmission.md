@@ -1,9 +1,9 @@
 ---
 UID: NS:ntddvdeo._MIPI_DSI_TRANSMISSION
 title: MIPI_DSI_TRANSMISSION
-description: Mipi (mobile industry processor interface) DSI-2 (display serial interface) transmission.
+description: Learn more about the MIPI_DSI_TRANSMISSION structure.
 tech.root: display
-ms.date: 04/04/2019
+ms.date: 05/21/2024
 keywords: ["MIPI_DSI_TRANSMISSION structure"]
 f1_keywords:
  - "ntddvdeo/MIPI_DSI_TRANSMISSION"
@@ -46,31 +46,35 @@ The **MIPI_DSI_TRANSMISSION** structure is used to describe a MIPI (Mobile Indus
 
 ### -field TotalBufferSize
 
-The total size of the buffer that contains the transmission request, in bytes.
+[in] The total size of the buffer that contains the transmission request, in bytes.
 
 ### -field PacketCount
 
-The number of packets in the transmission request.
+[in] The number of packets in the transmission request.
 
 ### -field FailedPacket
 
-Failed packet.
+[out] Index of the first failed packet in the transmission, if any failures occur.
 
 ### -field TransmissionMode
 
-Transmission mode.
+[in] Transmission mode.
 
 ### -field ReportMipiErrors
 
-Report MIPI errors.
+[in] When set, indicates that MIPI protocol errors should be reported.
 
 ### -field ClearMipiErrors
 
-Clear MIPI errors.
+[in] When set, indicates that MIPI protocol errors should be cleared after being reported.
 
 ### -field SecondaryPort
 
-Secondary port.
+[in] Indicates whether the transmission is for a secondary port.
+
+### -field ManufacturingMode
+
+[in] Indicates whether the transmission is happening in a special manufacturing mode.
 
 ### -field Reserved
 
@@ -78,23 +82,23 @@ Reserved.
 
 ### -field ReadWordCount
 
-Read word count.
+[out] Number of words read during a read operation.
 
 ### -field FinalCommandExtraPayload
 
-Final command extra payload.
+[in] Size of any extra payload that should be sent with the final command.
 
 ### -field MipiErrors
 
-MIPI errors.
+[out] Errors reported by the MIPI DSI hardware, if any.
 
 ### -field HostErrors
 
-Host errors.
+[out] Errors reported by the host processor or controller that is managing the transmission, if any.
 
 ### -field Packets
- 
-Packets.
+
+Array of **PacketCount** [**MIPI_DSI_PACKET**](ntddvdeo-mipi_dsi_packet.md) structures that describe the packets to be transmitted/modified.
 
 ## -remarks
 

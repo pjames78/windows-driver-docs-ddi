@@ -43,7 +43,7 @@ api_name:
 
 ## -description
 
-The **D3DDDI_UPDATEALLOCPROPERTY** structure describes the parameters needed to update an allocation.
+The **D3DDDI_UPDATEALLOCPROPERTY** structure is used to update properties of a memory allocation.
 
 ## -struct-fields
 
@@ -73,30 +73,32 @@ The **D3DDDI_UPDATEALLOCPROPERTY** structure describes the parameters needed to 
 
 ### -field SetAccessedPhysically
 
-[in] A UINT value that specifies whether the allocation is accessed by its physical address.
+[in] When set, the driver will update the [**AccessedPhysically**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md) property of the allocation.
 
-Setting this member is equivalent to setting the first bit of the 32-bit **PropertyMaskValue** member (0x00000001).
+[in] Specifies whether the allocation is accessed by its physical address.
 
 ### -field SetSupportedSegmentSet
 
-[in] A UINT value that specifies whether the supported segment is set to a new value.
-
-Setting this member is equivalent to setting the second bit of the 32-bit **PropertyMaskValue** member (0x00000010).
+[in] Specifies whether the supported segment is set to a new value.
 
 ### -field SetPreferredSegment
 
-[in] A UINT value that specifies whether the preferred segment is set to a new value.
+[in] Specifies whether the preferred segment is set to a new value.
 
-Setting this member is equivalent to setting the third bit of the 32-bit **PropertyMaskValue** member (0x00000100).
+### -field SetUnmoveable
+
+[in] When set, the driver will update the [**Unmoveable**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md) property of the allocation to indicate that the allocation is unmoveable.
 
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFFE) of the 32-bit **PropertyMaskValue** member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field PropertyMaskValue
 
 [in] A member in the union that is contained in D3DDDI_UPDATEALLOCPROPERTY that can hold one 32-bit value that identifies how to update an allocation.
 
 ## -see-also
+
+[**D3DDDI_UPDATEALLOCPROPERTY_FLAGS**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md)
 
 [**D3DKMTUpdateAllocationProperty**](../d3dkmthk/nf-d3dkmthk-d3dkmtupdateallocationproperty.md)

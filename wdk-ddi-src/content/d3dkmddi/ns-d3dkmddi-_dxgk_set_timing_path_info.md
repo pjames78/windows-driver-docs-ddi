@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGK_SET_TIMING_PATH_INFO
 title: DXGK_SET_TIMING_PATH_INFO (d3dkmddi.h)
-description: Structure to hold information to modify SetTiming path.
-old-location: display\dxgk_set_timing_path_info.htm
-ms.date: 08/25/2022
+description: Learn more about the DXGK_SET_TIMING_PATH_INFO structure.
+ms.date: 05/20/2024
 keywords: ["DXGK_SET_TIMING_PATH_INFO structure"]
 ms.keywords: DXGK_SET_TIMING_PATH_INFO, DXGK_SET_TIMING_PATH_INFO structure [Display Devices], PDXGK_SET_TIMING_PATH_INFO, PDXGK_SET_TIMING_PATH_INFO structure pointer [Display Devices], _DXGK_SET_TIMING_PATH_INFO, d3dkmddi/DXGK_SET_TIMING_PATH_INFO, d3dkmddi/PDXGK_SET_TIMING_PATH_INFO, display.dxgk_set_timing_path_info
 req.header: d3dkmddi.h
@@ -132,7 +131,7 @@ If set, indicates that the OS needs to issue a CheckMPO due to changes on this p
 
 This value is reserved for system use.
 
-### -field Output.OutputFlags
+### -field OutputFlags
 
 A set of flags specifying outcomes the OS needs to be aware of relating to this path.
 

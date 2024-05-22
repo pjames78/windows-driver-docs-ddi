@@ -2,7 +2,7 @@
 UID: NE:d3d12umddi.D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAGS_0082_0
 tech.root: display
 title: D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAGS_0082_0
-ms.date: 02/16/2022
+ms.date: 05/21/2024
 targetos: Windows
 description: Learn more about the D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAGS_0082_0 enumeration.
 prerelease: false
@@ -77,6 +77,10 @@ One of more of the requested resolutions in the list are not supported.
 ### -field D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAG_0082_0_GOP_STRUCTURE_NOT_SUPPORTED
 
 The requested group of pictures (GOP) structure is not supported.
+
+### -field D3D12DDI_VIDEO_ENCODER_VALIDATION_FLAG_0095_SUBREGION_LAYOUT_DATA_NOT_SUPPORTED
+
+The requested subregion layout data is not supported.
 
 ## -remarks
 
