@@ -10,7 +10,7 @@ ms.keywords: DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, DXGKMDT_OPM_CONNECTE
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

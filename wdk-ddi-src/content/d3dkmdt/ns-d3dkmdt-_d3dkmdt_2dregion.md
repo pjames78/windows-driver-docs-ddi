@@ -10,7 +10,7 @@ ms.keywords: D3DKMDT_2DOFFSET, D3DKMDT_2DREGION, D3DKMDT_2DREGION structure [Dis
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
