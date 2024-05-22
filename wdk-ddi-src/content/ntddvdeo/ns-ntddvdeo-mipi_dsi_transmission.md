@@ -98,7 +98,7 @@ Reserved.
 
 ### -field Packets
 
-Array of **PacketCount** [**MIPI_DSI_PACKET**](ntddvdeo-mipi_dsi_packet.md) structures that describe the packets to be transmitted/modified.
+Array of **PacketCount** [**MIPI_DSI_PACKET**](ns-ntddvdeo-mipi_dsi_packet.md) structures that describe the packets to be transmitted/modified.
 
 ## -remarks
 

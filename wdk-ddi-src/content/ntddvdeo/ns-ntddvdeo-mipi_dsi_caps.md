@@ -113,11 +113,11 @@ Low byte of the product identifier.
 High byte indicating the length of additional data or descriptors.
 
 ### -field LengthLo
- 
+
 Low byte indicating the length of additional data or descriptors.
 
 ## -remarks
 
 ## -see-also
 
-[**IOCTL_MIPI_DSI_QUERY_CAPS**](ni-ntddvdeo-mipi_dsi_query_caps.md)
+[**IOCTL_MIPI_DSI_QUERY_CAPS**](ni-ntddvdeo-ioctl_mipi_dsi_query_caps.md)
