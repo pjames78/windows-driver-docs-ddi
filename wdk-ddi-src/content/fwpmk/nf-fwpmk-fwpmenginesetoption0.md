@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: 
 req.kmdf-ver: 
-req.lib: 
+req.lib: fwpkclnt.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -54,7 +54,7 @@ helpviewer_keywords:
 
 ## -returns
 
-Type: ** **
+Type: **DWORD**
 
 | Return code/value | Description |
 | --- | --- |

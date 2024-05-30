@@ -15,7 +15,7 @@ req.idl:
 req.include-header: 
 req.irql: <= PASSIVE_LEVEL
 req.kmdf-ver: 
-req.lib: 
+req.lib: fwpkclnt.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
@@ -48,21 +48,23 @@ The **FWPM_SERVICE_STATE_CHANGE_CALLBACK0** function is implemented by a WFP cal
 
 ## -parameters
 
-### -param context
+### -param context [in, out]
 
 The pointer that was passed in the *context* parameter when the callout driver called the **[FwpmBfeStateSubscribeChanges0](nf-fwpmk-fwpmbfestatesubscribechanges0.md)** function.
 
-### -param newState
+### -param newState [in]
 
 The new BFE service state being changed to.
 
 ## -returns
 
-Type: **NTSTATUS**
+Type: **DWORD**
 
 | Return code/value | Description |
 | --- | --- |
-| **STATUS_SUCCESS** | Returned if the function completes successfully. |
+| **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
 | **Other NTSTATUS codes** | An error occurred. |
 
 ## -remarks
@@ -70,3 +72,6 @@ Type: **NTSTATUS**
 The filter engine calls this function whenever there is a change in the state of the filter engine.
 
 ## -see-also
+
+- **[FwpmBfeStateSubscribeChanges0](nf-fwpmk-fwpmbfestatesubscribechanges0.md)**
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
