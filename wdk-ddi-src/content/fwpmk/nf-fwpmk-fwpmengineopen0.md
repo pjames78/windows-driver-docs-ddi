@@ -55,7 +55,7 @@ The **FwpmEngineOpen0** function opens a session to the filter engine.
 ### -param serverName [in, optional]
 
 
-A pointer to a NULL-terminated string that specifies the standard DNS name of the system on which the session to the filter engine is opened. Callout drivers must specify <b>NULL</b> for this parameter.
+A pointer to a NULL-terminated string that specifies the standard DNS name of the system on which the session to the filter engine is opened. Callout drivers must specify **NULL** for this parameter.
 
 ### -param authnService [in]
 
@@ -84,7 +84,7 @@ The **FwpmEngineOpen0** function returns one of the following NTSTATUS codes.
 |Return code|Description|
 |--- |--- |
 |**STATUS_SUCCESS**|A session to the filter engine was successfully opened. The variable pointed to by the _engineHandle_ parameter contains a handle for the open session.|
-|**Other status codes**|An error occurred.|
+|**Other NTSTATUS codes**|An error occurred.|
 
 ## -remarks
 
