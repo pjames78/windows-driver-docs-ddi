@@ -54,11 +54,11 @@ The **FwpmCalloutDeleteByKey0** function deletes a callout from the filter engin
 
 ### -param engineHandle [in]
 
-A handle for an open session to the filter engine. A "callout" driver calls the [FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0) function to open a session to the filter engine.
+A handle for an open session to the filter engine. A "callout" driver calls the **[FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0)** function to open a session to the filter engine.
 
 ### -param key [in]
 
-A pointer to a GUID that uniquely identifies the callout that is being deleted from the filter engine. This must be a pointer to the same GUID that was specified when the callout driver called the [FwpmCalloutAdd0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutadd0) function to add the callout to the filter engine.
+A pointer to a GUID that uniquely identifies the callout that is being deleted from the filter engine. This must be a pointer to the same GUID that was specified when the callout driver called the **[FwpmCalloutAdd0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutadd0)** function to add the callout to the filter engine.
 
 ## -returns
 
@@ -81,6 +81,7 @@ A callout can be deleted from the filter engine only if there are no filters in 
 
 ## -see-also
 
-- [FwpmCalloutAdd0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutadd0)
-- [FwpmCalloutDeleteById0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutdeletebyid0)
-- [FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0)
+- **[FwpmCalloutAdd0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutadd0)**
+- **[FwpmCalloutDeleteById0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmcalloutdeletebyid0)**
+- **[FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0)**
+- [Windows Filtering Platform](/windows/desktop/FWP/windows-filtering-platform-start-page)

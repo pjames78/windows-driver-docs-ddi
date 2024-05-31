@@ -2,7 +2,7 @@
 UID: NF:fwpmk.FwpmCalloutCreateEnumHandle0
 tech.root: netvista
 title: FwpmCalloutCreateEnumHandle0
-ms.date: 05/30/2024
+ms.date: 05/31/2024
 targetos: Windows
 description: The FwpmCalloutCreateEnumHandle0 function creates a handle used to enumerate a set of callout objects.
 prerelease: false
@@ -19,8 +19,8 @@ req.lib: fwpkclnt.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows Vista [desktop apps only]
-req.target-min-winversvr: Windows Server 2008 [desktop apps only]
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
 req.target-type: Universal
 req.type-library: 
 req.umdf-ver: 
@@ -67,8 +67,8 @@ Type: **DWORD**
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |
-| **FWP_E_* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/desktop/FWP/wfp-error-codes) for details. |
-| **RPC_* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/desktop/FWP/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
 | **Other NTSTATUS codes** | An error occurred. |
 
 ## -remarks

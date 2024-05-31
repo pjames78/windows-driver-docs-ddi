@@ -4,7 +4,7 @@ title: FwpmCalloutDeleteById0 function (fwpmk.h)
 description: The FwpmCalloutDeleteById0 function deletes a callout from the filter engine.Note  FwpmCalloutDeleteById0 is a specific version of FwpmCalloutDeleteById.
 old-location: netvista\fwpmcalloutdeletebyid0.htm
 tech.root: netvista
-ms.date: 05/30/2024
+ms.date: 05/31/2024
 keywords: ["FwpmCalloutDeleteById0 function"]
 ms.keywords: FwpmCalloutDeleteById0, FwpmCalloutDeleteById0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmCalloutDeleteById0, netvista.fwpmcalloutdeletebyid0, wfp_ref_2_funct_2_fwpm_466376ac-f7a1-417e-9de8-9c3a7ff31404.xml
 req.header: fwpmk.h
@@ -54,7 +54,7 @@ The **FwpmCalloutDeleteById0** function deletes a callout from the filter engine
 
 ### -param engineHandle [in]
 
-A handle for an open session to the filter engine. A callout driver calls the [FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0) function to open a session to the filter engine.
+A handle for an open session to the filter engine. A callout driver calls the **[FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0)** function to open a session to the filter engine.
 
 ### -param id [in]
 

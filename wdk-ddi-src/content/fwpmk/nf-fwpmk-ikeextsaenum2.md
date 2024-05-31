@@ -13,13 +13,13 @@ req.dll:
 req.header: fwpmk.h
 req.idl: 
 req.include-header: 
-req.irql: 
+req.irql: <= PASSIVE_LEVEL
 req.kmdf-ver: 
 req.lib: fwpkclnt.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Available starting with Windows Vista.
 req.target-min-winversvr: 
 req.target-type: Universal
 req.type-library: 

@@ -19,8 +19,8 @@ req.lib: fwpkclnt.lib
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows Vista [desktop apps only]
-req.target-min-winversvr: Windows Server 2008 [desktop apps only]
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
 req.target-type: Universal
 req.type-library: 
 req.umdf-ver: 
