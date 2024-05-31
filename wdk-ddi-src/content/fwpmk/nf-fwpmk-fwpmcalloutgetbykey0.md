@@ -65,6 +65,7 @@ Information about the state associated with the callout.
 Type: **DWORD**
 
 | Return code/value | Description |
+|---|---|
 | **ERROR_SUCCESS**<br>0 | The callout was retrieved successfully. |
 | **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See WFP Error Codes for details. |
 | **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
