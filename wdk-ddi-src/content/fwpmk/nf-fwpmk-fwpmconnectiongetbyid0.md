@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmConnectionGetById0
 tech.root: netvista
 title: FwpmConnectionGetById0
-ms.date: 05/30/2024
+ms.date: 06/04/2024
 targetos: Windows
-description: 
+description: The FwpmConnectionGetById0 function retrieves a connection object by using the run-time identifier for the connection.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,17 +44,43 @@ helpviewer_keywords:
 
 ## -description
 
+The **FwpmConnectionGetById0** function retrieves a connection object by using the run-time identifier for the connection.
+
 ## -parameters
 
-### -param engineHandle
+### -param engineHandle [in]
 
-### -param id
+Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param connection
+### -param id [in]
+
+The run-time identifier for the connection.
+
+### -param connection [out]
+
+The connection information.
 
 ## -returns
 
+Type: **DWORD**
+
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The connection object was retrieved successfully. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+The caller must free the returned object by a call to **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**.
+
+The caller needs [FWPM_ACTRL_READ](/windows/desktop/FWP/access-right-identifiers) access to the provider context. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**
+- [FWPM_ACTRL_READ](/windows/desktop/FWP/access-right-identifiers)
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [Access Control](/windows/desktop/FWP/access-control)

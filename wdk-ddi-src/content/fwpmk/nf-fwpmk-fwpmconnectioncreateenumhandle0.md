@@ -2,7 +2,7 @@
 UID: NF:fwpmk.FwpmConnectionCreateEnumHandle0
 tech.root: netvista
 title: FwpmConnectionCreateEnumHandle0
-ms.date: 05/31/2024
+ms.date: 06/04/2024
 targetos: Windows
 description: The FwpmConnectionCreateEnumHandle0 function creates a handle used to enumerate a set of connection objects.
 prerelease: false
@@ -66,7 +66,7 @@ Type: **DWORD**
 
 | Return code/value | Description |
 | --- | --- |
-| **ERROR_SUCCESS**<br>0 | Success. |
+| **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |
 | **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
 | **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
 | **Other NTSTATUS codes** | An error occurred. |
