@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmEngineSetSecurityInfo0
 tech.root: netvista
 title: FwpmEngineSetSecurityInfo0
-ms.date: 05/30/2024
+ms.date: 06/05/2024
 targetos: Windows
-description: 
+description: The FwpmEngineSetSecurityInfo0 function sets specified security information in the security descriptor of the filter engine.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,23 +44,58 @@ helpviewer_keywords:
 
 ## -description
 
+The **FwpmEngineSetSecurityInfo0** function sets specified security information in the security descriptor of the filter engine.
+
 ## -parameters
 
-### -param engineHandle
+### -param engineHandle [in]
 
-### -param securityInfo
+Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param sidOwner
+### -param securityInfo [in]
 
-### -param sidGroup
+The type of security information to set.
 
-### -param dacl
+### -param sidOwner [in, optional]
 
-### -param sacl
+The owner's security identifier (SID) to be set in the security descriptor.
+
+### -param sidGroup [in, optional]
+
+The group's SID to be set in the security descriptor.
+
+### -param dacl [in, optional]
+
+The discretionary access control list (DACL) to be set in the security descriptor.
+
+### -param sacl [in, optional]
+
+The system access control list (SACL) to be set in the security descriptor.
 
 ## -returns
 
+Type: **DWORD**
+
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | Success |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+**FwpmEngineSetSecurityInfo0** cannot be called from within a transaction. It fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+
+**FwpmEngineSetSecurityInfo0** behaves like the standard Win32 **[SetSecurityInfo](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)** function. The caller needs the same standard access rights as described in the **SetSecurityInfo** reference topic.
+
+**FwpmEngineSetSecurityInfo0** is a specific implementation of **FwpmEngineSetSecurityInfo**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[SetSecurityInfo](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)**
+- **[FwpmEngineGetSecurityInfo0](nf-fwpmk-fwpmenginegetsecurityinfo0.md)**
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [Object Management](/windows/desktop/FWP/object-management)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
