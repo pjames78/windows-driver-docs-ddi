@@ -81,16 +81,16 @@ Type: **DWORD**
 
 **FwpmFilterAdd0** adds the filter to the specified sub-layer at every filtering layer in the system.
 
-Some fields in the [FWPM_FILTER0](../fwpmtypes/ns-fwpmtypes-fwpm_filter0.md) structure are assigned by the system, not the caller, and are ignored in the call to **FwpmFilterAdd0**.
+Some fields in the **[FWPM_FILTER0](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_filter0)** structure are assigned by the system, not the caller, and are ignored in the call to **FwpmFilterAdd0**.
 
 If the caller supplies a **NULL** security descriptor, the system will assign a default security descriptor.
 
-To block connections to particular locations, add a [FWP_ACTION_BLOCK](../fwpmtypes/ns-fwpmtypes-fwpm_action0.md) filter specifying the local address at the [FWPM_LAYER_ALE_AUTH_CONNECT_V*](/windows/desktop/FWP/management-filtering-layer-identifiers-) layer, or add a **FWP_ACTION_BLOCK** filter without specifying the local address at the **FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V*** layer.
+To block connections to particular locations, add a **[FWP_ACTION_BLOCK](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_action0)** filter specifying the local address at the [FWPM_LAYER_ALE_AUTH_CONNECT_V*](/windows/desktop/FWP/management-filtering-layer-identifiers-) layer, or add a **FWP_ACTION_BLOCK** filter without specifying the local address at the **FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V*** layer.
 
 > [!NOTE]
-> If a local address is specified at the resource assignment layer, an implicit bind would succeed because address, address type, and port may come back as [FWP_EMPTY](../fwptypes/ne-fwptypes-fwp_data_type.md).
+> If a local address is specified at the resource assignment layer, an implicit bind would succeed because address, address type, and port may come back as **[FWP_EMPTY](/windows/win32/api/fwptypes/ne-fwptypes-fwp_data_type)**.
 
-The [FWPM_FILTER0](../fwpmtypes/ns-fwpmtypes-fwpm_filter0.md) structure can label a filter as a boot-time or persistent filter.  Boot-time filters are added to the Base Filtering Engine (BFE) when the TCP/IP driver starts, and are removed once the BFE finishes initialization.  Persistent objects are added when the BFE starts.
+The [FWPM_FILTER0](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_filter0) structure can label a filter as a boot-time or persistent filter.  Boot-time filters are added to the Base Filtering Engine (BFE) when the TCP/IP driver starts, and are removed once the BFE finishes initialization.  Persistent objects are added when the BFE starts.
 
 This function cannot be called from within a read-only transaction. It will fail with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
@@ -107,8 +107,8 @@ See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
 To add a filter that references a callout, invoke the functions in the following order.
 
-- Call [FwpsCalloutRegister0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) (documented in the Windows Driver Kit (WDK)), to register the callout with the filter engine.
-- Call [FwpmCalloutAdd0](nf-fwpmu-fwpmcalloutadd0.md) to add the callout to the system.
+- Call **[FwpsCalloutRegister0](../fwpsk/nf-fwpsk-fwpscalloutregister0.md)** (documented in the Windows Driver Kit (WDK)), to register the callout with the filter engine.
+- Call **[FwpmCalloutAdd0](nf-fwpmk-fwpmcalloutadd0.md)** to add the callout to the system.
 - Call **FwpmFilterAdd0** to add the filter that references the callout to the system.
 
 By default filters that reference callouts that have been added but have not yet registered with the filter engine are treated as Block filters.
