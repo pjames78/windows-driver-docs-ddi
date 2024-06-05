@@ -151,7 +151,7 @@ else
 ## -see-also
 
 - **[FwpsCalloutRegister0](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0)**
-- **[FwpmCalloutAdd0](nf-fwpmu-fwpmcalloutadd0.md)**
+- **[FwpmCalloutAdd0](nf-fwpmk-fwpmcalloutadd0.md)**
 - **[FWPM_FILTER0](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_filter0)**
 - [Management Functions](/windows/desktop/FWP/fwp-mgmt-functions)
 - [WFP Functions](/windows/desktop/FWP/fwp-functions)
