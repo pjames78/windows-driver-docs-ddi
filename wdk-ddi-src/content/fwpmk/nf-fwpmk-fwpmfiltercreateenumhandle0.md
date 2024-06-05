@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmFilterCreateEnumHandle0
 tech.root: netvista
 title: FwpmFilterCreateEnumHandle0
-ms.date: 05/30/2024
+ms.date: 06/05/2024
 targetos: Windows
-description: 
+description: The FwpmFilterCreateEnumHandle0 function creates a handle used to enumerate a set of filter objects.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,17 +44,52 @@ helpviewer_keywords:
 
 ## -description
 
+The **FwpmFilterCreateEnumHandle0** function creates a handle used to enumerate a set of filter objects.
+
 ## -parameters
 
-### -param engineHandle
+### -param engineHandle [in]
 
-### -param enumTemplate
+Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param enumHandle
+### -param enumTemplate [in, optional]
+
+Template to selectively restrict the enumeration.
+
+### -param enumHandle [out]
+
+The handle for filter enumeration.
 
 ## -returns
 
+Type: **DWORD**
+
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+If *enumTemplate* is **NULL**, all filters are returned.
+
+The enumerator is not "live", meaning it does not reflect changes made to the system after the call to  **FwpmFilterCreateEnumHandle0** returns. If you need to ensure that the results are current, you must call **FwpmFilterCreateEnumHandle0** and **[FwpmFilterEnum0](nf-fwpmk-fwpmfilterenum0.md)** from within the same explicit transaction.
+
+The caller must free the returned handle by a call to **[FwpmFilterDestroyEnumHandle0](nf-fwpmk-fwpmfilterdestroyenumhandle0.md)**.
+
+The caller needs [FWPM_ACTRL_ENUM](/windows/desktop/FWP/access-right-identifiers) access to the filters' containers and **FWPM_ACTRL_READ** access to the filters. Only filters to which the caller has **FWPM_ACTRL_READ** access will be returned. See [Access Control](/windows/desktop/FWP/access-control) for more information.
+
+**FwpmFilterCreateEnumHandle0** is a specific implementation of FwpmFilterCreateEnumHandle. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)  for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmFilterDestroyEnumHandle0](nf-fwpmk-fwpmfilterdestroyenumhandle0.md)**
+- **[FwpmFilterEnum0](nf-fwpmk-fwpmfilterenum0.md)**
+- **[FWPM_FILTER_ENUM_TEMPLATE0](/windows/desktop/api/fwpmtypes/ns-fwpmtypes-fwpm_filter_enum_template0)**
+- [FWPM_ACTRL_ENUM](/windows/desktop/FWP/access-right-identifiers)
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [Access Control](/windows/desktop/FWP/access-control)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
