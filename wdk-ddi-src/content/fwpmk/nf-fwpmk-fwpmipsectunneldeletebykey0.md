@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmIPsecTunnelDeleteByKey0
 tech.root: netvista
 title: FwpmIPsecTunnelDeleteByKey0
-ms.date: 05/30/2024
+ms.date: 06/07/2024
 targetos: Windows
-description: 
+description: The FwpmIPsecTunnelDeleteByKey0 function removes an Internet Protocol Security (IPsec) tunnel mode policy from the system.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,15 +44,39 @@ helpviewer_keywords:
 
 ## -description
 
+The **FwpmIPsecTunnelDeleteByKey0** function removes an Internet Protocol Security (IPsec) tunnel mode policy from the system.
+
 ## -parameters
 
-### -param engineHandle
+### -param engineHandle [in]
 
-### -param key
+Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
+
+### -param key [in]
+
+Unique identifier of the IPsec tunnel. This GUID was specified in the providerContextKey member of the tunnelPolicy parameter of the **[FwpmIPsecTunnelAdd0](nf-fwpmk-fwpmipsectunneladd0.md)** function.
 
 ## -returns
 
+Type: **DWORD**
+
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The IPsec tunnel mode policy was successfully deleted. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+This function cannot be called from within a read-only transaction. It fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+
+**FwpmIPsecTunnelDeleteByKey0** is a specific implementation of **FwpmIPsecTunnelDeleteByKey**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmIPsecTunnelAdd0](nf-fwpmk-fwpmipsectunneladd0.md)**
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [Object Management](/windows/desktop/FWP/object-management)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
