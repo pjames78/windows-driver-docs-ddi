@@ -64,8 +64,6 @@ Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwp
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 |  |  |

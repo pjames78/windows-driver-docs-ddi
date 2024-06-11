@@ -82,8 +82,6 @@ The returned security descriptor.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The security descriptor was retrieved successfully. |

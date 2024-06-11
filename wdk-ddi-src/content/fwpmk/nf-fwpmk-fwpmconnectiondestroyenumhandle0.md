@@ -58,8 +58,6 @@ Handle of a connection object enumeration created by a call to **[FwpmProviderCo
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |

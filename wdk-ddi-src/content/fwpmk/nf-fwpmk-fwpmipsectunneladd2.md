@@ -89,8 +89,6 @@ The security information associated with the IPsec tunnel.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The IPsec tunnel mode policy was successfully added. |

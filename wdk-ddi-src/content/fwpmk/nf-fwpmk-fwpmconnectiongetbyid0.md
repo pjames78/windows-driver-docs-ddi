@@ -62,8 +62,6 @@ The connection information.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The connection object was retrieved successfully. |

@@ -62,8 +62,6 @@ The handle for network event enumeration.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |

@@ -70,8 +70,6 @@ The number of enumeration entries returned.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | Success |

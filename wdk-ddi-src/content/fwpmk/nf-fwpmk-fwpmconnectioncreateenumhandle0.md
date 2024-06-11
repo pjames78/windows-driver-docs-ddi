@@ -62,8 +62,6 @@ Address of a **HANDLE** variable. On function return, it contains the handle for
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |

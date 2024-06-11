@@ -58,8 +58,6 @@ Runtime identifier for the object being removed from the system. This value is r
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The filter was successfully deleted. |

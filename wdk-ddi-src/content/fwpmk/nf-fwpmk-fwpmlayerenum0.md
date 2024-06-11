@@ -70,8 +70,6 @@ The number of layer entries returned.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The layers were enumerated successfully. |

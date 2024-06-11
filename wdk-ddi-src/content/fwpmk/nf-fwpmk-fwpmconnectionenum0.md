@@ -70,8 +70,6 @@ The number of entries returned in the *entries* parameter.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The connection objects were enumerated successfully. |

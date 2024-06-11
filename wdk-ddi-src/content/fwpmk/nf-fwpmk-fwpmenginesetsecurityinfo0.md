@@ -74,8 +74,6 @@ The system access control list (SACL) to be set in the security descriptor.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The security descriptor was set successfully. |

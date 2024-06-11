@@ -58,8 +58,6 @@ Handle of a layer enumeration created by a call to **[FwpmLayerCreateEnumHandle0
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |

@@ -57,8 +57,6 @@ A handle to an open session with the filter engine. To open a session with the f
 The GUID of the connection policy that was created when you called **[FwpmConnectionPolicyAdd0](nf-fwpmk-fwpmconnectionpolicyadd0.md)**.
 
 ## -returns
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The connection policy was successfully removed. |

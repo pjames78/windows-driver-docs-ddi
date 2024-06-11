@@ -58,8 +58,6 @@ The new BFE service state being changed to.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |

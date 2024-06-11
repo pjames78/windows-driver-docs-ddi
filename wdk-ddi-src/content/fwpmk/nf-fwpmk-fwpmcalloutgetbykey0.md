@@ -62,8 +62,6 @@ Information about the state associated with the callout.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The callout was retrieved successfully. |

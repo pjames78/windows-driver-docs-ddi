@@ -94,8 +94,6 @@ The security information.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The routing policy was successfully configured. |

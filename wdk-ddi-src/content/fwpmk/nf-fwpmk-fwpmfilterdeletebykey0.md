@@ -58,8 +58,6 @@ Unique identifier of the object being removed from the system. This is the same 
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The filter was successfully deleted. |

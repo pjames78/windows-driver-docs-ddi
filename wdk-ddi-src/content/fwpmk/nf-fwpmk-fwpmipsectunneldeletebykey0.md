@@ -58,8 +58,6 @@ Unique identifier of the IPsec tunnel. This GUID was specified in the providerCo
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The IPsec tunnel mode policy was successfully deleted. |

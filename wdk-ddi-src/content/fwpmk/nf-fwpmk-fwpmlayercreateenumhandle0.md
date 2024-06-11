@@ -62,8 +62,6 @@ Handle for the layer enumeration.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The enumerator was created successfully. |

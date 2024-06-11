@@ -58,8 +58,6 @@ Handle of a callout enumeration created by a call to **[FwpmCalloutCreateEnumHan
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |

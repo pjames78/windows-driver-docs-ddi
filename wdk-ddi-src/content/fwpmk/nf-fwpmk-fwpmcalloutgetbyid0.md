@@ -62,8 +62,6 @@ Information about the state associated with the callout specified by the *id* pa
 
 ## -returns
 
-Type: **DWORD**
-
 The **FwpmCalloutGetById0** function returns one of the following NTSTATUS codes.
 
 | Return code/value | Description |

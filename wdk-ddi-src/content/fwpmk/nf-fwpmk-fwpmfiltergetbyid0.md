@@ -62,8 +62,6 @@ The filter information.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The filter was retrieved successfully. |

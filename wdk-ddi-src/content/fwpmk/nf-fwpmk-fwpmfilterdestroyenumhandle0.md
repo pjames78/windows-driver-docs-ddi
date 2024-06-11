@@ -58,8 +58,6 @@ Handle of a filter enumeration created by a call to **FwpmFilterCreateEnumHandle
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The enumerator was successfully deleted. |

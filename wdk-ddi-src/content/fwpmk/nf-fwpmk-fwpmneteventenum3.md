@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmNetEventEnum3
 tech.root: netvista
 title: FwpmNetEventEnum3
-ms.date: 05/30/2024
+ms.date: 06/11/2024
 targetos: Windows
-description: 
+description: The FwpmNetEventEnum3 function returns the next page of results from the network event enumerator.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,23 +44,59 @@ helpviewer_keywords:
 
 ## -description
 
+The **FwpmNetEventEnum3** function returns the next page of results from the network event enumerator.
+
 ## -parameters
 
 ### -param engineHandle [in]
 
 Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param enumHandle
+### -param enumHandle [in]
 
-### -param numEntriesRequested
+Handle for a network event enumeration created by a call to **[FwpmNetEventCreateEnumHandle0](nf-fwpmk-fwpmneteventcreateenumhandle0.md)**.
 
-### -param entries
+### -param numEntriesRequested [in]
 
-### -param numEntriesReturned
+The number of enumeration entries requested.
+
+### -param entries [out]
+
+Addresses of enumeration entries.
+
+### -param numEntriesReturned [out]
+
+The number of enumeration entries returned.
 
 ## -returns
 
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The network events were enumerated successfully. |
+| **FWP_E_NET_EVENTS_DISABLED**<br>0x80320013 | The collection of network diagnostic events is disabled. Call **[FwpmEngineSetOption0](nf-fwpmk-fwpmenginesetoption0.md)** to enable it. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+If the *numEntriesReturned* is less than the *numEntriesRequested*, the enumeration is exhausted.
+
+The returned array of entries (but not the individual entries themselves) must be freed by a call to **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**.
+
+A subsequent call that uses the same *enumHandle* parameter returns the next set of events following those in the current *entries* buffer.
+
+**FwpmNetEventEnum3** returns only events that were logged prior to the creation of the *enumHandle* parameter. See [Logging](/windows/desktop/FWP/logging) for more information.
+
+**FwpmNetEventEnum3** is the specific implementation of **FwpmNetEventEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**
+- **[FwpmNetEventCreateEnumHandle0](nf-fwpmk-fwpmneteventcreateenumhandle0.md)**
+- **[FwpmEngineSetOption0](nf-fwpmk-fwpmenginesetoption0.md)**
+- [FWPM_NET_EVENT3](/windows/desktop/api/fwpmtypes/ns-fwpmtypes-fwpm_net_event3)
+- [WFP Logging](/windows/desktop/FWP/logging)
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)

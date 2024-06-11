@@ -70,8 +70,6 @@ The number of callouts returned.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 | --- | --- |
 | **ERROR_SUCCESS**<br>0 | The callouts were enumerated successfully. |

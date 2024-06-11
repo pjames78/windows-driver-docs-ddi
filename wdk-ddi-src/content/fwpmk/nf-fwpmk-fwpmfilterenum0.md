@@ -70,8 +70,6 @@ The number of filter objects returned.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The filters were enumerated successfully. |

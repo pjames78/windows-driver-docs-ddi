@@ -97,8 +97,6 @@ The **FWPM_ENGINE_NAME_CACHE**  option is reserved for internal use.
 
 ## -returns
 
-Type: **DWORD**
-
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | Success |
