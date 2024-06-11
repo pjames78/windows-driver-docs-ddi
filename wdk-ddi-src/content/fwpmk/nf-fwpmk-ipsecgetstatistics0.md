@@ -46,7 +46,9 @@ helpviewer_keywords:
 
 ## -parameters
 
-### -param engineHandle
+### -param engineHandle [in]
+
+Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
 ### -param ipsecStatistics
 
