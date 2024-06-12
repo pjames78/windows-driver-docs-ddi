@@ -97,7 +97,7 @@ The security information associated with the IPsec tunnel.
 
 ## -remarks
 
-You can't call this function within a read-only transaction. It fails with **FWP_E_INCOMPATIBLE_TXN**. For more info about transactions, see [Object Management](/windows/desktop/FWP/object-management).
+You can't call this function within a read-only transaction, it fails with **FWP_E_INCOMPATIBLE_TXN**. For more info about transactions, see [Object Management](/windows/desktop/FWP/object-management).
 
 ## -see-also
 

@@ -92,7 +92,7 @@ The security information associated with the IPsec tunnel.
 
 ## -remarks
 
-This function cannot be called from within a read-only transaction. It fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a read-only transaction, it fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 **FwpmIPsecTunnelAdd0** is a specific implementation of **FwpmIPsecTunnelAdd**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 

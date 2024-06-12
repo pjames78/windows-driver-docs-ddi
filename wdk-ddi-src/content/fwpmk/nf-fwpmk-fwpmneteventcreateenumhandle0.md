@@ -75,7 +75,7 @@ If *enumTemplate* is **NULL**, all network event objects are returned.
 
 The caller must call **[FwpmNetEventDestroyEnumHandle0](nf-fwpmk-fwpmneteventdestroyenumhandle0.md)** to free the returned handle.
 
-This function cannot be called from within a transaction. It fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a transaction, it fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 The caller needs [FWPM_ACTRL_ENUM](/windows/desktop/FWP/access-right-identifiers) access to the events' containers. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 

@@ -69,7 +69,7 @@ Pointer to a variable that receives a runtime identifier for this provider conte
 | Return code/value | Description |
 |---|---|
 | **ERROR_SUCCESS**<br>0 | The provider context was successfully added. |
-| **ERROR_NOT_SUPPORTED**<br>0x32 | The [IKEEXT_IPV6_CGA](/windows/desktop/api/iketypes/ne-iketypes-ikeext_authentication_method_type) authentication method in the **authenticationMethods** array, but cryptographically generated address (CGA) is not enabled in the registry. |
+| **ERROR_NOT_SUPPORTED**<br>0x32 | The [FWPM_IPSEC_IKE_MM_CONTEXT](/windows/desktop/api/fwpmtypes/ne-fwpmtypes-fwpm_provider_context_type)and the [IKEEXT_IPV6_CGA](/windows/desktop/api/iketypes/ne-iketypes-ikeext_authentication_method_type) authentication method in the **authenticationMethods** array, but cryptographically generated address (CGA) is not enabled in the registry. |
 | **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
 | **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
 | **Other NTSTATUS codes** | An error occurred. |
@@ -80,7 +80,7 @@ Some fields in the [FWPM_PROVIDER_CONTEXT1](/windows/desktop/api/fwpmtypes/ns-fw
 
 If the caller supplies a **NULL** security descriptor, the system assigns a default security descriptor.
 
-This function cannot be called from within a read-only transaction. It fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a read-only transaction, it fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 The caller needs [FWPM_ACTRL_ADD](/windows/desktop/FWP/access-right-identifiers) access to the provider context's container and **FWPM_ACTRL_ADD_LINK** access to the provider (if any). See [Access Control](/windows/desktop/FWP/access-control) for more information.
 

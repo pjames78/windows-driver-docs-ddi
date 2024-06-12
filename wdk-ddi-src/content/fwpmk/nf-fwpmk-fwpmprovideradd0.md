@@ -79,7 +79,7 @@ Boot-time objects are added to the Base Filtering Engine (BFE) when the TCP/IP d
 - The object has an associated provider that does not specify a service name.
 - The object has an associated provider and an associated service set to auto-start.
 
-This function cannot be called from within a read-only transaction. It will fail with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a read-only transaction, it fails  with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 The caller needs [FWPM_ACTRL_ADD](/windows/desktop/FWP/access-right-identifiers) access to the provider's container. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 

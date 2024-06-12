@@ -67,7 +67,7 @@ Runtime identifier for the object being removed from the system. This value is r
 
 ## -remarks
 
-This function cannot be called from within a read-only transaction. It will fail with
+This function cannot be called from within a read-only transaction, it fails  with
 **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 This function can be called within a dynamic session if the corresponding object was added during the same session. If this function is called for an object that was added during a different dynamic session, it will fail with **FWP_E_WRONG_SESSION**. If this function is called for an object that was not added during a dynamic session, it will fail with **FWP_E_DYNAMIC_SESSION_IN_PROGRESS**.

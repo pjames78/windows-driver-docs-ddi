@@ -89,7 +89,7 @@ The system access control list (SACL) to be set in the security descriptor.
 
 If the *key* parameter is **NULL** or if it is a **NULL** GUID, this function manages the security information of the filters container.
 
-This function cannot be called from within a transaction. It fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a transaction, it fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 This function can be called within a dynamic session if the corresponding object was added during the same session. If this function is called for an object that was added during a different dynamic session, it fails with **FWP_E_WRONG_SESSION**. If this function is called for an object that was not added during a dynamic session, it fails with **FWP_E_DYNAMIC_SESSION_IN_PROGRESS**.
 

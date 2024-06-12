@@ -92,8 +92,6 @@ A subsequent call that uses the same *enumHandle* parameter will return the next
 
 ## -see-also
 
-Here are all the links in the current document:
-
 - **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
 - **[FwpmNetEventCreateEnumHandle0](nf-fwpmk-fwpmneteventcreateenumhandle0.md)**
 - **[FwpmEngineSetOption0](nf-fwpmk-fwpmenginesetoption0.md)**

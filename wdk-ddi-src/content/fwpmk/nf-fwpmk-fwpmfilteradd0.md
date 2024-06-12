@@ -90,7 +90,7 @@ To block connections to particular locations, add a **[FWP_ACTION_BLOCK](/window
 
 The [FWPM_FILTER0](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_filter0) structure can label a filter as a boot-time or persistent filter.  Boot-time filters are added to the Base Filtering Engine (BFE) when the TCP/IP driver starts, and are removed once the BFE finishes initialization.  Persistent objects are added when the BFE starts.
 
-This function cannot be called from within a read-only transaction. It will fail with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a read-only transaction, it fails  with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 The caller needs the following access rights:
 

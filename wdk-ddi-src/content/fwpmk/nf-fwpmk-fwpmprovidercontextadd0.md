@@ -80,7 +80,7 @@ Some fields in the [FWPM_PROVIDER_CONTEXT0](/windows/desktop/api/fwpmtypes/ns-fw
 
 If the caller supplies a **NULL** security descriptor, the system assigns a default security descriptor.
 
-This function cannot be called from within a read-only transaction. It fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a read-only transaction, it fails with **FWP_E_INCOMPATIBLE_TXN**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
 The caller needs [FWPM_ACTRL_ADD](/windows/desktop/FWP/access-right-identifiers) access to the provider context's container and **FWPM_ACTRL_ADD_LINK** access to the provider (if any). See [Access Control](/windows/desktop/FWP/access-control) for more information.
 

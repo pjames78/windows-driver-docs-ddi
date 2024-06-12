@@ -106,9 +106,9 @@ The **FWPM_ENGINE_NAME_CACHE**  option is reserved for internal use.
 
 ## -remarks
 
-This function cannot be called from within a transaction. It fails with FWP_E_TXN_IN_PROGRESS. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+This function cannot be called from within a transaction, it fails with FWP_E_TXN_IN_PROGRESS. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 
-This function cannot be called from within a dynamic session. It will fail with **FWP_E_DYNAMIC_SESSION_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about sessions.
+This function cannot be called from within a dynamic session, it fails  with **FWP_E_DYNAMIC_SESSION_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about sessions.
 
 The caller needs [FWPM_ACTRL_WRITE](/windows/desktop/FWP/access-right-identifiers) access to the filter engine. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
