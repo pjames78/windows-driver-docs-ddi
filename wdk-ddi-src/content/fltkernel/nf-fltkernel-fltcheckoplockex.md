@@ -107,7 +107,7 @@ This routine has the following parameters:
 
 A pointer to the callback data structure for the I/O operation.
 
-**Note** That when your WaitCompleteRoutine is called the IoStatus sub-structure may have been filled in with a failure status (for instance STATUS_CANCELLED).  You should inspect this status and react appropriately.
+**Note** that when your *WaitCompleteRoutine* is called, the IoStatus sub-structure might be filled in with a failure status (for instance STATUS_CANCELLED).  You should inspect this status and react appropriately.
 
 #### Context
 
