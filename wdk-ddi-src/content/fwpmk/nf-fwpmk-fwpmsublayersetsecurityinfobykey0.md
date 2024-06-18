@@ -2,7 +2,7 @@
 UID: NF:fwpmk.FwpmSubLayerSetSecurityInfoByKey0
 tech.root: netvista
 title: FwpmSubLayerSetSecurityInfoByKey0
-ms.date: 05/30/2024
+ms.date: 06/18/2024
 targetos: Windows
 description: 
 prerelease: false
@@ -50,21 +50,57 @@ helpviewer_keywords:
 
 Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param key
+### -param key [in, optional]
 
-### -param securityInfo
+Unique identifier of the sublayer. This must be the same GUID that was specified when the application called **[FwpmSubLayerAdd0](nf-fwpmk-fwpmsublayeradd0.md)**.
 
-### -param sidOwner
+### -param securityInfo [in]
 
-### -param sidGroup
+The type of security information to set.
 
-### -param dacl
+### -param sidOwner [in, optional]
 
-### -param sacl
+The owner's security identifier (SID) to be set in the security descriptor.
+
+### -param sidGroup [in, optional]
+
+The group's SID to be set in the security descriptor.
+
+### -param dacl [in, optional]
+
+The discretionary access control list (DACL) to be set in the security descriptor.
+
+### -param sacl [in, optional]
+
+The system access control list (SACL) to be set in the security descriptor.
 
 ## -returns
 
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The security descriptor was set successfully. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+If the *key* parameter is **NULL** or if it is a **NULL** GUID, this function manages the security information of the sublayers container.
+
+This function cannot be called from within a transaction it fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
+
+This function can be called within a dynamic session if the corresponding object was added during the same session. If this function is called for an object that was added during a different dynamic session, it fails with **FWP_E_WRONG_SESSION**. If this function is called for an object that was not added during a dynamic session, it fails with **FWP_E_DYNAMIC_SESSION_IN_PROGRESS**.
+
+This function behaves like the standard Win32 **[SetSecurityInfo](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)** function. The caller needs the same standard access rights as described in the **SetSecurityInfo** reference topic.
+
+**FwpmSubLayerSetSecurityInfoByKey0** is a specific implementation of **FwpmSubLayerSetSecurityInfoByKey**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmSubLayerAdd0](nf-fwpmk-fwpmsublayeradd0.md)**
+- **[FwpmSubLayerGetSecurityInfoByKey0](nf-fwpmk-fwpmsublayergetsecurityinfobykey0.md)**
+- **[SetSecurityInfo](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)**
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [Object Management](/windows/desktop/FWP/object-management)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
