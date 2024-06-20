@@ -88,7 +88,7 @@ A subsequent call that uses the same *enumHandle* parameter returns the next set
 
 **FwpmNetEventEnum3** returns only events that were logged prior to the creation of the *enumHandle* parameter. See [Logging](/windows/desktop/FWP/logging) for more information.
 
-**FwpmNetEventEnum3** is the specific implementation of **FwpmNetEventEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
+**FwpmNetEventEnum3** is a specific implementation of **FwpmNetEventEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

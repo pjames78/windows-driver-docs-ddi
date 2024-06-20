@@ -75,7 +75,7 @@ The caller must free the returned object by a call to **[FwpmFreeMemory0](nf-fwp
 
 The caller needs [FWPM_ACTRL_READ](/windows/desktop/FWP/access-right-identifiers) access to the provider context. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
-**FwpmProviderContextGetById0** is the specific implementation of **FwpmProviderContextGetById**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
+**FwpmProviderContextGetById0** is a specific implementation of **FwpmProviderContextGetById**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

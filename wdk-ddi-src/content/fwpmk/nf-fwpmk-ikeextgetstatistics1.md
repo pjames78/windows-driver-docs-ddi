@@ -69,7 +69,7 @@ The top-level object of IKE/AuthIP statistics organization.
 
 The caller needs [FWPM_ACTRL_READ_STATS](/windows/desktop/FWP/access-right-identifiers) access to the IKE/AuthIP security associations database. See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
-**IkeextGetStatistics1** is the specific implementation of **IkeextGetStatistics**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
+**IkeextGetStatistics1** is a specific implementation of **IkeextGetStatistics**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

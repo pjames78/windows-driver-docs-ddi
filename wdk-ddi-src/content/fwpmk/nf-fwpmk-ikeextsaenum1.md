@@ -87,7 +87,7 @@ A subsequent call using the same enumeration handle will return the next set of 
 
 **IkeextSaEnum1** works on a snapshot of the SAs taken at the time the enumeration handle was created.
 
-**IkeextSaEnum1** is the specific implementation of **IkeextSaEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
+**IkeextSaEnum1** is a specific implementation of **IkeextSaEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

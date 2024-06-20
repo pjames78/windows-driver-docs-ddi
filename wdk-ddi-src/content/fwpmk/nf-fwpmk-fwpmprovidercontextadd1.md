@@ -84,7 +84,7 @@ This function cannot be called from within a read-only transaction, it fails wit
 
 The caller needs [FWPM_ACTRL_ADD](/windows/desktop/FWP/access-right-identifiers) access to the provider context's container and **FWPM_ACTRL_ADD_LINK** access to the provider (if any). See [Access Control](/windows/desktop/FWP/access-control) for more information.
 
-**FwpmProviderContextAdd0** is the specific implementation of **FwpmProviderContextAdd**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
+**FwpmProviderContextAdd0** is a specific implementation of **FwpmProviderContextAdd**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
