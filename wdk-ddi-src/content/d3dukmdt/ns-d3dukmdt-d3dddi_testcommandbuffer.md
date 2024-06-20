@@ -62,7 +62,7 @@ Reserved for future use.
 
 ### -field Operation
 
-A [**D3DDDI_TESTCOMMANDBUFFEROP**](ns-d3dukmdt-d3dddi_testcommandbufferop.md) enumeration that specifies the type of operation for the test command buffer, and which operation-specific structure to use.
+A [**D3DDDI_TESTCOMMANDBUFFEROP**](ne-d3dukmdt-d3dddi_testcommandbufferop.md) enumeration that specifies the type of operation for the test command buffer, and which operation-specific structure to use.
 
 ### -field Reserved1
 
@@ -80,8 +80,8 @@ For more information, see [Kernel-mode testing](/windows-hardware/drivers/displa
 
 [**D3DDDI_TESTCOMMANDBUFFER_FILL**](ns-d3dukmdt-d3dddi_testcommandbuffer_fill.md)
 
-[**D3DDDI_TESTCOMMANDBUFFEROP**](ns-d3dukmdt-d3dddi_testcommandbufferop.md)
+[**D3DDDI_TESTCOMMANDBUFFEROP**](ne-d3dukmdt-d3dddi_testcommandbufferop.md)
 
 [**DXGKARG_BUILDTESTCOMMANDBUFFER**](../d3dkmddi/ns-d3dkmddi-dxgkarg_buildtestcommandbuffer.md)
 
-[**pfnBuildTestCommandBuffer**](../d3dkmddi/nc-d3dkmddi-dxgkddi_kernelmodetestinginterface.md)
+[**pfnBuildTestCommandBuffer**](../d3dkmddi/ns-d3dkmddi-dxgkddi_kernelmodetestinginterface.md)

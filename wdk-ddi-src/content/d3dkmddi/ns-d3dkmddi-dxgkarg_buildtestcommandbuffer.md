@@ -50,7 +50,7 @@ The **DXGKARG_BUILDTESTCOMMANDBUFFER** structure describes a test command buffer
 
 ### -field hContext
 
-[in] KMD context handle returned from [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) when [**Flags.HardwareQueue**](../d3dukmdt/ns-d3dukmdt-d3dddi_buildtestcommandbufferflags.md) is 0, or KMD hardware queue handle returned from [**DxgkDdiCreatehwqueue**](nc-d3dkmddi-dxgkddi_createhardwarequeue.md) when **Flags.HardwareQueue** is 1.
+[in] KMD context handle returned from [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) when [**Flags.HardwareQueue**](../d3dukmdt/ns-d3dukmdt-d3dddi_buildtestcommandbufferflags.md) is 0, or KMD hardware queue handle returned from [**DxgkDdiCreatehwqueue**](nc-d3dkmddi-dxgkddi_createhwqueue.md) when **Flags.HardwareQueue** is 1.
 
 ### -field Command
 

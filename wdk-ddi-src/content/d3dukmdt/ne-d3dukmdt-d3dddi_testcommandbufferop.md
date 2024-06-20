@@ -76,4 +76,4 @@ For more information, see [Kernel-mode testing](/windows-hardware/drivers/displa
 
 [**D3DDDI_TESTCOMMANDBUFFER**](ns-d3dukmdt-d3dddi_testcommandbuffer.md)
 
-[**pfnBuildTestCommandBuffer**](../d3dkmddi/nc-d3dkmddi-dxgkddi_kernelmodetestinginterface.md)
+[**pfnBuildTestCommandBuffer**](../d3dkmddi/ns-d3dkmddi-dxgkddi_kernelmodetestinginterface.md)

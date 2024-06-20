@@ -54,7 +54,7 @@ KMD's **DXGKDDI_BUILDTESTCOMMANDBUFFER** function builds a test command buffer f
 
 ### -param pArgs
 
-[in/out] Pointer to a [**DXGKARG_BUILDTESTCOMMANDBUFFER**](-d3dkmddi-dxgkarg_buildtestcommandbuffer.md) structure that describes the test command buffer to build.
+[in/out] Pointer to a [**DXGKARG_BUILDTESTCOMMANDBUFFER**](ns-d3dkmddi-dxgkarg_buildtestcommandbuffer.md) structure that describes the test command buffer to build.
 
 ## -returns
 
@@ -74,6 +74,6 @@ For more information, see [Kernel-mode testing](/windows-hardware/drivers/displa
 
 ## -see-also
 
-[**DXGKARG_BUILDTESTCOMMANDBUFFER**](-d3dkmddi-dxgkarg_buildtestcommandbuffer.md)
+[**DXGKARG_BUILDTESTCOMMANDBUFFER**](ns-d3dkmddi-dxgkarg_buildtestcommandbuffer.md)
 
 [**DxgkDdiQueryFeatureInterface**](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryfeatureinterface)

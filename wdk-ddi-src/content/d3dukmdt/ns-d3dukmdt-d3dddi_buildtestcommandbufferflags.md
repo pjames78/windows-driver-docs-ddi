@@ -68,8 +68,8 @@ For more information, see [Kernel-mode testing](/windows-hardware/drivers/displa
 
 [**DXGKARG_BUILDTESTCOMMANDBUFFER**](../d3dkmddi/ns-d3dkmddi-dxgkarg_buildtestcommandbuffer.md)
 
-[**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md)
+[**DxgkDdiCreateContext**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext.md)
 
- [**DxgkDdiCreatehwqueue**](nc-d3dkmddi-dxgkddi_createhardwarequeue.md)
+[**DxgkDdiCreatehwqueue**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createhwqueue.md)
 
-[**pfnBuildTestCommandBuffer**](../d3dkmddi/nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md)
+[**pfnBuildTestCommandBuffer**](../d3dkmddi/ns-d3dkmddi-dxgkddi_buildtestcommandbuffer.md)

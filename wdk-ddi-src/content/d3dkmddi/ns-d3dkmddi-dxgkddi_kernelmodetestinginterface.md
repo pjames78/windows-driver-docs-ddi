@@ -50,7 +50,7 @@ The **DXGKDDI_KERNELMODETESTINGINTERFACE** structure contains pointers to functi
 
 ### -field pfnBuildTestCommandBuffer
 
-Pointer to the [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](dxgkddi-buildtestcommandbuffer.md) function.
+Pointer to the [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md) function.
 
 ## -remarks
 
@@ -58,4 +58,4 @@ For more information, see [Kernel-mode testing](/windows-hardware/drivers/displa
 
 ## -see-also
 
- [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](dxgkddi-buildtestcommandbuffer.md)
+[**DXGKDDI_BUILDTESTCOMMANDBUFFER**](nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md)
