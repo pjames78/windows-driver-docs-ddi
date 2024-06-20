@@ -58,7 +58,7 @@ The **D3DDDI_DRIVERESCAPE_BUILDTESTCOMMANDBUFFER** structure defines the kernel-
 
 ### -field hContext
 
-[in] KMD context handle returned from [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) when [**Flags.HardwareQueue**](../d3dukmdt/ns-d3dukmdt-d3dddi_buildtestcommandbufferflags.md) is 0, or KMD hardware queue handle returned from [**DxgkDdiCreatehwqueue**](nc-d3dkmddi-dxgkddi_createhardwarequeue.md) when **Flags.HardwareQueue** is 1.
+[in] KMD context handle returned from [**DxgkDdiCreateContext**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext.md) when [**Flags.HardwareQueue**](ns-d3dukmdt-d3dddi_buildtestcommandbufferflags.md) is 0, or KMD hardware queue handle returned from [**DxgkDdiCreatehwqueue**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createhwqueue.md) when **Flags.HardwareQueue** is 1.
 
 ### -field Flags
 
@@ -74,7 +74,7 @@ The **D3DDDI_DRIVERESCAPE_BUILDTESTCOMMANDBUFFER** structure defines the kernel-
 
 ### -field DmaBufferSize
 
-[in/out] On input, specifies the size in bytes of the buffer that **pDmaBuffer** points to. On output, specifies the number of bytes that KMD has written to the buffer. See  [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md) for more information.
+[in/out] On input, specifies the size in bytes of the buffer that **pDmaBuffer** points to. On output, specifies the number of bytes that KMD has written to the buffer. See  [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](../d3dkmddi/nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md) for more information.
 
 ### -field pDmaBufferPrivateData
 
@@ -82,7 +82,7 @@ The **D3DDDI_DRIVERESCAPE_BUILDTESTCOMMANDBUFFER** structure defines the kernel-
 
 ### -field DmaBufferPrivateDataSize
 
-[in/out] On input, specifies the size in bytes of the buffer that **pDmaBufferPrivateData** points to. On output, specifies the number of bytes that KMD has written to the buffer. See  [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md) for more information.
+[in/out] On input, specifies the size in bytes of the buffer that **pDmaBufferPrivateData** points to. On output, specifies the number of bytes that KMD has written to the buffer. See  [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](../d3dkmddi/nc-d3dkmddi-dxgkddi_buildtestcommandbuffer.md) for more information.
 
 ## -remarks
 
