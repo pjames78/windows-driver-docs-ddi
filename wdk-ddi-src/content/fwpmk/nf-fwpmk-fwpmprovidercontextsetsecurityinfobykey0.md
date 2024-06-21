@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmProviderContextSetSecurityInfoByKey0
 tech.root: netvista
 title: FwpmProviderContextSetSecurityInfoByKey0
-ms.date: 06/13/2024
+ms.date: 06/21/2024
 targetos: Windows
-description: 
+description: The FwpmProviderContextSetSecurityInfoByKey0 function sets specified security information in the security descriptor of a provider context object.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+The **FwpmProviderContextSetSecurityInfoByKey0** function sets specified security information in the security descriptor of a provider context object.
 
 ## -parameters
 

@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmIPsecTunnelAdd3
 tech.root: netvista
 title: FwpmIPsecTunnelAdd3
-ms.date: 06/07/2024
+ms.date: 06/21/2024
 targetos: Windows
-description: 
+description: The FwpmIPsecTunnelAdd3 function adds a new Internet Protocol Security (IPsec) tunnel mode policy to the system.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-Adds a new Internet Protocol Security (IPsec) tunnel mode policy to the system.
+The **FwpmIPsecTunnelAdd3** function adds a new Internet Protocol Security (IPsec) tunnel mode policy to the system.
 
 ## -parameters
 

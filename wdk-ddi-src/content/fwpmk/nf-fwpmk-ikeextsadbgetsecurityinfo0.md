@@ -2,9 +2,9 @@
 UID: NF:fwpmk.IkeextSaDbGetSecurityInfo0
 tech.root: netvista
 title: IkeextSaDbGetSecurityInfo0
-ms.date: 06/19/2024
+ms.date: 06/21/2024
 targetos: Windows
-description: 
+description: The IkeextSaDbGetSecurityInfo0 function retrieves a copy of the security descriptor for a security association (SA) database.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+The **IkeextSaDbGetSecurityInfo0** function retrieves a copy of the security descriptor for a security association (SA) database.
 
 ## -parameters
 

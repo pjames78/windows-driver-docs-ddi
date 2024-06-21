@@ -2,9 +2,9 @@
 UID: NF:fwpmk.FwpmSubLayerSetSecurityInfoByKey0
 tech.root: netvista
 title: FwpmSubLayerSetSecurityInfoByKey0
-ms.date: 06/18/2024
+ms.date: 06/21/2024
 targetos: Windows
-description: 
+description: The FwpmSubLayerSetSecurityInfoByKey0 function sets specified security information in the security descriptor of a sublayer.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -43,6 +43,8 @@ helpviewer_keywords:
 ---
 
 ## -description
+
+The **FwpmSubLayerSetSecurityInfoByKey0** function sets specified security information in the security descriptor of a sublayer.
 
 ## -parameters
 
