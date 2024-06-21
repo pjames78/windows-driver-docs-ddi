@@ -87,7 +87,7 @@ The system access control list (SACL) to be set in the security descriptor.
 
 ## -remarks
 
-If the *key* parameter is **NULL** or if it is a NUL****L GUID, this function manages the security information of the providers container.
+If the *key* parameter is **NULL** or if it is a **NULL** GUID, this function manages the security information of the providers container.
 
 This function cannot be called from within a transaction, it fails with **FWP_E_TXN_IN_PROGRESS**. See [Object Management](/windows/desktop/FWP/object-management) for more information about transactions.
 

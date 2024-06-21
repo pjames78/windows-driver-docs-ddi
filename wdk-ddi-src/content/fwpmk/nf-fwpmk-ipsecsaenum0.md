@@ -2,9 +2,9 @@
 UID: NF:fwpmk.IPsecSaEnum0
 tech.root: netvista
 title: IPsecSaEnum0
-ms.date: 05/30/2024
+ms.date: 06/20/2024
 targetos: Windows
-description: 
+description: The IPsecSaEnum0 function returns the next page of results from the IPsec security association (SA) enumerator.
 prerelease: false
 req.assembly: 
 req.construct-type: function
@@ -44,23 +44,56 @@ helpviewer_keywords:
 
 ## -description
 
+The **IPsecSaEnum0** function returns the next page of results from the IPsec security association (SA) enumerator.
+
 ## -parameters
 
 ### -param engineHandle [in]
 
 Handle for an open session to the filter engine. Call **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)** to open a session to the filter engine.
 
-### -param enumHandle
+### -param enumHandle [in]
 
-### -param numEntriesRequested
+Handle for an IPsec SA enumeration. Call **[IPsecSaCreateEnumHandle0](nf-fwpmk-ipsecsacreateenumhandle0.md)** to obtain an enumeration handle.
 
-### -param entries
+### -param numEntriesRequested [in]
 
-### -param numEntriesReturned
+The number of enumeration entries requested.
+
+### -param entries [out]
+
+Addresses of the enumeration entries.
+
+### -param numEntriesReturned [out]
+
+The number of enumeration entries returned.
 
 ## -returns
 
+| Return code/value | Description |
+|---|---|
+| **ERROR_SUCCESS**<br>0 | The SAs were enumerated successfully. |
+| **FWP_E_\* error code**<br>0x80320001—0x80320039 | A Windows Filtering Platform (WFP) specific error. See [WFP Error Codes](/windows/win32/fwp/wfp-error-codes) for details. |
+| **RPC_\* error code**<br>0x80010001—0x80010122 | Failure to communicate with the remote or local firewall engine. |
+| **Other NTSTATUS codes** | An error occurred. |
+
 ## -remarks
+
+If the *numEntriesReturned* is less than the *numEntriesRequested*, the enumeration is exhausted.
+
+The returned array of entries (but not the individual entries themselves) must be freed by a call to **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**.
+
+A subsequent call using the same enumeration handle will return the next set of items following those in the last output buffer.
+
+**IPsecSaEnum0** works on a snapshot of the SAs taken at the time the enumeration handle was created.
+
+**IPsecSaEnum0** is a specific implementation of **IPsecSaEnum**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
+- **[FwpmEngineOpen0](nf-fwpmk-fwpmengineopen0.md)**
+- **[FwpmFreeMemory0](nf-fwpmk-fwpmfreememory0.md)**
+- **[IPsecSaCreateEnumHandle0](nf-fwpmk-ipsecsacreateenumhandle0.md)**
+- [IPSEC_SA_DETAILS0](/windows/desktop/api/ipsectypes/ns-ipsectypes-ipsec_sa_details0)
+- [WFP Error Codes](/windows/win32/fwp/wfp-error-codes)
+- [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows)
