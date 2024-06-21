@@ -4,7 +4,7 @@ title: FwpmEngineOpen0 function (fwpmk.h)
 description: The FwpmEngineOpen0 function opens a session to the filter engine. FwpmEngineOpen0 is a specific version of FwpmEngineOpen.
 old-location: netvista\fwpmengineopen0.htm
 tech.root: netvista
-ms.date: 06/05/2024
+ms.date: 06/21/2024
 keywords: ["FwpmEngineOpen0 function"]
 ms.keywords: FwpmEngineOpen0, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmEngineOpen0, netvista.fwpmengineopen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml
 req.header: fwpmk.h
@@ -47,9 +47,6 @@ api_name:
 
 The **FwpmEngineOpen0** function opens a session to the filter engine.
 
-> [!NOTE]
-> **FwpmEngineOpen0** is a specific version of **FwpmEngineOpen**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
-
 ## -parameters
 
 ### -param serverName [in, optional]
@@ -91,6 +88,8 @@ Callout drivers normally do not need to open a session to the filter engine beca
 For a callout driver to successfully open a session to the filter engine, the filter engine must be currently running at the time that the callout driver calls the **FwpmEngineOpen0** function. A callout driver can call the [FwpmBfeStateGet0](./nf-fwpmk-fwpmbfestateget0.md) function to obtain the current state of the filter engine. Before calling **FwpmBfeStateGet0**, the callout driver must call the [FwpmBfeStateSubscribeChanges0](./nf-fwpmk-fwpmbfestatesubscribechanges0.md) function to register a callback function that will be called whenever there is a change in the state of the filter engine.
 
 After a callout driver has finished accessing the filter engine, it calls the [FwpmEngineClose0](./nf-fwpmk-fwpmengineclose0.md) function to close the open session to the filter engine.
+
+**FwpmEngineOpen0** is a specific version of **FwpmEngineOpen**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

@@ -4,7 +4,7 @@ title: FwpmCalloutAdd0 function (fwpmk.h)
 description: The FwpmCalloutAdd0 function adds a callout to the filter engine.Note  FwpmCalloutAdd0 is a specific version of FwpmCalloutAdd.
 old-location: netvista\fwpmcalloutadd0.htm
 tech.root: netvista
-ms.date: 05/30/2024
+ms.date: 06/21/2024
 keywords: ["FwpmCalloutAdd0 function"]
 ms.keywords: FwpmCalloutAdd0, FwpmCalloutAdd0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmCalloutAdd0, netvista.fwpmcalloutadd0, wfp_ref_2_funct_2_fwpm_b1548682-4f29-467f-916d-fa434260b0ae.xml
 req.header: fwpmk.h
@@ -47,9 +47,6 @@ api_name:
 
 The **FwpmCalloutAdd0** function adds a callout to the filter engine.
 
-> [!NOTE]
->  **FwpmCalloutAdd0** is a specific version of **FwpmCalloutAdd**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
-
 ## -parameters
 
 ### -param engineHandle [in]
@@ -85,6 +82,8 @@ A callout driver calls the **FwpmCalloutAdd0** function to add a callout to the 
 Callout drivers do not typically add their callouts to the filter engine. In most situations this is handled by a user-mode Windows Filtering Platform management application.
 
 A callout and filters that specify the callout for the filter's action can be added to the filter engine before a callout driver registers the callout with the filter engine. In this situation, filters with an action type of **FWP_ACTION_CALLOUT_TERMINATING** or **FWP_ACTION_CALLOUT_UNKNOWN** are treated as **FWP_ACTION_BLOCK** and filters with an action type of **FWP_ACTION_CALLOUT_INSPECTION** are ignored until the callout is registered with the filter engine.
+
+**FwpmCalloutAdd0** is a specific version of **FwpmCalloutAdd**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

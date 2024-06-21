@@ -4,7 +4,7 @@ title: FwpmBfeStateGet0 function (fwpmk.h)
 description: The FwpmBfeStateGet0 function retrieves the current state of the filter engine.Note  FwpmBfeStateGet0 is a specific version of FwpmBfeStateGet.
 old-location: netvista\fwpmbfestateget0.htm
 tech.root: netvista
-ms.date: 05/30/2024
+ms.date: 06/21/2024
 keywords: ["FwpmBfeStateGet0 function"]
 ms.keywords: FwpmBfeStateGet0, FwpmBfeStateGet0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmBfeStateGet0, netvista.fwpmbfestateget0, wfp_ref_2_funct_2_fwpm_6f70e48b-0c6c-465e-95c3-fa41413398db.xml
 req.header: fwpmk.h
@@ -47,9 +47,6 @@ api_name:
 
 The **FwpmBfeStateGet0** function retrieves the current state of the filter engine.
 
-> [!NOTE]
->  **FwpmBfeStateGet0** is a specific version of **FwpmBfeStateGet**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
-
 ## -returns
 
 The **FwpmBfeStateGet0** function returns one of the following values.
@@ -66,6 +63,8 @@ The **FwpmBfeStateGet0** function returns one of the following values.
 A callout driver calls the **FwpmBfeStateGet0** function to retrieve the current state of the filter engine. For a callout driver to open a session to the filter engine, the filter engine must  be currently running.
 
 Before calling **FwpmBfeStateGet0**, the callout driver  must call the [FwpmBfeStateSubscribeChanges0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmbfestatesubscribechanges0) function to register a callback function that is called whenever the state of the filter engine changes.
+
+**FwpmBfeStateGet0** is a specific version of **FwpmBfeStateGet**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

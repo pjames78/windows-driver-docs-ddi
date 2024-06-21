@@ -4,7 +4,7 @@ title: FwpmCalloutDeleteById0 function (fwpmk.h)
 description: The FwpmCalloutDeleteById0 function deletes a callout from the filter engine.Note  FwpmCalloutDeleteById0 is a specific version of FwpmCalloutDeleteById.
 old-location: netvista\fwpmcalloutdeletebyid0.htm
 tech.root: netvista
-ms.date: 05/31/2024
+ms.date: 06/21/2024
 keywords: ["FwpmCalloutDeleteById0 function"]
 ms.keywords: FwpmCalloutDeleteById0, FwpmCalloutDeleteById0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmCalloutDeleteById0, netvista.fwpmcalloutdeletebyid0, wfp_ref_2_funct_2_fwpm_466376ac-f7a1-417e-9de8-9c3a7ff31404.xml
 req.header: fwpmk.h
@@ -47,9 +47,6 @@ api_name:
 
 The **FwpmCalloutDeleteById0** function deletes a callout from the filter engine.
 
-> [!NOTE]
->  **FwpmCalloutDeleteById0** is a specific version of **FwpmCalloutDeleteById**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
-
 ## -parameters
 
 ### -param engineHandle [in]
@@ -78,6 +75,8 @@ A callout driver calls the **FwpmCalloutDeleteById0** function to delete a callo
 Callout drivers do not typically delete their callouts from the filter engine. In most situations, this is handled by a user-mode [Windows Filtering Platform](/windows/desktop/FWP/windows-filtering-platform-start-page) management application.
 
 A callout can be deleted from the filter engine only if there are no filters in the filter engine that specify the callout for the filter's action.
+
+**FwpmCalloutDeleteById0** is a specific version of **FwpmCalloutDeleteById**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

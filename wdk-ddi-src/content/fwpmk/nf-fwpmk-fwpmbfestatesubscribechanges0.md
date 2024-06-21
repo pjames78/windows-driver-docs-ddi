@@ -4,7 +4,7 @@ title: FwpmBfeStateSubscribeChanges0 function (fwpmk.h)
 description: The FwpmBfeStateSubscribeChanges0 function registers a callback function that is called whenever there is a change to the state of the filter engine.Note  FwpmBfeStateSubscribeChanges0 is a specific version of FwpmBfeStateSubscribeChanges.
 old-location: netvista\fwpmbfestatesubscribechanges0.htm
 tech.root: netvista
-ms.date: 05/30/2024
+ms.date: 06/21/2024
 keywords: ["FwpmBfeStateSubscribeChanges0 function"]
 ms.keywords: FwpmBfeStateSubscribeChanges0, FwpmBfeStateSubscribeChanges0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmBfeStateSubscribeChanges0, netvista.fwpmbfestatesubscribechanges0, wfp_ref_2_funct_2_fwpm_79b78030-bb8c-462d-98fc-6f3818dead3d.xml
 req.header: fwpmk.h
@@ -46,9 +46,6 @@ api_name:
 ## -description
 
 The **FwpmBfeStateSubscribeChanges0** function registers a callback function that is called whenever there is a change to the state of the filter engine.
-
-> [!NOTE]
-> **FwpmBfeStateSubscribeChanges0** is a specific version of **FwpmBfeStateSubscribeChanges**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 > [!WARNING]
 > Do not call [FwpmBfeStateUnsubscribeChanges0](nf-fwpmk-fwpmbfestateunsubscribechanges0.md) from the callback function that you passed in the *callback* parameter. Doing so can cause a deadlock.
@@ -123,6 +120,8 @@ For example, a callout driver cannot open a session to the filter engine by call
 A callout driver must call **FwpmBfeStateSubscribeChanges0** before calling the [FwpmBfeStateGet0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmbfestateget0) function to retrieve the current state of the filter engine. After the call to **FwpmBfeStateSubscribeChanges0** returns, the callout driver can call **FwpmBfeStateGet0** at any time.
 
 A callout driver must deregister the callback function by calling the [FwpmBfeStateUnsubscribeChanges0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmbfestateunsubscribechanges0) function before the callout driver can be unloaded.
+
+**FwpmBfeStateSubscribeChanges0** is a specific version of **FwpmBfeStateSubscribeChanges**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 

@@ -2,7 +2,7 @@
 UID: NF:fwpmk.FwpmFilterAdd0
 tech.root: netvista
 title: FwpmFilterAdd0
-ms.date: 06/05/2024
+ms.date: 06/21/2024
 targetos: Windows
 description: The FwpmFilterAdd0 function adds a new filter object to the system.
 prerelease: false
@@ -85,8 +85,7 @@ If the caller supplies a **NULL** security descriptor, the system will assign a 
 
 To block connections to particular locations, add a **[FWP_ACTION_BLOCK](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_action0)** filter specifying the local address at the [FWPM_LAYER_ALE_AUTH_CONNECT_V*](/windows/desktop/FWP/management-filtering-layer-identifiers-) layer, or add a **FWP_ACTION_BLOCK** filter without specifying the local address at the **FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V*** layer.
 
-> [!NOTE]
-> If a local address is specified at the resource assignment layer, an implicit bind would succeed because address, address type, and port may come back as **[FWP_EMPTY](/windows/win32/api/fwptypes/ne-fwptypes-fwp_data_type)**.
+If a local address is specified at the resource assignment layer, an implicit bind would succeed because address, address type, and port may come back as **[FWP_EMPTY](/windows/win32/api/fwptypes/ne-fwptypes-fwp_data_type)**.
 
 The [FWPM_FILTER0](/windows/win32/api/fwpmtypes/ns-fwpmtypes-fwpm_filter0) structure can label a filter as a boot-time or persistent filter.  Boot-time filters are added to the Base Filtering Engine (BFE) when the TCP/IP driver starts, and are removed once the BFE finishes initialization.  Persistent objects are added when the BFE starts.
 

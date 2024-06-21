@@ -4,7 +4,7 @@ title: FwpmEngineClose0 function (fwpmk.h)
 description: The FwpmEngineClose0 function closes a previously opened session to the filter engine.Note  FwpmEngineClose0 is a specific version of FwpmEngineClose.
 old-location: netvista\fwpmengineclose0.htm
 tech.root: netvista
-ms.date: 05/30/2024
+ms.date: 06/21/2024
 keywords: ["FwpmEngineClose0 function"]
 ms.keywords: FwpmEngineClose0, FwpmEngineClose0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmEngineClose0, netvista.fwpmengineclose0, wfp_ref_2_funct_2_fwpm_b01feaca-7c4a-44a9-aec4-f867508b0129.xml
 req.header: fwpmk.h
@@ -47,9 +47,6 @@ api_name:
 
 The **FwpmEngineClose0** function closes a previously opened session to the filter engine.
 
-> [!NOTE]
->  **FwpmEngineClose0** is a specific version of **FwpmEngineClose**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
-
 ## -parameters
 
 ### -param engineHandle [in, out]
@@ -68,6 +65,8 @@ The **FwpmEngineClose0** function returns one of the following NTSTATUS codes.
 ## -remarks
 
 A callout driver calls the **FwpmEngineClose0** function to close a session to the filter engine that was previously opened by a call to the [FwpmEngineOpen0](/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0) function.
+
+**FwpmEngineClose0** is a specific version of **FwpmEngineClose**. See [WFP Version-Independent Names and Targeting Specific Versions of Windows](/windows/desktop/FWP/wfp-version-independent-names-and-targeting-specific-versions-of-windows) for more information.
 
 ## -see-also
 
