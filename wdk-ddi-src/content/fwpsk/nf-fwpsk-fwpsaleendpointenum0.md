@@ -133,8 +133,8 @@ After obtaining a handle, the callout driver can call
     <b>FwpsAleEndpointEnum0</b> to get information about the endpoints that match the enumeration parameters
     of the handle.
 
-Note that the localV4Address field from the returned FWPS_ALE_ENDPOINT_PROPERTIES0 is in host-byte order, while the localV6Address is in network-byte order. In order to use the IPv4 address
-    from the localV4Address field, one must call htonl() on the localV4Address in order to store it in an in_addr structure, to have a correctly formatted sockaddr.
+Note that the localV4Address field from the returned FWPS_ALE_ENDPOINT_PROPERTIES0 is in host-byte order, while the localV6Address is in network-byte order. To use the IPv4 address
+    from the localV4Address field, you must call htonl() on the localV4Address to store it in an in_addr structure and ensure the sockaddr is correctly formatted.
 
 When finished examining endpoint properties, the callout driver must call 
     <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointdestroyenumhandle0">FwpsAleEndpointDestroyEnumHandle0</a> to release the system resources associated with the enumeration
