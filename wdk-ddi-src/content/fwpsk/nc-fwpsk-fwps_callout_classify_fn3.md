@@ -2,7 +2,7 @@
 UID: NC:fwpsk.FWPS_CALLOUT_CLASSIFY_FN3
 tech.root: netvista
 title: FWPS_CALLOUT_CLASSIFY_FN3
-ms.date: 06/25/2024
+ms.date: 06/27/2024
 targetos: Windows
 description: Version 3 of the callback function invoked during classification when a callout filter matches.
 prerelease: false
@@ -12,7 +12,7 @@ req.ddi-compliance:
 req.dll: 
 req.header: fwpsk.h
 req.idl: 
-req.include-header: fwpsk.h
+req.include-header: 
 req.irql: <= DISPATCH_LEVEL
 req.kmdf-ver: 
 req.lib: 

@@ -2,14 +2,14 @@
 UID: NE:fwpsk.FWPS_BUILTIN_LAYERS_
 tech.root: netvista
 title: FWPS_BUILTIN_LAYERS
-ms.date: 06/25/2024
+ms.date: 06/27/2024
 targetos: Windows
 description: Defines constants that specify built-in run-time filtering layer identifiers.
 prerelease: false
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: fwpsk.h
-req.include-header: fwpsk.h
+req.include-header: 
 req.kmdf-ver: 
 req.max-support: 
 req.target-min-winverclnt: Available starting with Windows Vista.

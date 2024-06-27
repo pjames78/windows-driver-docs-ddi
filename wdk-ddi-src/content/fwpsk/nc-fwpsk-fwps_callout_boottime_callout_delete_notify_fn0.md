@@ -2,7 +2,7 @@
 UID: NC:fwpsk.FWPS_CALLOUT_BOOTTIME_CALLOUT_DELETE_NOTIFY_FN0
 tech.root: netvista
 title: FWPS_CALLOUT_BOOTTIME_CALLOUT_DELETE_NOTIFY_FN0
-ms.date: 06/25/2024
+ms.date: 06/27/2024
 targetos: Windows
 description: The filter engine calls a callout's **FWPS_CALLOUT_BOOTTIME_CALLOUT_DELETE_NOTIFY_FN0** function when the boottime callout has been removed.
 prerelease: false
@@ -12,7 +12,7 @@ req.ddi-compliance:
 req.dll: 
 req.header: fwpsk.h
 req.idl: 
-req.include-header: fwpsk.h
+req.include-header: 
 req.irql: <= DISPATCH_LEVEL
 req.kmdf-ver: 
 req.lib: 
