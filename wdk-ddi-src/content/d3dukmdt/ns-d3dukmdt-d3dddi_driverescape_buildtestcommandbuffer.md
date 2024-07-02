@@ -88,7 +88,7 @@ The **D3DDDI_DRIVERESCAPE_BUILDTESTCOMMANDBUFFER** structure defines the kernel-
 
 This structure is used by test applications that don't know the specifics of internal device formats.
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 

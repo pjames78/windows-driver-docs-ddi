@@ -78,7 +78,7 @@ The **DXGKARG_BUILDTESTCOMMANDBUFFER** structure describes a test command buffer
 
 ## -remarks
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 

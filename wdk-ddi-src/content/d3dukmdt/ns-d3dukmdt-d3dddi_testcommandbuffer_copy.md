@@ -64,7 +64,7 @@ The number of bytes to copy. **NumBytes** must be a multiple of 4.
 
 **D3DDDI_TESTCOMMANDBUFFER_COPY** is used to copy bytes using source and destination GPU virtual addresses.
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 

@@ -65,7 +65,7 @@ The engine supports [user-mode work submission](/windows-hardware/drivers/displa
 
 ### -field SupportBuildTestCommandBuffer
 
-The engine supports [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing). Supported starting with Windows 11, version 24H2.
+The engine supports [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features). Supported starting with Windows 11, version 24H2.
 
 ### -field MaxInFlightHwQueueBuffers
 

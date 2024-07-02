@@ -62,7 +62,7 @@ Can be used to access the flags as a single value.
 
 ## -remarks
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 
