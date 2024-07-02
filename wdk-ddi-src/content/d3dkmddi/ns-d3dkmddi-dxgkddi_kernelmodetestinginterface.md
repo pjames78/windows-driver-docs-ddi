@@ -54,7 +54,7 @@ Pointer to the [**DXGKDDI_BUILDTESTCOMMANDBUFFER**](nc-d3dkmddi-dxgkddi_buildtes
 
 ## -remarks
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 
