@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-KMD's **DXGKDDI_BUILDTESTCOMMANDBUFFER** function builds a test command buffer for [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+KMD's **DXGKDDI_BUILDTESTCOMMANDBUFFER** function builds a test command buffer for [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -parameters
 
@@ -70,7 +70,7 @@ When **pDmaBufferPrivateData** is NULL or too small and KMD needs to generate pr
 
 The KMD must calculate the size of both buffers in the same call.
 
-For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing).
+For more information, see [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features).
 
 ## -see-also
 
