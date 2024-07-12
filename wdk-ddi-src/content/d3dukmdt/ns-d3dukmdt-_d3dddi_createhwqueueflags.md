@@ -75,7 +75,7 @@ When set, indicates that the [**DXGKARG_CREATEHWQUEUE::hHwQueueProgressFence**](
 
 ### -field TestQueue
 
-When set, indicates that the hardware queue being created is a test queue for [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing). Available starting with Windows 11, version 24H2.
+When set, indicates that the hardware queue being created is a test queue for [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features). Available starting with Windows 11, version 24H2.
 
 ### -field Reserved
 

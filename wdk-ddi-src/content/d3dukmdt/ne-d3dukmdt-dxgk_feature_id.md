@@ -78,7 +78,7 @@ The page-based memory management feature. The feature category is DXGK_FEATURE_C
 
 ### -field DXGK_FEATURE_KERNEL_MODE_TESTING
 
-The [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing) feature. The feature category is DXGK_FEATURE_CATEGORY_DRIVER.
+The [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features) feature. The feature category is DXGK_FEATURE_CATEGORY_DRIVER.
 
 ### -field DXGK_FEATURE_64K_PT_DEMOTION_FIX
 

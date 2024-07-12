@@ -58,7 +58,7 @@ Driver escape type for CPU event usage; used to notify the kernel-mode driver (K
 
 ### -field D3DDDI_DRIVERESCAPETYPE_BUILDTESTCOMMANDBUFFER:3
 
-Driver escape type for building a test command buffer; used to build a test command buffer for kernel-mode testing. Available starting in Windows 11, version 24H2 (WDDM 3.2). See [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing) for more information.
+Driver escape type for building a test command buffer; used to build a test command buffer for kernel-mode testing. Available starting in Windows 11, version 24H2 (WDDM 3.2). See [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features) for more information.
 
 ### -field D3DDDI_DRIVERESCAPETYPE_MAX
 
