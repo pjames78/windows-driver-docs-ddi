@@ -2,9 +2,9 @@
 UID: NS:fwpsk.FWPS_CALLOUT3_
 tech.root: netvista
 title: FWPS_CALLOUT3
-ms.date: 06/28/2024
+ms.date: 07/12/2024
 targetos: Windows
-description: 
+description: The FWPS_CALLOUT3 structure defines the data that is required for a callout driver to register a callout with the filter engine.
 prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
