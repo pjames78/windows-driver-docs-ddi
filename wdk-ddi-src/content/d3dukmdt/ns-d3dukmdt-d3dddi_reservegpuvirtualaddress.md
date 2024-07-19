@@ -3,7 +3,7 @@ UID: NS:d3dukmdt.D3DDDI_RESERVEGPUVIRTUALADDRESS
 title: D3DDDI_RESERVEGPUVIRTUALADDRESS (d3dukmdt.h)
 description: Learn more about the D3DDDI_RESERVEGPUVIRTUALADDRESS structure.
 tech.root: display
-ms.date: 07/17/2024
+ms.date: 07/19/2024
 keywords: ["D3DDDI_RESERVEGPUVIRTUALADDRESS structure"]
 ms.keywords: D3DDDI_RESERVEGPUVIRTUALADDRESS, D3DDDI_RESERVEGPUVIRTUALADDRESS structure [Display Devices], d3dukmdt/D3DDDI_RESERVEGPUVIRTUALADDRESS, display.d3dddi_reservegpuvirtualaddress
 req.header: d3dukmdt.h
@@ -53,7 +53,7 @@ This member is obsolete. Don't use it.
 
 ### -field hAdapter
 
-[in] DirectX graphics adapter handle.
+[in] DirectX graphics adapter handle or zero (0). If UMD sets **hAdapter** set to 0, the D3D runtime will set **hAdapter** to the kernel's D3DKMT_HANDLE before calling the [**D3DKMTReserveGpuVirtualAddress**](../d3dkmthk/nf-d3dkmthk-d3dkmtreservegpuvirtualaddress.md) kernel interface.
 
 ### -field BaseAddress
 
