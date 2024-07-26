@@ -2,7 +2,7 @@
 UID: NF:storport.StorPortRegisterDriverProxyEndpoints
 tech.root: display
 title: StorPortRegisterDriverProxyEndpoints
-ms.date: 07/25/2025
+ms.date: 07/26/2024
 targetos: Windows
 description: Learn more about the StorPortRegisterDriverProxyEndpoints function.
 prerelease: false

@@ -152,6 +152,8 @@ An NVMe miniport driver calls the **StorPortNvmeMiniportEvent** function to log 
 
 **StorPortNvmeMiniportEvent** returns a STOR_STATUS_SUCCESS if the event is successfully logged. Otherwise, it returns a value such as:
 
+| Return code | Description |
+| ----------- | ----------- |
 | **STOR_STATUS_NOT_IMPLEMENTED** | This function is not implemented on the active operating system. |
 | **STOR_STATUS_INVALID_PARAMETER** | The operation fails with this return value if one or more of the parameters are invalid. |
 | **STOR_STATUS_UNSUCCESSFUL** | The operation failed for other internal reasons. |

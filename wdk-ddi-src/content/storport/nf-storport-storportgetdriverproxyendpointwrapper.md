@@ -2,7 +2,7 @@
 UID: NF:storport.StorPortGetDriverProxyEndpointWrapper
 tech.root: storage
 title: StorPortGetDriverProxyEndpointWrapper
-ms.date: 07/25/2024
+ms.date: 07/26/2024
 targetos: Windows
 description: Learn more about the StorPortGetDriverProxyEndpointWrapper function.
 prerelease: false
@@ -54,7 +54,7 @@ helpviewer_keywords:
 
 ### -param ProxyExtension
 
-[in] Pointer to a [**STOR_DRIVER_PROXY_EXTENSION**](ns-storport-stor_driver_proxy_extension.md) structure that contains the driver proxy extension.
+[in] Pointer to an opaque structure that contains the driver proxy extension.
 
 ### -param Id
 
@@ -81,4 +81,4 @@ helpviewer_keywords:
 
 [**StorPortRegisterDriverProxy**](nf-storport-storportregisterdriverproxy.md)
 
-[**StorPortRegisterDriverProxyEndpoint**](nf-storport-storportregisterdriverproxyendpoint.md)
+[**StorPortRegisterDriverProxyEndpoints**](nf-storport-storportregisterdriverproxyendpoints.md)

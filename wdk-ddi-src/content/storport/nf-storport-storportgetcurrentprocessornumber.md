@@ -3,7 +3,7 @@ UID: NF:storport.StorPortGetCurrentProcessorNumber
 title: StorPortGetCurrentProcessorNumber function (storport.h)
 description: Learn more about the StorPortGetCurrentProcessorNumber function.
 tech.root: storage
-ms.date: 07/24/2024
+ms.date: 07/26/2024
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
@@ -67,4 +67,4 @@ The **StorPortGetCurrentProcessorNumber** routine returns one of the following s
 
 [**PROCESSOR_NUMBER**](../miniport/ns-miniport-_processor_number.md)
 
-[**StorPortGetProcessorCount**](storport-storportgetprocessorcount.md)
+[**StorPortGetProcessorCount**](nf-storport-storportgetprocessorcount.md)

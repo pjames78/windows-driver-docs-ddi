@@ -76,4 +76,4 @@ helpviewer_keywords:
 
 [**StorPortGetDriverProxyEndpointWrapper**](nf-storport-storportgetdriverproxyendpointwrapper.md)
 
-[**StorPortRegisterDriverProxyEndpoint**](nf-storport-storportregisterdriverproxyendpoint.md)
+[**StorPortRegisterDriverProxyEndpoints**](nf-storport-storportregisterdriverproxyendpoints.md)
