@@ -80,10 +80,10 @@ For more information, see [Allocation Notification](/windows-hardware/drivers/di
 
 [**DXGK_ALLOCATIONINFOFLAGS2**](ns-d3dkmddi-dxgk_allocationinfoflags2.md)
 
-[**DXGK_BUILDPAGINGBUFFER_OPERATION**](ne-d3dkmddi-dxgk_buildpagingbuffer_operation.md)
+[**DXGK_BUILDPAGINGBUFFER_OPERATION**](ne-d3dkmddi-_dxgk_buildpagingbuffer_operation.md)
 
 [**DXGK_NOTIFYALLOCFLAGS**](ns-d3dkmddi-dxgk_notifyallocflags.md)
 
-[**DXGKARG_BUILDPAGINGBUFFER**](ns-d3dkmddi-dxgkarg_buildpagingbuffer.md)
+[**DXGKARG_BUILDPAGINGBUFFER**](ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md)
 
 [**DxgkDdiBuildPagingBuffer**](nc-d3dkmddi-dxgkddi_buildpagingbuffer.md)
