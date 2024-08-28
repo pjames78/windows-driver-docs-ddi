@@ -2,7 +2,7 @@
 UID: NC:d3d10umddi.PFND3D11DDI_QUERYDESIREDMODE1
 tech.root: display
 title: PFND3D11DDI_QUERYDESIREDMODE1
-ms.date: 08/23/2024
+ms.date: 08/28/2024
 targetos: Windows
 description: Learn more about the PFND3D11DDI_QUERYDESIREDMODE1 function.
 prerelease: false
@@ -44,7 +44,7 @@ helpviewer_keywords:
 
 ## -description
 
-The **PFND3D11DDI_QUERYDESIREDMODE1** function queries the D3D11on12 mode that a D3D11 user-mode driver (UMD) wants to run in.
+The **PFND3D11DDI_QUERYDESIREDMODE1** function is reserved for system use.
 
 ## -parameters
 
@@ -61,6 +61,8 @@ The **PFND3D11DDI_QUERYDESIREDMODE1** function queries the D3D11on12 mode that a
 [out] Pointer to a [**D3D11_UMD_MODE**](../d3d10umddi/ne-d3d10umddi-d3d11_umd_mode.md) enumeration that specifies the mode that the UMD wants to run in.
 
 ## -returns
+
+This function is reserved for system use and the Direct3D runtime shouldn't be expected to call it. When enabled, this function queries the D3D11on12 mode that a D3D11 user-mode driver (UMD) wants to run in.
 
 If this callback function succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
