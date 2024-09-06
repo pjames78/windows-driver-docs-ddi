@@ -6,7 +6,7 @@ ms.date: 06/30/2023
 keywords: ["a2dpsidebandaudio.h header"]
 ms.keywords: 
 ms.service: windows-hardware-driver-quality
-ms.subservice: windows-devices
+ms.subservice: wdk-api-reference
 ms.topic: reference
 tech.root: audio
 f1_keywords:

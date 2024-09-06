@@ -6,7 +6,7 @@ description: The  acxevents.h header is used by an ACX audio class extensions.
 keywords: ["acxevents.h header"]
 ms.keywords: 
 ms.service: windows-hardware-driver-quality
-ms.subservice: windows-devices
+ms.subservice: wdk-api-reference
 ms.topic: reference
 tech.root: audio
 f1_keywords:

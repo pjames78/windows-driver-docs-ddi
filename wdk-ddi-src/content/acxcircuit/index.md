@@ -6,7 +6,7 @@ description: The  acxcircuit.h header is used by the ACX audio class extensions.
 keywords: ["acxcircuit.h header"]
 ms.keywords: 
 ms.service: windows-hardware-driver-quality
-ms.subservice: windows-devices
+ms.subservice: wdk-api-reference
 ms.topic: reference
 tech.root: audioaudio
 f1_keywords:
