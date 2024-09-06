@@ -7,7 +7,7 @@ keywords: ["acxevents.h header"]
 ms.keywords: 
 ms.service: windows-hardware-driver-quality
 ms.subservice: windows-devices
-ms.topic: overview
+ms.topic: reference
 tech.root: audio
 f1_keywords:
  - acxevents

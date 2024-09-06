@@ -7,7 +7,7 @@ keywords: ["acxcircuit.h header"]
 ms.keywords: 
 ms.service: windows-hardware-driver-quality
 ms.subservice: windows-devices
-ms.topic: overview
+ms.topic: reference
 tech.root: audioaudio
 f1_keywords:
  - acxcircuit
