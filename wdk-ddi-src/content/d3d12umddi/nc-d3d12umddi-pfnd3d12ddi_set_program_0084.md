@@ -54,7 +54,7 @@ UMD's **PFND3D12DDI_SET_PROGRAM_0084** function sets a program on a command list
 
 ### -param pDesc
 
-[in] Pointer to a [**D3D12DDI_SET_PROGRAM_DESC_0084**](ns-d3d12umddi-d3d12ddi_set_program_desc_0084.md) structure that describes the program.
+[in] Pointer to a [**D3D12DDI_SET_PROGRAM_DESC_0084**](ns-d3d12umddi-d3d12ddi_set_program_desc_0108.md) structure that describes the program.
 
 ## -remarks
 
@@ -62,4 +62,4 @@ For more information, see [Work graphs](/windows-hardware/drivers/display/work-g
 
 ## -see-also
 
-[**D3D12DDI_SET_PROGRAM_DESC_0084**](ns-d3d12umddi-d3d12ddi_set_program_desc_0084.md)
+[**D3D12DDI_SET_PROGRAM_DESC_0084**](ns-d3d12umddi-d3d12ddi_set_program_desc_0108.md)

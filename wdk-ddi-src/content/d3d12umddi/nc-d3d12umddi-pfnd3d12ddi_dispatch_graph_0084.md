@@ -54,7 +54,7 @@ UMD's **PFND3D12DDI_DISPATCH_GRAPH_0084** function dispatches a work graph for e
 
 ### -param unnamedParam2
 
-[in] Pointer to a [**D3D12DDI_DISPATCH_GRAPH_DESC_0084**](ns-d3d12umddi-d3d12ddi_dispatch_graph_desc_0084.md) structure that describes the work graph.
+[in] Pointer to a [**D3D12DDI_DISPATCH_GRAPH_DESC_0084**](ns-d3d12umddi-d3d12ddi_dispatch_graph_desc_0108.md) structure that describes the work graph.
 
 ## -remarks
 
@@ -62,4 +62,4 @@ For more information, see [Work graphs](/windows-hardware/drivers/display/work-g
 
 ## -see-also
 
-[**D3D12DDI_DISPATCH_GRAPH_DESC_0084**](ns-d3d12umddi-d3d12ddi_dispatch_graph_desc_0084.md)
+[**D3D12DDI_DISPATCH_GRAPH_DESC_0084**](ns-d3d12umddi-d3d12ddi_dispatch_graph_desc_0108.md)
