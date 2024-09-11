@@ -72,4 +72,6 @@ For more information, see [Creating and Using a DirectX VA 2.0 Extension Device]
 
 [**D3DDDIARG_CREATEEXTENSIONDEVICE**](ns-d3dumddi-_d3dddiarg_createextensiondevice.md)
 
+[**DecodeExtensionExecute**](nc-d3dumddi-pfnd3dddi_decodeextensionexecute.md)
+
 [**DestroyExtensionDevice**](nc-d3dumddi-pfnd3dddi_destroyextensiondevice.md)
