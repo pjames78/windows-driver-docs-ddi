@@ -3,7 +3,7 @@ UID: NS:d3dumddi._D3DDDIARG_CREATEEXTENSIONDEVICE
 title: D3DDDIARG_CREATEEXTENSIONDEVICE (d3dumddi.h)
 description: Learn more about the D3DDDIARG_CREATEEXTENSIONDEVICE structure.
 tech.root: display
-ms.date: 09/09/2024
+ms.date: 09/10/2024
 req.header: d3dumddi.h
 req.include-header: D3dumddi.h
 req.target-type: Windows
@@ -58,7 +58,7 @@ A pointer to the [**DXVADDI_PRIVATEDATA**](ns-d3dumddi-_dxvaddi_privatedata.md) 
 
 ### -field hExtension [out]
 
-A handle to the user-mode driver's extension device. The Direct3D runtime uses this handle to identify the extension device in subsequent calls.
+A handle to the extension device. The user-mode driver creates this handle. The Direct3D runtime uses it to identify the extension device in subsequent calls.
 
 ## -remarks
 
